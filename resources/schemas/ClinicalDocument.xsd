@@ -1,0 +1,2681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+a license text
+
+  Generated on 26/04/18 5:47 PM for FHIR v0.0.1 
+
+  Note: this schema does not contain all the knowledge represented in the underlying content model
+
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fhir="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:lm="urn:hl7-org:v3" targetNamespace="urn:hl7-org:v3" elementFormDefault="qualified" version="1.0">
+  <xs:import schemaLocation="fhir-common.xsd" namespace="http://hl7.org/fhir"/>
+  <xs:include schemaLocation="cda-narrative.xsd"/>
+  <xs:element name="ClinicalDocument" type="lm:ClinicalDocument"/>
+  <xs:complexType name="ClinicalDocument">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="1" type="lm:II"/>
+        <xs:element name="code" minOccurs="1" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="title" minOccurs="0" maxOccurs="1" type="lm:ST"/>
+        <xs:element name="effectiveTime" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="confidentialityCode" minOccurs="1" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="setId" minOccurs="0" maxOccurs="1" type="lm:II"/>
+        <xs:element name="versionNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="copyTime" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="recordTarget" minOccurs="1" maxOccurs="unbounded" type="lm:ClinicalDocumentRecordTarget"/>
+        <xs:element name="author" minOccurs="1" maxOccurs="unbounded" type="lm:ClinicalDocumentAuthor"/>
+        <xs:element name="dataEnterer" minOccurs="0" maxOccurs="1" type="lm:ClinicalDocumentDataEnterer"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentInformant"/>
+        <xs:element name="custodian" minOccurs="1" maxOccurs="1" type="lm:ClinicalDocumentCustodian"/>
+        <xs:element name="informationRecipient" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentInformationRecipient"/>
+        <xs:element name="legalAuthenticator" minOccurs="0" maxOccurs="1" type="lm:ClinicalDocumentLegalAuthenticator"/>
+        <xs:element name="authenticator" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentAuthenticator"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentParticipant"/>
+        <xs:element name="inFulfillmentOf" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentInFulfillmentOf"/>
+        <xs:element name="documentationOf" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentDocumentationOf"/>
+        <xs:element name="relatedDocument" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentRelatedDocument"/>
+        <xs:element name="authorization" minOccurs="0" maxOccurs="unbounded" type="lm:ClinicalDocumentAuthorization"/>
+        <xs:element name="componentOf" minOccurs="0" maxOccurs="1" type="lm:ClinicalDocumentComponentOf"/>
+        <xs:element name="component" minOccurs="1" maxOccurs="1" type="lm:ClinicalDocumentComponent"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DOCCLIN"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentRecordTarget">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="patientRole" minOccurs="1" maxOccurs="1" type="lm:PatientRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="RCT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentDataEnterer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="ENT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentCustodian">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedCustodian" minOccurs="1" maxOccurs="1" type="lm:AssignedCustodian"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="CST"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentInformationRecipient">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="intendedRecipient" minOccurs="1" maxOccurs="1" type="lm:IntendedRecipient"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" default="PRCP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentLegalAuthenticator">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="signatureCode" minOccurs="1" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="LA"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentAuthenticator">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="signatureCode" minOccurs="1" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUTHEN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="associatedEntity" minOccurs="1" maxOccurs="1" type="lm:AssociatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentInFulfillmentOf">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="order" minOccurs="1" maxOccurs="1" type="lm:Order"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="FLFS"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentDocumentationOf">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="serviceEvent" minOccurs="1" maxOccurs="1" type="lm:ServiceEvent"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="DOC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentRelatedDocument">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="parentDocument" minOccurs="1" maxOccurs="1" type="lm:ParentDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentAuthorization">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="consent" minOccurs="1" maxOccurs="1" type="lm:Consent"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUTH"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentComponentOf">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="encompassingEncounter" minOccurs="1" maxOccurs="1" type="lm:EncompassingEncounter"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="COMP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ClinicalDocumentComponent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="nonXMLBody" minOccurs="0" maxOccurs="1" type="lm:NonXMLBody"/>
+        <xs:element name="structuredBody" minOccurs="0" maxOccurs="1" type="lm:StructuredBody"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="COMP"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="II">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="root" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="extension" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="assigningAuthorityName" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="displayable" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CE">
+    <xs:complexContent>
+      <xs:extension base="lm:CD">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ST">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:string-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="TS">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:dateTime-primitive"/>
+        <xs:attribute name="inclusive" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CS">
+    <xs:complexContent>
+      <xs:extension base="lm:CV">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="INT">
+    <xs:complexContent>
+      <xs:extension base="lm:QTY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:integer-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PatientRole">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="patient" minOccurs="0" maxOccurs="1" type="lm:Patient"/>
+        <xs:element name="providerOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PAT"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AssignedAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="assignedPerson" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        <xs:element name="assignedAuthoringDevice" minOccurs="0" maxOccurs="1" type="lm:AuthoringDevice"/>
+        <xs:element name="representedOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ASSIGNED"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AssignedEntity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="assignedPerson" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        <xs:element name="representedOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ASSIGNED"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedEntity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="relatedPerson" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AssignedCustodian">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="representedCustodianOrganization" minOccurs="1" maxOccurs="1" type="lm:CustodianOrganization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ASSIGNED"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="IntendedRecipient">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="informationRecipient" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        <xs:element name="receivedOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ASSIGNED"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="IVL_TS">
+    <xs:complexContent>
+      <xs:extension base="lm:SXCM_TS">
+        <xs:sequence>
+        <xs:element name="low" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="high" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="width" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="center" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AssociatedEntity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="associatedPerson" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        <xs:element name="scopingOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Order">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ACT"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="RQO"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ServiceEvent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:ServiceEventPerformer"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ACT"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ServiceEventPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ParentDocument">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="setId" minOccurs="0" maxOccurs="1" type="lm:II"/>
+        <xs:element name="versionNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DOCCLIN"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Consent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="statusCode" minOccurs="1" maxOccurs="1" type="lm:CS"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="CONS"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncompassingEncounter">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="effectiveTime" minOccurs="1" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="admissionReferralSourceCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="dischargeDispositionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="responsibleParty" minOccurs="0" maxOccurs="1" type="lm:EncompassingEncounterResponsibleParty"/>
+        <xs:element name="encounterParticipant" minOccurs="0" maxOccurs="unbounded" type="lm:EncompassingEncounterEncounterParticipant"/>
+        <xs:element name="location" minOccurs="0" maxOccurs="1" type="lm:EncompassingEncounterLocation"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ENC"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncompassingEncounterResponsibleParty">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="RESP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncompassingEncounterEncounterParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncompassingEncounterLocation">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="healthCareFacility" minOccurs="1" maxOccurs="1" type="lm:HealthCareFacility"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="LOC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="NonXMLBody">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="text" minOccurs="1" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="confidentialityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DOCBODY"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuredBody">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="confidentialityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="component" minOccurs="1" maxOccurs="unbounded" type="lm:StructuredBodyComponent"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DOCBODY"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="StructuredBodyComponent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="section" minOccurs="1" maxOccurs="1" type="lm:Section"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="COMP"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ANY">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="nullFlavor" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CD">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="originalText" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="translation" minOccurs="0" maxOccurs="unbounded" type="lm:CD"/>
+        <xs:element name="qualifier" minOccurs="0" maxOccurs="unbounded" type="lm:CR"/>
+        </xs:sequence>
+        <xs:attribute name="code" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="codeSystem" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="codeSystemName" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="codeSystemVersion" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="displayName" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="valueSetVersion" use="optional" type="fhir:string-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CV">
+    <xs:complexContent>
+      <xs:extension base="lm:CE">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="QTY">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AD">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="delimiter" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="country" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="state" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="county" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="city" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="postalCode" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="streetAddressLine" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="houseNumber" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="houseNumberNumeric" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="direction" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="streetName" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="streetNameBase" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="streetNameType" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="additionalLocator" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="unitID" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="unitType" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="careOf" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="censusTract" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryAddressLine" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryInstallationType" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryInstallationArea" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryInstallationQualifier" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryMode" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="deliveryModeIdentifier" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="buildingNumberSuffix" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="postBox" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="precinct" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="useablePeriod" minOccurs="0" maxOccurs="unbounded" type="lm:SXCM_TS">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:IVL_TS, lm:EIVL_TS, lm:PIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        </xs:sequence>
+        <xs:attribute name="other" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="use" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="isNotOrdered" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="TEL">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="useablePeriod" minOccurs="0" maxOccurs="unbounded" type="lm:SXCM_TS">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:IVL_TS, lm:EIVL_TS, lm:PIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:uri-primitive"/>
+        <xs:attribute name="use" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Patient">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="1" type="lm:II"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="lm:EN"/>
+        <xs:element name="desc" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="administrativeGenderCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="birthTime" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="deceasedInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="deceasedTime" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="maritalStatusCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="religiousAffiliationCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="raceCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="ethnicGroupCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="guardian" minOccurs="0" maxOccurs="unbounded" type="lm:Guardian"/>
+        <xs:element name="birthplace" minOccurs="0" maxOccurs="1" type="lm:Birthplace"/>
+        <xs:element name="languageCommunication" minOccurs="0" maxOccurs="unbounded" type="lm:LanguageCommunication"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PSN"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Organization">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="standardIndustryClassCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="asOrganizationPartOf" minOccurs="0" maxOccurs="1" type="lm:OrganizationPartOf"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ORG"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Person">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="lm:EN"/>
+        <xs:element name="asPatientRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:CE"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PSN"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="AuthoringDevice">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="manufacturerModelName" minOccurs="0" maxOccurs="1" type="lm:SC"/>
+        <xs:element name="softwareName" minOccurs="0" maxOccurs="1" type="lm:SC"/>
+        <xs:element name="asMaintainedEntity" minOccurs="0" maxOccurs="unbounded" type="lm:MaintainedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DEV"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CustodianOrganization">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="1" type="lm:ST"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="1" type="lm:TEL"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="1" type="lm:AD"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ORG"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SXCM_TS">
+    <xs:complexContent>
+      <xs:extension base="lm:TS">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="operator" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PQ">
+    <xs:complexContent>
+      <xs:extension base="lm:QTY">
+        <xs:sequence>
+        <xs:element name="translation" minOccurs="0" maxOccurs="unbounded" type="lm:PQR"/>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:decimal-primitive"/>
+        <xs:attribute name="unit" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="inclusive" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ED">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="reference" minOccurs="0" maxOccurs="1" type="lm:TEL"/>
+        <xs:element name="thumbnail" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="representation" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="text" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="data" use="optional" type="fhir:base64Binary-primitive"/>
+        <xs:attribute name="mediaType" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="charset" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="language" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="compression" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="integrityCheck" use="optional" type="fhir:base64Binary-primitive"/>
+        <xs:attribute name="integrityCheckAlgorithm" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="HealthCareFacility">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="location" minOccurs="0" maxOccurs="1" type="lm:Place"/>
+        <xs:element name="serviceProviderOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="SDLOC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Section">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="1" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="title" minOccurs="0" maxOccurs="1" type="lm:ST"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:StrucDoc.Text"/>
+        <xs:element name="confidentialityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:SectionSubject"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:SectionAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:SectionInformant"/>
+        <xs:element name="entry" minOccurs="0" maxOccurs="unbounded" type="lm:SectionEntry"/>
+        <xs:element name="component" minOccurs="0" maxOccurs="unbounded" type="lm:SectionComponent"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="DOCSECT"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SectionSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SectionAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SectionInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SectionEntry">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" default="COMP"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SectionComponent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="section" minOccurs="1" maxOccurs="1" type="lm:Section"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="COMP"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CR">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="name" minOccurs="0" maxOccurs="1" type="lm:CV"/>
+        <xs:element name="value" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        </xs:sequence>
+        <xs:attribute name="inverted" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EIVL_TS">
+    <xs:complexContent>
+      <xs:extension base="lm:SXCM_TS">
+        <xs:sequence>
+        <xs:element name="event" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="offset" minOccurs="0" maxOccurs="1" type="lm:IVL_PQ"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PIVL_TS">
+    <xs:complexContent>
+      <xs:extension base="lm:SXCM_TS">
+        <xs:sequence>
+        <xs:element name="phase" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="period" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        </xs:sequence>
+        <xs:attribute name="alignment" use="optional" type="fhir:code-primitive"/>
+        <xs:attribute name="institutionSpecified" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SXPR_TS">
+    <xs:complexContent>
+      <xs:extension base="lm:SXCM_TS">
+        <xs:sequence>
+        <xs:element name="comp" minOccurs="1" maxOccurs="unbounded" type="lm:SXCM_TS">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:IVL_TS, lm:EIVL_TS, lm:PIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EN">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="delimiter" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="family" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="given" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="prefix" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="suffix" minOccurs="0" maxOccurs="unbounded" type="lm:ST"/>
+        <xs:element name="validTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        </xs:sequence>
+        <xs:attribute name="other" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="use" use="optional" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="BL">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Guardian">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="guardianPerson" minOccurs="0" maxOccurs="1" type="lm:Person"/>
+        <xs:element name="guardianOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="GUARD"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Birthplace">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="place" minOccurs="1" maxOccurs="1" type="lm:Place"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="BIRTHPL"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LanguageCommunication">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="proficiencyLevelCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="preferenceInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizationPartOf">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="wholeOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PART"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SC">
+    <xs:complexContent>
+      <xs:extension base="lm:ST">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="code" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="codeSystem" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="codeSystemVersion" use="optional" type="fhir:string-primitive"/>
+        <xs:attribute name="displayName" use="optional" type="fhir:string-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MaintainedEntity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="maintainingPerson" minOccurs="1" maxOccurs="1" type="lm:Person"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="MNT"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PQR">
+    <xs:complexContent>
+      <xs:extension base="lm:CV">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:decimal-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Place">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="name" minOccurs="0" maxOccurs="1" type="lm:EN"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="1" type="lm:AD"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PLC"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RelatedSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:SubjectPerson"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="PRS"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Observation">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="1" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="derivationExpr" minOccurs="0" maxOccurs="1" type="lm:ST"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="repeatNumber" minOccurs="0" maxOccurs="1" type="lm:IVL_INT"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="value" minOccurs="0" maxOccurs="unbounded" type="lm:ANY">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:BL, lm:ED, lm:ST, lm:CD, lm:CV, lm:CE, lm:SC, lm:II, lm:TEL, lm:AD, lm:EN, lm:INT, lm:REAL, lm:PQ, lm:MO, lm:TS, lm:IVL_PQ, lm:IVL_TS, lm:PIVL_TS, lm:EIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="interpretationCode" minOccurs="0" maxOccurs="unbounded" type="lm:CE"/>
+        <xs:element name="methodCode" minOccurs="0" maxOccurs="unbounded" type="lm:CE"/>
+        <xs:element name="targetSiteCode" minOccurs="0" maxOccurs="unbounded" type="lm:CD"/>
+        <xs:element name="referenceRange" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationReferenceRange"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:ObservationSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationReferenceRange">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="observationRange" minOccurs="1" maxOccurs="1" type="lm:ObservationRange"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="REFV"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterest">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="1" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="1" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="value" minOccurs="1" maxOccurs="unbounded" type="lm:INT"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterestSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:RegionOfInterestPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ROIOVL"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RegionOfInterestPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMedia">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="value" minOccurs="1" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:ObservationMediaSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:ObservationMediaPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="OBS"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationMediaPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministration">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="unbounded" type="lm:SXCM_TS">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:IVL_TS, lm:EIVL_TS, lm:PIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="repeatNumber" minOccurs="0" maxOccurs="1" type="lm:IVL_INT"/>
+        <xs:element name="routeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="approachSiteCode" minOccurs="0" maxOccurs="unbounded" type="lm:CD"/>
+        <xs:element name="doseQuantity" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="rateQuantity" minOccurs="0" maxOccurs="1" type="lm:IVL_PQ"/>
+        <xs:element name="maxDoseQuantity" minOccurs="0" maxOccurs="1" type="lm:RTO_PQ_PQ"/>
+        <xs:element name="administrationUnitCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="consumable" minOccurs="1" maxOccurs="1" type="lm:SubstanceAdministrationConsumable"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministrationSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:SubstanceAdministrationPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="SBADM"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationConsumable">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="manufacturedProduct" minOccurs="1" maxOccurs="1" type="lm:ManufacturedProduct"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="CSM"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubstanceAdministrationPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Supply">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="unbounded" type="lm:SXCM_TS">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:IVL_TS, lm:EIVL_TS, lm:PIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="unbounded" type="lm:CE"/>
+        <xs:element name="repeatNumber" minOccurs="0" maxOccurs="1" type="lm:IVL_INT"/>
+        <xs:element name="independentInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="quantity" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="expectedUseTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="product" minOccurs="0" maxOccurs="1" type="lm:SupplyProduct"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:SupplySubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:SupplySpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:SupplyPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="SPLY"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyProduct">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="manufacturedProduct" minOccurs="1" maxOccurs="1" type="lm:ManufacturedProduct"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRD"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplySubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplySpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SupplyPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Procedure">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="methodCode" minOccurs="0" maxOccurs="unbounded" type="lm:CE"/>
+        <xs:element name="approachSiteCode" minOccurs="0" maxOccurs="unbounded" type="lm:CD"/>
+        <xs:element name="targetSiteCode" minOccurs="0" maxOccurs="unbounded" type="lm:CD"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:ProcedureSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedurePerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedureReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:ProcedurePrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PROC"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedurePerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedureReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProcedurePrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Encounter">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:EncounterSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:EncounterPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="ENC"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EncounterPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Organizer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="statusCode" minOccurs="1" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="component" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerComponent"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:OrganizerSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:OrganizerPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerComponent">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="COMP"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OrganizerPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Act">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="1" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="statusCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="effectiveTime" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="priorityCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="languageCode" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        <xs:element name="subject" minOccurs="0" maxOccurs="1" type="lm:ActSubject"/>
+        <xs:element name="specimen" minOccurs="0" maxOccurs="unbounded" type="lm:ActSpecimen"/>
+        <xs:element name="performer" minOccurs="0" maxOccurs="unbounded" type="lm:ActPerformer"/>
+        <xs:element name="author" minOccurs="0" maxOccurs="unbounded" type="lm:ActAuthor"/>
+        <xs:element name="informant" minOccurs="0" maxOccurs="unbounded" type="lm:ActInformant"/>
+        <xs:element name="participant" minOccurs="0" maxOccurs="unbounded" type="lm:ActParticipant"/>
+        <xs:element name="entryRelationship" minOccurs="0" maxOccurs="unbounded" type="lm:ActEntryRelationship"/>
+        <xs:element name="reference" minOccurs="0" maxOccurs="unbounded" type="lm:ActReference"/>
+        <xs:element name="precondition" minOccurs="0" maxOccurs="unbounded" type="lm:ActPrecondition"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="moodCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActSubject">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="relatedSubject" minOccurs="1" maxOccurs="1" type="lm:RelatedSubject"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SBJ"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActSpecimen">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="specimenRole" minOccurs="1" maxOccurs="1" type="lm:SpecimenRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="SPC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActPerformer">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="modeCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="assignedEntity" minOccurs="1" maxOccurs="1" type="lm:AssignedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRF"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActAuthor">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="functionCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="time" minOccurs="1" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="assignedAuthor" minOccurs="1" maxOccurs="1" type="lm:AssignedAuthor"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="AUT"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActInformant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="assignedEntity" minOccurs="0" maxOccurs="1" type="lm:AssignedEntity"/>
+        <xs:element name="relatedEntity" minOccurs="0" maxOccurs="1" type="lm:RelatedEntity"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="INF"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActParticipant">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="time" minOccurs="0" maxOccurs="1" type="lm:IVL_TS"/>
+        <xs:element name="awarenessCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="participantRole" minOccurs="1" maxOccurs="1" type="lm:ParticipantRole"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="contextControlCode" use="optional" type="fhir:code-primitive" fixed="OP"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActEntryRelationship">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="sequenceNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="observation" minOccurs="0" maxOccurs="1" type="lm:Observation"/>
+        <xs:element name="regionOfInterest" minOccurs="0" maxOccurs="1" type="lm:RegionOfInterest"/>
+        <xs:element name="observationMedia" minOccurs="0" maxOccurs="1" type="lm:ObservationMedia"/>
+        <xs:element name="substanceAdministration" minOccurs="0" maxOccurs="1" type="lm:SubstanceAdministration"/>
+        <xs:element name="supply" minOccurs="0" maxOccurs="1" type="lm:Supply"/>
+        <xs:element name="procedure" minOccurs="0" maxOccurs="1" type="lm:Procedure"/>
+        <xs:element name="encounter" minOccurs="0" maxOccurs="1" type="lm:Encounter"/>
+        <xs:element name="organizer" minOccurs="0" maxOccurs="1" type="lm:Organizer"/>
+        <xs:element name="act" minOccurs="0" maxOccurs="1" type="lm:Act"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+        <xs:attribute name="inversionInd" use="optional" type="fhir:boolean-primitive"/>
+        <xs:attribute name="contextConductionInd" use="optional" type="fhir:boolean-primitive" default="true"/>
+        <xs:attribute name="negationInd" use="optional" type="fhir:boolean-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActReference">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="seperatableInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="externalAct" minOccurs="0" maxOccurs="1" type="lm:ExternalAct"/>
+        <xs:element name="externalObservation" minOccurs="0" maxOccurs="1" type="lm:ExternalObservation"/>
+        <xs:element name="externalProcedure" minOccurs="0" maxOccurs="1" type="lm:ExternalProcedure"/>
+        <xs:element name="externalDocument" minOccurs="0" maxOccurs="1" type="lm:ExternalDocument"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="required" type="fhir:code-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActPrecondition">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="criterion" minOccurs="1" maxOccurs="1" type="lm:Criterion"/>
+        </xs:sequence>
+        <xs:attribute name="typeCode" use="optional" type="fhir:code-primitive" fixed="PRCN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="IVL_PQ">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="low" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="high" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="width" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="center" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubjectPerson">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="lm:EN"/>
+        <xs:element name="desc" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="administrativeGenderCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="birthTime" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        <xs:element name="deceasedInd" minOccurs="0" maxOccurs="1" type="lm:BL"/>
+        <xs:element name="deceasedTime" minOccurs="0" maxOccurs="1" type="lm:TS"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PSN"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="IVL_INT">
+    <xs:complexContent>
+      <xs:extension base="lm:ANY">
+        <xs:sequence>
+        <xs:element name="low" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="high" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        <xs:element name="width" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="center" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="REAL">
+    <xs:complexContent>
+      <xs:extension base="lm:QTY">
+        <xs:sequence>
+        </xs:sequence>
+        <xs:attribute name="value" use="optional" type="fhir:decimal-primitive"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="MO">
+    <xs:complexContent>
+      <xs:extension base="lm:QTY">
+        <xs:sequence>
+        <xs:element name="value" minOccurs="0" maxOccurs="1" type="lm:REAL"/>
+        <xs:element name="currency" minOccurs="0" maxOccurs="1" type="lm:CS"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ObservationRange">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="value" minOccurs="0" maxOccurs="1" type="lm:ANY">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:BL, lm:ED, lm:ST, lm:CD, lm:CV, lm:CE, lm:SC, lm:II, lm:TEL, lm:AD, lm:EN, lm:INT, lm:REAL, lm:PQ, lm:MO, lm:TS, lm:IVL_PQ, lm:IVL_TS, lm:PIVL_TS, lm:EIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="interpretationCode" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="OBS"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN.CRT"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SpecimenRole">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="specimenPlayingEntity" minOccurs="0" maxOccurs="1" type="lm:PlayingEntity"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="SPEC"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ParticipantRole">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="addr" minOccurs="0" maxOccurs="unbounded" type="lm:AD"/>
+        <xs:element name="telecom" minOccurs="0" maxOccurs="unbounded" type="lm:TEL"/>
+        <xs:element name="playingDevice" minOccurs="0" maxOccurs="1" type="lm:Device"/>
+        <xs:element name="playingEntity" minOccurs="0" maxOccurs="1" type="lm:PlayingEntity"/>
+        <xs:element name="scopingEntity" minOccurs="0" maxOccurs="1" type="lm:Entity"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ROL"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalAct">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ACT"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalObservation">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="OBS"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalProcedure">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="PROC"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ExternalDocument">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="setId" minOccurs="0" maxOccurs="1" type="lm:II"/>
+        <xs:element name="versionNumber" minOccurs="0" maxOccurs="1" type="lm:INT"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="DOC"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Criterion">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CD"/>
+        <xs:element name="text" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        <xs:element name="value" minOccurs="0" maxOccurs="1" type="lm:ANY">
+          <xs:annotation>
+          <xs:appinfo xml:lang="en">Possible types: lm:BL, lm:ED, lm:ST, lm:CD, lm:CV, lm:CE, lm:SC, lm:II, lm:TEL, lm:AD, lm:EN, lm:INT, lm:REAL, lm:PQ, lm:MO, lm:TS, lm:IVL_PQ, lm:IVL_TS, lm:PIVL_TS, lm:EIVL_TS, lm:SXPR_TS</xs:appinfo>
+          </xs:annotation>
+        </xs:element>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="OBS"/>
+        <xs:attribute name="moodCode" use="optional" type="fhir:code-primitive" fixed="EVN.CRT"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RTO_PQ_PQ">
+    <xs:complexContent>
+      <xs:extension base="lm:QTY">
+        <xs:sequence>
+        <xs:element name="numerator" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        <xs:element name="denominator" minOccurs="0" maxOccurs="1" type="lm:PQ"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ManufacturedProduct">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="manufacturedLabeledDrug" minOccurs="0" maxOccurs="1" type="lm:LabeledDrug"/>
+        <xs:element name="manufacturedMaterial" minOccurs="0" maxOccurs="1" type="lm:Material"/>
+        <xs:element name="manufacturerOrganization" minOccurs="0" maxOccurs="1" type="lm:Organization"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="MANU"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PlayingEntity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="quantity" minOccurs="0" maxOccurs="unbounded" type="lm:PQ"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="lm:EN"/>
+        <xs:element name="desc" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ENT"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Device">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="manufacturerModelName" minOccurs="0" maxOccurs="1" type="lm:SC"/>
+        <xs:element name="softwareName" minOccurs="0" maxOccurs="1" type="lm:SC"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="DEV"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Entity">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="id" minOccurs="0" maxOccurs="unbounded" type="lm:II"/>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="desc" minOccurs="0" maxOccurs="1" type="lm:ED"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" default="ENT"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="INSTANCE"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="LabeledDrug">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="1" type="lm:EN"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="MMAT"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="KIND"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Material">
+    <xs:complexContent>
+      <xs:extension base="fhir:Element">
+        <xs:sequence>
+        <xs:element name="code" minOccurs="0" maxOccurs="1" type="lm:CE"/>
+        <xs:element name="name" minOccurs="0" maxOccurs="1" type="lm:EN"/>
+        <xs:element name="lotNumberText" minOccurs="0" maxOccurs="1" type="lm:ST"/>
+        </xs:sequence>
+        <xs:attribute name="classCode" use="optional" type="fhir:code-primitive" fixed="MMAT"/>
+        <xs:attribute name="determinerCode" use="optional" type="fhir:code-primitive" fixed="KIND"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>

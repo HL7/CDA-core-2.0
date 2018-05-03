@@ -1,0 +1,48 @@
+---
+# jekyll header
+---
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{{ site.data.fhir.igName }}</title>
+        
+        {% include header.html %}
+    </head>
+    <body>
+        {% include navbar.html %}
+        
+        <div id="segment-breadcrumb" class="segmnt">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li title="{{ site.data.fhir.igName }}"><a href="index.html"><b>{{site.data.fhir.igName}}</b></a></li>
+                    {% if page.title %}
+                    <li><b>{{page.title}} Details</b></li>
+                    {% else %}
+                    <li><b>{{[id]}} Details</b></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        
+        <div id="segment-content" class="segment">
+            <div class="container">
+                <div class="row">
+                    <div class="inner-wrapper">
+                        <div class="col-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="{{[type]}}-{{[id]}}.html">Content</a></li>
+                                <li><a href="{{[type]}}-{{[id]}}.xml.html">XML</a></li>
+                                <li><a href="{{[type]}}-{{[id]}}.json.html">JSON</a></li>
+                            </ul>
+                            
+                            {% include {{[type]}}-{{[name]}}.xhtml %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        {% include footer.html %}
+    </body>
+</html>

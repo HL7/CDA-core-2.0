@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Place"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/Place"/>
+  <name value="CDAR2.Place"/>
+  <title value="FHIR Definition for CDA R2 Class Place"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Place"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <snapshot>
+    <element id="Place">
+      <path value="Place"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Place"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+    </element>
+    <element id="Place.nullFlavor">
+      <path value="Place.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="Place.realmCode">
+      <path value="Place.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Place.typeId">
+      <path value="Place.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Place.templateId">
+      <path value="Place.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Place.classCode">
+      <path value="Place.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Place.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="PLC"/>
+      <fixedCode value="PLC"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-EntityClassPlace"/>
+      </binding>
+    </element>
+    <element id="Place.determinerCode">
+      <path value="Place.determinerCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Place.determinerCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INSTANCE"/>
+      <fixedCode value="INSTANCE"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+      </binding>
+    </element>
+    <element id="Place.name">
+      <path value="Place.name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Place.name"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+      </type>
+    </element>
+    <element id="Place.addr">
+      <path value="Place.addr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Place.addr"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Place">
+      <path value="Place"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Place.classCode">
+      <path value="Place.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="PLC"/>
+      <fixedCode value="PLC"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-EntityClassPlace"/>
+      </binding>
+    </element>
+    <element id="Place.determinerCode">
+      <path value="Place.determinerCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INSTANCE"/>
+      <fixedCode value="INSTANCE"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+      </binding>
+    </element>
+    <element id="Place.name">
+      <path value="Place.name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+      </type>
+    </element>
+    <element id="Place.addr">
+      <path value="Place.addr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

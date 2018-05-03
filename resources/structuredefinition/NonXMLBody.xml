@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="NonXMLBody"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+  <name value="CDAR2.NonXMLBody"/>
+  <title value="FHIR Definition for CDA R2 Class NonXMLBody"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <snapshot>
+    <element id="NonXMLBody">
+      <path value="NonXMLBody"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+    </element>
+    <element id="NonXMLBody.nullFlavor">
+      <path value="NonXMLBody.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="NonXMLBody.realmCode">
+      <path value="NonXMLBody.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.typeId">
+      <path value="NonXMLBody.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.templateId">
+      <path value="NonXMLBody.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.classCode">
+      <path value="NonXMLBody.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOCBODY"/>
+      <fixedCode value="DOCBODY"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-ActClassOrganizer"/>
+      </binding>
+    </element>
+    <element id="NonXMLBody.moodCode">
+      <path value="NonXMLBody.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody.moodCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="NonXMLBody.text">
+      <path value="NonXMLBody.text"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody.text"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.confidentialityCode">
+      <path value="NonXMLBody.confidentialityCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody.confidentialityCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.languageCode">
+      <path value="NonXMLBody.languageCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="NonXMLBody.languageCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+      </binding>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="NonXMLBody">
+      <path value="NonXMLBody"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="NonXMLBody.classCode">
+      <path value="NonXMLBody.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOCBODY"/>
+      <fixedCode value="DOCBODY"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-ActClassOrganizer"/>
+      </binding>
+    </element>
+    <element id="NonXMLBody.moodCode">
+      <path value="NonXMLBody.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="NonXMLBody.text">
+      <path value="NonXMLBody.text"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.confidentialityCode">
+      <path value="NonXMLBody.confidentialityCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="NonXMLBody.languageCode">
+      <path value="NonXMLBody.languageCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

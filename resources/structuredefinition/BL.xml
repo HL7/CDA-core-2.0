@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="BL"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+  <name value="V3 Data type BL (Boolean)"/>
+  <title value="V3 Data type BL (Boolean)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="BL">
+      <path value="BL"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ANY.nullFlavor">
+      <path value="BL.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="BL.value">
+      <path value="BL.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="BL.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="BL">
+      <path value="BL"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="BL.value">
+      <path value="BL.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
