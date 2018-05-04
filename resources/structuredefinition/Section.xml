@@ -13,7 +13,7 @@
   <publisher value="HL7"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
+  <type value="Section"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <snapshot>
     <element id="Section">
@@ -164,7 +164,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/StrucDoc.Text"/>
+        <code value="xhtml"/>
       </type>
       <mustSupport value="true"/>
     </element>

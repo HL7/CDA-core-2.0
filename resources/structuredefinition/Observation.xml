@@ -13,7 +13,7 @@
   <publisher value="HL7"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+  <type value="Observation"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <snapshot>
     <element id="Observation">
@@ -307,6 +307,9 @@
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_PQ"/>

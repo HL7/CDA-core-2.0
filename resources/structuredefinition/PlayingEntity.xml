@@ -13,7 +13,7 @@
   <publisher value="HL7"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/PlayingEntity"/>
+  <type value="PlayingEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <snapshot>
     <element id="PlayingEntity">

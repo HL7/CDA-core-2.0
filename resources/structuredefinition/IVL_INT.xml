@@ -14,7 +14,7 @@
   <description value="A set of consecutive values of an ordered base data type."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/IVL_INT"/>
+  <type value="IVL_INT"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <snapshot>
