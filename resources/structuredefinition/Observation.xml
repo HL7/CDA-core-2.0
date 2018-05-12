@@ -276,6 +276,9 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
       </type>
       <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CO"/>
+      </type>
+      <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <type>
