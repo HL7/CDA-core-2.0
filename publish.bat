@@ -1,0 +1,1 @@
+java -Xms2g -Xmx2g -jar org.hl7.fhir.igpublisher.jar -ig ig.json

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ExternalObservation"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+  <name value="CDAR2.ExternalObservation"/>
+  <title value="ExternalObservation (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="ExternalObservation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <snapshot>
+    <element id="ExternalObservation">
+      <path value="ExternalObservation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ExternalObservation"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+    </element>
+    <element id="ExternalObservation.nullFlavor">
+      <path value="ExternalObservation.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.realmCode">
+      <path value="ExternalObservation.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ExternalObservation.typeId">
+      <path value="ExternalObservation.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ExternalObservation.templateId">
+      <path value="ExternalObservation.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ExternalObservation.classCode">
+      <path value="ExternalObservation.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ExternalObservation.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OBS"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassObservation"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.moodCode">
+      <path value="ExternalObservation.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ExternalObservation.moodCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.id">
+      <path value="ExternalObservation.id"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ExternalObservation.id"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ExternalObservation.code">
+      <path value="ExternalObservation.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ExternalObservation.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActCode"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.text">
+      <path value="ExternalObservation.text"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ExternalObservation.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ExternalObservation">
+      <path value="ExternalObservation"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="ExternalObservation.classCode">
+      <path value="ExternalObservation.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OBS"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassObservation"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.moodCode">
+      <path value="ExternalObservation.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.id">
+      <path value="ExternalObservation.id"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ExternalObservation.code">
+      <path value="ExternalObservation.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActCode"/>
+      </binding>
+    </element>
+    <element id="ExternalObservation.text">
+      <path value="ExternalObservation.text"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PlayingEntity"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/PlayingEntity"/>
+  <name value="CDAR2.PlayingEntity"/>
+  <title value="PlayingEntity (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="PlayingEntity"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <snapshot>
+    <element id="PlayingEntity">
+      <path value="PlayingEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PlayingEntity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+    </element>
+    <element id="PlayingEntity.nullFlavor">
+      <path value="PlayingEntity.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.realmCode">
+      <path value="PlayingEntity.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.typeId">
+      <path value="PlayingEntity.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.templateId">
+      <path value="PlayingEntity.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.classCode">
+      <path value="PlayingEntity.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PlayingEntity.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="ENT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassRoot"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.determinerCode">
+      <path value="PlayingEntity.determinerCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PlayingEntity.determinerCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INSTANCE"/>
+      <fixedCode value="INSTANCE"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.code">
+      <path value="PlayingEntity.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PlayingEntity.code"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityCode"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.quantity">
+      <path value="PlayingEntity.quantity"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="PlayingEntity.quantity"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.name">
+      <path value="PlayingEntity.name"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="PlayingEntity.name"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.desc">
+      <path value="PlayingEntity.desc"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PlayingEntity.desc"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PlayingEntity">
+      <path value="PlayingEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="PlayingEntity.classCode">
+      <path value="PlayingEntity.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="ENT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassRoot"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.determinerCode">
+      <path value="PlayingEntity.determinerCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INSTANCE"/>
+      <fixedCode value="INSTANCE"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.code">
+      <path value="PlayingEntity.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityCode"/>
+      </binding>
+    </element>
+    <element id="PlayingEntity.quantity">
+      <path value="PlayingEntity.quantity"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.name">
+      <path value="PlayingEntity.name"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.desc">
+      <path value="PlayingEntity.desc"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

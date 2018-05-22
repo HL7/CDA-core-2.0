@@ -1,0 +1,2662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ClinicalDocument"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/ClinicalDocument"/>
+  <name value="CDAR2.ClinicalDocument"/>
+  <title value="ClinicalDocument (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="This is a generated StructureDefinition that describes CDA - that is, CDA as it actually is for R2. The intent of this StructureDefinition is to enable CDA to be a FHIR resource. That enables the FHIR infrastructure - API, conformance, query - to be used directly against CDA"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="ClinicalDocument"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <snapshot>
+    <element id="ClinicalDocument">
+      <path value="ClinicalDocument"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+    </element>
+    <element id="ClinicalDocument.nullFlavor">
+      <path value="ClinicalDocument.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.realmCode">
+      <path value="ClinicalDocument.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.typeId">
+      <path value="ClinicalDocument.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.templateId">
+      <path value="ClinicalDocument.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.classCode">
+      <path value="ClinicalDocument.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.classCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOCCLIN"/>
+      <fixedCode value="DOCCLIN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.moodCode">
+      <path value="ClinicalDocument.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.moodCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.id">
+      <path value="ClinicalDocument.id"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.id"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.code">
+      <path value="ClinicalDocument.code"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.code"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-DocumentType"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.title">
+      <path value="ClinicalDocument.title"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.title"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.effectiveTime">
+      <path value="ClinicalDocument.effectiveTime"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.effectiveTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.confidentialityCode">
+      <path value="ClinicalDocument.confidentialityCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.confidentialityCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.languageCode">
+      <path value="ClinicalDocument.languageCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.languageCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.setId">
+      <path value="ClinicalDocument.setId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.setId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.versionNumber">
+      <path value="ClinicalDocument.versionNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.versionNumber"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.copyTime">
+      <path value="ClinicalDocument.copyTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.copyTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget">
+      <path value="ClinicalDocument.recordTarget"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.recordTarget"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget.nullFlavor">
+      <path value="ClinicalDocument.recordTarget.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.recordTarget.realmCode">
+      <path value="ClinicalDocument.recordTarget.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget.typeId">
+      <path value="ClinicalDocument.recordTarget.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget.templateId">
+      <path value="ClinicalDocument.recordTarget.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget.typeCode">
+      <path value="ClinicalDocument.recordTarget.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.recordTarget.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="RCT"/>
+      <fixedCode value="RCT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationIndirectTarget"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.recordTarget.contextControlCode">
+      <path value="ClinicalDocument.recordTarget.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.recordTarget.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.recordTarget.patientRole">
+      <path value="ClinicalDocument.recordTarget.patientRole"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.recordTarget.patientRole"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PatientRole"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author">
+      <path value="ClinicalDocument.author"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.author"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author.nullFlavor">
+      <path value="ClinicalDocument.author.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.realmCode">
+      <path value="ClinicalDocument.author.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author.typeId">
+      <path value="ClinicalDocument.author.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author.templateId">
+      <path value="ClinicalDocument.author.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author.typeCode">
+      <path value="ClinicalDocument.author.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.author.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUT"/>
+      <fixedCode value="AUT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationTranscriber"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.functionCode">
+      <path value="ClinicalDocument.author.functionCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.author.functionCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationFunction"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.contextControlCode">
+      <path value="ClinicalDocument.author.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.author.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.time">
+      <path value="ClinicalDocument.author.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.author.time"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.author.assignedAuthor">
+      <path value="ClinicalDocument.author.assignedAuthor"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.author.assignedAuthor"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer">
+      <path value="ClinicalDocument.dataEnterer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.dataEnterer"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.nullFlavor">
+      <path value="ClinicalDocument.dataEnterer.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.realmCode">
+      <path value="ClinicalDocument.dataEnterer.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.typeId">
+      <path value="ClinicalDocument.dataEnterer.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.templateId">
+      <path value="ClinicalDocument.dataEnterer.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.typeCode">
+      <path value="ClinicalDocument.dataEnterer.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.dataEnterer.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="ENT"/>
+      <fixedCode value="ENT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.contextControlCode">
+      <path value="ClinicalDocument.dataEnterer.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.dataEnterer.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.time">
+      <path value="ClinicalDocument.dataEnterer.time"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.dataEnterer.time"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.assignedEntity">
+      <path value="ClinicalDocument.dataEnterer.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.dataEnterer.assignedEntity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant">
+      <path value="ClinicalDocument.informant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.informant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.nullFlavor">
+      <path value="ClinicalDocument.informant.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informant.realmCode">
+      <path value="ClinicalDocument.informant.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.typeId">
+      <path value="ClinicalDocument.informant.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.templateId">
+      <path value="ClinicalDocument.informant.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.typeCode">
+      <path value="ClinicalDocument.informant.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informant.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INF"/>
+      <fixedCode value="INF"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informant.contextControlCode">
+      <path value="ClinicalDocument.informant.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informant.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informant.assignedEntity">
+      <path value="ClinicalDocument.informant.assignedEntity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informant.assignedEntity"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.relatedEntity">
+      <path value="ClinicalDocument.informant.relatedEntity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informant.relatedEntity"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian">
+      <path value="ClinicalDocument.custodian"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.custodian"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian.nullFlavor">
+      <path value="ClinicalDocument.custodian.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.custodian.realmCode">
+      <path value="ClinicalDocument.custodian.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian.typeId">
+      <path value="ClinicalDocument.custodian.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian.templateId">
+      <path value="ClinicalDocument.custodian.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian.typeCode">
+      <path value="ClinicalDocument.custodian.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.custodian.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="CST"/>
+      <fixedCode value="CST"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.custodian.assignedCustodian">
+      <path value="ClinicalDocument.custodian.assignedCustodian"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.custodian.assignedCustodian"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedCustodian"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient">
+      <path value="ClinicalDocument.informationRecipient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.informationRecipient"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.nullFlavor">
+      <path value="ClinicalDocument.informationRecipient.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.realmCode">
+      <path value="ClinicalDocument.informationRecipient.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.typeId">
+      <path value="ClinicalDocument.informationRecipient.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.templateId">
+      <path value="ClinicalDocument.informationRecipient.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.typeCode">
+      <path value="ClinicalDocument.informationRecipient.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informationRecipient.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="PRCP"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.intendedRecipient">
+      <path value="ClinicalDocument.informationRecipient.intendedRecipient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.informationRecipient.intendedRecipient"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IntendedRecipient"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator">
+      <path value="ClinicalDocument.legalAuthenticator"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.nullFlavor">
+      <path value="ClinicalDocument.legalAuthenticator.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.realmCode">
+      <path value="ClinicalDocument.legalAuthenticator.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.typeId">
+      <path value="ClinicalDocument.legalAuthenticator.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.templateId">
+      <path value="ClinicalDocument.legalAuthenticator.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.typeCode">
+      <path value="ClinicalDocument.legalAuthenticator.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="LA"/>
+      <fixedCode value="LA"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.contextControlCode">
+      <path value="ClinicalDocument.legalAuthenticator.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.time">
+      <path value="ClinicalDocument.legalAuthenticator.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator.time"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.signatureCode">
+      <path value="ClinicalDocument.legalAuthenticator.signatureCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator.signatureCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.assignedEntity">
+      <path value="ClinicalDocument.legalAuthenticator.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.legalAuthenticator.assignedEntity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator">
+      <path value="ClinicalDocument.authenticator"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.authenticator"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator.nullFlavor">
+      <path value="ClinicalDocument.authenticator.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authenticator.realmCode">
+      <path value="ClinicalDocument.authenticator.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator.typeId">
+      <path value="ClinicalDocument.authenticator.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator.templateId">
+      <path value="ClinicalDocument.authenticator.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator.typeCode">
+      <path value="ClinicalDocument.authenticator.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authenticator.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUTHEN"/>
+      <fixedCode value="AUTHEN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authenticator.time">
+      <path value="ClinicalDocument.authenticator.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authenticator.time"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.authenticator.signatureCode">
+      <path value="ClinicalDocument.authenticator.signatureCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authenticator.signatureCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.authenticator.assignedEntity">
+      <path value="ClinicalDocument.authenticator.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authenticator.assignedEntity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant">
+      <path value="ClinicalDocument.participant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.participant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.nullFlavor">
+      <path value="ClinicalDocument.participant.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.realmCode">
+      <path value="ClinicalDocument.participant.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.typeId">
+      <path value="ClinicalDocument.participant.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.templateId">
+      <path value="ClinicalDocument.participant.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.typeCode">
+      <path value="ClinicalDocument.participant.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.participant.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationType"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.functionCode">
+      <path value="ClinicalDocument.participant.functionCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.participant.functionCode"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationFunction"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.contextControlCode">
+      <path value="ClinicalDocument.participant.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.participant.contextControlCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.time">
+      <path value="ClinicalDocument.participant.time"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.participant.time"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.associatedEntity">
+      <path value="ClinicalDocument.participant.associatedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.participant.associatedEntity"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf">
+      <path value="ClinicalDocument.inFulfillmentOf"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.inFulfillmentOf"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.nullFlavor">
+      <path value="ClinicalDocument.inFulfillmentOf.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.realmCode">
+      <path value="ClinicalDocument.inFulfillmentOf.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.typeId">
+      <path value="ClinicalDocument.inFulfillmentOf.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.templateId">
+      <path value="ClinicalDocument.inFulfillmentOf.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.typeCode">
+      <path value="ClinicalDocument.inFulfillmentOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.inFulfillmentOf.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="FLFS"/>
+      <fixedCode value="FLFS"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipFulfills"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.order">
+      <path value="ClinicalDocument.inFulfillmentOf.order"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.inFulfillmentOf.order"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Order"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf">
+      <path value="ClinicalDocument.documentationOf"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.documentationOf"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf.nullFlavor">
+      <path value="ClinicalDocument.documentationOf.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.documentationOf.realmCode">
+      <path value="ClinicalDocument.documentationOf.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf.typeId">
+      <path value="ClinicalDocument.documentationOf.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf.templateId">
+      <path value="ClinicalDocument.documentationOf.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf.typeCode">
+      <path value="ClinicalDocument.documentationOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.documentationOf.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOC"/>
+      <fixedCode value="DOC"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassDocument"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.documentationOf.serviceEvent">
+      <path value="ClinicalDocument.documentationOf.serviceEvent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.documentationOf.serviceEvent"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ServiceEvent"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument">
+      <path value="ClinicalDocument.relatedDocument"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.relatedDocument"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.nullFlavor">
+      <path value="ClinicalDocument.relatedDocument.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.realmCode">
+      <path value="ClinicalDocument.relatedDocument.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.typeId">
+      <path value="ClinicalDocument.relatedDocument.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.templateId">
+      <path value="ClinicalDocument.relatedDocument.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.typeCode">
+      <path value="ClinicalDocument.relatedDocument.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.relatedDocument.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.parentDocument">
+      <path value="ClinicalDocument.relatedDocument.parentDocument"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.relatedDocument.parentDocument"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ParentDocument"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization">
+      <path value="ClinicalDocument.authorization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="ClinicalDocument.authorization"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization.nullFlavor">
+      <path value="ClinicalDocument.authorization.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authorization.realmCode">
+      <path value="ClinicalDocument.authorization.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization.typeId">
+      <path value="ClinicalDocument.authorization.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization.templateId">
+      <path value="ClinicalDocument.authorization.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization.typeCode">
+      <path value="ClinicalDocument.authorization.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authorization.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUTH"/>
+      <fixedCode value="AUTH"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipPertains"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authorization.consent">
+      <path value="ClinicalDocument.authorization.consent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.authorization.consent"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Consent"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf">
+      <path value="ClinicalDocument.componentOf"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.componentOf"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf.nullFlavor">
+      <path value="ClinicalDocument.componentOf.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.componentOf.realmCode">
+      <path value="ClinicalDocument.componentOf.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf.typeId">
+      <path value="ClinicalDocument.componentOf.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf.templateId">
+      <path value="ClinicalDocument.componentOf.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf.typeCode">
+      <path value="ClinicalDocument.componentOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.componentOf.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <fixedCode value="COMP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipHasComponent"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.componentOf.encompassingEncounter">
+      <path value="ClinicalDocument.componentOf.encompassingEncounter"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.componentOf.encompassingEncounter"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component">
+      <path value="ClinicalDocument.component"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.component"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.nullFlavor">
+      <path value="ClinicalDocument.component.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.component.realmCode">
+      <path value="ClinicalDocument.component.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.typeId">
+      <path value="ClinicalDocument.component.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.templateId">
+      <path value="ClinicalDocument.component.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.typeCode">
+      <path value="ClinicalDocument.component.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.component.typeCode"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <fixedCode value="COMP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipHasComponent"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.component.contextConductionInd">
+      <path value="ClinicalDocument.component.contextConductionInd"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.component.contextConductionInd"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <defaultValueBoolean value="true"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.component.nonXMLBody">
+      <path value="ClinicalDocument.component.nonXMLBody"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.component.nonXMLBody"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.structuredBody">
+      <path value="ClinicalDocument.component.structuredBody"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ClinicalDocument.component.structuredBody"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/StructuredBody"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="ClinicalDocument">
+      <path value="ClinicalDocument"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="ClinicalDocument.classCode">
+      <path value="ClinicalDocument.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOCCLIN"/>
+      <fixedCode value="DOCCLIN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.moodCode">
+      <path value="ClinicalDocument.moodCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="EVN"/>
+      <fixedCode value="EVN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.id">
+      <path value="ClinicalDocument.id"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.code">
+      <path value="ClinicalDocument.code"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-DocumentType"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.title">
+      <path value="ClinicalDocument.title"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.effectiveTime">
+      <path value="ClinicalDocument.effectiveTime"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.confidentialityCode">
+      <path value="ClinicalDocument.confidentialityCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.languageCode">
+      <path value="ClinicalDocument.languageCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.setId">
+      <path value="ClinicalDocument.setId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.versionNumber">
+      <path value="ClinicalDocument.versionNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.copyTime">
+      <path value="ClinicalDocument.copyTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget">
+      <path value="ClinicalDocument.recordTarget"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.recordTarget.typeCode">
+      <path value="ClinicalDocument.recordTarget.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="RCT"/>
+      <fixedCode value="RCT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationIndirectTarget"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.recordTarget.contextControlCode">
+      <path value="ClinicalDocument.recordTarget.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.recordTarget.patientRole">
+      <path value="ClinicalDocument.recordTarget.patientRole"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PatientRole"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author">
+      <path value="ClinicalDocument.author"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.author.typeCode">
+      <path value="ClinicalDocument.author.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUT"/>
+      <fixedCode value="AUT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationTranscriber"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.functionCode">
+      <path value="ClinicalDocument.author.functionCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationFunction"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.contextControlCode">
+      <path value="ClinicalDocument.author.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.author.time">
+      <path value="ClinicalDocument.author.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.author.assignedAuthor">
+      <path value="ClinicalDocument.author.assignedAuthor"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer">
+      <path value="ClinicalDocument.dataEnterer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.typeCode">
+      <path value="ClinicalDocument.dataEnterer.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="ENT"/>
+      <fixedCode value="ENT"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.contextControlCode">
+      <path value="ClinicalDocument.dataEnterer.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.time">
+      <path value="ClinicalDocument.dataEnterer.time"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.dataEnterer.assignedEntity">
+      <path value="ClinicalDocument.dataEnterer.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant">
+      <path value="ClinicalDocument.informant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.typeCode">
+      <path value="ClinicalDocument.informant.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="INF"/>
+      <fixedCode value="INF"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informant.contextControlCode">
+      <path value="ClinicalDocument.informant.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.informant.assignedEntity">
+      <path value="ClinicalDocument.informant.assignedEntity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informant.relatedEntity">
+      <path value="ClinicalDocument.informant.relatedEntity"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian">
+      <path value="ClinicalDocument.custodian"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.custodian.typeCode">
+      <path value="ClinicalDocument.custodian.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="CST"/>
+      <fixedCode value="CST"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.custodian.assignedCustodian">
+      <path value="ClinicalDocument.custodian.assignedCustodian"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedCustodian"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient">
+      <path value="ClinicalDocument.informationRecipient"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.typeCode">
+      <path value="ClinicalDocument.informationRecipient.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="PRCP"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.informationRecipient.intendedRecipient">
+      <path value="ClinicalDocument.informationRecipient.intendedRecipient"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IntendedRecipient"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator">
+      <path value="ClinicalDocument.legalAuthenticator"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.typeCode">
+      <path value="ClinicalDocument.legalAuthenticator.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="LA"/>
+      <fixedCode value="LA"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.contextControlCode">
+      <path value="ClinicalDocument.legalAuthenticator.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.time">
+      <path value="ClinicalDocument.legalAuthenticator.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.signatureCode">
+      <path value="ClinicalDocument.legalAuthenticator.signatureCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.legalAuthenticator.assignedEntity">
+      <path value="ClinicalDocument.legalAuthenticator.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator">
+      <path value="ClinicalDocument.authenticator"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authenticator.typeCode">
+      <path value="ClinicalDocument.authenticator.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUTHEN"/>
+      <fixedCode value="AUTHEN"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationVerifier"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authenticator.time">
+      <path value="ClinicalDocument.authenticator.time"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.authenticator.signatureCode">
+      <path value="ClinicalDocument.authenticator.signatureCode"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.authenticator.assignedEntity">
+      <path value="ClinicalDocument.authenticator.assignedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant">
+      <path value="ClinicalDocument.participant"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.typeCode">
+      <path value="ClinicalDocument.participant.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationType"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.functionCode">
+      <path value="ClinicalDocument.participant.functionCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+      <binding>
+        <strength value="extensible"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationFunction"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.contextControlCode">
+      <path value="ClinicalDocument.participant.contextControlCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="OP"/>
+      <fixedCode value="OP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.participant.time">
+      <path value="ClinicalDocument.participant.time"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.participant.associatedEntity">
+      <path value="ClinicalDocument.participant.associatedEntity"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf">
+      <path value="ClinicalDocument.inFulfillmentOf"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.typeCode">
+      <path value="ClinicalDocument.inFulfillmentOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="FLFS"/>
+      <fixedCode value="FLFS"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipFulfills"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.inFulfillmentOf.order">
+      <path value="ClinicalDocument.inFulfillmentOf.order"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Order"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf">
+      <path value="ClinicalDocument.documentationOf"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.documentationOf.typeCode">
+      <path value="ClinicalDocument.documentationOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="DOC"/>
+      <fixedCode value="DOC"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassDocument"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.documentationOf.serviceEvent">
+      <path value="ClinicalDocument.documentationOf.serviceEvent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ServiceEvent"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument">
+      <path value="ClinicalDocument.relatedDocument"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.typeCode">
+      <path value="ClinicalDocument.relatedDocument.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.relatedDocument.parentDocument">
+      <path value="ClinicalDocument.relatedDocument.parentDocument"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ParentDocument"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization">
+      <path value="ClinicalDocument.authorization"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.authorization.typeCode">
+      <path value="ClinicalDocument.authorization.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="AUTH"/>
+      <fixedCode value="AUTH"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipPertains"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.authorization.consent">
+      <path value="ClinicalDocument.authorization.consent"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Consent"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf">
+      <path value="ClinicalDocument.componentOf"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.componentOf.typeCode">
+      <path value="ClinicalDocument.componentOf.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <fixedCode value="COMP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipHasComponent"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.componentOf.encompassingEncounter">
+      <path value="ClinicalDocument.componentOf.encompassingEncounter"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component">
+      <path value="ClinicalDocument.component"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.typeCode">
+      <path value="ClinicalDocument.component.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <fixedCode value="COMP"/>
+      <mustSupport value="true"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipHasComponent"/>
+      </binding>
+    </element>
+    <element id="ClinicalDocument.component.contextConductionInd">
+      <path value="ClinicalDocument.component.contextConductionInd"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+      <defaultValueBoolean value="true"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="ClinicalDocument.component.nonXMLBody">
+      <path value="ClinicalDocument.component.nonXMLBody"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+      </type>
+    </element>
+    <element id="ClinicalDocument.component.structuredBody">
+      <path value="ClinicalDocument.component.structuredBody"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/StructuredBody"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
