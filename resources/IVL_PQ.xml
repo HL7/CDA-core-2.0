@@ -26,7 +26,7 @@
         <code value="Element"/>
       </type>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="IVL_PQ.nullFlavor">
       <path value="IVL_PQ.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
