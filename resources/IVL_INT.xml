@@ -27,7 +27,7 @@
       </type>
     </element>
     <element id="ANY.nullFlavor">
-      <path value="IVL_INT.nullFlavor"/>
+      <path value=".nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
       <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
@@ -45,6 +45,20 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
+    </element>
+    <element id="IVL_INT.value">
+      <path value="IVL_INT.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IVL_INT.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
+      </type>
     </element>
     <element id="IVL_INT.low">
       <path value="IVL_INT.low"/>
@@ -114,6 +128,20 @@
       <max value="*"/>
       <type>
         <code value="Element"/>
+      </type>
+    </element>
+    <element id="IVL_INT.value">
+      <path value="IVL_INT.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IVL_INT.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="integer"/>
       </type>
     </element>
     <element id="IVL_INT.low">

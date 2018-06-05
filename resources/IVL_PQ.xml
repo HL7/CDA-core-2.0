@@ -46,6 +46,38 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
+    <element id="IVL_PQ.value">
+      <path value="IVL_PQ.value"/>
+      <representation value="xmlAttr"/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PQ.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.unit">
+      <path value="IVL_PQ.unit"/>
+      <representation value="xmlAttr"/>
+      <label value="Unit of Measure"/>
+      <definition value="The unit of measure specified in the Unified Code for Units of Measure (UCUM) []."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IVL_PQ.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
     <element id="IVL_PQ.low">
       <path value="IVL_PQ.low"/>
       <label value="Low Boundary"/>
@@ -114,6 +146,38 @@
       <max value="*"/>
       <type>
         <code value="Element"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.value">
+      <path value="IVL_PQ.value"/>
+      <representation value="xmlAttr"/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PQ.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.unit">
+      <path value="IVL_PQ.unit"/>
+      <representation value="xmlAttr"/>
+      <label value="Unit of Measure"/>
+      <definition value="The unit of measure specified in the Unified Code for Units of Measure (UCUM) []."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="IVL_PQ.unit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
       </type>
     </element>
     <element id="IVL_PQ.low">

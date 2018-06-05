@@ -46,7 +46,7 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="TS.value">
+    <element id="IVL_TS.value">
       <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
         <valueString value="v3"/>
       </extension>
@@ -55,7 +55,7 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="TS.value"/>
+        <path value="IVL_TS.value"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -63,13 +63,13 @@
         <code value="dateTime"/>
       </type>
     </element>
-    <element id="TS.inclusive">
+    <element id="IVL_TS.inclusive">
       <path value="IVL_TS.inclusive"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="TS.inclusive"/>
+        <path value="IVL_TS.inclusive"/>
         <min value="0"/>
         <max value="1"/>
       </base>
