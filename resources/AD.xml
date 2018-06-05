@@ -5,6 +5,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-no-order">
+    <valueBoolean value="true"/>
+  </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
   <name value="AD"/>
   <title value="AD: PostalAddress (V3 Data Type)"/>
