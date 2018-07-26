@@ -15,6 +15,7 @@
   <abstract value="false"/>
   <type value="ServiceEvent"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
   <snapshot>
     <element id="ServiceEvent">
       <path value="ServiceEvent"/>

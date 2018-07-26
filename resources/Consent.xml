@@ -15,6 +15,7 @@
   <abstract value="false"/>
   <type value="Consent"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
   <snapshot>
     <element id="Consent">
       <path value="Consent"/>

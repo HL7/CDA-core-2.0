@@ -16,6 +16,7 @@
   <abstract value="false"/>
   <type value="ClinicalDocument"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
   <snapshot>
     <element id="ClinicalDocument">
       <path value="ClinicalDocument"/>
