@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A Patient's birthplace is represented as a relationship between a patient and a place. The Birthplace class is played by a place (Place class), and scoped by the patient (Patient class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Birthplace"/>

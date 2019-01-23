@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="The LabeledDrug class, which is an Entity class playing the Role of Manufactured Product, identifies the drug that is consumed in the substance administration. The medication is identified by means of the LabeledDrug.code or the LabeledDrug.name."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="LabeledDrug"/>

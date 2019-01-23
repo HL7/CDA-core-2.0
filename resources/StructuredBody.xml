@@ -17,6 +17,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="The StructuredBody class represents a CDA document body that is comprised of one or more document sections.&#10;The StructuredBody class is associated with one or more Section classes through a component relationship."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="StructuredBody"/>

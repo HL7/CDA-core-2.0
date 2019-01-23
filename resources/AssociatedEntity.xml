@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A participant is a person or organization in the role of a participating entity (AssociatedEntity class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="AssociatedEntity"/>

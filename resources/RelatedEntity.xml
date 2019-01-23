@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="The RelatedEntity role is used to represent an informant without a role.id (e.g. a parent or guy on the street)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="RelatedEntity"/>

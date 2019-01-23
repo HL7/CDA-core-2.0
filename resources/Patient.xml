@@ -17,6 +17,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A LivingSubject as a recipient of health care services from a healthcare provider.&#10;The patient is the player; the provider is the scoper."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Patient"/>

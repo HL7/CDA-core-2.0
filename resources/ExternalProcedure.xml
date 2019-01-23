@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="ExternalProcedure is a derivative of the RIM Procedure class, used for representing external procedures."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="ExternalProcedure"/>

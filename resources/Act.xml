@@ -17,6 +17,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A derivative of the RIM Act class, to be used when the other more specific classes aren't appropriate.&#10;Act.negationInd, when set to &quot;true&quot;, is a positive assertion that the Act as a whole is negated. Some properties such as Act.id, Act.moodCode, and the participations are not affected. These properties always have the same meaning: i.e., the author remains the author of the negative Act. An act statement with negationInd is still a statement about the specific fact described by the Act. For instance, a negated &quot;finding of wheezing on July 1&quot; means that the author positively denies that there was wheezing on July 1, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Act"/>

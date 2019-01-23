@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A custodian is a scoping organization in the role of an assigned custodian (AssignedCustodian class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="AssignedCustodian"/>

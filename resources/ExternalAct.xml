@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="ExternalAct is a derivative of the RIM Act class, to be used when the other more specific classes are not appropriate."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="ExternalAct"/>

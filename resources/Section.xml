@@ -17,6 +17,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="Document sections can nest, can override context propagated from the header (See CDA Context), and can contain narrative and CDA entries.&#10;An XML attribute &quot;ID&quot; of type XML ID, is added to Section within the CDA Schema. This attribute serves as the target of a linkHtml reference (see linkHtml). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Section"/>

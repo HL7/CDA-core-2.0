@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A subject is a person playing one of several possible roles (RelatedSubject class). The entity playing the role is a person (SubjectPerson class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="RelatedSubject"/>

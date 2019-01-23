@@ -17,6 +17,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="A human being.&#10;This class can be used to represent either a single individual, a group of individuals or a kind of individual based on the values of Entity.determinerCode and Entity.quantity."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Person"/>
