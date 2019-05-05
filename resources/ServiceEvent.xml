@@ -133,6 +133,7 @@
     </element>
     <element id="ServiceEvent.code">
       <path value="ServiceEvent.code"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -143,10 +144,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="ServiceEvent.effectiveTime">
       <path value="ServiceEvent.effectiveTime"/>
@@ -322,15 +319,12 @@
     </element>
     <element id="ServiceEvent.code">
       <path value="ServiceEvent.code"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="ServiceEvent.effectiveTime">
       <path value="ServiceEvent.effectiveTime"/>
