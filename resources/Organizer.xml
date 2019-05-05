@@ -244,10 +244,6 @@
       <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
       <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Organizer.component.contextConductionInd">
       <path value="Organizer.component.contextConductionInd"/>
@@ -1719,10 +1715,6 @@
       <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
       <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Organizer.component.contextConductionInd">
       <path value="Organizer.component.contextConductionInd"/>
