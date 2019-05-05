@@ -164,7 +164,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActStatus"/>
       </binding>
     </element>
   </snapshot>
@@ -238,7 +238,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActStatus"/>
       </binding>
     </element>
   </differential>
