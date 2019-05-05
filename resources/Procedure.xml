@@ -127,6 +127,7 @@
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -137,10 +138,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.negationInd">
       <path value="Procedure.negationInd"/>
@@ -235,6 +232,7 @@
     </element>
     <element id="Procedure.methodCode">
       <path value="Procedure.methodCode"/>
+      <definition value="Drawn from concept domain ObservationMethod"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -245,13 +243,10 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.approachSiteCode">
       <path value="Procedure.approachSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -262,13 +257,10 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.targetSiteCode">
       <path value="Procedure.targetSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -279,10 +271,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject"/>
@@ -1545,15 +1533,12 @@
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.negationInd">
       <path value="Procedure.negationInd"/>
@@ -1618,39 +1603,30 @@
     </element>
     <element id="Procedure.methodCode">
       <path value="Procedure.methodCode"/>
+      <definition value="Drawn from concept domain ObservationMethod"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.approachSiteCode">
       <path value="Procedure.approachSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.targetSiteCode">
       <path value="Procedure.targetSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject"/>
