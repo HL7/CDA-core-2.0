@@ -1,109 +1,242 @@
+<style type="text/css">
+	.cda-table {
+		border: 0px;
+		width: 100%;
+	}
+	
+	.cda-table td {
+		width: 50%;
+		vertical-align: top;
+	}
+	
+	.cda-rmim {
+		max-width: 100%;
+		overflow-x: auto;
+	}
+</style>
+
 <div>
-    <h2> CDA FHIR Definition </h2>
-    <p> This FHIR Implementation Guide represents CDA using the FHIR Type Definition Framework</p>
+	<h2>CDA FHIR Definition </h2>
+	<p>This FHIR Implementation Guide represents CDA using the FHIR Type Definition Framework</p>
 
-<h3>Classes defined in CDA</h3>
+	<table class="cda-table">
+		<tbody>
+		<tr>
+			<td>
+				<h3>CDA Classes</h3>
+				<ul>
+					<li><a href="StructureDefinition-ClinicalDocument.html"><strong>ClinicalDocument</strong></a></li>
+					<li><a href="StructureDefinition-Act.html">Act</a></li>
+					<li><a href="StructureDefinition-AssignedAuthor.html">AssignedAuthor</a></li>
+					<li><a href="StructureDefinition-AssignedCustodian.html">AssignedCustodian</a></li>
+					<li><a href="StructureDefinition-AssignedEntity.html">AssignedEntity</a></li>
+					<li><a href="StructureDefinition-AssociatedEntity.html">AssociatedEntity</a></li>
+					<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice</a></li>
+					<li><a href="StructureDefinition-Birthplace.html">Birthplace</a></li>
+					<li><a href="StructureDefinition-Consent.html">Consent</a></li>
+					<li><a href="StructureDefinition-Criterion.html">Criterion</a></li>
+					<li><a href="StructureDefinition-CustodianOrganization.html">CustodianOrganization</a></li>
+					<li><a href="StructureDefinition-Device.html">Device</a></li>
+					<li><a href="StructureDefinition-EncompassingEncounter.html">EncompassingEncounter</a></li>
+					<li><a href="StructureDefinition-Encounter.html">Encounter</a></li>
+					<li><a href="StructureDefinition-Entity.html">Entity</a></li>
+					<li><a href="StructureDefinition-ExternalAct.html">ExternalAct</a></li>
+					<li><a href="StructureDefinition-ExternalDocument.html">ExternalDocument</a></li>
+					<li><a href="StructureDefinition-ExternalObservation.html">ExternalObservation</a></li>
+					<li><a href="StructureDefinition-ExternalProcedure.html">ExternalProcedure</a></li>
+					<li><a href="StructureDefinition-Guardian.html">Guardian</a></li>
+					<li><a href="StructureDefinition-HealthCareFacility.html">HealthCareFacility</a></li>
+					<li><a href="StructureDefinition-InfrastructureRoot.html">InfrastructureRoot</a></li>
+					<li><a href="StructureDefinition-IntendedRecipient.html">IntendedRecipient</a></li>
+					<li><a href="StructureDefinition-LabeledDrug.html">LabeledDrug</a></li>
+					<li><a href="StructureDefinition-LanguageCommunication.html">LanguageCommunication</a></li>
+					<li><a href="StructureDefinition-MaintainedEntity.html">MaintainedEntity</a></li>
+					<li><a href="StructureDefinition-ManufacturedProduct.html">ManufacturedProduct</a></li>
+					<li><a href="StructureDefinition-Material.html">Material</a></li>
+					<li><a href="StructureDefinition-NonXMLBody.html">NonXMLBody</a></li>
+					<li><a href="StructureDefinition-Observation.html">Observation</a></li>
+					<li><a href="StructureDefinition-ObservationMedia.html">ObservationMedia</a></li>
+					<li><a href="StructureDefinition-ObservationRange.html">ObservationRange</a></li>
+					<li><a href="StructureDefinition-Order.html">Order</a></li>
+					<li><a href="StructureDefinition-Organization.html">Organization</a></li>
+					<li><a href="StructureDefinition-OrganizationPartOf.html">OrganizationPartOf</a></li>
+					<li><a href="StructureDefinition-Organizer.html">Organizer</a></li>
+					<li><a href="StructureDefinition-ParentDocument.html">ParentDocument</a></li>
+					<li><a href="StructureDefinition-ParticipantRole.html">ParticipantRole</a></li>
+					<li><a href="StructureDefinition-Patient.html">Patient</a></li>
+					<li><a href="StructureDefinition-PatientRole.html">PatientRole</a></li>
+					<li><a href="StructureDefinition-Person.html">Person</a></li>
+					<li><a href="StructureDefinition-Place.html">Place</a></li>
+					<li><a href="StructureDefinition-PlayingEntity.html">PlayingEntity</a></li>
+					<li><a href="StructureDefinition-Procedure.html">Procedure</a></li>
+					<li><a href="StructureDefinition-RegionOfInterest.html">RegionOfInterest</a></li>
+					<li><a href="StructureDefinition-RelatedEntity.html">RelatedEntity</a></li>
+					<li><a href="StructureDefinition-RelatedSubject.html">RelatedSubject</a></li>
+					<li><a href="StructureDefinition-Section.html">Section</a></li>
+					<li><a href="StructureDefinition-ServiceEvent.html">ServiceEvent</a></li>
+					<li><a href="StructureDefinition-SpecimenRole.html">SpecimenRole</a></li>
+					<li><a href="StructureDefinition-StructuredBody.html">StructuredBody</a></li>
+					<li><a href="StructureDefinition-SubjectPerson.html">SubjectPerson</a></li>
+					<li><a href="StructureDefinition-SubstanceAdministration.html">SubstanceAdministration</a></li>
+					<li><a href="StructureDefinition-Supply.html">Supply</a></li>
+				</ul>
+			</td>
+			<td>
+				<h3>V3 Data Types</h3>
+				<ul>
+					<li><a href="StructureDefinition-AD.html">AD: PostalAddress</a></li>
+					<li><a href="StructureDefinition-ANY.html">ANY: DataValue</a></li>
+					<li><a href="StructureDefinition-BL.html">BL: Boolean</a></li>
+					<li><a href="StructureDefinition-CD.html">CD: ConceptDescriptor</a></li>
+					<li><a href="StructureDefinition-CE.html">CE: CodedWithEquivalents</a></li>
+					<li><a href="StructureDefinition-CO.html">CO: CodedOrdinal</a></li>
+					<li><a href="StructureDefinition-CR.html">CR: ConceptRole</a></li>
+					<li><a href="StructureDefinition-CS.html">CS: CodedSimpleValue</a></li>
+					<li><a href="StructureDefinition-CV.html">CV: CodedValue</a></li>
+					<li><a href="StructureDefinition-ED.html">ED: EncapsulatedData</a></li>
+					<li><a href="StructureDefinition-EIVL_TS.html">EIVL_TS: EventRelatedPeriodicInterval</a></li>
+					<li><a href="StructureDefinition-EN.html">EN: EntityName</a></li>
+					<li><a href="StructureDefinition-II.html">II: InstanceIdentifier</a></li>
+					<li><a href="StructureDefinition-INT.html">INT: IntegerNumber</a></li>
+					<li><a href="StructureDefinition-IVL_INT.html">IVL_INT: Interval</a></li>
+					<li><a href="StructureDefinition-IVL_PQ.html">IVL_PQ: Interval</a></li>
+					<li><a href="StructureDefinition-IVL_TS.html">IVL_TS: Interval</a></li>
+					<li><a href="StructureDefinition-MO.html">MO: MonetaryAmount</a></li>
+					<li><a href="StructureDefinition-PIVL_TS.html">PIVL_TS: PeriodicIntervalOfTime</a></li>
+					<li><a href="StructureDefinition-PQ.html">PQ: PhysicalQuantity</a></li>
+					<li><a href="StructureDefinition-PQR.html">PQR: PhysicalQuantityRepresentation</a></li>
+					<li><a href="StructureDefinition-QTY.html">QTY: Quantity</a></li>
+					<li><a href="StructureDefinition-REAL.html">REAL: RealNumber</a></li>
+					<li><a href="StructureDefinition-RTO_PQ_PQ.html">RTO_PQ_PQ: Ratio</a></li>
+					<li><a href="StructureDefinition-SC.html">SC: CharacterStringWithCode</a></li>
+					<li><a href="StructureDefinition-ST.html">ST: CharacterString</a></li>
+					<li><a href="StructureDefinition-SXCM_TS.html">SXCM_TS: GeneralTimingSpecification</a></li>
+					<li><a href="StructureDefinition-SXPR_TS.html">SXPR_TS: Component part of GTS</a></li>
+					<li><a href="StructureDefinition-TEL.html">TEL: TelecommunicationAddress</a></li>
+					<li><a href="StructureDefinition-TS.html">TS: PointInTime</a></li>
+				</ul>
+			</td>
+		</tr>
+		</tbody>
+	</table>
 
-<table style="border: 0px">
-	<tbody>
-	<tr>
-		<td>
-			<ul>
-				<li><a href="StructureDefinition-Act.html">Act (CDA Class)</a></li>
-				<li><a href="StructureDefinition-AssignedAuthor.html">AssignedAuthor (CDA Class)</a></li>
-				<li><a href="StructureDefinition-AssignedCustodian.html">AssignedCustodian (CDA Class)</a></li>
-				<li><a href="StructureDefinition-AssignedEntity.html">AssignedEntity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-AssociatedEntity.html">AssociatedEntity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Birthplace.html">Birthplace (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ClinicalDocument.html">ClinicalDocument (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Consent.html">Consent (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Criterion.html">Criterion (CDA Class)</a></li>
-				<li><a href="StructureDefinition-CustodianOrganization.html">CustodianOrganization (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Device.html">Device (CDA Class)</a></li>
-				<li><a href="StructureDefinition-EncompassingEncounter.html">EncompassingEncounter (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Encounter.html">Encounter (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Entity.html">Entity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ExternalAct.html">ExternalAct (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ExternalDocument.html">ExternalDocument (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ExternalObservation.html">ExternalObservation (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ExternalProcedure.html">ExternalProcedure (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Guardian.html">Guardian (CDA Class)</a></li>
-				<li><a href="StructureDefinition-HealthCareFacility.html">HealthCareFacility (CDA Class)</a></li>
-				<li><a href="StructureDefinition-InfrastructureRoot.html">InfrastructureRoot</a></li>
-				<li><a href="StructureDefinition-IntendedRecipient.html">IntendedRecipient (CDA Class)</a></li>
-				<li><a href="StructureDefinition-LabeledDrug.html">LabeledDrug (CDA Class)</a></li>
-				<li><a href="StructureDefinition-LanguageCommunication.html">LanguageCommunication (CDA Class)</a></li>
-				<li><a href="StructureDefinition-MaintainedEntity.html">MaintainedEntity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ManufacturedProduct.html">ManufacturedProduct (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Material.html">Material (CDA Class)</a></li>
-				<li><a href="StructureDefinition-NonXMLBody.html">NonXMLBody (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Observation.html">Observation (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ObservationMedia.html">ObservationMedia (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ObservationRange.html">ObservationRange (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Order.html">Order (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Organization.html">Organization (CDA Class)</a></li>
-				<li><a href="StructureDefinition-OrganizationPartOf.html">OrganizationPartOf (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Organizer.html">Organizer (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ParentDocument.html">ParentDocument (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ParticipantRole.html">ParticipantRole (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Patient.html">Patient (CDA Class)</a></li>
-				<li><a href="StructureDefinition-PatientRole.html">PatientRole (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Person.html">Person (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Place.html">Place (CDA Class)</a></li>
-				<li><a href="StructureDefinition-PlayingEntity.html">PlayingEntity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Procedure.html">Procedure (CDA Class)</a></li>
-				<li><a href="StructureDefinition-RegionOfInterest.html">RegionOfInterest (CDA Class)</a></li>
-				<li><a href="StructureDefinition-RelatedEntity.html">RelatedEntity (CDA Class)</a></li>
-				<li><a href="StructureDefinition-RelatedSubject.html">RelatedSubject (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Section.html">Section (CDA Class)</a></li>
-				<li><a href="StructureDefinition-ServiceEvent.html">ServiceEvent (CDA Class)</a></li>
-				<li><a href="StructureDefinition-SpecimenRole.html">SpecimenRole (CDA Class)</a></li>
-				<li><a href="StructureDefinition-StructuredBody.html">StructuredBody (CDA Class)</a></li>
-				<li><a href="StructureDefinition-SubjectPerson.html">SubjectPerson (CDA Class)</a></li>
-				<li><a href="StructureDefinition-SubstanceAdministration.html">SubstanceAdministration (CDA Class)</a></li>
-				<li><a href="StructureDefinition-Supply.html">Supply (CDA Class)</a></li>
-			</ul>
-		</td>
-		<td>
-			<h3>V3 Data Types</h3>
-			<ul>
-				<li><a href="StructureDefinition-AD.html">AD: PostalAddress (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-ANY.html">ANY: DataValue (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-BL.html">BL: Boolean (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CD.html">CD: ConceptDescriptor (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CE.html">CE: CodedWithEquivalents (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CO.html">CO: CodedOrdinal (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CR.html">CR: ConceptRole (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CS.html">CS: CodedSimpleValue (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-CV.html">CV: CodedValue (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-ED.html">ED: EncapsulatedData (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-EIVL_TS.html">EIVL_TS: EventRelatedPeriodicInterval (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-EN.html">EN: EntityName (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-II.html">II: InstanceIdentifier (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-INT.html">INT: IntegerNumber (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-IVL_INT.html">IVL_INT: Interval (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-IVL_PQ.html">IVL_PQ: Interval (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-IVL_TS.html">IVL_TS: Interval (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-MO.html">MO: MonetaryAmount (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-PIVL_TS.html">PIVL_TS: PeriodicIntervalOfTime (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-PQ.html">PQ: PhysicalQuantity (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-PQR.html">PQR: PhysicalQuantityRepresentation (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-QTY.html">QTY: Quantity (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-REAL.html">REAL: RealNumber (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-RTO_PQ_PQ.html">RTO_PQ_PQ: Ratio (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-SC.html">SC: CharacterStringWithCode (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-ST.html">ST: CharacterString (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-SXCM_TS.html">SXCM_TS: GeneralTimingSpecification (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-SXPR_TS.html">SXPR_TS: Component part of GTS (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-TEL.html">TEL: TelecommunicationAddress (V3 Data Type)</a></li>
-				<li><a href="StructureDefinition-TS.html">TS: PointInTime (V3 Data Type)</a></li>
-			</ul>
-		</td>
-	</tr>
-	</tbody>
-</table>
-<ul>
-</ul>
+	<h3>CDA RMIM Diagram</div>
 
+	<div class="cda-rmim">
+		<img src="L-POCD_RM000040.gif" alt="CDA Diagram" usemap="#cdadiagram">
+	</div>
+
+	<map id="cdadiagram" name="cdadiagram">
+		<area alt="Organization" coords="95,89,310,216" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Person" coords="205,251,327,330" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="Organization" coords="188,367,312,443" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Person" coords="3,455,328,507" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="Organization" coords="193,537,313,609" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Person" coords="86,645,432,711" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="AuthoringDevice" coords="86,720,430,810" href="StructureDefinition-AuthoringDevice.html" shape="rect" title="AuthoringDevice" />
+		<area alt="Person" coords="216,848,338,922" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="Place" coords="169,937,337,1012" href="StructureDefinition-Place.html" shape="rect" title="Place" />
+		<area alt="Birthplace" coords="18,1055,155,1104" href="StructureDefinition-Birthplace.html" shape="rect" title="Birthplace" />
+		<area alt="Organization" coords="333,1026,451,1098" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Patient" coords="56,1126,388,1280" href="StructureDefinition-Patient.html" shape="rect" title="Patient" />
+		<area alt="PatientRole" coords="500,1116,693,1192" href="StructureDefinition-PatientRole.html" shape="rect" title="PatientRole" />
+		<area alt="LanguageCommunication" coords="660,1220,991,1310" href="StructureDefinition-LanguageCommunication.html" shape="rect" title="LanguageCommunication" />
+		<area alt="Person" coords="13,1332,132,1406" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="Organization" coords="14,1418,133,1490" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Guardian" coords="490,1342,682,1429" href="StructureDefinition-Guardian.html" shape="rect" title="Guardian" />
+		<area alt="Person" coords="204,1521,318,1592" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="AssignedEntity" coords="471,1471,707,1509" href="StructureDefinition-AssignedEntity.htl" shape="rect" title="AssignedEntity" />
+		<area alt="RelatedEntity" coords="469,1521,716,1622" href="StructureDefinition-RelatedEntity.html" shape="rect" title="RelatedEntity" />
+		<area alt="Organization" coords="192,1633,315,1679" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Person" coords="245,1678,368,1754" href="StructureDefinition-Person.html" shape="rect" title="Person" />
+		<area alt="AssociatedEntity" coords="529,1656,718,1743" href="StructureDefinition-AssociatedEntity.html" shape="rect" title="AssociatedEntity" />
+		<area alt="Informant" coords="738,1540,1019,1583" href="StructureDefinition-Informant.html" shape="rect" title="Informant" />
+		<area alt="Participant" coords="727,1654,1018,1717" href="StructureDefinition-Participant.html" shape="rect" title="Participant" />
+		<area alt="MaintainedEntity" coords="497,823,691,876" href="StructureDefinition-MaintainedEntity.html" shape="rect" title="MaintainedEntity" />
+		<area alt="AssignedEntity" coords="500,901,693,965" href="StructureDefinition-AssignedEntity.html" shape="rect" title="AssignedEntity" />
+		<area alt="DataEnterer" coords="703,908,1020,957" href="StructureDefinition-DataEnterer.html" shape="rect" title="DataEnterer" />
+		<area alt="CustodianOrganization" coords="745,754,917,853" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="CustodianOrganization" />
+		<area alt="AssignedCustodian" coords="499,680,690,740" href="StructureDefinition-AssignedCustodian.html" shape="rect" title="AssignedCustodian" />
+		<area alt="AssignedAuthor" coords="502,560,695,650" href="StructureDefinition-AssignedAuthor.html" shape="rect" title="AssignedAuthor" />
+		<area alt="IntendedRecipient" coords="499,422,690,510" href="StructureDefinition-IntendedRecipient.html" shape="rect" title="IntendedRecipient" />
+		<area alt="AssignedEntity" coords="499,225,691,350" href="StructureDefinition-AssignedEntity.html" shape="rect" title="AssignedEntity" />
+		<area alt="OrganizationPartOf" coords="499,41,693,148" href="StructureDefinition-OrganizationPartOf.html" shape="rect" title="OrganizationPartOf" />
+		<area alt="Authenticator" coords="702,229,1019,280" href="StructureDefinition-Authenticator.html" shape="rect" title="Authenticator" />
+		<area alt="LegalAuthenticator" coords="700,299,1015,360" href="StructureDefinition-LegalAuthenticator.html" shape="rect" title="LegalAuthenticator" />
+		<area alt="InformationRecipient" coords="705,459,1017,490" href="StructureDefinition-InformationRecipient.html" shape="rect" title="InformationRecipient" />
+		<area alt="Author" coords="708,548,1017,612" href="StructureDefinition-Author.html" shape="rect" title="Author" />
+		<area alt="Custodian" coords="704,677,1015,714" href="StructureDefinition-Custodian.html" shape="rect" title="Custodian" />
+		<area alt="ClinicalDocument" coords="1021,209,1300,1720" href="StructureDefinition-ClinicalDocument.html" shape="rect" title="ClinicalDocument" />
+		<area alt="RelatedDocument" coords="1303,212,1536,244" href="StructureDefinition-RelatedDocument.html" shape="rect" title="RelatedDocument" />
+		<area alt="DocumentationOf" coords="1303,341,1539,373" href="StructureDefinition-DocumentationOf.html" shape="rect" title="DocumentationOf" />
+		<area alt="InFulfillmentOf" coords="1302,400,1537,434" href="StructureDefinition-InFulfillmentOf.html" shape="rect" title="InFulfillmentOf" />
+		<area alt="Authorization" coords="1302,531,1537,563" href="StructureDefinition-Authorization.html" shape="rect" title="Authorization" />
+		<area alt="ComponentOf" coords="1313,655,1545,681" href="StructureDefinition-ComponentOf.html" shape="rect" title="ComponentOf" />
+		<area alt="Organization" coords="1348,894,1464,963" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="Component" coords="1302,1048,2159,1093" href="StructureDefinition-Component.html" shape="rect" title="Component" />
+		<area alt="ParentDocument" coords="1546,177,1767,293" href="StructureDefinition-ParentDocument.html" shape="rect" title="ParentDocument" />
+		<area alt="ServiceEvent" coords="1544,303,1768,393" href="StructureDefinition-ServiceEvent.html" shape="rect" title="ServiceEvent" />
+		<area alt="Order" coords="1545,410,1768,500" href="StructureDefinition-Order.html" shape="rect" title="Order" />
+		<area alt="Consent" coords="1545,513,1772,598" href="StructureDefinition-Consent.html" shape="rect" title="Consent" />
+		<area alt="EncompassingEncounter" coords="1546,619,1776,730" href="StructureDefinition-EncompassingEncounter.html" shape="rect" title="EncompassingEncounter" />
+		<area alt="Location" coords="1625,733,1724,781" href="StructureDefinition-Location.html" shape="rect" title="Location" />
+		<area alt="HealthCareFacility" coords="1518,783,1805,870" href="StructureDefinition-HealthCareFacility.html" shape="rect" title="HealthCareFacility" />
+		<area alt="Place" coords="1646,897,1765,968" href="StructureDefinition-Place.html" shape="rect" title="Place" />
+		<area alt="Performer" coords="1771,314,2044,364" href="StructureDefinition-Performer.html" shape="rect" title="Performer" />
+		<area alt="AssignedEntity" coords="2054,310,2216,367" href="StructureDefinition-AssignedEntity.html" shape="rect" title="AssignedEntity" />
+		<area alt="ResponsibleParty" coords="1778,621,2042,652" href="StructureDefinition-ResponsibleParty.html" shape="rect" title="ResponsibleParty" />
+		<area alt="EncounterParticipant" coords="1779,689,2043,727" href="StructureDefinition-EncounterParticipant.html" shape="rect" title="EncounterParticipant" />
+		<area alt="AssignedEntity" coords="2054,617,2217,742" href="StructureDefinition-AssignedEntity.html" shape="rect" title="AssignedEntity" />
+		<area alt="NonXMLBody" coords="2178,918,2374,1048" href="StructureDefinition-NonXMLBody.html" shape="rect" title="NonXMLBody" />
+		<area alt="StructuredBody" coords="2180,1060,2380,1173" href="StructureDefinition-StructuredBody.html" shape="rect" title="StructuredBody" />
+		<area alt="Component" coords="2151,1177,2347,1281" href="StructureDefinition-Component.html" shape="rect" title="Component" />
+		<area alt="Section" coords="2190,1291,2438,1617" href="StructureDefinition-Section.html" shape="rect" title="Section" />
+		<area alt="Author" coords="2087,1316,2186,1346" href="StructureDefinition-Author.html" shape="rect" title="Author" />
+		<area alt="Informant" coords="2091,1369,2185,1404" href="StructureDefinition-Informant.html" shape="rect" title="Informant" />
+		<area alt="Subject" coords="1894,1442,2185,1498" href="StructureDefinition-Subject.html" shape="rect" title="Subject" />
+		<area alt="RelatedSubject" coords="1616,1434,1885,1507" href="StructureDefinition-RelatedSubject.html" shape="rect" title="RelatedSubject" />
+		<area alt="SubjectPerson" coords="1787,1548,2120,1632" href="StructureDefinition-SubjectPerson.html" shape="rect" title="SubjectPerson" />
+		<area alt="Component" coords="2413,1239,2617,1291" href="StructureDefinition-Component.html" shape="rect" title="Component" />
+		<area alt="Component" coords="2441,1294,2613,1355" href="StructureDefinition-Component.html" shape="rect" title="Component" />
+		<area alt="Entry" coords="2440,1486,3288,1529" href="StructureDefinition-Entry.html" shape="rect" title="Entry" />
+		<area alt="Organization" coords="2693,479,2813,553" href="StructureDefinition-CustodianOrganization.html" shape="rect" title="Organization" />
+		<area alt="AssignedEntity" coords="2904,440,3028,522" href="StructureDefinition-AssignedEntity.html" shape="rect" title="AssignedEntity" />
+		<area alt="LabeledDrug" coords="2575,594,2750,684" href="StructureDefinition-LabeledDrug.html" shape="rect" title="LabeledDrug" />
+		<area alt="Material" coords="2575,697,2748,797" href="StructureDefinition-Material.html" shape="rect" title="Material" />
+		<area alt="ManufacturedProduct" coords="2903,617,3045,843" href="StructureDefinition-ManufacturedProduct.html" shape="rect" title="ManufacturedProduct" />
+		<area alt="Device" coords="2644,877,2855,990" href="StructureDefinition-Device.html" shape="rect" title="Device" />
+		<area alt="PlayingEntity" coords="2644,1001,2859,1102" href="StructureDefinition-PlayingEntity.html" shape="rect" title="PlayingEntity" />
+		<area alt="SpecimenRole" coords="2915,917,3048,969" href="StructureDefinition-SpecimenRole.html" shape="rect" title="SpecimenRole" />
+		<area alt="ParticipantRole" coords="2812,1137,3022,1226" href="StructureDefinition-ParticipantRole.html" shape="rect" title="ParticipantRole" />
+		<area alt="Entity" coords="2748,1260,2927,1347" href="StructureDefinition-Entity.html" shape="rect" title="Entity" />
+		<area alt="EntryRelationship" coords="3080,2,3298,260" href="StructureDefinition-EntryRelationship.html" shape="rect" title="EntryRelationship" />
+		<area alt="EntryRelationship" coords="3298,1,3333,101" href="StructureDefinition-EntryRelationship.html" shape="rect" title="EntryRelationship" />
+		<area alt="Author" coords="3129,286,3299,315" href="StructureDefinition-Author.html" shape="rect" title="Author" />
+		<area alt="Informant" coords="3133,346,3297,374" href="StructureDefinition-Informant.html" shape="rect" title="Informant" />
+		<area alt="Subject" coords="3132,409,3298,439" href="StructureDefinition-Subject.html" shape="rect" title="Subject" />
+		<area alt="Performer" coords="3041,484,3295,534" href="StructureDefinition-Performer.html" shape="rect" title="Performer" />
+		<area alt="Consumable" coords="3058,669,3299,701" href="StructureDefinition-Consumable.html" shape="rect" title="Consumable" />
+		<area alt="Product" coords="3055,822,3295,854" href="StructureDefinition-Product.html" shape="rect" title="Product" />
+		<area alt="Specimen" coords="3062,912,3296,940" href="StructureDefinition-Specimen.html" shape="rect" title="Specimen" />
+		<area alt="Participant" coords="3037,1146,3296,1211" href="StructureDefinition-Participant.html" shape="rect" title="Participant" />
+		<area alt="Observation" coords="3312,128,3594,349" href="StructureDefinition-Observation.html" shape="rect" title="Observation" />
+		<area alt="RegionOfInterest" coords="3312,365,3596,452" href="StructureDefinition-RegionOfInterest.html" shape="rect" title="RegionOfInterest" />
+		<area alt="ObservationMedia" coords="3310,464,3592,553" href="StructureDefinition-ObservationMedia.html" shape="rect" title="ObservationMedia" />
+		<area alt="SubstanceAdministration" coords="3312,565,3597,817" href="StructureDefinition-SubstanceAdministration.html" shape="rect" title="SubstanceAdministration" />
+		<area alt="Supply" coords="3314,831,3597,1009" href="StructureDefinition-Supply.html" shape="rect" title="Supply" />
+		<area alt="Procedure" coords="3312,1019,3594,1213" href="StructureDefinition-Procedure.html" shape="rect" title="Procedure" />
+		<area alt="Encounter" coords="3310,1221,3590,1354" href="StructureDefinition-Encounter.html" shape="rect" title="Encounter" />
+		<area alt="Organizer" coords="3310,1368,3600,1493" href="StructureDefinition-Organizer.html" shape="rect" title="Organizer" />
+		<area alt="Act" coords="3311,1510,3603,1665" href="StructureDefinition-Act.html" shape="rect" title="Act" />
+		<area alt="ReferenceRange" coords="3598,156,3775,185" href="StructureDefinition-ReferenceRange.html" shape="rect" title="ReferenceRange" />
+		<area alt="ObservationRange" coords="3782,87,4103,191" href="StructureDefinition-ObservationRange.html" shape="rect" title="ObservationRange" />
+		<area alt="Precondition" coords="3615,382,3776,415" href="StructureDefinition-Precondition.html" shape="rect" title="Precondition" />
+		<area alt="Criterion" coords="3785,325,4098,413" href="StructureDefinition-Criterion.html" shape="rect" title="Criterion" />
+		<area alt="Reference" coords="3614,1130,4097,1174" href="StructureDefinition-Reference.html" shape="rect" title="Reference" />
+		<area alt="Component" coords="3604,1367,3800,1481" href="StructureDefinition-Component.html" shape="rect" title="Component" />
+		<area alt="ExternalAct" coords="4118,1026,4327,1116" href="StructureDefinition-ExternalAct.html" shape="rect" title="ExternalAct" />
+		<area alt="ExternalObservation" coords="4119,1127,4328,1213" href="StructureDefinition-ExternalObservation.html" shape="rect" title="ExternalObservation" />
+		<area alt="ExternalProcedure" coords="4117,1227,4323,1313" href="StructureDefinition-ExternalProcedure.html" shape="rect" title="ExternalProcedure" />
+		<area alt="ExternalDocument" coords="4119,1325,4326,1437" href="StructureDefinition-ExternalDocument.html" shape="rect" title="ExternalDocument" />
+	</map>
 </div>
