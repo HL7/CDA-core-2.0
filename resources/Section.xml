@@ -858,6 +858,7 @@
     </element>
     <element id="Section.component.typeCode">
       <path value="Section.component.typeCode"/>
+      <definition value="Drawn from concept domain DocumentSectionType"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -872,10 +873,6 @@
       <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
       <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Section.component.contextConductionInd">
       <path value="Section.component.contextConductionInd"/>
@@ -1300,6 +1297,7 @@
     </element>
     <element id="Section.component.typeCode">
       <path value="Section.component.typeCode"/>
+      <definition value="Drawn from concept domain DocumentSectionType"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -1309,10 +1307,6 @@
       <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
       <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Section.component.contextConductionInd">
       <path value="Section.component.contextConductionInd"/>
