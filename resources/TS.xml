@@ -30,9 +30,6 @@
       <path value="TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="TS.nullFlavor"/>
