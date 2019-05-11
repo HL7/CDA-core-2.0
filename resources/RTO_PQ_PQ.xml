@@ -81,9 +81,6 @@
       <path value="RTO_PQ_PQ"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="RTO_PQ_PQ.numerator">
       <path value="RTO_PQ_PQ.numerator"/>

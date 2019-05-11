@@ -143,9 +143,6 @@
       <path value="IVL_PQ"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="IVL_PQ.value">
       <path value="IVL_PQ.value"/>

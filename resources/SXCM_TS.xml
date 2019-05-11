@@ -96,9 +96,6 @@
       <path value="SXCM_TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="SXCM_TS.operator">
       <path value="SXCM_TS.operator"/>

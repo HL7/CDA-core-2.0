@@ -214,9 +214,6 @@
       <path value="CS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="CS.value">
       <path value="CS.value"/>

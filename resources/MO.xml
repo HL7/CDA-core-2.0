@@ -87,9 +87,6 @@
       <path value="MO"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="MO.value">
       <path value="MO.value"/>

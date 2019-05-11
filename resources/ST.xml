@@ -71,9 +71,6 @@
       <path value="ST"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ST.value">
       <path value="ST.value"/>

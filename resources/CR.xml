@@ -103,9 +103,6 @@
       <path value="CR"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="CR.name">
       <path value="CR.name"/>

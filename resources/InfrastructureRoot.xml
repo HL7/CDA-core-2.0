@@ -101,9 +101,6 @@
       <path value="InfrastructureRoot"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="InfrastructureRoot.realmCode">
       <path value="InfrastructureRoot.realmCode"/>

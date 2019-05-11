@@ -121,9 +121,6 @@
       <path value="II"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="II.root">
       <path value="II.root"/>

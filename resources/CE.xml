@@ -200,9 +200,6 @@
       <path value="CE"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="CE.code">
       <path value="CE.code"/>

@@ -156,9 +156,6 @@
       <path value="IVL_TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="IVL_TS.low">
       <path value="IVL_TS.low"/>

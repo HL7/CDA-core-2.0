@@ -233,9 +233,6 @@
       <path value="ED"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ED.representation">
       <path value="ED.representation"/>

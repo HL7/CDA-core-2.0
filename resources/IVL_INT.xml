@@ -125,9 +125,6 @@
       <path value="IVL_INT"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="IVL_INT.value">
       <path value="IVL_INT.value"/>

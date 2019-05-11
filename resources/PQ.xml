@@ -118,9 +118,6 @@
       <path value="PQ"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="PQ.value">
       <path value="PQ.value"/>

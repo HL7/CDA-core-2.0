@@ -71,9 +71,6 @@
       <path value="REAL"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="REAL.value">
       <path value="REAL.value"/>
