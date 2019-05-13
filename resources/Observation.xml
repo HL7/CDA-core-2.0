@@ -369,11 +369,12 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ObservationMethod"/>
       </binding>
     </element>
     <element id="Observation.targetSiteCode">
       <path value="Observation.targetSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -384,10 +385,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>
@@ -1915,20 +1912,17 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ObservationMethod"/>
       </binding>
     </element>
     <element id="Observation.targetSiteCode">
       <path value="Observation.targetSiteCode"/>
+      <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-null"/>
-      </binding>
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>

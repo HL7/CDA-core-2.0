@@ -27,9 +27,6 @@
       <path value="CV"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="CV.nullFlavor"/>
@@ -200,9 +197,6 @@
       <path value="CV"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="CV.code">
       <path value="CV.code"/>

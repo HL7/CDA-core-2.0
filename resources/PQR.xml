@@ -27,9 +27,6 @@
       <path value="PQR"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="PQR.nullFlavor"/>
@@ -216,9 +213,6 @@
       <path value="PQR"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="PQR.value">
       <path value="PQR.value"/>

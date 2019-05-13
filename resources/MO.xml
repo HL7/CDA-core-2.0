@@ -27,9 +27,6 @@
       <path value="MO"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="MO.nullFlavor"/>
@@ -87,9 +84,6 @@
       <path value="MO"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="MO.value">
       <path value="MO.value"/>

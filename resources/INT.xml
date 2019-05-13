@@ -27,9 +27,6 @@
       <path value="INT"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="INT.nullFlavor"/>
@@ -71,9 +68,6 @@
       <path value="INT"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="INT.value">
       <path value="INT.value"/>
