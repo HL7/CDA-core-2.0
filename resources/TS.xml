@@ -30,9 +30,6 @@
       <path value="TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="TS.nullFlavor"/>
@@ -94,9 +91,6 @@
       <path value="TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="TS.value">
       <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">

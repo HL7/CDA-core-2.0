@@ -232,7 +232,7 @@
     </element>
     <element id="Procedure.methodCode">
       <path value="Procedure.methodCode"/>
-      <definition value="Drawn from concept domain ObservationMethod"/>
+      <definition value="Drawn from concept domain ProcedureMethod"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -1603,7 +1603,7 @@
     </element>
     <element id="Procedure.methodCode">
       <path value="Procedure.methodCode"/>
-      <definition value="Drawn from concept domain ObservationMethod"/>
+      <definition value="Drawn from concept domain ProcedureMethod"/>
       <min value="0"/>
       <max value="*"/>
       <type>
