@@ -29,9 +29,6 @@
       <path value="InfrastructureRoot"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="InfrastructureRoot.nullFlavor"/>
@@ -101,9 +98,6 @@
       <path value="InfrastructureRoot"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="InfrastructureRoot.realmCode">
       <path value="InfrastructureRoot.realmCode"/>

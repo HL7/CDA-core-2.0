@@ -21,9 +21,6 @@
       <path value="SXPR_TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="ANY.nullFlavor">
       <path value="SXPR_TS.nullFlavor"/>
@@ -119,9 +116,6 @@
       <path value="SXPR_TS"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
     </element>
     <element id="SXPR_TS.comp">
       <path value="SXPR_TS.comp"/>
