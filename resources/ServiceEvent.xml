@@ -133,7 +133,7 @@
     </element>
     <element id="ServiceEvent.code">
       <path value="ServiceEvent.code"/>
-      <definition value="Drawn from concept domain ActServiceEventCode"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -319,7 +319,7 @@
     </element>
     <element id="ServiceEvent.code">
       <path value="ServiceEvent.code"/>
-      <definition value="Drawn from concept domain ActServiceEventCode"/>
+      <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
