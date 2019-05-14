@@ -28,6 +28,7 @@
         <valueCode value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
       </extension>
       <path value="TS"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."></definition>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -57,6 +58,7 @@
       </extension>
       <path value="TS.value"/>
       <representation value="xmlAttr"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -71,6 +73,7 @@
     <element id="TS.inclusive">
       <path value="TS.inclusive"/>
       <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -89,6 +92,7 @@
         <valueCode value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
       </extension>
       <path value="TS"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."></definition>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -98,6 +102,7 @@
       </extension>
       <path value="TS.value"/>
       <representation value="xmlAttr"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -107,6 +112,7 @@
     <element id="TS.inclusive">
       <path value="TS.inclusive"/>
       <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
       <min value="0"/>
       <max value="1"/>
       <type>

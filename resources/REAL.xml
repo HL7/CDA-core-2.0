@@ -25,7 +25,7 @@
   <snapshot>
     <element id="REAL">
       <path value="REAL"/>
-      <min value="1"/>
+      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -51,6 +51,7 @@
     <element id="REAL.value">
       <path value="REAL.value"/>
       <representation value="xmlAttr"/>
+      <definition value="The decimal value"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -66,7 +67,7 @@
   <differential>
     <element id="REAL">
       <path value="REAL"/>
-      <min value="1"/>
+      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="REAL.value">

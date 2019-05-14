@@ -25,7 +25,7 @@
   <snapshot>
     <element id="CR">
       <path value="CR"/>
-      <min value="1"/>
+      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -98,7 +98,7 @@
   <differential>
     <element id="CR">
       <path value="CR"/>
-      <min value="1"/>
+      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="CR.name">

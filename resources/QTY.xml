@@ -25,7 +25,7 @@
   <snapshot>
     <element id="QTY">
       <path value="QTY"/>
-      <min value="1"/>
+      <definition value="is an abstract generalization for all data types (1) whose value set has an order relation (less-or-equal) and (2) where difference is defined in all of the data type's totally ordered value subsets. The quantity type abstraction is needed in defining certain other types, such as the interval and the probability distribution."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -52,7 +52,7 @@
   <differential>
     <element id="QTY">
       <path value="QTY"/>
-      <min value="1"/>
+      <definition value="is an abstract generalization for all data types (1) whose value set has an order relation (less-or-equal) and (2) where difference is defined in all of the data type's totally ordered value subsets. The quantity type abstraction is needed in defining certain other types, such as the interval and the probability distribution."/><min value="1"/>
       <max value="*"/>
     </element>
   </differential>

@@ -19,6 +19,7 @@
   <snapshot>
     <element id="RTO_PQ_PQ">
       <path value="RTO_PQ_PQ"/>
+      <definition value="A ratio of a physical quantity (PQ) numerator and a physical quantity (PQ) denominator."/>
       <min value="1"/>
       <max value="*"/>
     </element>
