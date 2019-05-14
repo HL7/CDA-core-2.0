@@ -25,7 +25,7 @@
   <snapshot>
     <element id="CO">
       <path value="CO"/>
-      <min value="1"/>
+      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -148,7 +148,7 @@
       <label value="Translation"/>
       <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="CD.translation"/>
         <min value="0"/>
@@ -163,7 +163,7 @@
       <label value="Qualifier"/>
       <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="CD.qualifier"/>
         <min value="0"/>
@@ -171,6 +171,24 @@
       </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CD.valueSet">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="CO.valueSet"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+          <path value="CD.valueSet"/>
+          <min value="0"/>
+          <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
       </type>
     </element>
     <element id="CD.valueSetVersion">
@@ -195,7 +213,7 @@
   <differential>
     <element id="CO">
       <path value="CO"/>
-      <min value="1"/>
+      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="CO.code">
@@ -255,6 +273,47 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="CO.translation">
+      <path value="CO.translation"/>
+      <label value="Translation"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="CO.qualifier">
+      <path value="CO.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CO.valueSet">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="CO.valueSet"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.valueSet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
       </type>
     </element>
     <element id="CO.valueSetVersion">
