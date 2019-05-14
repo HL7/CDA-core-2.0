@@ -28,7 +28,7 @@
   <snapshot>
     <element id="EN">
       <path value="EN"/>
-      <min value="1"/>
+      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -53,6 +53,7 @@
     </element>
     <element id="EN.delimiter">
       <path value="EN.delimiter"/>
+      <definition value="A delimiter has no meaning other than being literally printed in this name representation. A delimiter has no implicit leading and trailing white space."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -64,8 +65,41 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="EN.delimiter.partType">
+      <path value="EN.delimiter.partType"/>
+      <definition value="Specifies the type of the name part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.delimiter.partType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <fixedCode value="DEL"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.delimiter.qualifier">
+      <path value="EN.delimiter.qualifier"/>
+      <definition value="Specifies the one or more subcategories of the name part in addition to the main name part type."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.delimiter.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
+      </binding>
+    </element>
     <element id="EN.family">
       <path value="EN.family"/>
+      <definition value="Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -77,8 +111,41 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="EN.family.partType">
+      <path value="EN.family.partType"/>
+      <definition value="Specifies the type of the name part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.family.partType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <fixedCode value="FAM"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.family.qualifier">
+      <path value="EN.family.qualifier"/>
+      <definition value="Specifies the one or more subcategories of the name part in addition to the main name part type."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.family.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
+      </binding>
+    </element>
     <element id="EN.given">
       <path value="EN.given"/>
+      <definition value="Given name (don't call it &quot;first name&quot; since this given names do not always come first)"/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -90,8 +157,41 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="EN.given.partType">
+      <path value="EN.given.partType"/>
+      <definition value="Specifies the type of the name part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.given.partType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <fixedCode value="GIV"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.given.qualifier">
+      <path value="EN.given.qualifier"/>
+      <definition value="Specifies the one or more subcategories of the name part in addition to the main name part type."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.given.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
+      </binding>
+    </element>
     <element id="EN.prefix">
       <path value="EN.prefix"/>
+      <definition value="A prefix has a strong association to the immediately following name part. A prefix has no implicit trailing white space (it has implicit leading white space though). Note that prefixes can be inverted."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -103,8 +203,41 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="EN.prefix.partType">
+      <path value="EN.prefix.partType"/>
+      <definition value="Specifies the type of the name part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.prefix.partType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <fixedCode value="PFX"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.prefix.qualifier">
+      <path value="EN.prefix.qualifier"/>
+      <definition value="Specifies the one or more subcategories of the name part in addition to the main name part type."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.prefix.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
+      </binding>
+    </element>
     <element id="EN.suffix">
       <path value="EN.suffix"/>
+      <definition value="A suffix has a strong association to the immediately preceding name part. A prefix has no implicit leading white space (it has implicit trailing white space though). Suffices can not be inverted."/>
       <min value="0"/>
       <max value="*"/>
       <base>
@@ -116,9 +249,42 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="EN.suffix.partType">
+      <path value="EN.suffix.partType"/>
+      <definition value="Specifies the type of the name part"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.suffix.partType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <fixedCode value="SFX"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.suffix.qualifier">
+      <path value="EN.suffix.qualifier"/>
+      <definition value="Specifies the one or more subcategories of the name part in addition to the main name part type."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.suffix.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
+      </binding>
+    </element>
     <element id="EN.other">
       <path value="EN.other"/>
       <representation value="xmlText"/>
+      <definition value="Textual representation of (part of) the name"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -165,7 +331,7 @@
   <differential>
     <element id="EN">
       <path value="EN"/>
-      <min value="1"/>
+      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="EN.delimiter">
