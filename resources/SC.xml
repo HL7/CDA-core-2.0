@@ -25,7 +25,7 @@
   <snapshot>
     <element id="SC">
       <path value="SC"/>
-      <min value="1"/>
+      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -51,6 +51,7 @@
     <element id="ST.value">
       <path value="SC.value"/>
       <representation value="xmlText"/>
+      <definition value="The string value"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -66,6 +67,7 @@
       <path value="SC.code"/>
       <representation value="xmlAttr"/>
       <label value="Code"/>
+      <definition value="The plain code symbol defined by the code system. For example, &quot;784.0&quot; is the code symbol of the ICD-9 code &quot;784.0&quot; for headache."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -81,6 +83,7 @@
       <path value="SC.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
+      <definition value="Specifies the code system that defines the code."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -92,10 +95,27 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="SC.codeSystemName">
+      <path value="SC.codeSystemName"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Name"/>
+      <definition value="The common name of the coding system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SC.codeSystemName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
     <element id="SC.codeSystemVersion">
       <path value="SC.codeSystemVersion"/>
       <representation value="xmlAttr"/>
       <label value="Code System Version"/>
+      <definition value="If applicable, a version descriptor defined specifically for the given code system."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -111,6 +131,7 @@
       <path value="SC.displayName"/>
       <representation value="xmlAttr"/>
       <label value="Display Name"/>
+      <definition value="A name or title for the code, under which the sending system shows the code value to its users."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -126,7 +147,7 @@
   <differential>
     <element id="SC">
       <path value="SC"/>
-      <min value="1"/>
+      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="SC.code">
@@ -143,6 +164,16 @@
       <path value="SC.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="SC.codeSystemName">
+      <path value="SC.codeSystemName"/>
+      <representation value="xmlAttr"/>
+      <label value="Code System Name"/>
       <min value="0"/>
       <max value="1"/>
       <type>
