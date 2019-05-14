@@ -25,7 +25,7 @@
   <snapshot>
     <element id="PQ">
       <path value="PQ"/>
-      <min value="1"/>
+      <definition value="A dimensioned quantity expressing the result of a measurement act."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -76,8 +76,24 @@
         <min value="0"/>
         <max value="1"/>
       </base>
+      <defaultValueCode value="1"/>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="PQ.inclusive">
+      <path value="PQ.inclusive"/>
+      <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PQ.inclusive"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
       </type>
     </element>
     <element id="PQ.translation">
@@ -95,25 +111,11 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQR"/>
       </type>
     </element>
-    <element id="PQ.inclusive">
-      <path value="PQ.inclusive"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="PQ.inclusive"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
   </snapshot>
   <differential>
     <element id="PQ">
       <path value="PQ"/>
-      <min value="1"/>
+      <definition value="A dimensioned quantity expressing the result of a measurement act."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="PQ.value">
@@ -138,6 +140,15 @@
         <code value="code"/>
       </type>
     </element>
+    <element id="PQ.inclusive">
+      <path value="PQ.inclusive"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
     <element id="PQ.translation">
       <path value="PQ.translation"/>
       <label value="Translation"/>
@@ -146,15 +157,6 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQR"/>
-      </type>
-    </element>
-    <element id="PQ.inclusive">
-      <path value="PQ.inclusive"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
       </type>
     </element>
   </differential>
