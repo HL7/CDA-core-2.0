@@ -25,6 +25,7 @@
   <snapshot>
     <element id="TEL">
       <path value="TEL"/>
+      <definition value="A telephone number (voice or fax), e-mail address, or other locator for a resource (information or service) mediated by telecommunication equipment."/>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -51,6 +52,7 @@
     <element id="TEL.value">
       <path value="TEL.value"/>
       <representation value="xmlAttr"/>
+      <definition value="The telecommunications address specified as a URL"/>
       <min value="0"/>
       <max value="1"/>
       <base>

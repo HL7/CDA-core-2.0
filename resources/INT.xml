@@ -25,7 +25,7 @@
   <snapshot>
     <element id="INT">
       <path value="INT"/>
-      <min value="1"/>
+      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -51,6 +51,7 @@
     <element id="INT.value">
       <path value="INT.value"/>
       <representation value="xmlAttr"/>
+      <definition value="The integer value"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -66,7 +67,7 @@
   <differential>
     <element id="INT">
       <path value="INT"/>
-      <min value="1"/>
+      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="INT.value">

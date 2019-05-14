@@ -19,6 +19,7 @@
   <snapshot>
     <element id="IVL_PQ">
       <path value="IVL_PQ"/>
+      <definition value="Interval of physical quantities"/>
       <min value="1"/>
       <max value="*"/>
     </element>

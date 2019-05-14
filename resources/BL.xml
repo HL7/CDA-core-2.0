@@ -25,7 +25,7 @@
   <snapshot>
     <element id="BL">
       <path value="BL"/>
-      <min value="1"/>
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -51,6 +51,7 @@
     <element id="BL.value">
       <path value="BL.value"/>
       <representation value="xmlAttr"/>
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -66,12 +67,13 @@
   <differential>
     <element id="BL">
       <path value="BL"/>
-      <min value="1"/>
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="BL.value">
       <path value="BL.value"/>
       <representation value="xmlAttr"/>
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
       <min value="0"/>
       <max value="1"/>
       <type>

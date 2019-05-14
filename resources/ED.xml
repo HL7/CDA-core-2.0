@@ -25,7 +25,7 @@
   <snapshot>
     <element id="ED">
       <path value="ED"/>
-      <min value="1"/>
+      <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.) Instead of the data itself, an ED may contain only a reference (see TEL.) Note that the ST data type is a specialization of when the is text/plain."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -51,6 +51,7 @@
     <element id="ED.representation">
       <path value="ED.representation"/>
       <representation value="xmlAttr"/>
+      <definition value="Specifies the representation of the binary data that is the content of the binary data value."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -60,34 +61,6 @@
       </base>
       <type>
         <code value="code"/>
-      </type>
-    </element>
-    <element id="ED.text">
-      <path value="ED.text"/>
-      <representation value="xmlText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.text"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="ED.data">
-      <path value="ED.data"/>
-      <representation value="xmlText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.data"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="base64Binary"/>
       </type>
     </element>
     <element id="ED.mediaType">
@@ -158,21 +131,6 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-CompressionAlgorithm"/>
       </binding>
     </element>
-    <element id="ED.reference">
-      <path value="ED.reference"/>
-      <label value="Reference"/>
-      <definition value="A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.reference"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
-      </type>
-    </element>
     <element id="ED.integrityCheck">
       <path value="ED.integrityCheck"/>
       <representation value="xmlAttr"/>
@@ -209,6 +167,39 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
     </element>
+    <element id="ED.data">
+      <path value="ED.data"/>
+      <representation value="xmlText"/>
+      <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.data"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+    </element>
+    <element id="ED.reference">
+      <path value="ED.reference"/>
+      <label value="Reference"/>
+      <definition value="A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.reference"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+      </type>
+    </element>
     <element id="ED.thumbnail">
       <path value="ED.thumbnail"/>
       <label value="Thumbnail"/>
@@ -228,7 +219,7 @@
   <differential>
     <element id="ED">
       <path value="ED"/>
-      <min value="1"/>
+      <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.) Instead of the data itself, an ED may contain only a reference (see TEL.) Note that the ST data type is a specialization of when the is text/plain."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ED.representation">
@@ -238,24 +229,6 @@
       <max value="1"/>
       <type>
         <code value="code"/>
-      </type>
-    </element>
-    <element id="ED.text">
-      <path value="ED.text"/>
-      <representation value="xmlText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="ED.data">
-      <path value="ED.data"/>
-      <representation value="xmlText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="base64Binary"/>
       </type>
     </element>
     <element id="ED.mediaType">
@@ -306,16 +279,6 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-CompressionAlgorithm"/>
       </binding>
     </element>
-    <element id="ED.reference">
-      <path value="ED.reference"/>
-      <label value="Reference"/>
-      <definition value="A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
-      </type>
-    </element>
     <element id="ED.integrityCheck">
       <path value="ED.integrityCheck"/>
       <representation value="xmlAttr"/>
@@ -341,6 +304,29 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
+    </element>
+    <element id="ED.data">
+      <path value="ED.data"/>
+      <representation value="xmlText"/>
+      <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="base64Binary"/>
+      </type>
+    </element>
+    <element id="ED.reference">
+      <path value="ED.reference"/>
+      <label value="Reference"/>
+      <definition value="A telecommunication address (TEL), such as a URL for HTTP or FTP, which will resolve to precisely the same binary data that could as well have been provided as inline data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+      </type>
     </element>
     <element id="ED.thumbnail">
       <path value="ED.thumbnail"/>

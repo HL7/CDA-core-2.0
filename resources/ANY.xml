@@ -25,7 +25,7 @@
   <snapshot>
     <element id="ANY">
       <path value="ANY"/>
-      <min value="1"/>
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -52,7 +52,7 @@
   <differential>
     <element id="ANY">
       <path value="ANY"/>
-      <min value="1"/>
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">

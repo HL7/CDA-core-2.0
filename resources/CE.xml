@@ -25,7 +25,7 @@
   <snapshot>
     <element id="CE">
       <path value="CE"/>
-      <min value="1"/>
+      <definition value="Coded data, consists of a coded value (CV) and, optionally, coded value(s) from other coding systems that identify the same concept. Used when alternative codes may exist."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -163,7 +163,7 @@
       <label value="Qualifier"/>
       <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="0"/>
       <base>
         <path value="CD.qualifier"/>
         <min value="0"/>
@@ -171,6 +171,24 @@
       </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CD.valueSet">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="CE.valueSet"/>
+      <representation value="xmlAttr"/>
+      <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+          <path value="CD.valueSet"/>
+          <min value="0"/>
+          <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
       </type>
     </element>
     <element id="CD.valueSetVersion">
@@ -195,7 +213,7 @@
   <differential>
     <element id="CE">
       <path value="CE"/>
-      <min value="1"/>
+      <definition value="Coded data, consists of a coded value (CV) and, optionally, coded value(s) from other coding systems that identify the same concept. Used when alternative codes may exist."/><min value="1"/>
       <max value="*"/>
     </element>
     <element id="CE.code">
@@ -264,6 +282,38 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+    </element>
+    <element id="CE.qualifier">
+      <path value="CE.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CE.valueSet">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="CE.valueSet"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.valueSet"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
       </type>
     </element>
     <element id="CE.valueSetVersion">

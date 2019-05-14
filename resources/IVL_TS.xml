@@ -19,6 +19,7 @@
   <snapshot>
     <element id="IVL_TS">
       <path value="IVL_TS"/>
+      <definition value="Interval of timestamps"/>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -48,6 +49,7 @@
       </extension>
       <path value="IVL_TS.value"/>
       <representation value="xmlAttr"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -62,6 +64,7 @@
     <element id="IVL_TS.inclusive">
       <path value="IVL_TS.inclusive"/>
       <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -76,6 +79,7 @@
     <element id="SXCM_TS.operator">
       <path value="IVL_TS.operator"/>
       <representation value="xmlAttr"/>
+      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
       <min value="0"/>
       <max value="1"/>
       <base>
