@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="INT"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="INT">
       <path value="INT"/>
-      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/><min value="1"/>
+      <short value="Integer" />
+      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="INT.nullFlavor">
       <path value="INT.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -67,7 +69,8 @@
   <differential>
     <element id="INT">
       <path value="INT"/>
-      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/><min value="1"/>
+      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="INT.value">

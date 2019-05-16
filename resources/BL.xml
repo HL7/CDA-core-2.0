@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="BL"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="BL">
       <path value="BL"/>
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/><min value="1"/>
+      <short value="Boolean" />
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="BL.nullFlavor">
       <path value="BL.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -67,7 +69,8 @@
   <differential>
     <element id="BL">
       <path value="BL"/>
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/><min value="1"/>
+      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="BL.value">

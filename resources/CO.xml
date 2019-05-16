@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="CO"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="CO">
       <path value="CO"/>
-      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/><min value="1"/>
+      <short value="Coded Ordinal" />
+      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="CO.nullFlavor">
       <path value="CO.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,7 +50,7 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="CD.code">
+    <element id="CO.code">
       <path value="CO.code"/>
       <representation value="xmlAttr"/>
       <label value="Code"/>
@@ -64,7 +66,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.codeSystem">
+    <element id="CO.codeSystem">
       <path value="CO.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
@@ -80,7 +82,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.codeSystemName">
+    <element id="CO.codeSystemName">
       <path value="CO.codeSystemName"/>
       <representation value="xmlAttr"/>
       <label value="Code System Name"/>
@@ -96,7 +98,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.codeSystemVersion">
+    <element id="CO.codeSystemVersion">
       <path value="CO.codeSystemVersion"/>
       <representation value="xmlAttr"/>
       <label value="Code System Version"/>
@@ -112,7 +114,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.displayName">
+    <element id="CO.displayName">
       <path value="CO.displayName"/>
       <representation value="xmlAttr"/>
       <label value="Display Name"/>
@@ -128,52 +130,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.originalText">
-      <path value="CO.originalText"/>
-      <label value="Original Text"/>
-      <definition value="The text or phrase used as the basis for the coding."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="CD.originalText"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-      </type>
-    </element>
-    <element id="CD.translation">
-      <path value="CO.translation"/>
-      <label value="Translation"/>
-      <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
-      <min value="0"/>
-      <max value="0"/>
-      <base>
-        <path value="CD.translation"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-    </element>
-    <element id="CD.qualifier">
-      <path value="CO.qualifier"/>
-      <label value="Qualifier"/>
-      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
-      <min value="0"/>
-      <max value="0"/>
-      <base>
-        <path value="CD.qualifier"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
-      </type>
-    </element>
-    <element id="CD.valueSet">
+    <element id="CO.valueSet">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
@@ -191,7 +148,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSetVersion">
+    <element id="CO.valueSetVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
@@ -209,11 +166,57 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="CO.originalText">
+      <path value="CO.originalText"/>
+      <label value="Original Text"/>
+      <definition value="The text or phrase used as the basis for the coding."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CD.originalText"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="CO.qualifier">
+      <path value="CO.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CO.translation">
+      <path value="CO.translation"/>
+      <label value="Translation"/>
+      <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.translation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+    </element>
   </snapshot>
   <differential>
     <element id="CO">
       <path value="CO"/>
-      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/><min value="1"/>
+      <definition value="Coded data, where the domain from which the codeset comes is ordered. The Coded Ordinal data type adds semantics related to ordering so that models that make use of such domains may introduce model elements that involve statements about the order of the terms in a domain."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="CO.code">
@@ -266,39 +269,6 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CO.originalText">
-      <path value="CO.originalText"/>
-      <label value="Original Text"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-      </type>
-    </element>
-    <element id="CO.translation">
-      <path value="CO.translation"/>
-      <label value="Translation"/>
-      <min value="0"/>
-      <max value="0"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-    </element>
-    <element id="CO.qualifier">
-      <path value="CO.qualifier"/>
-      <label value="Qualifier"/>
-      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
-      <min value="0"/>
-      <max value="0"/>
-      <base>
-        <path value="CD.qualifier"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
-      </type>
-    </element>
     <element id="CO.valueSet">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
@@ -327,6 +297,39 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+      </type>
+    </element>
+    <element id="CO.originalText">
+      <path value="CO.originalText"/>
+      <label value="Original Text"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+      </type>
+    </element>
+    <element id="CO.qualifier">
+      <path value="CO.qualifier"/>
+      <label value="Qualifier"/>
+      <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
+      <min value="0"/>
+      <max value="0"/>
+      <base>
+        <path value="CD.qualifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+      </type>
+    </element>
+    <element id="CO.translation">
+      <path value="CO.translation"/>
+      <label value="Translation"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
   </differential>

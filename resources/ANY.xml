@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ANY"/>
   <text>
@@ -25,7 +25,9 @@
   <snapshot>
     <element id="ANY">
       <path value="ANY"/>
-      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/><min value="1"/>
+      <short value="Data Value" />
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">
@@ -52,7 +54,8 @@
   <differential>
     <element id="ANY">
       <path value="ANY"/>
-      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/><min value="1"/>
+      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="ANY.nullFlavor">

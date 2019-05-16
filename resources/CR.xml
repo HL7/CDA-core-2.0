@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="CR"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="CR">
       <path value="CR"/>
-      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/><min value="1"/>
+      <short value="Concept Role" />
+      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="CR.nullFlavor">
       <path value="CR.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -47,6 +49,22 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
+    </element>
+    <element id="CR.inverted">
+      <path value="CR.inverted"/>
+      <representation value="xmlAttr"/>
+      <label value="Inversion Indicator"/>
+      <definition value="Indicates if the sense of the role name is inverted. This can be used in cases where the underlying code system defines inversion but does not provide reciprocal pairs of role names. By default, inverted is false."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="CR.inverted"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
     </element>
     <element id="CR.name">
       <path value="CR.name"/>
@@ -78,6 +96,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
+  </snapshot>
+  <differential>
+    <element id="CR">
+      <path value="CR"/>
+      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
     <element id="CR.inverted">
       <path value="CR.inverted"/>
       <representation value="xmlAttr"/>
@@ -85,21 +111,9 @@
       <definition value="Indicates if the sense of the role name is inverted. This can be used in cases where the underlying code system defines inversion but does not provide reciprocal pairs of role names. By default, inverted is false."/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="CR.inverted"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="boolean"/>
       </type>
-    </element>
-  </snapshot>
-  <differential>
-    <element id="CR">
-      <path value="CR"/>
-      <definition value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system. For example, if SNOMED RT defines a concept &#34;leg&#34;, a role relation &#34;has-laterality&#34;, and another concept &#34;left&#34;, the concept role relation allows to add the qualifier &#34;has-laterality: left&#34; to a primary code &#34;leg&#34; to construct the meaning &#34;left leg&#34;."/><min value="1"/>
-      <max value="*"/>
     </element>
     <element id="CR.name">
       <path value="CR.name"/>
@@ -119,17 +133,6 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-    </element>
-    <element id="CR.inverted">
-      <path value="CR.inverted"/>
-      <representation value="xmlAttr"/>
-      <label value="Inversion Indicator"/>
-      <definition value="Indicates if the sense of the role name is inverted. This can be used in cases where the underlying code system defines inversion but does not provide reciprocal pairs of role names. By default, inverted is false."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
       </type>
     </element>
   </differential>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SC"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="SC">
       <path value="SC"/>
-      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/><min value="1"/>
+      <short value="Character String with Code" />
+      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="SC.nullFlavor">
       <path value="SC.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -47,21 +49,6 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
-    </element>
-    <element id="ST.value">
-      <path value="SC.value"/>
-      <representation value="xmlText"/>
-      <definition value="The string value"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ST.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="SC.code">
       <path value="SC.code"/>
@@ -143,11 +130,27 @@
         <code value="string"/>
       </type>
     </element>
+    <element id="SC.value">
+      <path value="SC.value"/>
+      <representation value="xmlText"/>
+      <definition value="The string value"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ST.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
   </snapshot>
   <differential>
     <element id="SC">
       <path value="SC"/>
-      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/><min value="1"/>
+      <definition value="An ST that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="SC.code">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="IVL_TS"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -19,6 +19,7 @@
   <snapshot>
     <element id="IVL_TS">
       <path value="IVL_TS"/>
+      <short value="Interval of Timestamps" />
       <definition value="Interval of timestamps"/>
       <min value="1"/>
       <max value="*"/>
@@ -76,7 +77,7 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="SXCM_TS.operator">
+    <element id="IVL_TS.operator">
       <path value="IVL_TS.operator"/>
       <representation value="xmlAttr"/>
       <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="SXCM_TS"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -19,11 +19,12 @@
   <snapshot>
     <element id="SXCM_TS">
       <path value="SXCM_TS"/>
-      <definition value="Speciolization for timing specification of generic type extension for the base data type of a set, representing a component of a general set over a discrete or continuous value domain. Its use is mainly for continuous value domains. Discrete (enumerable) set components are the individual elements of the base data type."/>
+      <short value="Set Component for Timestamp" />
+      <definition value="Specialization for timing specification of generic type extension for the base data type of a set, representing a component of a general set over a discrete or continuous value domain. Its use is mainly for continuous value domains. Discrete (enumerable) set components are the individual elements of the base data type." />
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="SXCM_TS.nullFlavor">
       <path value="SXCM_TS.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -43,25 +44,7 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="TS.value">
-      <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
-        <valueString value="v3"/>
-      </extension>
-      <path value="SXCM_TS.value"/>
-      <representation value="xmlAttr"/>
-      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="TS.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="dateTime"/>
-      </type>
-    </element>
-    <element id="TS.inclusive">
+    <element id="SXCM_TS.inclusive">
       <path value="SXCM_TS.inclusive"/>
       <representation value="xmlAttr"/>
       <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
@@ -89,6 +72,24 @@
       </base>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="SXCM_TS.value">
+      <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
+        <valueString value="v3"/>
+      </extension>
+      <path value="SXCM_TS.value"/>
+      <representation value="xmlAttr"/>
+      <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="TS.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
       </type>
     </element>
   </snapshot>

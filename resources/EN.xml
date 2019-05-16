@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="EN"/>
   <text>
@@ -28,10 +28,12 @@
   <snapshot>
     <element id="EN">
       <path value="EN"/>
-      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/><min value="1"/>
+      <short value="Entity Name" />
+      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="EN.nullFlavor">
       <path value="EN.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -51,6 +53,22 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
+    <element id="EN.use">
+      <path value="EN.use"/>
+      <representation value="xmlAttr"/>
+      <label value="Use Code"/>
+      <definition value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.use"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
     <element id="EN.delimiter">
       <path value="EN.delimiter"/>
       <definition value="A delimiter has no meaning other than being literally printed in this name representation. A delimiter has no implicit leading and trailing white space."/>
@@ -62,7 +80,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.delimiter.partType">
@@ -71,14 +89,14 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="EN.delimiter.partType"/>
+        <path value="ENXP.partType"/>
         <min value="0"/>
         <max value="1"/>
       </base>
-      <fixedCode value="DEL"/>
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="DEL"/>
     </element>
     <element id="EN.delimiter.qualifier">
       <path value="EN.delimiter.qualifier"/>
@@ -86,7 +104,7 @@
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="EN.delimiter.qualifier"/>
+        <path value="ENXP.qualifier"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -94,6 +112,7 @@
         <code value="code"/>
       </type>
       <binding>
+        <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
       </binding>
     </element>
@@ -108,7 +127,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.family.partType">
@@ -117,14 +136,14 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="EN.family.partType"/>
+        <path value="ENXP.partType"/>
         <min value="0"/>
         <max value="1"/>
       </base>
-      <fixedCode value="FAM"/>
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="FAM"/>
     </element>
     <element id="EN.family.qualifier">
       <path value="EN.family.qualifier"/>
@@ -132,7 +151,7 @@
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="EN.family.qualifier"/>
+        <path value="ENXP.qualifier"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -140,6 +159,7 @@
         <code value="code"/>
       </type>
       <binding>
+        <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
       </binding>
     </element>
@@ -154,7 +174,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.given.partType">
@@ -163,14 +183,14 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="EN.given.partType"/>
+        <path value="ENXP.partType"/>
         <min value="0"/>
         <max value="1"/>
       </base>
-      <fixedCode value="GIV"/>
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="GIV"/>
     </element>
     <element id="EN.given.qualifier">
       <path value="EN.given.qualifier"/>
@@ -178,7 +198,7 @@
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="EN.given.qualifier"/>
+        <path value="ENXP.qualifier"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -186,6 +206,7 @@
         <code value="code"/>
       </type>
       <binding>
+        <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
       </binding>
     </element>
@@ -200,7 +221,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.prefix.partType">
@@ -209,14 +230,14 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="EN.prefix.partType"/>
+        <path value="ENXP.partType"/>
         <min value="0"/>
         <max value="1"/>
       </base>
-      <fixedCode value="PFX"/>
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="PFX"/>
     </element>
     <element id="EN.prefix.qualifier">
       <path value="EN.prefix.qualifier"/>
@@ -224,7 +245,7 @@
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="EN.prefix.qualifier"/>
+        <path value="ENXP.qualifier"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -232,6 +253,7 @@
         <code value="code"/>
       </type>
       <binding>
+        <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
       </binding>
     </element>
@@ -246,7 +268,7 @@
         <max value="*"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.suffix.partType">
@@ -255,14 +277,14 @@
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="EN.suffix.partType"/>
+        <path value="ENXP.partType"/>
         <min value="0"/>
         <max value="1"/>
       </base>
-      <fixedCode value="SFX"/>
       <type>
         <code value="code"/>
       </type>
+      <fixedCode value="SFX"/>
     </element>
     <element id="EN.suffix.qualifier">
       <path value="EN.suffix.qualifier"/>
@@ -270,7 +292,7 @@
       <min value="0"/>
       <max value="*"/>
       <base>
-        <path value="EN.suffix.qualifier"/>
+        <path value="ENXP.qualifier"/>
         <min value="0"/>
         <max value="*"/>
       </base>
@@ -278,6 +300,7 @@
         <code value="code"/>
       </type>
       <binding>
+        <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNamePartQualifier"/>
       </binding>
     </element>
@@ -294,22 +317,6 @@
       </base>
       <type>
         <code value="string"/>
-      </type>
-    </element>
-    <element id="EN.use">
-      <path value="EN.use"/>
-      <representation value="xmlAttr"/>
-      <label value="Use Code"/>
-      <definition value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="EN.use"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="code"/>
       </type>
     </element>
     <element id="EN.validTime">
@@ -331,57 +338,9 @@
   <differential>
     <element id="EN">
       <path value="EN"/>
-      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/><min value="1"/>
+      <definition value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &#34;Jim Bob Walton, Jr.&#34;, &#34;Health Level Seven, Inc.&#34;, &#34;Lake Tahoe&#34;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &#34;Jim&#34;, &#34;Bob&#34;, &#34;Walton&#34;, and &#34;Jr.&#34;, &#34;Health Level Seven&#34; and &#34;Inc.&#34;, &#34;Lake&#34; and &#34;Tahoe&#34;."/>
+      <min value="1"/>
       <max value="*"/>
-    </element>
-    <element id="EN.delimiter">
-      <path value="EN.delimiter"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="EN.family">
-      <path value="EN.family"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="EN.given">
-      <path value="EN.given"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="EN.prefix">
-      <path value="EN.prefix"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="EN.suffix">
-      <path value="EN.suffix"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="EN.other">
-      <path value="EN.other"/>
-      <representation value="xmlText"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="EN.use">
       <path value="EN.use"/>
@@ -392,6 +351,55 @@
       <max value="*"/>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="EN.delimiter">
+      <path value="EN.delimiter"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="EN.family">
+      <path value="EN.family"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="EN.given">
+      <path value="EN.given"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="EN.prefix">
+      <path value="EN.prefix"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="EN.suffix">
+      <path value="EN.suffix"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="EN.other">
+      <path value="EN.other"/>
+      <representation value="xmlText"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
       </type>
     </element>
     <element id="EN.validTime">

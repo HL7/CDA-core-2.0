@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PN"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>A name for a person. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for person name values are "Jim Bob Walton, Jr.", "Adam Everyman", etc. A person name may be as simple as a character string or may consist of several person name parts, such as, "Jim", "Bob", "Walton", and "Jr.". PN differs from EN because the qualifier type cannot include LS (Legal Status).</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-no-order">
+    <valueBoolean value="true"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/PN"/>
+  <name value="PN"/>
+  <title value="PN: PersonName (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="A name for a person. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for person name values are &quot;Jim Bob Walton, Jr.&quot;, &quot;Adam Everyman&quot;, etc. A person name may be as simple as a character string or may consist of several person name parts, such as, &quot;Jim&quot;, &quot;Bob&quot;, &quot;Walton&quot;, and &quot;Jr.&quot;. PN differs from EN because the qualifier type cannot include LS (Legal Status)."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="PN"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="PN">
+      <path value="PN"/>
+      <short value="Person Name" />
+      <definition value="A name for a person. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for person name values are &quot;Jim Bob Walton, Jr.&quot;, &quot;Adam Everyman&quot;, etc. A person name may be as simple as a character string or may consist of several person name parts, such as, &quot;Jim&quot;, &quot;Bob&quot;, &quot;Walton&quot;, and &quot;Jr.&quot;. PN differs from EN because the qualifier type cannot include LS (Legal Status)."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="PN.nullFlavor">
+      <path value="PN.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ANY.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="PN.use">
+      <path value="PN.use"/>
+      <representation value="xmlAttr"/>
+      <label value="Use Code"/>
+      <definition value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.use"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-PersonNameUse"/>
+      </binding>
+    </element>
+    <element id="PN.delimiter">
+      <path value="PN.delimiter"/>
+      <definition value="A delimiter has no meaning other than being literally printed in this name representation. A delimiter has no implicit leading and trailing white space."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.delimiter"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="PN.family">
+      <path value="PN.family"/>
+      <definition value="Family name, this is the name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.family"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="PN.given">
+      <path value="PN.given"/>
+      <definition value="Given name (don't call it &quot;first name&quot; since this given names do not always come first)"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.given"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="PN.prefix">
+      <path value="PN.prefix"/>
+      <definition value="A prefix has a strong association to the immediately following name part. A prefix has no implicit trailing white space (it has implicit leading white space though). Note that prefixes can be inverted."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.prefix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="PN.suffix">
+      <path value="PN.suffix"/>
+      <definition value="A suffix has a strong association to the immediately preceding name part. A prefix has no implicit leading white space (it has implicit trailing white space though). Suffices can not be inverted."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EN.suffix"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+      </type>
+    </element>
+    <element id="PN.other">
+      <path value="PN.other"/>
+      <representation value="xmlText"/>
+      <definition value="Unstructured textual represention of the entity name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.other"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PN.validTime">
+      <path value="PN.validTime"/>
+      <label value="Valid Time"/>
+      <definition value="An interval of time specifying the time during which the name is or was used for the entity. This accomodates the fact that people change names for people, places and things."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EN.validTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PN">
+      <path value="PN"/>
+      <definition value="A name for a person. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for person name values are &quot;Jim Bob Walton, Jr.&quot;, &quot;Adam Everyman&quot;, etc. A person name may be as simple as a character string or may consist of several person name parts, such as, &quot;Jim&quot;, &quot;Bob&quot;, &quot;Walton&quot;, and &quot;Jr.&quot;. PN differs from EN because the qualifier type cannot include LS (Legal Status)."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="PN.use">
+      <path value="PN.use"/>
+      <binding>
+        <strength value="required"/>
+        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-PersonNameUse"/>
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>

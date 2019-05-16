@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="IVL_INT"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -19,6 +19,7 @@
   <snapshot>
     <element id="IVL_INT">
       <path value="IVL_INT"/>
+      <short value="Interval of Integers" />
       <definition value="Interval of integers"/>
       <min value="1"/>
       <max value="*"/>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="REAL"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="REAL">
       <path value="REAL"/>
-      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/><min value="1"/>
+      <short value="Real Number" />
+      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="REAL.nullFlavor">
       <path value="REAL.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -67,7 +69,8 @@
   <differential>
     <element id="REAL">
       <path value="REAL"/>
-      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/><min value="1"/>
+      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="REAL.value">

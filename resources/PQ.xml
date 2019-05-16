@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PQ"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="PQ">
       <path value="PQ"/>
-      <definition value="A dimensioned quantity expressing the result of a measurement act."/><min value="1"/>
+      <short value="Physical Quantities" />
+      <definition value="A dimensioned quantity expressing the result of a measurement act."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="PQ.nullFlavor">
       <path value="PQ.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,20 +50,19 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="PQ.value">
-      <path value="PQ.value"/>
+    <element id="PQ.inclusive">
+      <path value="PQ.inclusive"/>
       <representation value="xmlAttr"/>
-      <label value="Maginitude Value"/>
-      <definition value="The magnitude of the quantity measured in terms of the unit."/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="PQ.value"/>
+        <path value="PQ.inclusive"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="decimal"/>
+        <code value="boolean"/>
       </type>
     </element>
     <element id="PQ.unit">
@@ -76,24 +77,25 @@
         <min value="0"/>
         <max value="1"/>
       </base>
-      <defaultValueCode value="1"/>
       <type>
         <code value="code"/>
       </type>
+      <defaultValueCode value="1"/>
     </element>
-    <element id="PQ.inclusive">
-      <path value="PQ.inclusive"/>
+    <element id="PQ.value">
+      <path value="PQ.value"/>
       <representation value="xmlAttr"/>
-      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="PQ.inclusive"/>
+        <path value="PQ.value"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="boolean"/>
+        <code value="decimal"/>
       </type>
     </element>
     <element id="PQ.translation">
@@ -115,18 +117,17 @@
   <differential>
     <element id="PQ">
       <path value="PQ"/>
-      <definition value="A dimensioned quantity expressing the result of a measurement act."/><min value="1"/>
+      <definition value="A dimensioned quantity expressing the result of a measurement act."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PQ.value">
-      <path value="PQ.value"/>
+    <element id="PQ.inclusive">
+      <path value="PQ.inclusive"/>
       <representation value="xmlAttr"/>
-      <label value="Maginitude Value"/>
-      <definition value="The magnitude of the quantity measured in terms of the unit."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="decimal"/>
+        <code value="boolean"/>
       </type>
     </element>
     <element id="PQ.unit">
@@ -139,14 +140,17 @@
       <type>
         <code value="code"/>
       </type>
+      <defaultValueCode value="1"/>
     </element>
-    <element id="PQ.inclusive">
-      <path value="PQ.inclusive"/>
+    <element id="PQ.value">
+      <path value="PQ.value"/>
       <representation value="xmlAttr"/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="boolean"/>
+        <code value="decimal"/>
       </type>
     </element>
     <element id="PQ.translation">

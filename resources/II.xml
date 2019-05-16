@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="II"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="II">
       <path value="II"/>
-      <definition value="An identifier that uniquely identifies a thing or object. Examples are object identifier for HL7 RIM objects, medical record number, order id, service catalog item id, Vehicle Identification Number (VIN), etc. Instance identifiers are defined based on ISO object identifiers."/><min value="1"/>
+      <short value="Instance Identifier" />
+      <definition value="An identifier that uniquely identifies a thing or object. Examples are object identifier for HL7 RIM objects, medical record number, order id, service catalog item id, Vehicle Identification Number (VIN), etc. Instance identifiers are defined based on ISO object identifiers."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="II.nullFlavor">
       <path value="II.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -47,38 +49,6 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
-    </element>
-    <element id="II.root">
-      <path value="II.root"/>
-      <representation value="xmlAttr"/>
-      <label value="Root"/>
-      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="II.root"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="II.extension">
-      <path value="II.extension"/>
-      <representation value="xmlAttr"/>
-      <label value="Extension"/>
-      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="II.extension"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="II.assigningAuthorityName">
       <path value="II.assigningAuthorityName"/>
@@ -112,12 +82,21 @@
         <code value="boolean"/>
       </type>
     </element>
-  </snapshot>
-  <differential>
-    <element id="II">
-      <path value="II"/>
-      <definition value="An identifier that uniquely identifies a thing or object. Examples are object identifier for HL7 RIM objects, medical record number, order id, service catalog item id, Vehicle Identification Number (VIN), etc. Instance identifiers are defined based on ISO object identifiers."/><min value="1"/>
-      <max value="*"/>
+    <element id="II.extension">
+      <path value="II.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="II.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
     </element>
     <element id="II.root">
       <path value="II.root"/>
@@ -126,20 +105,22 @@
       <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
       <min value="0"/>
       <max value="1"/>
+      <base>
+        <path value="II.root"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
       <type>
         <code value="string"/>
       </type>
     </element>
-    <element id="II.extension">
-      <path value="II.extension"/>
-      <representation value="xmlAttr"/>
-      <label value="Extension"/>
-      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
+  </snapshot>
+  <differential>
+    <element id="II">
+      <path value="II"/>
+      <definition value="An identifier that uniquely identifies a thing or object. Examples are object identifier for HL7 RIM objects, medical record number, order id, service catalog item id, Vehicle Identification Number (VIN), etc. Instance identifiers are defined based on ISO object identifiers."/>
+      <min value="1"/>
+      <max value="*"/>
     </element>
     <element id="II.assigningAuthorityName">
       <path value="II.assigningAuthorityName"/>
@@ -161,6 +142,28 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+      </type>
+    </element>
+    <element id="II.extension">
+      <path value="II.extension"/>
+      <representation value="xmlAttr"/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="II.root">
+      <path value="II.root"/>
+      <representation value="xmlAttr"/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
       </type>
     </element>
   </differential>
