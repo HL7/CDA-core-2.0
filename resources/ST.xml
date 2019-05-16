@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ST"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="ST">
       <path value="ST"/>
-      <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/><min value="1"/>
+      <short value="Character String" />
+      <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="ST.nullFlavor">
       <path value="ST.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,39 +50,6 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="ST.representation">
-      <path value="ST.representation"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies the representation of the binary data that is the content of the binary data value."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.representation"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <fixedCode value="TXT"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ST.mediaType">
-      <path value="ST.mediaType"/>
-      <representation value="xmlAttr"/>
-      <label value="Media Type"/>
-      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.mediaType"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <fixedCode value="text/plain"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
     <element id="ST.charset">
       <path value="ST.charset"/>
       <representation value="xmlAttr"/>
@@ -90,22 +59,6 @@
       <max value="1"/>
       <base>
         <path value="ED.charset"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ST.language">
-      <path value="ST.language"/>
-      <representation value="xmlAttr"/>
-      <label value="Language"/>
-      <definition value="For character based information the language property specifies the human language of the text."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ED.language"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -169,6 +122,55 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
     </element>
+    <element id="ST.language">
+      <path value="ST.language"/>
+      <representation value="xmlAttr"/>
+      <label value="Language"/>
+      <definition value="For character based information the language property specifies the human language of the text."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="ST.mediaType">
+      <path value="ST.mediaType"/>
+      <representation value="xmlAttr"/>
+      <label value="Media Type"/>
+      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.mediaType"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="text/plain"/>
+    </element>
+    <element id="ST.representation">
+      <path value="ST.representation"/>
+      <representation value="xmlAttr"/>
+      <definition value="Specifies the representation of the binary data that is the content of the binary data value."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="ED.representation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="TXT"/>
+    </element>
     <element id="ST.data">
       <path value="ST.data"/>
       <representation value="xmlText"/>
@@ -218,47 +220,15 @@
   <differential>
     <element id="ST">
       <path value="ST"/>
-      <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/><min value="1"/>
+      <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
+      <min value="1"/>
       <max value="*"/>
-    </element>
-    <element id="ST.representation">
-      <path value="ST.representation"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <fixedCode value="TXT"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ST.mediaType">
-      <path value="ST.mediaType"/>
-      <representation value="xmlAttr"/>
-      <label value="Media Type"/>
-      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
-      <min value="0"/>
-      <max value="1"/>
-      <fixedCode value="text/plain"/>
-      <type>
-        <code value="code"/>
-      </type>
     </element>
     <element id="ST.charset">
       <path value="ST.charset"/>
       <representation value="xmlAttr"/>
       <label value="Charset"/>
       <definition value="For character-based encoding types, this property specifies the character set and character encoding used. The charset shall be identified by an Internet Assigned Numbers Authority (IANA) Charset Registration [] in accordance with RFC 2978 []."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-    </element>
-    <element id="ST.language">
-      <path value="ST.language"/>
-      <representation value="xmlAttr"/>
-      <label value="Language"/>
-      <definition value="For character based information the language property specifies the human language of the text."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -305,6 +275,39 @@
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
+    </element>
+    <element id="ST.language">
+      <path value="ST.language"/>
+      <representation value="xmlAttr"/>
+      <label value="Language"/>
+      <definition value="For character based information the language property specifies the human language of the text."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="ST.mediaType">
+      <path value="ST.mediaType"/>
+      <representation value="xmlAttr"/>
+      <label value="Media Type"/>
+      <definition value="Identifies the type of the encapsulated data and identifies a method to interpret or render the data."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="text/plain"/>
+    </element>
+    <element id="ST.representation">
+      <path value="ST.representation"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <fixedCode value="TXT"/>
     </element>
     <element id="ST.data">
       <path value="ST.data"/>

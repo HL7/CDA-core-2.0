@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="EIVL_TS"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="EIVL_TS">
       <path value="EIVL_TS"/>
-      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/><min value="1"/>
+      <short value="Event Related Interval of Timestamps" />
+      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="EIVL_TS.nullFlavor">
       <path value="EIVL_TS.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,7 +50,37 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="TS.value">
+    <element id="EIVL_TS.inclusive">
+      <path value="EIVL_TS.inclusive"/>
+      <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="TS.inclusive"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EIVL_TS.operator">
+      <path value="EIVL_TS.operator"/>
+      <representation value="xmlAttr"/>
+      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SXCM_TS.operator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="EIVL_TS.value">
       <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
         <valueString value="v3"/>
       </extension>
@@ -64,36 +96,6 @@
       </base>
       <type>
         <code value="dateTime"/>
-      </type>
-    </element>
-    <element id="TS.inclusive">
-      <path value="EIVL_TS.inclusive"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="TS.inclusive"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="SXCM_TS.operator">
-      <path value="EIVL_TS.operator"/>
-      <representation value="xmlAttr"/>
-      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="SXCM_TS.operator"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
       </type>
     </element>
     <element id="EIVL_TS.event">
@@ -130,7 +132,8 @@
   <differential>
     <element id="EIVL_TS">
       <path value="EIVL_TS"/>
-      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/><min value="1"/>
+      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="EIVL_TS.event">

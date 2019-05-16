@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="MO"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="MO">
       <path value="MO"/>
-      <definition value="A monetary amount is a quantity expressing the amount of money in some currency. Currencies are the units in which monetary amounts are denominated in different economic regions. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between physical quantity and monetary amounts, and the reason why currency units are not physical units."/><min value="1"/>
+      <short value="Money" />
+      <definition value="A monetary amount is a quantity expressing the amount of money in some currency. Currencies are the units in which monetary amounts are denominated in different economic regions. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between physical quantity and monetary amounts, and the reason why currency units are not physical units."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="MO.nullFlavor">
       <path value="MO.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,21 +50,6 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="MO.value">
-      <path value="MO.value"/>
-      <label value="Value"/>
-      <definition value="The magnitude of the monetary amount in terms of the currency unit."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="MO.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
-      </type>
-    </element>
     <element id="MO.currency">
       <path value="MO.currency"/>
       <label value="Currency"/>
@@ -78,22 +65,28 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-  </snapshot>
-  <differential>
-    <element id="MO">
-      <path value="MO"/>
-      <definition value="A monetary amount is a quantity expressing the amount of money in some currency. Currencies are the units in which monetary amounts are denominated in different economic regions. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between physical quantity and monetary amounts, and the reason why currency units are not physical units."/><min value="1"/>
-      <max value="*"/>
-    </element>
     <element id="MO.value">
       <path value="MO.value"/>
       <label value="Value"/>
       <definition value="The magnitude of the monetary amount in terms of the currency unit."/>
       <min value="0"/>
       <max value="1"/>
+      <base>
+        <path value="MO.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
       </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="MO">
+      <path value="MO"/>
+      <definition value="A monetary amount is a quantity expressing the amount of money in some currency. Currencies are the units in which monetary amounts are denominated in different economic regions. While the monetary amount is a single kind of quantity (money) the exchange rates between the different units are variable. This is the principle difference between physical quantity and monetary amounts, and the reason why currency units are not physical units."/>
+      <min value="1"/>
+      <max value="*"/>
     </element>
     <element id="MO.currency">
       <path value="MO.currency"/>
@@ -103,6 +96,16 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="MO.value">
+      <path value="MO.value"/>
+      <label value="Value"/>
+      <definition value="The magnitude of the monetary amount in terms of the currency unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
       </type>
     </element>
   </differential>

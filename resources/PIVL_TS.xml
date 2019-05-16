@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="PIVL_TS"/>
   <text>
@@ -25,10 +25,12 @@
   <snapshot>
     <element id="PIVL_TS">
       <path value="PIVL_TS"/>
-      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/><min value="1"/>
+      <short value="Periodic Interval of Timestamps" />
+      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="PIVL_TS.nullFlavor">
       <path value="PIVL_TS.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
@@ -48,7 +50,7 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="TS.value">
+    <element id="PIVL_TS.value">
       <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
         <valueString value="v3"/>
       </extension>
@@ -66,7 +68,7 @@
         <code value="dateTime"/>
       </type>
     </element>
-    <element id="TS.inclusive">
+    <element id="PIVL_TS.inclusive">
       <path value="PIVL_TS.inclusive"/>
       <representation value="xmlAttr"/>
       <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
@@ -81,7 +83,7 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="SXCM_TS.operator">
+    <element id="PIVL_TS.operator">
       <path value="PIVL_TS.operator"/>
       <representation value="xmlAttr"/>
       <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
@@ -162,7 +164,8 @@
   <differential>
     <element id="PIVL_TS">
       <path value="PIVL_TS"/>
-      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/><min value="1"/>
+      <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/>
+      <min value="1"/>
       <max value="*"/>
     </element>
     <element id="PIVL_TS.phase">

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="RTO_PQ_PQ"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -19,11 +19,12 @@
   <snapshot>
     <element id="RTO_PQ_PQ">
       <path value="RTO_PQ_PQ"/>
+      <short value="Ratio of Physical Quantities" />
       <definition value="A ratio of a physical quantity (PQ) numerator and a physical quantity (PQ) denominator."/>
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="ANY.nullFlavor">
+    <element id="RTO_PQ_PQ.nullFlavor">
       <path value="RTO_PQ_PQ.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>

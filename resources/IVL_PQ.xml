@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="IVL_PQ"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -19,6 +19,7 @@
   <snapshot>
     <element id="IVL_PQ">
       <path value="IVL_PQ"/>
+      <short value="Interval of Physical Quantities" />
       <definition value="Interval of physical quantities"/>
       <min value="1"/>
       <max value="*"/>
@@ -43,22 +44,6 @@
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
       </binding>
     </element>
-    <element id="IVL_PQ.value">
-      <path value="IVL_PQ.value"/>
-      <representation value="xmlAttr"/>
-      <label value="Maginitude Value"/>
-      <definition value="The magnitude of the quantity measured in terms of the unit."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="PQ.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="decimal"/>
-      </type>
-    </element>
     <element id="IVL_PQ.unit">
       <path value="IVL_PQ.unit"/>
       <representation value="xmlAttr"/>
@@ -73,6 +58,22 @@
       </base>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.value">
+      <path value="IVL_PQ.value"/>
+      <representation value="xmlAttr"/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PQ.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
       </type>
     </element>
     <element id="IVL_PQ.low">
@@ -142,22 +143,6 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="IVL_PQ.value">
-      <path value="IVL_PQ.value"/>
-      <representation value="xmlAttr"/>
-      <label value="Maginitude Value"/>
-      <definition value="The magnitude of the quantity measured in terms of the unit."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="PQ.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="decimal"/>
-      </type>
-    </element>
     <element id="IVL_PQ.unit">
       <path value="IVL_PQ.unit"/>
       <representation value="xmlAttr"/>
@@ -172,6 +157,22 @@
       </base>
       <type>
         <code value="code"/>
+      </type>
+    </element>
+    <element id="IVL_PQ.value">
+      <path value="IVL_PQ.value"/>
+      <representation value="xmlAttr"/>
+      <label value="Maginitude Value"/>
+      <definition value="The magnitude of the quantity measured in terms of the unit."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PQ.value"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
       </type>
     </element>
     <element id="IVL_PQ.low">
