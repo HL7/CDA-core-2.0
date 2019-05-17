@@ -20,7 +20,7 @@
   <description value="A derivative of the RIM Procedure class, used for representing procedures.&#10;Procedure.negationInd, when set to &quot;true&quot;, is a positive assertion that the Procedure as a whole is negated. Some properties such as Procedure.id, Procedure.moodCode, and the participations are not affected. These properties always have the same meaning: i.e., the author remains the author of the negative Procedure. A procedure statement with negationInd is still a statement about the specific fact described by the Procedure. For instance, a negated &quot;appendectomy performed&quot; means that the author positively denies that there was ever an appendectomy performed, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Procedure"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

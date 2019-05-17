@@ -19,7 +19,7 @@
   <description value="A custodian is a scoping organization in the role of an assigned custodian (AssignedCustodian class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="AssignedCustodian"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/AssignedCustodian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>
