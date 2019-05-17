@@ -2,3 +2,7 @@ output
 qa
 temp
 template/
+resources/ig-expansion-parameters.json
+resources/ig-new.json
+resources/ig-new.xml
+resources/ig-validation-parameters.json
