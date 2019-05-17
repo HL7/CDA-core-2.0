@@ -20,7 +20,7 @@
   <description value="A human being.&#10;This class can be used to represent either a single individual, a group of individuals or a kind of individual based on the values of Entity.determinerCode and Entity.quantity."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Person"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

@@ -19,7 +19,7 @@
   <description value="A character string token representing a part of a name. May have a type code signifying the role of the part in the whole entity name, and a qualifier code for more detail about the name part type. Typical name parts for person names are given names, and family names, titles, etc."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ENXP"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
   <derivation value="specialization"/>
   <snapshot>

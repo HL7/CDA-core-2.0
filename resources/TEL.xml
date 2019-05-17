@@ -19,7 +19,7 @@
   <description value="A telephone number (voice or fax), e-mail address, or other locator for a resource mediated by telecommunication equipment. The address is specified as a Universal Resource Locator (URL) qualified by time specification and use codes that help in deciding which address to use for a given time and purpose."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="TEL"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <snapshot>

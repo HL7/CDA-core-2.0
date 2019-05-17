@@ -13,7 +13,7 @@
   <description value="A set of consecutive values of an ordered base data type."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="IVL_TS"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
   <derivation value="specialization"/>
   <snapshot>

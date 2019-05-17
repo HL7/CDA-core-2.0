@@ -12,7 +12,7 @@
   <publisher value="HL7"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="HealthCareFacility"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/HealthCareFacility"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

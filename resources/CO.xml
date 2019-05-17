@@ -19,7 +19,7 @@
   <description value="Coded data, where the coding system from which the code comes is ordered"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CO"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/CO"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
   <derivation value="specialization"/>
   <snapshot>

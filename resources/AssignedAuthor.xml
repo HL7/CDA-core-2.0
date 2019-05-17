@@ -19,7 +19,7 @@
   <description value="An author is a person in the role of an assigned author (AssignedAuthor class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="AssignedAuthor"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>
