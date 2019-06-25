@@ -22,7 +22,7 @@
   <description value="A name for an organization. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for organization name values are &quot;Health Level Seven, Inc.&quot;, &quot;Hospital&quot;, etc. An organization name may be as simple as a character string or may consist of several person name parts, such as, &quot;Health Level 7&quot;, &quot;Inc.&quot;. ON differs from EN because certain person related name parts are not possible."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ON"/>
+  <type value="ON"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
   <derivation value="specialization"/>
   <snapshot>

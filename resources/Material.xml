@@ -22,7 +22,7 @@
   <description value="A subtype of Entity that is inanimate and locationally independent.&#10;Materials are entities that are neither Living Subjects nor places. Manufactured or processed products are considered material, even if they originate as living matter. Materials come in a wide variety of physical forms and can pass through different states (ie. Gas, liquid, solid) while still retaining their physical composition and material characteristics.&#10;Clarify the meaning of &quot;locationally independent&quot;; suggest removing it and supplanting with first Usage Note sentence.&#10;Pharmaceutical substances (including active vaccines containing retarded virus), disposable supplies, durable equipment, implantable devices, food items (including meat or plant products), waste, traded goods."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Material"/>
+  <type value="Material"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

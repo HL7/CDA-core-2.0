@@ -21,7 +21,7 @@
   <description value="A derivative of the RIM Observation class that represents multimedia that is logically part of the current document. This class is only for multimedia that is logically part of the attested content of the document. Rendering a referenced ObservationMedia requires a software tool that recognizes the particular MIME media type.&#10;An XML attribute &quot;ID&quot; of type XML ID, is added to ObservationMedia within the CDA Schema. This attribute serves as the target of a renderMultiMedia reference (see renderMultiMedia). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification).&#10;The distinction between ObservationMedia and ExternalObservation is that ObservationMedia entries are part of the attested content of the document whereas ExternalObservations are not. For instance, when a clinician draws a picture as part of a progress note, that picture is represented as a CDA ObservationMedia. If that clinician is also describing a finding seen on a chest-x-ray, the referenced chest-x-ray is represented as a CDA ExternalObservation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+  <type value="ObservationMedia"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

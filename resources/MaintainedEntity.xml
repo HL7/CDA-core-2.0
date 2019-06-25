@@ -20,7 +20,7 @@
   <description value="The MaintainedEntity class is present for backwards compatibility, and its use is discouraged, except where needed to support the transformation of CDA, Release One documents.&#10;NOTE: In CDA, Release One, it was possible to specify those individuals responsible for the device. This functionality has been deprecated in CDA, Release Two."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/MaintainedEntity"/>
+  <type value="MaintainedEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

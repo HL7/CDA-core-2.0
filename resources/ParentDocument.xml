@@ -19,7 +19,7 @@
   <description value="The ParentDocument represents the source of a document revision, addenda, or transformation. ParentDocument.text is modeled as an ED data type - allowing for the expression of the MIME type of the parent document. It is not to be used to embed the related document, and thus ParentDocument.text.BIN is precluded from use."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ParentDocument"/>
+  <type value="ParentDocument"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

@@ -20,7 +20,7 @@
   <description value="The StructuredBody class represents a CDA document body that is comprised of one or more document sections.&#10;The StructuredBody class is associated with one or more Section classes through a component relationship."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/StructuredBody"/>
+  <type value="StructuredBody"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

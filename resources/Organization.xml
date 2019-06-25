@@ -20,7 +20,7 @@
   <description value="An Entity representing a formalized group of persons or other organizations with a common purpose and the infrastructure to carry out that purpose.&#10;Companies and institutions, a government department, an incorporated body that is responsible for administering a facility, an insurance company."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+  <type value="Organization"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

@@ -21,7 +21,7 @@
   <description value="A physical thing, group of physical things or an organization capable of participating in Acts while in a role.&#10;An entity is a physical object that has, had or will have existence. The only exception to this is Organization, which while not having a physical presence, fulfills the other characteristics of an Entity. Entity stipulates the thing itself, not the Roles it may play: the Role of Patient, e.g., is played by the Person Entity.&#10;Living subjects (including human beings), organizations, materials, places and their specializations."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Entity"/>
+  <type value="Entity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

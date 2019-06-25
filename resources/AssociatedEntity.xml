@@ -19,7 +19,7 @@
   <description value="A participant is a person or organization in the role of a participating entity (AssociatedEntity class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity"/>
+  <type value="AssociatedEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

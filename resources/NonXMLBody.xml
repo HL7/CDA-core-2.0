@@ -20,7 +20,7 @@
   <description value="The NonXMLBody class represents a document body that is in some format other than XML. NonXMLBody.text is used to reference data that is stored externally to the CDA document or to encode the data directly inline.&#10;Rendering a referenced non-XML body requires a software tool that recognizes the particular MIME media type of the blob."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+  <type value="NonXMLBody"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

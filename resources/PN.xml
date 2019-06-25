@@ -22,7 +22,7 @@
   <description value="A name for a person. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for person name values are &quot;Jim Bob Walton, Jr.&quot;, &quot;Adam Everyman&quot;, etc. A person name may be as simple as a character string or may consist of several person name parts, such as, &quot;Jim&quot;, &quot;Bob&quot;, &quot;Walton&quot;, and &quot;Jr.&quot;. PN differs from EN because the qualifier type cannot include LS (Legal Status)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/PN"/>
+  <type value="PN"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
   <derivation value="specialization"/>
   <snapshot>

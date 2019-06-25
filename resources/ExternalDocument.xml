@@ -19,7 +19,7 @@
   <description value="ExternalDocument is a derivative of the RIM Document class, used for representing external documents. ExternalDocument.text is modeled as an ED data type - allowing for the expression of the MIME type of the external document."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+  <type value="ExternalDocument"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

@@ -20,7 +20,7 @@
   <description value="A derivative of the RIM PatientEncounter class, used to represent related encounters, such as follow-up visits or referenced past encounters.&#10;NOTE: The EncompassingEncounter class in the CDA Header (see Header Relationships (§ 4.2.3 )) represents the setting of the clinical encounter during which the documented act occurred. The Encounter class in the CDA Body is used to represent other related encounters."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+  <type value="Encounter"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>

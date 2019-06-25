@@ -19,7 +19,7 @@
   <description value="ExternalObservation is a derivative of the RIM Observation class, used for representing external coded and other observations."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+  <type value="ExternalObservation"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <snapshot>
