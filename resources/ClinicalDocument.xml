@@ -1925,55 +1925,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="ClinicalDocument.dataEnterer.typeCode">
-      <path value="ClinicalDocument.dataEnterer.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="ENT"/>
-      <fixedCode value="ENT"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="ClinicalDocument.dataEnterer.contextControlCode">
-      <path value="ClinicalDocument.dataEnterer.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="ClinicalDocument.dataEnterer.time">
-      <path value="ClinicalDocument.dataEnterer.time"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
-      </type>
-    </element>
-    <element id="ClinicalDocument.dataEnterer.assignedEntity">
-      <path value="ClinicalDocument.dataEnterer.assignedEntity"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/DataEnterer"/>
       </type>
     </element>
     <element id="ClinicalDocument.informant">
