@@ -41,6 +41,11 @@
       <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
       <min value="0"/>
       <max value="1"/>
+      <base>
+        <path value="Author.nullFlavor"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
       <type>
         <code value="code"/>
       </type>
@@ -94,6 +99,11 @@
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
+      <base>
+        <path value="Author.realmCode"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
@@ -103,6 +113,11 @@
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
+      <base>
+        <path value="Author.typeId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
@@ -112,6 +127,11 @@
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
+      <base>
+        <path value="Author.templateId"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
@@ -163,11 +183,6 @@
       <path value="Author"/>
       <min value="1"/>
       <max value="1"/>
-      <base>
-        <path value="Author"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
     </element>
     <element id="Author.nullFlavor">
       <path value="Author.nullFlavor"/>
@@ -189,11 +204,6 @@
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="Author.typeCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
@@ -209,11 +219,6 @@
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="Author.contextControlCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="code"/>
       </type>
@@ -255,11 +260,6 @@
       <path value="Author.functionCode"/>
       <min value="0"/>
       <max value="1"/>
-      <base>
-        <path value="Author.functionCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
@@ -269,11 +269,6 @@
       <path value="Author.time"/>
       <min value="1"/>
       <max value="1"/>
-      <base>
-        <path value="Author.time"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
@@ -283,11 +278,6 @@
       <path value="Author.assignedAuthor"/>
       <min value="1"/>
       <max value="1"/>
-      <base>
-        <path value="Author.assignedAuthor"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor"/>
       </type>
