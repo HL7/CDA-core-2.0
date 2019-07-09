@@ -1,87 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="BL"/>
-  <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL.</p>
-    </div>
-  </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-    <valueUri value="urn:hl7-org:v3"/>
-  </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
-  <name value="BL"/>
-  <title value="BL: Boolean (V3 Data Type)"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <publisher value="HL7"/>
-  <description value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
-  <kind value="logical"/>
-  <abstract value="false"/>
-  <type value="BL"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
-  <derivation value="specialization"/>
-  <snapshot>
-    <element id="BL">
-      <path value="BL"/>
-      <short value="Boolean" />
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="BL.nullFlavor">
-      <path value="BL.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="BL.value">
-      <path value="BL.value"/>
-      <representation value="xmlAttr"/>
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="BL.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-  </snapshot>
-  <differential>
-    <element id="BL">
-      <path value="BL"/>
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="BL.value">
-      <path value="BL.value"/>
-      <representation value="xmlAttr"/>
-      <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-  </differential>
+   <id value="BL"/>
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml"> 
+         <p>The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL.</p> 
+      </div>
+   </text>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:hl7-org:v3"/>
+   </extension>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+   <name value="BL"/>
+   <title value="BL: Boolean (V3 Data Type)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <description value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="BL"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="BL">
+         <path value="BL"/>
+         <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+         <min value="1"/>
+         <max value="*"/>
+      </element>
+      <element id="BL.value">
+         <path value="BL.value"/>
+         <representation value="xmlAttr"/>
+         <definition value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="boolean"/>
+         </type>
+      </element>
+   </differential>
 </StructureDefinition>

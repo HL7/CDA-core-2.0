@@ -3,19 +3,18 @@
 <!--
 Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" implementation guide, currently in a draft state. The guide, co-developed by HL7 and the College of American Pathologists, will be balloted by HL7 as an Informative Document. Recommendations in the final published guide should usurp patterns of SNOMED CT usage found in this sample instance.
 -->
-<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:schemaLocation="urn:hl7-org:v3 ClinicalDocument.xsd">
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
 	<!-- 
 ********************************************************
   CDA Header
 ********************************************************
---><!--
+-->
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
-	<templateId root="2.16.840.1.113883.3.27.1776"/> -->
+	<templateId root="2.16.840.1.113883.3.27.1776"/>
 	<id extension="c266" root="2.16.840.1.113883.19.4"/>
 	<code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
-	<title value="Good Health Clinic Consultation Note"/>
-	<effectiveTime value="2000-04-07"/>
+	<title>Good Health Clinic Consultation Note</title>
+	<effectiveTime value="20000407"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
 	<languageCode code="en-US"/>
 	<setId extension="BB35" root="2.16.840.1.113883.19.7"/>
@@ -25,12 +24,12 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<id extension="12345" root="2.16.840.1.113883.19.5"/>
 			<patient>
 				<name>
-					<family value="Levin"/>
-					<given value="Henry"/>
-					<suffix value="the 3rd"/>
+					<given>Henry</given>
+					<family>Levin</family>
+					<suffix>the 7th</suffix>
 				</name>
 				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
-				<birthTime value="1932-09-24"/>
+				<birthTime value="19320924"/>
 			</patient>
 			<providerOrganization>
 				<id root="2.16.840.1.113883.19.5"/>
@@ -38,14 +37,14 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="2000-04-07T14:00:00Z"/>
+		<time value="2000040714"/>
 		<assignedAuthor>
 			<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 			<assignedPerson>
 				<name>
-					<family value="Dolin"/>
-					<given value="Robert"/>
-					<suffix value="MD"/>
+					<given>Robert</given>
+					<family>Dolin</family>
+					<suffix>MD</suffix>
 				</name>
 			</assignedPerson>
 			<representedOrganization>
@@ -57,20 +56,20 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 		<assignedCustodian>
 			<representedCustodianOrganization>
 				<id root="2.16.840.1.113883.19.5"/>
-				<name value="Good Health Clinic"/>
+				<name>Good Health Clinic</name>
 			</representedCustodianOrganization>
 		</assignedCustodian>
 	</custodian>
 	<legalAuthenticator>
-		<time value="2000-04-08"/>
+		<time value="20000408"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 			<assignedPerson>
 				<name>
-					<family value="Dolin"/>
-					<given value="Robert"/>
-					<suffix value="MD"/>
+					<given>Robert</given>
+					<family>Dolin</family>
+					<suffix>MD</suffix>
 				</name>
 			</assignedPerson>
 			<representedOrganization>
@@ -88,16 +87,16 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 	<componentOf>
 		<encompassingEncounter>
 			<id extension="KPENC1332" root="2.16.840.1.113883.19.6"/>
-			<effectiveTime value="2000-04-07"/>
+			<effectiveTime value="20000407"/>
 			<encounterParticipant typeCode="CON">
-				<time value="2000-04-07"/>
+				<time value="20000407"/>
 				<assignedEntity>
 					<id extension="KP00017" root="2.16.840.1.113883.19.5"/>
 					<assignedPerson>
 						<name>
-							<family value="Dolin"/>
-							<given value="Robert"/>
-							<suffix value="MD"/>
+							<given>Robert</given>
+							<family>Dolin</family>
+							<suffix>MD</suffix>
 						</name>
 					</assignedPerson>
 					<representedOrganization>
@@ -127,7 +126,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="History of Present Illness"/>
+					<title>History of Present Illness</title>
 					<text>
 						<content styleCode="Bold">Henry Levin, the 7<sup>th</sup>
 						</content> is a 67 year old male referred for further asthma management. Onset of asthma in his <content revised="delete">twenties</content>
@@ -143,7 +142,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="10153-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Past Medical History"/>
+					<title>Past Medical History</title>
 					<text>
 						<list>
 							<item>
@@ -235,7 +234,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Medications"/>
+					<title>Medications</title>
 					<text>
 						<list>
 							<item>Theodur 200mg BID</item>
@@ -246,7 +245,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					</text>
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="EVN">
-							<text text="Theodur 200mg BID"/>
+							<text>Theodur 200mg BID</text>
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
 								<period value="12" unit="h"/>
 							</effectiveTime>
@@ -263,7 +262,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					</entry>
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="EVN">
-							<text text="Proventil inhaler 2puffs QID PRN"/>
+							<text>Proventil inhaler 2puffs QID PRN</text>
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
 								<period value="6" unit="h"/>
 							</effectiveTime>
@@ -282,7 +281,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="EVN">
 							<id root="2.16.840.1.113883.19.8.1"/>
-							<text text="Prednisone 20mg qd"/>
+							<text>Prednisone 20mg qd</text>
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
 								<period value="24" unit="h"/>
 							</effectiveTime>
@@ -299,7 +298,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					</entry>
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="EVN">
-							<text text="HCTZ 25mg qd"/>
+							<text>HCTZ 25mg qd</text>
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
 								<period value="24" unit="h"/>
 							</effectiveTime>
@@ -323,7 +322,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="10155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Allergies and Adverse Reactions"/>
+					<title>Allergies and Adverse Reactions</title>
 					<text>
 						<list>
 							<item>Penicillin - Hives</item>
@@ -395,7 +394,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="10157-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Family history"/>
+					<title>Family history</title>
 					<text>
 						<list>
 							<item>Father had fatal MI in his early 50's.</item>
@@ -426,7 +425,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 							<code code="275937001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Family history of cancer"/>
 							<statusCode code="completed"/>
 							<effectiveTime>
-								<high value="2000-04-07" inclusive="true"/>
+								<high value="20000407" inclusive="true"/>
 							</effectiveTime>
 						</observation>
 					</entry>
@@ -435,7 +434,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 							<code code="160274005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="No family history of diabetes"/>
 							<statusCode code="completed"/>
 							<effectiveTime>
-								<high value="2000-04-07" inclusive="true"/>
+								<high value="20000407" inclusive="true"/>
 							</effectiveTime>
 						</observation>
 					</entry>
@@ -449,7 +448,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Social History"/>
+					<title>Social History</title>
 					<text>
 						<list>
 							<item>Smoking :: 1 PPD between the ages of 20 and 55, and then he quit.</item>
@@ -489,7 +488,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="11384-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Physical Examination"/>
+					<title>Physical Examination</title>
 					<!-- 
           ********************************************************
             Physical Exam  - Vital Signs
@@ -498,7 +497,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<component>
 						<section>
 							<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-							<title value="Vital Signs"/>
+							<title>Vital Signs</title>
 							<text>
 								<table>
 									<tbody>
@@ -565,7 +564,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="50373000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body height measure"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="PQ" value="1.77" unit="m">
 										<translation value="69.7" code="[in_I]" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM"/>
 									</value>
@@ -575,7 +574,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="363808001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body weight measure"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="PQ" value="194.0" unit="[lb_ap]">
 										<translation value="88.0" code="kg" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM"/>
 									</value>
@@ -585,7 +584,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="60621009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body mass index"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="RTO_PQ_PQ">
 										<numerator value="28.1" unit="kg"/>
 										<denominator value="1" unit="ar"/>
@@ -596,7 +595,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="301898006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body surface area"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="PQ" value="2.05" unit="ar"/>
 								</observation>
 							</entry>
@@ -604,7 +603,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="386725007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Body temperature"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="PQ" value="36.9" unit="Cel">
 										<translation value="98.5" code="[degF]" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM"/>
 									</value>
@@ -614,7 +613,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="364075005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Heart rate"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="RTO_PQ_PQ">
 										<numerator value="86"/>
 										<denominator value="1" unit="min"/>
@@ -625,7 +624,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="364075005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Heart rate"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T15:30:00Z"/>
+									<effectiveTime value="200004071530"/>
 									<value xsi:type="RTO_PQ_PQ">
 										<numerator value="84"/>
 										<denominator value="1" unit="min"/>
@@ -636,7 +635,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="364074009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Regularity of heart rhythm"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="CD" code="248649006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Heart regular"/>
 								</observation>
 							</entry>
@@ -644,7 +643,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="364074009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Regularity of heart rhythm"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T15:30:00Z"/>
+									<effectiveTime value="200004071530"/>
 									<value xsi:type="CD" code="248649006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Heart regular"/>
 								</observation>
 							</entry>
@@ -652,7 +651,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="86290005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Respiratory rate"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<value xsi:type="RTO_PQ_PQ">
 										<numerator value="16"/>
 										<denominator value="1" unit="min"/>
@@ -663,14 +662,14 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="276362002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Breathing easily"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 								</observation>
 							</entry>
 							<entry>
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="86290005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Respiratory rate"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T15:30:00Z"/>
+									<effectiveTime value="200004071530"/>
 									<value xsi:type="RTO_PQ_PQ">
 										<numerator value="14"/>
 										<denominator value="1" unit="min"/>
@@ -681,13 +680,13 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="251076008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cuff blood pressure"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T14:30:00Z"/>
+									<effectiveTime value="200004071430"/>
 									<targetSiteCode code="368208006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Left arm"/>
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
 											<code code="271649006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Systolic BP"/>
 											<statusCode code="completed"/>
-											<effectiveTime value="2000-04-07T15:30:00Z"/>
+											<effectiveTime value="200004071530"/>
 											<value xsi:type="PQ" value="132" unit="mm[Hg]"/>
 										</observation>
 									</entryRelationship>
@@ -695,7 +694,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 										<observation classCode="OBS" moodCode="EVN">
 											<code code="271650006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diastolic BP"/>
 											<statusCode code="completed"/>
-											<effectiveTime value="2000-04-07T15:30:00Z"/>
+											<effectiveTime value="200004071530"/>
 											<value xsi:type="PQ" value="86" unit="mm[Hg]"/>
 										</observation>
 									</entryRelationship>
@@ -705,13 +704,13 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<code code="251076008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cuff blood pressure"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="2000-04-07T15:30:00Z"/>
+									<effectiveTime value="200004071530"/>
 									<targetSiteCode code="368208006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Left arm"/>
 									<entryRelationship typeCode="COMP">
 										<observation classCode="OBS" moodCode="EVN">
 											<code code="271649006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Systolic BP"/>
 											<statusCode code="completed"/>
-											<effectiveTime value="2000-04-07T15:30:00Z"/>
+											<effectiveTime value="200004071530"/>
 											<value xsi:type="PQ" value="135" unit="mm[Hg]"/>
 										</observation>
 									</entryRelationship>
@@ -719,7 +718,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 										<observation classCode="OBS" moodCode="EVN">
 											<code code="271650006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Diastolic BP"/>
 											<statusCode code="completed"/>
-											<effectiveTime value="2000-04-07T15:30:00Z"/>
+											<effectiveTime value="200004071530"/>
 											<value xsi:type="PQ" value="88" unit="mm[Hg]"/>
 										</observation>
 									</entryRelationship>
@@ -735,9 +734,9 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<component>
 						<section>
 							<code code="8709-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-							<title value="Skin Exam"/>
+							<title>Skin Exam</title>
 							<text>Erythematous rash, palmar surface, left index finger.
-<!--								 <renderMultiMedia referencedObject="MM1"/> -->
+								 <renderMultiMedia referencedObject="MM1"/>
 							</text>
 							<entry>
 								<observation classCode="OBS" moodCode="EVN">
@@ -751,7 +750,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 										</qualifier>
 									</targetSiteCode>
 									<entryRelationship typeCode="SPRT">
-										<regionOfInterest classCode="ROIOVL" moodCode="EVN" id="MM1">
+										<regionOfInterest classCode="ROIOVL" moodCode="EVN" ID="MM1">
 											<id root="2.16.840.1.113883.19.3.1"/>
 											<code code="ELLIPSE"/>
 											<value value="3"/>
@@ -784,7 +783,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<component>
 						<section>
 							<code code="8710-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-							<title value="Lungs"/>
+							<title>Lungs</title>
 							<text>Clear with no wheeze. Good air flow.</text>
 							<entry>
 								<observation classCode="OBS" moodCode="EVN">
@@ -810,7 +809,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<component>
 						<section>
 							<code code="10223-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-							<title value="Cardiac"/>
+							<title>Cardiac</title>
 							<text>RRR with no murmur, no S3, no S4.</text>
 							<entry>
 								<observation classCode="OBS" moodCode="EVN">
@@ -852,7 +851,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Labs"/>
+					<title>Labs</title>
 					<text>
 						<list>
 							<item>CXR 02/03/1999: Hyperinflated. Normal cardiac silhouette, clear lungs.</item>					
@@ -873,7 +872,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN">
 									<id root="2.16.840.1.113883.19.1.5505"/>
 									<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" nullFlavor="OTH">
-										<originalText text="normal cardiac silhouette"/>
+										<originalText>normal cardiac silhouette</originalText>
 									</code>
 								</observation>
 							</entryRelationship>
@@ -881,7 +880,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 								<observation classCode="OBS" moodCode="EVN" negationInd="true">
 									<id root="2.16.840.1.113883.19.1.6675"/>
 									<code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" nullFlavor="OTH">
-										<originalText text="radiopacities"/>
+										<originalText>radiopacities</originalText>
 									</code>
 								</observation>
 							</entryRelationship>
@@ -898,7 +897,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 							<id root="2.16.840.1.113883.19.1.7005"/>
 							<code code="313193002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Peak flow"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="2000-04-07"/>
+							<effectiveTime value="20000407"/>
 							<value xsi:type="RTO_PQ_PQ">
 								<numerator value="260" unit="l"/>
 								<denominator value="1" unit="min"/>
@@ -915,7 +914,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="In-office Procedures"/>
+					<title>In-office Procedures</title>
 					<text>
 						<list>
 							<item>Suture removal, left forearm.</item>
@@ -925,7 +924,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<procedure classCode="PROC" moodCode="EVN">
 							<code code="30549001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Suture removal"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="2000-04-07T14:30:00Z"/>
+							<effectiveTime value="200004071430"/>
 							<targetSiteCode code="66480008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Left forearm"/>
 						</procedure>
 					</entry>
@@ -939,7 +938,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 			<component>
 				<section>
 					<code code="11496-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Assessment"/>
+					<title>Assessment</title>
 					<text>
 						<list>
 							<item>Asthma, with prior smoking history. Difficulty weaning off steroids. Will try gradual taper.</item>
@@ -951,7 +950,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<observation classCode="COND" moodCode="EVN">
 							<code code="14657009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Established diagnosis"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="2000-04-07T15:30:00Z"/>
+							<effectiveTime value="200004071530"/>
 							<value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Asthma">
 								<translation code="49390" codeSystem="2.16.840.1.113883.6.2" codeSystemName="ICD9CM" displayName="ASTHMA W/O STATUS ASTHMATICUS"/>
 							</value>
@@ -966,7 +965,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<observation classCode="COND" moodCode="EVN">
 							<code code="14657009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Established diagnosis"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="2000-04-07T15:30:00Z"/>
+							<effectiveTime value="200004071530"/>
 							<value xsi:type="CD" code="59621000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Essential hypertension">
 								<translation code="4019" codeSystem="2.16.840.1.113883.6.2" codeSystemName="ICD9CM" displayName="HYPERTENSION NOS"/>
 							</value>
@@ -981,7 +980,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<observation classCode="COND" moodCode="EVN">
 							<code code="14657009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Established diagnosis"/>
 							<statusCode code="completed"/>
-							<effectiveTime value="2000-04-07T15:30:00Z"/>
+							<effectiveTime value="200004071530"/>
 							<value xsi:type="CD" code="40275004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Contact dermatitis">
 								<translation code="692.9" codeSystem="2.16.840.1.113883.6.2" codeSystemName="ICD9CM" displayName="Contact Dermatitis, NOS"/>
 							</value>
@@ -1002,9 +1001,9 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 -->
 			<component>
 				<section>
-<!--					<templateId root="2.16.840.1.113883.3.27.354"/> -->
+					<templateId root="2.16.840.1.113883.3.27.354"/>
 					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title value="Plan"/>
+					<title>Plan</title>
 					<text>
 						<list>
 							<item>Complete PFTs with lung volumes.</item>
@@ -1019,7 +1018,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<act classCode="ACT" moodCode="INT">
 							<id/>
 							<code code="23426006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Pulmonary function test"/>
-							<text text="Complete PFTs with lung volumes."/>
+							<text>Complete PFTs with lung volumes.</text>
 							<entryRelationship typeCode="COMP">
 								<act classCode="ACT" moodCode="INT">
 									<code code="252472004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Lung volume test"/>
@@ -1030,11 +1029,11 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					<entry>
 						<observation classCode="OBS" moodCode="INT">
 							<code code="24320-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-								<originalText text="Chem-7"/>
+								<originalText>Chem-7</originalText>
 								<translation code="aYU7t6" codeSystem="2.16.840.1.113883.19.278.47" codeSystemName="MyLocalCodeSystem" displayName="Chem7"/>
 							</code>
-							<text text="Chem-7 tomorrow"/>
-							<effectiveTime value="2000-04-08"/>
+							<text>Chem-7 tomorrow</text>
+							<effectiveTime value="20000408"/>
 						</observation>
 					</entry>
 					<entry>
@@ -1050,7 +1049,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					</entry>
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="RQO">
-							<text text="prednisone 20qOD alternating with 18qOD."/>
+							<text>prednisone 20qOD alternating with 18qOD.</text>
 							<routeCode code="PO" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration"/>
 							<consumable>
 								<manufacturedProduct>
@@ -1063,7 +1062,7 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 					</entry>
 					<entry>
 						<substanceAdministration classCode="SBADM" moodCode="RQO">
-							<text text="Hydrocortisone cream to finger BID."/>
+							<text>Hydrocortisone cream to finger BID.</text>
 							<effectiveTime xsi:type="PIVL_TS" institutionSpecified="true">
 								<period value="12" unit="h"/>
 							</effectiveTime>
@@ -1087,8 +1086,8 @@ Readers should be aware of the evolving "Using SNOMED CT in HL7 Version 3" imple
 						<encounter classCode="ENC" moodCode="RQO">
 							<code code="185389009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Follow-up visit"/>
 							<effectiveTime>
-								<low value="2000-04-12"/>
-								<high value="2000-04-17"/>
+								<low value="20000412"/>
+								<high value="20000417"/>
 							</effectiveTime>
 						</encounter>
 					</entry>
