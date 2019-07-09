@@ -27,26 +27,6 @@
          <min value="1"/>
          <max value="*"/>
       </element>
-      <element id="ENXP.nullFlavor">
-         <path value="ENXP.nullFlavor"/>
-         <representation value="xmlAttr"/>
-         <label value="Exceptional Value Detail"/>
-         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-         <min value="0"/>
-         <max value="1"/>
-         <base>
-            <path value="ANY.nullFlavor"/>
-            <min value="0"/>
-            <max value="1"/>
-         </base>
-         <type>
-            <code value="code"/>
-         </type>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-         </binding>
-      </element>
       <element id="ENXP.partType">
          <path value="ENXP.partType"/>
          <representation value="xmlAttr"/>
@@ -86,20 +66,6 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNamePartQualifier"/>
          </binding>
-      </element>
-      <element id="ENXP.data">
-         <path value="ENXP.data"/>
-         <representation value="xmlText"/>
-         <min value="0"/>
-         <max value="1"/>
-         <base>
-            <path value="ST.data"/>
-            <min value="0"/>
-            <max value="1"/>
-         </base>
-         <type>
-            <code value="string"/>
-         </type>
       </element>
    </differential>
 </StructureDefinition>

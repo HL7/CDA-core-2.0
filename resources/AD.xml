@@ -36,26 +36,6 @@
             <max value="*"/>
          </base>
       </element>
-      <element id="AD.nullFlavor">
-         <path value="AD.nullFlavor"/>
-         <representation value="xmlAttr"/>
-         <label value="Exceptional Value Detail"/>
-         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-         <min value="0"/>
-         <max value="1"/>
-         <base>
-            <path value="ANY.nullFlavor"/>
-            <min value="0"/>
-            <max value="1"/>
-         </base>
-         <type>
-            <code value="code"/>
-         </type>
-         <binding>
-            <strength value="required"/>
-            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
-         </binding>
-      </element>
       <element id="AD.isNotOrdered">
          <path value="AD.isNotOrdered"/>
          <representation value="xmlAttr"/>
