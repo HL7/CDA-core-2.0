@@ -122,7 +122,7 @@
          </type>
          <type>
             <code value="base64Binary"/>
-         </type>
+         </type>                  
       </element>
       <element id="ED.reference">
          <path value="ED.reference"/>

@@ -19,7 +19,7 @@
    <kind value="logical"/>
    <abstract value="false"/>
    <type value="RelatedSubject"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
    <derivation value="specialization"/>
    <differential>
       <element id="RelatedSubject">
