@@ -2,8 +2,8 @@
    <id value="PatientRole"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>A recordTarget is represented as a relationship between a person and an organization, where the person is in a patient role (PatientRole class). The entity playing the role is a patient (Patient class). The entity scoping the role is an organization (Organization class). A patient is uniquely identified via the PatientRole.id attribute.</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>A recordTarget is represented as a relationship between a person and an organization, where the person is in a patient role (PatientRole class). The entity playing the role is a patient (Patient class). The entity scoping the role is an organization (Organization class). A patient is uniquely identified via the PatientRole.id attribute.</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -42,6 +42,33 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassRelationshipFormal"/>
          </binding>
+      </element>
+      <element id="PatientRole.realmCode">
+         <path value="PatientRole.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="PatientRole.typeId">
+         <path value="PatientRole.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="PatientRole.templateId">
+         <path value="PatientRole.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="PatientRole.id">
          <path value="PatientRole.id"/>

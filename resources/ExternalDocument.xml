@@ -2,8 +2,8 @@
    <id value="ExternalDocument"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>ExternalDocument is a derivative of the RIM Document class, used for representing external documents. ExternalDocument.text is modeled as an ED data type - allowing for the expression of the MIME type of the external document.</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>ExternalDocument is a derivative of the RIM Document class, used for representing external documents. ExternalDocument.text is modeled as an ED data type - allowing for the expression of the MIME type of the external document.</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -57,6 +57,33 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
          </binding>
+      </element>
+      <element id="ExternalDocument.realmCode">
+         <path value="ExternalDocument.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="ExternalDocument.typeId">
+         <path value="ExternalDocument.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="ExternalDocument.templateId">
+         <path value="ExternalDocument.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="ExternalDocument.id">
          <path value="ExternalDocument.id"/>

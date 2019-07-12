@@ -2,9 +2,9 @@
    <id value="Guardian"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>A patient's guardian is a person or organization in the role of guardian (Guardian class). The entity playing the role of guardian is a person (Person class) or organization (Organization class). The entity scoping the role is the patient (Patient class).</p> 
-         <p>Where a guardian is not explicitly stated, the value should default to local business practice (e.g. the patient makes their own health care decisions unless incapacitated in which case healthcare decisions are made by the patient's spouse).</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>A patient's guardian is a person or organization in the role of guardian (Guardian class). The entity playing the role of guardian is a person (Person class) or organization (Organization class). The entity scoping the role is the patient (Patient class).</p>
+         <p>Where a guardian is not explicitly stated, the value should default to local business practice (e.g. the patient makes their own health care decisions unless incapacitated in which case healthcare decisions are made by the patient's spouse).</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -43,6 +43,33 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassAgent"/>
          </binding>
+      </element>
+      <element id="Guardian.realmCode">
+         <path value="Guardian.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="Guardian.typeId">
+         <path value="Guardian.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="Guardian.templateId">
+         <path value="Guardian.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="Guardian.id">
          <path value="Guardian.id"/>

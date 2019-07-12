@@ -2,9 +2,9 @@
    <id value="Organizer"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>A derivative of the RIM Act class, which can be used to create arbitrary groupings of other CDA entries that share a common context. An Organizer can contain other Organizers and/or other CDA entries, by traversing the component relationship. An Organizer can refer to external acts by traversing the reference relationship. An Organizer cannot be the source of an entryRelationship relationship.</p> 
-         <p>NOTE: CDA entries such as Observation can also contain other CDA entries by traversing the entryRelationship class. There is no requirement that the Organizer entry be used in order to group CDA entries.</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>A derivative of the RIM Act class, which can be used to create arbitrary groupings of other CDA entries that share a common context. An Organizer can contain other Organizers and/or other CDA entries, by traversing the component relationship. An Organizer can refer to external acts by traversing the reference relationship. An Organizer cannot be the source of an entryRelationship relationship.</p>
+         <p>NOTE: CDA entries such as Observation can also contain other CDA entries by traversing the entryRelationship class. There is no requirement that the Organizer entry be used in order to group CDA entries.</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -53,6 +53,33 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
          </binding>
+      </element>
+      <element id="Organizer.realmCode">
+         <path value="Organizer.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="Organizer.typeId">
+         <path value="Organizer.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="Organizer.templateId">
+         <path value="Organizer.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="Organizer.id">
          <path value="Organizer.id"/>

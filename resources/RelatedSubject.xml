@@ -2,8 +2,8 @@
    <id value="RelatedSubject"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>A subject is a person playing one of several possible roles (RelatedSubject class). The entity playing the role is a person (SubjectPerson class).</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>A subject is a person playing one of several possible roles (RelatedSubject class). The entity playing the role is a person (SubjectPerson class).</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -37,6 +37,33 @@
          </type>
          <defaultValueCode value="PRS"/>
          <mustSupport value="true"/>
+      </element>
+      <element id="RelatedSubject.realmCode">
+         <path value="RelatedSubject.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="RelatedSubject.typeId">
+         <path value="RelatedSubject.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="RelatedSubject.templateId">
+         <path value="RelatedSubject.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="RelatedSubject.code">
          <path value="RelatedSubject.code"/>

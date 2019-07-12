@@ -2,9 +2,9 @@
    <id value="Section"/>
    <text>
       <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>Document sections can nest, can override context propagated from the header (See CDA Context), and can contain narrative and CDA entries.</p> 
-         <p>An XML attribute &quot;ID&quot; of type XML ID, is added to Section within the CDA Schema. This attribute serves as the target of a linkHtml reference (see linkHtml). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification).</p> 
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <p>Document sections can nest, can override context propagated from the header (See CDA Context), and can contain narrative and CDA entries.</p>
+         <p>An XML attribute &quot;ID&quot; of type XML ID, is added to Section within the CDA Schema. This attribute serves as the target of a linkHtml reference (see linkHtml). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification).</p>
       </div>
    </text>
    <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -27,6 +27,21 @@
          <path value="Section"/>
          <min value="1"/>
          <max value="1"/>
+      </element>
+      <element id="Section.nullFlavor">
+         <path value="Section.nullFlavor"/>
+         <representation value="xmlAttr"/>
+         <label value="Exceptional Value Detail"/>
+         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+         </binding>
       </element>
       <element id="Section.classCode">
          <path value="Section.classCode"/>
@@ -59,6 +74,33 @@
             <strength value="required"/>
             <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
          </binding>
+      </element>
+      <element id="Section.realmCode">
+         <path value="Section.realmCode"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+         </type>
+      </element>
+      <element id="Section.typeId">
+         <path value="Section.typeId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
+      </element>
+      <element id="Section.templateId">
+         <path value="Section.templateId"/>
+         <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+         </type>
       </element>
       <element id="Section.id">
          <path value="Section.id"/>
