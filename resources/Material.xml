@@ -30,6 +30,21 @@
          <min value="1"/>
          <max value="1"/>
       </element>
+      <element id="Material.nullFlavor">
+         <path value="Material.nullFlavor"/>
+         <representation value="xmlAttr"/>
+         <label value="Exceptional Value Detail"/>
+         <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <binding>
+            <strength value="required"/>
+            <valueSet value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
+         </binding>
+      </element>
       <element id="Material.classCode">
          <path value="Material.classCode"/>
          <representation value="xmlAttr"/>
@@ -109,12 +124,67 @@
             <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
          </type>
       </element>
+      <element id="Material.formCode">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="Material.formCode"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+         </type>
+      </element>
       <element id="Material.lotNumberText">
          <path value="Material.lotNumberText"/>
          <min value="0"/>
          <max value="1"/>
          <type>
             <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+         </type>
+      </element>
+      <element id="Material.expirationTime">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="Material.expirationTime"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+         </type>
+      </element>
+      <element id="Material.asContent">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="Material.asContent"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmContent"/>
+         </type>
+      </element>
+      <element id="Material.asSpecializedKind">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="Material.asSpecializedKind"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSpecializedKind"/>
+         </type>
+      </element>
+      <element id="Material.ingredient">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="Material.ingredient"/>
+         <min value="0"/>
+         <max value="*"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmIngredient"/>
          </type>
       </element>
    </differential>

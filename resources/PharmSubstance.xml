@@ -1,0 +1,70 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="PharmSubstance"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:ihe:pharm"/>
+   </extension>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstance"/>
+   <name value="CDAR2.PharmSubstance"/>
+   <title value="PharmSubstance (CDA Pharm Class)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="PharmSubstance"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="PharmSubstance">
+         <path value="PharmSubstance"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="PharmSubstance.classCode">
+         <path value="PharmSubstance.classCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <defaultValueCode value="MMAT"/>
+         <fixedCode value="MMAT"/>
+         <mustSupport value="true"/>
+      </element>
+      <element id="PharmSubstance.determinerCode">
+         <path value="PharmSubstance.determinerCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <defaultValueCode value="KIND"/>
+         <fixedCode value="KIND"/>
+         <mustSupport value="true"/>
+      </element>
+      <element id="PharmSubstance.code">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="PharmSubstance.code"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+         </type>
+      </element>
+      <element id="PharmSubstance.name">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>
+         <path value="PharmSubstance.name"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+         </type>
+      </element>
+   </differential>
+</StructureDefinition>

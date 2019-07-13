@@ -23,6 +23,7 @@
       </element>
       <element id="RTO_PQ_PQ.numerator">
          <path value="RTO_PQ_PQ.numerator"/>
+         <representation value="typeAttr"/>
          <label value="Numerator"/>
          <definition value="The quantity that is being divided in the ratio. The default is the integer number 1 (one.)"/>
          <min value="0"/>
@@ -33,6 +34,7 @@
       </element>
       <element id="RTO_PQ_PQ.denominator">
          <path value="RTO_PQ_PQ.denominator"/>
+         <representation value="typeAttr"/>
          <label value="Denominator"/>
          <definition value="The quantity that devides the numerator in the ratio. The default is the integer number 1 (one.) The denominator must not be zero."/>
          <min value="0"/>

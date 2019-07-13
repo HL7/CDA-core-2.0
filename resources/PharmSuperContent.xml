@@ -1,0 +1,35 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="PharmSuperContent"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:ihe:pharm"/>
+   </extension>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmSuperContent"/>
+   <name value="CDAR2.PharmSuperContent"/>
+   <title value="PharmSuperContent (CDA Pharm Class)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="PharmSuperContent"/>
+   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="PharmSuperContent">
+         <path value="PharmSuperContent"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+     <element id="PharmSuperContent.containerPackagedMedicine">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>     
+         <path value="PharmSuperContent.containerPackagedMedicine"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmPackagedMedicine"/>
+         </type>
+      </element>      
+   </differential>
+</StructureDefinition>
