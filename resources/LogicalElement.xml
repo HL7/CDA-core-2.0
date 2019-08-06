@@ -1,42 +1,42 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="LogicalElement"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-         <p>LogicalElement to erase id and extension types because they are need in CDA</p>
-      </div>
-   </text>
-   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:hl7-org:v3"/>
-   </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
-   <name value="LogicalElement"/>
-   <title value="LogicalElement"/>
-   <status value="active"/>
-   <experimental value="false"/>
-   <publisher value="HL7"/>
-   <description value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
-   <kind value="logical"/>
-   <abstract value="true"/>
-   <type value="LogicalElement"/>
-   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
-   <derivation value="constraint"/>
-   <differential>
-      <element id="Element.id">
-         <path value="Element.id"/>
-         <representation value="xmlAttr"/>
-         <short value="Unique id for inter-element referencing"/>
-         <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
-         <min value="0"/>
-         <max value="0"/>
-      </element>
-      <element id="Element.extension">
-         <path value="Element.extension"/>
-         <min value="0"/>
-         <max value="0"/>
-         <type>
-            <code value="Extension"/>
-         </type>
-      </element>
-   </differential>
+  <id value="LogicalElement"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>LogicalElement to erase id and extension types because they are need in CDA</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
+  <name value="LogicalElement"/>
+  <title value="LogicalElement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
+  <kind value="logical"/>
+  <abstract value="true"/>
+  <type value="LogicalElement"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Element.id">
+      <path value="Element.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="Element.extension">
+      <path value="Element.extension"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="Extension"/>
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>

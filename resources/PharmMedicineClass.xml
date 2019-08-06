@@ -1,58 +1,58 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="PharmMedicineClass"/>
-   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:ihe:pharm"/>
-   </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
-   <name value="CDAR2.PharmMedicineClass"/>
-   <title value="PharmMedicineClass (CDA Pharm Class)"/>
-   <status value="active"/>
-   <experimental value="false"/>
-   <publisher value="HL7"/>
-   <kind value="logical"/>
-   <abstract value="false"/>
-   <type value="PharmMedicineClass"/>
-   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
-   <derivation value="specialization"/>
-   <differential>
-      <element id="PharmMedicineClass">
-         <path value="PharmMedicineClass"/>
-         <min value="1"/>
-         <max value="1"/>
-      </element>
-      <element id="PharmMedicineClass.classCode">
-         <path value="PharmMedicineClass.classCode"/>
-         <representation value="xmlAttr"/>
-         <min value="1"/>
-         <max value="1"/>
-         <type>
-            <code value="code"/>
-         </type>
-         <defaultValueCode value="MMAT"/>
-         <fixedCode value="MMAT"/>
-         <mustSupport value="true"/>
-      </element>
-      <element id="PharmMedicineClass.code">
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
-         </extension>
-         <path value="PharmMedicineClass.code"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-         </type>
-      </element>
-      <element id="PharmMedicineClass.name">
-         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-            <valueUri value="urn:ihe:pharm"/>
-         </extension>
-         <path value="PharmMedicineClass.name"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
-         </type>
-      </element>
-   </differential>
+  <id value="PharmMedicineClass"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:ihe:pharm"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
+  <name value="CDAR2.PharmMedicineClass"/>
+  <title value="PharmMedicineClass (CDA Pharm Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="PharmMedicineClass"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/LogicalElement"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="PharmMedicineClass">
+      <path value="PharmMedicineClass"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="PharmMedicineClass.classCode">
+      <path value="PharmMedicineClass.classCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="MMAT"/>
+      <fixedCode value="MMAT"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="PharmMedicineClass.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm"/>
+      </extension>
+      <path value="PharmMedicineClass.code"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+      </type>
+    </element>
+    <element id="PharmMedicineClass.name">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:ihe:pharm"/>
+      </extension>
+      <path value="PharmMedicineClass.name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>

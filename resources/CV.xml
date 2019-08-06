@@ -1,41 +1,41 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="CV"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml"> 
-         <p>Coded data, consists of a code, display name, code system, and original text. Used when a single code value must be sent.</p> 
-      </div>
-   </text>
-   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:hl7-org:v3"/>
-   </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
-   <name value="CV"/>
-   <title value="CV: CodedValue (V3 Data Type)"/>
-   <status value="active"/>
-   <experimental value="false"/>
-   <publisher value="HL7"/>
-   <description value="Coded data, specifying only a code, code system, and optionally display name and original text. Used only as the data type for other data types' properties."/>
-   <kind value="logical"/>
-   <abstract value="false"/>
-   <type value="CV"/>
-   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-   <derivation value="constraint"/>
-   <differential>
-      <element id="CD">
-         <path value="CD"/>
-         <definition value="Coded data, consists of a code, display name, code system, and original text. Used when a single code value must be sent."/>
-         <min value="1"/>
-         <max value="*"/>
-      </element>
-      <element id="CD.translation">
-         <path value="CD.translation"/>
-         <label value="Translation"/>
-         <min value="0"/>
-         <max value="0"/>
-         <type>
-            <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-         </type>
-      </element>
-   </differential>
+  <id value="CV"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Coded data, consists of a code, display name, code system, and original text. Used when a single code value must be sent.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+  <name value="CV"/>
+  <title value="CV: CodedValue (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="Coded data, specifying only a code, code system, and optionally display name and original text. Used only as the data type for other data types' properties."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="CV"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="CD">
+      <path value="CD"/>
+      <definition value="Coded data, consists of a code, display name, code system, and original text. Used when a single code value must be sent."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="CD.translation">
+      <path value="CD.translation"/>
+      <label value="Translation"/>
+      <min value="0"/>
+      <max value="0"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>

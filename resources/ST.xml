@@ -1,71 +1,71 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
-   <id value="ST"/>
-   <text>
-      <status value="generated"/>
-      <div xmlns="http://www.w3.org/1999/xhtml">
-         <p>The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions.</p>
-      </div>
-   </text>
-   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-      <valueUri value="urn:hl7-org:v3"/>
-   </extension>
-   <url value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-   <name value="ST"/>
-   <title value="ST: CharacterString (V3 Data Type)"/>
-   <status value="active"/>
-   <experimental value="false"/>
-   <publisher value="HL7"/>
-   <description value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
-   <kind value="logical"/>
-   <abstract value="false"/>
-   <type value="ST"/>
-   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-   <derivation value="constraint"/>
-   <differential>
-      <element id="ED">
-         <path value="ED"/>
-         <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
-         <min value="1"/>
-         <max value="*"/>
-      </element>
-      <element id="ED.compression">
-         <path value="ED.compression"/>
-         <max value="0"/>
-      </element>
-      <element id="ED.integrityCheck">
-         <path value="ED.integrityCheck"/>
-         <representation value="xmlAttr"/>
-         <max value="0"/>
-      </element>
-      <element id="ED.integrityCheckAlgorithm">
-         <path value="ED.integrityCheckAlgorithm"/>
-         <max value="0"/>
-      </element>
-      <element id="ED.mediaType">
-         <path value="ED.mediaType"/>
-         <fixedCode value="text/plain"/>
-      </element>
-      <element id="ED.representation">
-         <path value="ED.representation"/>
-         <fixedCode value="TXT"/>
-      </element>
-      <element id="ED.data[x]">
-         <path value="ED.data[x]"/>
-         <representation value="xmlText"/>
-         <definition value="The string value"/>
-         <min value="0"/>
-         <max value="1"/>
-         <type>
-            <code value="string"/>
-         </type>
-      </element>
-      <element id="ED.reference">
-         <path value="ED.reference"/>
-         <max value="0"/>
-      </element>
-      <element id="ED.thumbnail">
-         <path value="ED.thumbnail"/>
-         <max value="0"/>
-      </element>
-   </differential>
+  <id value="ST"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+  <name value="ST"/>
+  <title value="ST: CharacterString (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="ST"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="ED">
+      <path value="ED"/>
+      <definition value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="ED.compression">
+      <path value="ED.compression"/>
+      <max value="0"/>
+    </element>
+    <element id="ED.integrityCheck">
+      <path value="ED.integrityCheck"/>
+      <representation value="xmlAttr"/>
+      <max value="0"/>
+    </element>
+    <element id="ED.integrityCheckAlgorithm">
+      <path value="ED.integrityCheckAlgorithm"/>
+      <max value="0"/>
+    </element>
+    <element id="ED.mediaType">
+      <path value="ED.mediaType"/>
+      <fixedCode value="text/plain"/>
+    </element>
+    <element id="ED.representation">
+      <path value="ED.representation"/>
+      <fixedCode value="TXT"/>
+    </element>
+    <element id="ED.data[x]">
+      <path value="ED.data[x]"/>
+      <representation value="xmlText"/>
+      <definition value="The string value"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="ED.reference">
+      <path value="ED.reference"/>
+      <max value="0"/>
+    </element>
+    <element id="ED.thumbnail">
+      <path value="ED.thumbnail"/>
+      <max value="0"/>
+    </element>
+  </differential>
 </StructureDefinition>
