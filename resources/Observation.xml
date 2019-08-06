@@ -89,7 +89,6 @@
       </element>
       <element id="Observation.code">
          <path value="Observation.code"/>
-         <representation value="typeAttr"/>
          <min value="1"/>
          <max value="1"/>
          <type>
