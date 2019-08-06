@@ -1,3 +1,2 @@
 * text=auto
-
-*.xml text eol=crlf
+*.xml binary
