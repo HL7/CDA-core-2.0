@@ -36,6 +36,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="PIVL_TS.period">
@@ -46,6 +47,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="PIVL_TS.alignment">

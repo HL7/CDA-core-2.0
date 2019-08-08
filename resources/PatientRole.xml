@@ -49,7 +49,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="PatientRole.typeId">
@@ -59,6 +60,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="PatientRole.templateId">
@@ -68,6 +70,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="PatientRole.id">
@@ -76,6 +79,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="PatientRole.addr">
@@ -84,6 +88,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="PatientRole.telecom">
@@ -92,6 +97,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="PatientRole.patient">
@@ -100,6 +106,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Patient"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Patient"/>
       </type>
     </element>
     <element id="PatientRole.providerOrganization">
@@ -108,6 +115,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

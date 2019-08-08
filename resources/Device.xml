@@ -65,7 +65,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Device.typeId">
@@ -75,6 +76,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Device.templateId">
@@ -84,6 +86,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Device.code">
@@ -91,7 +94,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -104,6 +108,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -116,6 +121,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
       </type>
       <binding>
         <strength value="extensible"/>

@@ -66,7 +66,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Patient.typeId">
@@ -76,6 +77,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Patient.templateId">
@@ -85,6 +87,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Patient.id">
@@ -93,6 +96,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Patient.name">
@@ -101,6 +105,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
     <element id="Patient.desc">
@@ -112,6 +117,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Patient.administrativeGenderCode">
@@ -119,7 +125,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -132,6 +139,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="Patient.deceasedInd">
@@ -143,6 +151,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Patient.deceasedTime">
@@ -154,6 +163,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="Patient.maritalStatusCode">
@@ -161,7 +171,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -173,7 +184,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -185,7 +197,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -197,7 +210,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -210,6 +224,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Guardian"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Guardian"/>
       </type>
     </element>
     <element id="Patient.birthplace">
@@ -218,6 +233,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Birthplace"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Birthplace"/>
       </type>
     </element>
     <element id="Patient.languageCommunication">
@@ -226,6 +242,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/LanguageCommunication"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/LanguageCommunication"/>
       </type>
     </element>
   </differential>

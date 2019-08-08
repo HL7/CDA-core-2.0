@@ -48,6 +48,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.family">
@@ -56,6 +57,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.given">
@@ -64,6 +66,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.prefix">
@@ -72,6 +75,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.suffix">
@@ -80,6 +84,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.other">
@@ -99,6 +104,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
   </differential>

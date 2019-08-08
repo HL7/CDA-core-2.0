@@ -83,7 +83,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Material.typeId">
@@ -93,6 +94,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Material.templateId">
@@ -102,6 +104,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Material.code">
@@ -109,7 +112,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -122,6 +126,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
     <element id="Material.formCode">
@@ -132,7 +137,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="Material.lotNumberText">
@@ -140,7 +146,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="Material.expirationTime">
@@ -152,6 +159,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Material.asContent">
@@ -163,6 +171,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmContent"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PharmContent"/>
       </type>
     </element>
     <element id="Material.asSpecializedKind">
@@ -174,6 +183,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSpecializedKind"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PharmSpecializedKind"/>
       </type>
     </element>
     <element id="Material.ingredient">
@@ -185,6 +195,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmIngredient"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PharmIngredient"/>
       </type>
     </element>
   </differential>

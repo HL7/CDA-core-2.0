@@ -29,6 +29,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="IVL_TS.high">
@@ -39,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="IVL_TS.width">
@@ -49,6 +51,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="IVL_TS.center">
@@ -59,6 +62,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
   </differential>

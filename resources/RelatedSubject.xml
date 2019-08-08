@@ -44,7 +44,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="RelatedSubject.typeId">
@@ -54,6 +55,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="RelatedSubject.templateId">
@@ -63,6 +65,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="RelatedSubject.code">
@@ -70,7 +73,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -83,6 +87,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="RelatedSubject.telecom">
@@ -91,6 +96,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="RelatedSubject.subject">
@@ -99,6 +105,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SubjectPerson"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SubjectPerson"/>
       </type>
     </element>
   </differential>

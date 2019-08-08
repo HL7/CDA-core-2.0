@@ -68,7 +68,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="ObservationMedia.typeId">
@@ -78,6 +79,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationMedia.templateId">
@@ -87,6 +89,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationMedia.id">
@@ -95,6 +98,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationMedia.languageCode">
@@ -102,7 +106,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -115,6 +120,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -163,7 +169,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -176,6 +183,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="ObservationMedia.specimen">
@@ -208,6 +216,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"/>
       </type>
     </element>
     <element id="ObservationMedia.performer">
@@ -240,6 +249,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="ObservationMedia.performer.modeCode">
@@ -247,7 +257,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -260,6 +271,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="ObservationMedia.author">
@@ -268,6 +280,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="ObservationMedia.informant">
@@ -316,6 +329,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="ObservationMedia.informant.relatedEntity">
@@ -324,6 +338,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="ObservationMedia.participant">
@@ -370,6 +385,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="ObservationMedia.participant.awarenessCode">
@@ -377,7 +393,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -390,6 +407,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship">
@@ -436,6 +454,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.negationInd">
@@ -453,6 +472,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.observation">
@@ -461,6 +481,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.regionOfInterest">
@@ -469,6 +490,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.observationMedia">
@@ -477,6 +499,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.substanceAdministration">
@@ -485,6 +508,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.supply">
@@ -493,6 +517,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.procedure">
@@ -501,6 +526,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.encounter">
@@ -509,6 +535,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.organizer">
@@ -517,6 +544,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.act">
@@ -525,6 +553,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="ObservationMedia.reference">
@@ -551,6 +580,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="ObservationMedia.reference.externalAct">
@@ -559,6 +589,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
       </type>
     </element>
     <element id="ObservationMedia.reference.externalObservation">
@@ -567,6 +598,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
       </type>
     </element>
     <element id="ObservationMedia.reference.externalProcedure">
@@ -575,6 +607,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
       </type>
     </element>
     <element id="ObservationMedia.reference.externalDocument">
@@ -583,6 +616,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
       </type>
     </element>
     <element id="ObservationMedia.precondition">
@@ -615,6 +649,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
       </type>
     </element>
   </differential>

@@ -81,7 +81,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Section.typeId">
@@ -91,6 +92,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Section.templateId">
@@ -100,6 +102,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Section.id">
@@ -108,6 +111,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Section.code">
@@ -115,7 +119,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -127,7 +132,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="Section.text">
@@ -145,7 +151,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="Section.languageCode">
@@ -153,7 +160,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -205,7 +213,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -218,6 +227,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="Section.author">
@@ -226,6 +236,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Section.informant">
@@ -274,6 +285,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="Section.informant.relatedEntity">
@@ -282,6 +294,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="Section.entry">
@@ -320,6 +333,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="Section.entry.regionOfInterest">
@@ -328,6 +342,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Section.entry.observationMedia">
@@ -336,6 +351,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="Section.entry.substanceAdministration">
@@ -344,6 +360,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="Section.entry.supply">
@@ -352,6 +369,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="Section.entry.procedure">
@@ -360,6 +378,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="Section.entry.encounter">
@@ -368,6 +387,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="Section.entry.organizer">
@@ -376,6 +396,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="Section.entry.act">
@@ -384,6 +405,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="Section.component">
@@ -424,6 +446,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
       </type>
     </element>
   </differential>

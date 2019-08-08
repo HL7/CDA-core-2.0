@@ -65,7 +65,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="CustodianOrganization.typeId">
@@ -75,6 +76,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="CustodianOrganization.templateId">
@@ -84,6 +86,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="CustodianOrganization.id">
@@ -92,6 +95,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -100,7 +104,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="CustodianOrganization.telecom">
@@ -109,6 +114,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="CustodianOrganization.addr">
@@ -117,6 +123,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
       </type>
     </element>
   </differential>

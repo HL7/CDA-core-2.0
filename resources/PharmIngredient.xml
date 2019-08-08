@@ -41,6 +41,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
       </type>
     </element>
     <element id="PharmIngredient.ingredient">
@@ -52,6 +53,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstance"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PharmSubstance"/>
       </type>
     </element>
   </differential>

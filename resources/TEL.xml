@@ -48,15 +48,19 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
     </element>
     <element id="TEL.use">

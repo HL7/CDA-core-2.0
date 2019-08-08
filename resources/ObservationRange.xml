@@ -57,7 +57,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="ObservationRange.typeId">
@@ -67,6 +68,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationRange.templateId">
@@ -76,6 +78,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationRange.code">
@@ -84,6 +87,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -96,6 +100,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="ObservationRange.value">
@@ -105,66 +110,90 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
+<!--       
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+      </type>
+-->      
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+      </type>
+<!--       <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
+ -->      
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/MO"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/MO"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_PQ"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
       </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
     </element>
     <element id="ObservationRange.interpretationCode">
@@ -172,7 +201,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="required"/>

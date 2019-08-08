@@ -18,7 +18,7 @@
   <description value="Coded data, where the coding system from which the code comes is ordered"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CO"/>
+  <type value="CD"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
   <derivation value="constraint"/>
   <differential>

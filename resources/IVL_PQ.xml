@@ -61,6 +61,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.high">
@@ -71,6 +72,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.width">
@@ -81,6 +83,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.center">
@@ -91,6 +94,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
   </differential>

@@ -52,7 +52,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="PharmSubstance.name">
@@ -64,6 +65,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
   </differential>

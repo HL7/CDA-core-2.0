@@ -51,7 +51,8 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/> 
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/> <!-- if profile is added only CS will be shown in IG -->
       </type>
     </element>
     <element id="ClinicalDocument.typeId">
@@ -61,6 +62,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ClinicalDocument.templateId">
@@ -70,6 +72,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ClinicalDocument.classCode">
@@ -110,6 +113,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -118,7 +122,8 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <mustSupport value="true"/>
       <binding>
@@ -131,7 +136,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="ClinicalDocument.effectiveTime">
@@ -140,6 +146,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -148,7 +155,8 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -157,7 +165,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -170,6 +179,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ClinicalDocument.versionNumber">
@@ -178,6 +188,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="ClinicalDocument.copyTime">
@@ -186,6 +197,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="ClinicalDocument.recordTarget">
@@ -194,6 +206,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
       </type>
     </element>
     <element id="ClinicalDocument.author">
@@ -202,6 +215,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="ClinicalDocument.dataEnterer">
@@ -210,6 +224,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/DataEnterer"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/DataEnterer"/>
       </type>
     </element>
     <element id="ClinicalDocument.informant">
@@ -218,6 +233,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="ClinicalDocument.custodian">
@@ -226,6 +242,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
       </type>
     </element>
     <element id="ClinicalDocument.informationRecipient">
@@ -234,6 +251,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
       </type>
     </element>
     <element id="ClinicalDocument.legalAuthenticator">
@@ -242,6 +260,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/LegalAuthenticator"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/LegalAuthenticator"/>
       </type>
     </element>
     <element id="ClinicalDocument.authenticator">
@@ -250,6 +269,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Authenticator"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Authenticator"/>
       </type>
     </element>
     <element id="ClinicalDocument.participant">
@@ -258,6 +278,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Participant"/>
       </type>
     </element>
     <element id="ClinicalDocument.inFulfillmentOf">
@@ -266,6 +287,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
       </type>
     </element>
     <element id="ClinicalDocument.documentationOf">
@@ -274,6 +296,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/DocumentationOf"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/DocumentationOf"/>
       </type>
     </element>
     <element id="ClinicalDocument.relatedDocument">
@@ -282,6 +305,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedDocument"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/RelatedDocument"/>
       </type>
     </element>
     <element id="ClinicalDocument.authorization">
@@ -314,6 +338,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Consent"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/Consent"/>
       </type>
     </element>
     <element id="ClinicalDocument.componentOf">
@@ -346,6 +371,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
       </type>
     </element>
     <element id="ClinicalDocument.component">
@@ -389,6 +415,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/NonXMLBody"/>
       </type>
     </element>
     <element id="ClinicalDocument.component.structuredBody">
@@ -397,6 +424,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/StructuredBody"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/StructuredBody"/>
       </type>
     </element>
   </differential>

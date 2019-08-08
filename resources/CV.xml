@@ -18,7 +18,7 @@
   <description value="Coded data, specifying only a code, code system, and optionally display name and original text. Used only as the data type for other data types' properties."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CV"/>
+  <type value="CD"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
   <derivation value="constraint"/>
   <differential>
@@ -35,6 +35,7 @@
       <max value="0"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
   </differential>

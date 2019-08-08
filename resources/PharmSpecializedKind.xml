@@ -41,6 +41,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PharmMedicineClass"/>
       </type>
     </element>
   </differential>

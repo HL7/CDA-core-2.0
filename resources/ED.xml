@@ -132,6 +132,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="ED.thumbnail">
@@ -142,6 +143,7 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
     </element>
   </differential>
