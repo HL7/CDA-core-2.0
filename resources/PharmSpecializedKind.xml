@@ -20,6 +20,21 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="PharmSpecializedKind.nullFlavor">
+      <path value="PharmSpecializedKind.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="PharmSpecializedKind.classCode">
       <path value="PharmSpecializedKind.classCode"/>
       <representation value="xmlAttr"/>

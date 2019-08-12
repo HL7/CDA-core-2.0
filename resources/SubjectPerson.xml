@@ -27,6 +27,21 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="SubjectPerson.nullFlavor">
+      <path value="SubjectPerson.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="SubjectPerson.classCode">
       <path value="SubjectPerson.classCode"/>
       <representation value="xmlAttr"/>
@@ -95,7 +110,7 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
-        <profile value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/PN"/>
       </type>
     </element>
     <element id="SubjectPerson.desc">
