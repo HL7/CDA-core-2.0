@@ -22,50 +22,6 @@
   <type value="REAL"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="REAL">
-      <path value="REAL"/>
-      <short value="Real Number" />
-      <definition value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers. The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &#34;Real number&#34; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="REAL.nullFlavor">
-      <path value="REAL.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="REAL.value">
-      <path value="REAL.value"/>
-      <representation value="xmlAttr"/>
-      <definition value="The decimal value"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="REAL.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="decimal"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="REAL">
       <path value="REAL"/>

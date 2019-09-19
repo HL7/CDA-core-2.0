@@ -26,133 +26,6 @@
   <type value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="RecordTarget">
-      <path value="RecordTarget"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="RecordTarget.nullFlavor">
-      <path value="RecordTarget.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="RecordTarget.typeCode">
-      <path value="RecordTarget.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget.typeCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="RCT"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
-      </binding>
-    </element>
-    <element id="RecordTarget.contextControlCode">
-      <path value="RecordTarget.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget.contextControlCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="OP"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="RecordTarget.realmCode">
-      <path value="RecordTarget.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="RecordTarget.realmCode"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="RecordTarget.typeId">
-      <path value="RecordTarget.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget.typeId"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="RecordTarget.templateId">
-      <path value="RecordTarget.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="RecordTarget.templateId"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="RecordTarget.patientRole">
-      <path value="RecordTarget.patientRole"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="RecordTarget.patientRole"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PatientRole"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="RecordTarget">
       <path value="RecordTarget"/>
@@ -183,7 +56,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="RCT"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -198,7 +71,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="OP"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>

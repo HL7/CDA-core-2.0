@@ -22,94 +22,6 @@
   <type value="AssignedCustodian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="AssignedCustodian">
-      <path value="AssignedCustodian"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedCustodian"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="AssignedCustodian.nullFlavor">
-      <path value="AssignedCustodian.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="AssignedCustodian.realmCode">
-      <path value="AssignedCustodian.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="AssignedCustodian.typeId">
-      <path value="AssignedCustodian.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="AssignedCustodian.templateId">
-      <path value="AssignedCustodian.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="AssignedCustodian.classCode">
-      <path value="AssignedCustodian.classCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedCustodian.classCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="ASSIGNED"/>
-      <fixedCode value="ASSIGNED"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-RoleClassAssignedEntity"/>
-      </binding>
-    </element>
-    <element id="AssignedCustodian.representedCustodianOrganization">
-      <path value="AssignedCustodian.representedCustodianOrganization"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedCustodian.representedCustodianOrganization"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CustodianOrganization"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="AssignedCustodian">
       <path value="AssignedCustodian"/>
@@ -126,7 +38,6 @@
       </type>
       <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
-      <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-RoleClassAssignedEntity"/>

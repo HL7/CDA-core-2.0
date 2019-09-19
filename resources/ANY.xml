@@ -22,35 +22,6 @@
   <type value="ANY"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="ANY">
-      <path value="ANY"/>
-      <short value="Data Value" />
-      <definition value="Defines the basic properties of every data value. This is an abstract type, meaning that no value can be just a data value without belonging to any concrete type. Every concrete type is a specialization of this general abstract DataValue type."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="ANY.nullFlavor">
-      <path value="ANY.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-  </snapshot>
   <differential>
     <element id="ANY">
       <path value="ANY"/>

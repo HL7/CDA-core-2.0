@@ -24,113 +24,6 @@
   <type value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="InformationRecipient">
-      <path value="InformationRecipient"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="InformationRecipient"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="InformationRecipient.nullFlavor">
-      <path value="InformationRecipient.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="InformationRecipient.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="InformationRecipient.typeCode">
-      <path value="InformationRecipient.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="InformationRecipient.typeCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="PRCP"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
-      </binding>
-    </element>
-    <element id="InformationRecipient.realmCode">
-      <path value="InformationRecipient.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="InformationRecipient.realmCode"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="InformationRecipient.typeId">
-      <path value="InformationRecipient.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="InformationRecipient.typeId"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="InformationRecipient.templateId">
-      <path value="InformationRecipient.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="InformationRecipient.templateId"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="InformationRecipient.intendedRecipient">
-      <path value="InformationRecipient.intendedRecipient"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="InformationRecipient.intendedRecipient"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IntendedRecipient"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="InformationRecipient">
       <path value="InformationRecipient"/>
@@ -161,7 +54,7 @@
         <code value="code"/>
       </type>
       <defaultValueCode value="PRCP"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>

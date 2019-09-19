@@ -22,155 +22,6 @@
   <type value="CustodianOrganization"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="CustodianOrganization">
-      <path value="CustodianOrganization"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="CustodianOrganization.nullFlavor">
-      <path value="CustodianOrganization.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="CustodianOrganization.realmCode">
-      <path value="CustodianOrganization.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="CustodianOrganization.typeId">
-      <path value="CustodianOrganization.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="CustodianOrganization.templateId">
-      <path value="CustodianOrganization.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="CustodianOrganization.classCode">
-      <path value="CustodianOrganization.classCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization.classCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="ORG"/>
-      <fixedCode value="ORG"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassOrganization"/>
-      </binding>
-    </element>
-    <element id="CustodianOrganization.determinerCode">
-      <path value="CustodianOrganization.determinerCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization.determinerCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INSTANCE"/>
-      <fixedCode value="INSTANCE"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
-      </binding>
-    </element>
-    <element id="CustodianOrganization.id">
-      <path value="CustodianOrganization.id"/>
-      <min value="1"/>
-      <max value="*"/>
-      <base>
-        <path value="CustodianOrganization.id"/>
-        <min value="1"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="CustodianOrganization.name">
-      <path value="CustodianOrganization.name"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization.name"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
-      </type>
-    </element>
-    <element id="CustodianOrganization.telecom">
-      <path value="CustodianOrganization.telecom"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization.telecom"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
-      </type>
-    </element>
-    <element id="CustodianOrganization.addr">
-      <path value="CustodianOrganization.addr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="CustodianOrganization.addr"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="CustodianOrganization">
       <path value="CustodianOrganization"/>
@@ -187,7 +38,7 @@
       </type>
       <defaultValueCode value="ORG"/>
       <fixedCode value="ORG"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassOrganization"/>
@@ -203,7 +54,7 @@
       </type>
       <defaultValueCode value="INSTANCE"/>
       <fixedCode value="INSTANCE"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
@@ -216,7 +67,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="CustodianOrganization.name">
       <path value="CustodianOrganization.name"/>

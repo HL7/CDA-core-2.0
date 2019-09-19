@@ -16,65 +16,6 @@
   <type value="RTO_PQ_PQ"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="RTO_PQ_PQ">
-      <path value="RTO_PQ_PQ"/>
-      <short value="Ratio of Physical Quantities" />
-      <definition value="A ratio of a physical quantity (PQ) numerator and a physical quantity (PQ) denominator."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="RTO_PQ_PQ.nullFlavor">
-      <path value="RTO_PQ_PQ.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="RTO_PQ_PQ.numerator">
-      <path value="RTO_PQ_PQ.numerator"/>
-      <label value="Numerator"/>
-      <definition value="The quantity that is being divided in the ratio. The default is the integer number 1 (one.)"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RTO_PQ_PQ.numerator"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
-      </type>
-    </element>
-    <element id="RTO_PQ_PQ.denominator">
-      <path value="RTO_PQ_PQ.denominator"/>
-      <label value="Denominator"/>
-      <definition value="The quantity that devides the numerator in the ratio. The default is the integer number 1 (one.) The denominator must not be zero."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="RTO_PQ_PQ.denominator"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="RTO_PQ_PQ">
       <path value="RTO_PQ_PQ"/>

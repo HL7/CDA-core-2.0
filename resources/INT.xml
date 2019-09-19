@@ -22,50 +22,6 @@
   <type value="INT"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="INT">
-      <path value="INT"/>
-      <short value="Integer" />
-      <definition value="Integer numbers (-1,0,1,2, 100, 3398129, etc.) are precise numbers that are results of counting and enumerating. Integer numbers are discrete, the set of integers is infinite but countable. No arbitrary limit is imposed on the range of integer numbers. Two NULL flavors are defined for the positive and negative infinity."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="INT.nullFlavor">
-      <path value="INT.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="INT.value">
-      <path value="INT.value"/>
-      <representation value="xmlAttr"/>
-      <definition value="The integer value"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="INT.value"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="integer"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="INT">
       <path value="INT"/>

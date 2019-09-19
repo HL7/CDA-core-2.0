@@ -24,160 +24,6 @@
   <type value="http://hl7.org/fhir/cda/StructureDefinition/LegalAuthenticator"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="LegalAuthenticator">
-      <path value="LegalAuthenticator"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="LegalAuthenticator.nullFlavor">
-      <path value="LegalAuthenticator.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="LegalAuthenticator.typeCode">
-      <path value="LegalAuthenticator.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.typeCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="LA"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
-      </binding>
-    </element>
-    <element id="LegalAuthenticator.contextControlCode">
-      <path value="LegalAuthenticator.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.contextControlCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <fixedCode value="OP"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="LegalAuthenticator.realmCode">
-      <path value="LegalAuthenticator.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="LegalAuthenticator.realmCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="LegalAuthenticator.typeId">
-      <path value="LegalAuthenticator.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.typeId"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="LegalAuthenticator.templateId">
-      <path value="LegalAuthenticator.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="LegalAuthenticator.templateId"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="LegalAuthenticator.time">
-      <path value="LegalAuthenticator.time"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.time"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="LegalAuthenticator.signatureCode">
-      <path value="LegalAuthenticator.signatureCode"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.signatureCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="LegalAuthenticator.assignedEntity">
-      <path value="LegalAuthenticator.assignedEntity"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="LegalAuthenticator.assignedEntity"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="LegalAuthenticator">
       <path value="LegalAuthenticator"/>
@@ -208,7 +54,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="LA"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -223,7 +69,7 @@
         <code value="code"/>
       </type>
       <fixedCode value="OP"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
@@ -263,7 +109,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="LegalAuthenticator.signatureCode">
       <path value="LegalAuthenticator.signatureCode"/>

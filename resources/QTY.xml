@@ -22,35 +22,6 @@
   <type value="QTY"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="QTY">
-      <path value="QTY"/>
-      <short value="Quantity" />
-      <definition value="is an abstract generalization for all data types (1) whose value set has an order relation (less-or-equal) and (2) where difference is defined in all of the data type's totally ordered value subsets. The quantity type abstraction is needed in defining certain other types, such as the interval and the probability distribution."/>
-      <min value="1"/>
-      <max value="*"/>
-    </element>
-    <element id="QTY.nullFlavor">
-      <path value="QTY.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ANY.nullFlavor"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-  </snapshot>
   <differential>
     <element id="QTY">
       <path value="QTY"/>

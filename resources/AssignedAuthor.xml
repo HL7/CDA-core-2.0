@@ -22,177 +22,6 @@
   <type value="AssignedAuthor"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="AssignedAuthor">
-      <path value="AssignedAuthor"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="AssignedAuthor.nullFlavor">
-      <path value="AssignedAuthor.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="AssignedAuthor.realmCode">
-      <path value="AssignedAuthor.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.typeId">
-      <path value="AssignedAuthor.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.templateId">
-      <path value="AssignedAuthor.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.classCode">
-      <path value="AssignedAuthor.classCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor.classCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="ASSIGNED"/>
-      <fixedCode value="ASSIGNED"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-RoleClassAssignedEntity"/>
-      </binding>
-    </element>
-    <element id="AssignedAuthor.id">
-      <path value="AssignedAuthor.id"/>
-      <min value="1"/>
-      <max value="*"/>
-      <base>
-        <path value="AssignedAuthor.id"/>
-        <min value="1"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="AssignedAuthor.code">
-      <path value="AssignedAuthor.code"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor.code"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-RoleCode"/>
-      </binding>
-    </element>
-    <element id="AssignedAuthor.addr">
-      <path value="AssignedAuthor.addr"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="AssignedAuthor.addr"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.telecom">
-      <path value="AssignedAuthor.telecom"/>
-      <min value="0"/>
-      <max value="*"/>
-      <base>
-        <path value="AssignedAuthor.telecom"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.assignedPerson">
-      <path value="AssignedAuthor.assignedPerson"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor.assignedPerson"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.assignedAuthoringDevice">
-      <path value="AssignedAuthor.assignedAuthoringDevice"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor.assignedAuthoringDevice"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AuthoringDevice"/>
-      </type>
-    </element>
-    <element id="AssignedAuthor.representedOrganization">
-      <path value="AssignedAuthor.representedOrganization"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="AssignedAuthor.representedOrganization"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="AssignedAuthor">
       <path value="AssignedAuthor"/>
@@ -209,7 +38,6 @@
       </type>
       <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
-      <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-RoleClassAssignedEntity"/>
@@ -222,7 +50,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
-      <mustSupport value="true"/>
     </element>
     <element id="AssignedAuthor.code">
       <path value="AssignedAuthor.code"/>

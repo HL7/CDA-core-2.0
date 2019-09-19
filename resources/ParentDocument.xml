@@ -22,172 +22,6 @@
   <type value="ParentDocument"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="ParentDocument">
-      <path value="ParentDocument"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="ParentDocument.nullFlavor">
-      <path value="ParentDocument.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="ParentDocument.realmCode">
-      <path value="ParentDocument.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="ParentDocument.typeId">
-      <path value="ParentDocument.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="ParentDocument.templateId">
-      <path value="ParentDocument.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="ParentDocument.classCode">
-      <path value="ParentDocument.classCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.classCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="DOCCLIN"/>
-      <fixedCode value="DOCCLIN"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassClinicalDocument"/>
-      </binding>
-    </element>
-    <element id="ParentDocument.moodCode">
-      <path value="ParentDocument.moodCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.moodCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="EVN"/>
-      <fixedCode value="EVN"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
-      </binding>
-    </element>
-    <element id="ParentDocument.id">
-      <path value="ParentDocument.id"/>
-      <min value="1"/>
-      <max value="*"/>
-      <base>
-        <path value="ParentDocument.id"/>
-        <min value="1"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="ParentDocument.code">
-      <path value="ParentDocument.code"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.code"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-DocumentType"/>
-      </binding>
-    </element>
-    <element id="ParentDocument.text">
-      <path value="ParentDocument.text"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.text"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-      </type>
-    </element>
-    <element id="ParentDocument.setId">
-      <path value="ParentDocument.setId"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.setId"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="ParentDocument.versionNumber">
-      <path value="ParentDocument.versionNumber"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="ParentDocument.versionNumber"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
-      </type>
-    </element>
-  </snapshot>
   <differential>
     <element id="ParentDocument">
       <path value="ParentDocument"/>
@@ -204,7 +38,7 @@
       </type>
       <defaultValueCode value="DOCCLIN"/>
       <fixedCode value="DOCCLIN"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassClinicalDocument"/>
@@ -220,7 +54,7 @@
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
@@ -233,7 +67,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="ParentDocument.code">
       <path value="ParentDocument.code"/>

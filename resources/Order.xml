@@ -22,149 +22,6 @@
   <type value="Order"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
-  <snapshot>
-    <element id="Order">
-      <path value="Order"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Order"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-    </element>
-    <element id="Order.nullFlavor">
-      <path value="Order.nullFlavor"/>
-      <representation value="xmlAttr"/>
-      <label value="Exceptional Value Detail"/>
-      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-NullFlavor"/>
-      </binding>
-    </element>
-    <element id="Order.realmCode">
-      <path value="Order.realmCode"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
-      </type>
-    </element>
-    <element id="Order.typeId">
-      <path value="Order.typeId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="Order.templateId">
-      <path value="Order.templateId"/>
-      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-    </element>
-    <element id="Order.classCode">
-      <path value="Order.classCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Order.classCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="ACT"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
-      </binding>
-    </element>
-    <element id="Order.moodCode">
-      <path value="Order.moodCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <base>
-        <path value="Order.moodCode"/>
-        <min value="1"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="RQO"/>
-      <fixedCode value="RQO"/>
-      <mustSupport value="true"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMoodIntent"/>
-      </binding>
-    </element>
-    <element id="Order.id">
-      <path value="Order.id"/>
-      <min value="1"/>
-      <max value="*"/>
-      <base>
-        <path value="Order.id"/>
-        <min value="1"/>
-        <max value="*"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Order.code">
-      <path value="Order.code"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Order.code"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActCode"/>
-      </binding>
-    </element>
-    <element id="Order.priorityCode">
-      <path value="Order.priorityCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="Order.priorityCode"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActPriority"/>
-      </binding>
-    </element>
-  </snapshot>
   <differential>
     <element id="Order">
       <path value="Order"/>
@@ -180,7 +37,7 @@
         <code value="code"/>
       </type>
       <defaultValueCode value="ACT"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
@@ -196,7 +53,7 @@
       </type>
       <defaultValueCode value="RQO"/>
       <fixedCode value="RQO"/>
-      <mustSupport value="true"/>
+      
       <binding>
         <strength value="required"/>
         <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMoodIntent"/>
@@ -209,7 +66,7 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
-      <mustSupport value="true"/>
+      
     </element>
     <element id="Order.code">
       <path value="Order.code"/>
