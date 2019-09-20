@@ -26,6 +26,12 @@
       <path value="Component2"/>
       <min value="1"/>
       <max value="1"/>
+      <constraint>
+        <key value="body-choice"/>
+        <severity value="error"/>
+        <human value="Choice of the body required."/>
+        <expression value="(nonXMLBody | structuredBody).count() &lt;= 1 and (nonXMLBody | structuredBody).count() &gt;= 1"/>
+      </constraint>
     </element>
     <element id="Component2.nullFlavor">
       <path value="Component2.nullFlavor"/>
