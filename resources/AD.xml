@@ -904,7 +904,7 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="AD.useablePeriod">
+    <element id="AD.useablePeriod[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
         <valueString value="SXPR_TS"/>
       </extension>
