@@ -43,7 +43,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.moodCode">
@@ -59,7 +59,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.id">
@@ -79,7 +79,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.effectiveTime">
@@ -111,7 +111,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EncounterDischargeDisposition"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EncounterDischargeDisposition"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.responsibleParty">
@@ -135,7 +135,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.responsibleParty.assignedEntity">
@@ -201,7 +201,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationTargetLocation"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetLocation"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.location.healthCareFacility">

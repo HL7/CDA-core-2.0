@@ -41,7 +41,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
       </binding>
     </element>
     <element id="Encounter.moodCode">
@@ -71,7 +71,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActEncounterCode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
       </binding>
     </element>
     <element id="Encounter.text">
@@ -91,7 +91,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActStatus"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActStatus"/>
       </binding>
     </element>
     <element id="Encounter.effectiveTime">
@@ -111,7 +111,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActPriority"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActPriority"/>
       </binding>
     </element>
     <element id="Encounter.subject">
@@ -135,7 +135,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationTargetSubject"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
       </binding>
     </element>
     <element id="Encounter.subject.contextControlCode">
@@ -151,7 +151,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Encounter.subject.awarenessCode">
@@ -163,7 +163,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-TargetAwareness"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="Encounter.subject.relatedSubject">
@@ -195,7 +195,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationTargetDirect"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
       </binding>
     </element>
     <element id="Encounter.specimen.specimenRole">
@@ -227,7 +227,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationPhysicalPerformer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"/>
       </binding>
     </element>
     <element id="Encounter.performer.time">
@@ -247,7 +247,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationMode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationMode"/>
       </binding>
     </element>
     <element id="Encounter.performer.assignedEntity">
@@ -287,7 +287,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
       </binding>
     </element>
     <element id="Encounter.informant.contextControlCode">
@@ -303,7 +303,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Encounter.informant.assignedEntity">
@@ -341,7 +341,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="Encounter.participant.contextControlCode">
@@ -357,7 +357,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="Encounter.participant.time">
@@ -377,7 +377,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-TargetAwareness"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="Encounter.participant.participantRole">
@@ -602,7 +602,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipConditional"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
       </binding>
     </element>
     <element id="Encounter.precondition.criterion">

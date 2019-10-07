@@ -36,7 +36,7 @@
       <path value="PN.use"/>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-PersonNameUse"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-PersonNameUse"/>
       </binding>
     </element>
   </differential>

@@ -48,7 +48,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-PersonalRelationshipRoleType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType"/>
       </binding>
     </element>
     <element id="RelatedSubject.addr">

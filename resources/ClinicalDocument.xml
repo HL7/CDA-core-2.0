@@ -44,7 +44,7 @@
       
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
       </binding>
     </element>
     <element id="ClinicalDocument.moodCode">
@@ -60,7 +60,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="ClinicalDocument.id">
@@ -82,7 +82,7 @@
       
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-DocumentType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-DocumentType"/>
       </binding>
     </element>
     <element id="ClinicalDocument.title">
@@ -120,7 +120,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-HumanLanguage"/>
       </binding>
     </element>
     <element id="ClinicalDocument.setId">

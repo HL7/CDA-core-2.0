@@ -41,7 +41,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassDevice"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassDevice"/>
       </binding>
     </element>
     <element id="Device.determinerCode">
@@ -57,7 +57,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
     <element id="Device.code">
@@ -69,7 +69,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityCode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityCode"/>
       </binding>
     </element>
     <element id="Device.manufacturerModelName">
@@ -81,7 +81,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ManufacturerModelName"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ManufacturerModelName"/>
       </binding>
     </element>
     <element id="Device.softwareName">
@@ -93,7 +93,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-SoftwareName"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SoftwareName"/>
       </binding>
     </element>
   </differential>

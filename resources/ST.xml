@@ -52,7 +52,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-CompressionAlgorithm"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-CompressionAlgorithm"/>
       </binding>
     </element>
     <element id="ST.integrityCheck">
@@ -78,7 +78,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-IntegrityCheckAlgorithm"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-IntegrityCheckAlgorithm"/>
       </binding>
     </element>
     <element id="ST.language">

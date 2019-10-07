@@ -42,7 +42,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassROI"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassROI"/>
       </binding>
     </element>
     <element id="RegionOfInterest.moodCode">
@@ -58,7 +58,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="RegionOfInterest.id">
@@ -109,7 +109,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationTargetSubject"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
       </binding>
     </element>
     <element id="RegionOfInterest.subject.contextControlCode">
@@ -125,7 +125,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="RegionOfInterest.subject.awarenessCode">
@@ -137,7 +137,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-TargetAwareness"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="RegionOfInterest.subject.relatedSubject">
@@ -169,7 +169,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationTargetDirect"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
       </binding>
     </element>
     <element id="RegionOfInterest.specimen.specimenRole">
@@ -201,7 +201,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationPhysicalPerformer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"/>
       </binding>
     </element>
     <element id="RegionOfInterest.performer.time">
@@ -221,7 +221,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationMode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationMode"/>
       </binding>
     </element>
     <element id="RegionOfInterest.performer.assignedEntity">
@@ -261,7 +261,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationInformationGenerator"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
       </binding>
     </element>
     <element id="RegionOfInterest.informant.contextControlCode">
@@ -277,7 +277,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="RegionOfInterest.informant.assignedEntity">
@@ -315,7 +315,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
     </element>
     <element id="RegionOfInterest.participant.contextControlCode">
@@ -331,7 +331,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ContextControl"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
       </binding>
     </element>
     <element id="RegionOfInterest.participant.time">
@@ -351,7 +351,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-TargetAwareness"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
       </binding>
     </element>
     <element id="RegionOfInterest.participant.participantRole">
@@ -576,7 +576,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActRelationshipConditional"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
       </binding>
     </element>
     <element id="RegionOfInterest.precondition.criterion">
