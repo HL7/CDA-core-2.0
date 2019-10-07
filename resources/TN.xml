@@ -61,7 +61,7 @@
       <path value="TN.use"/>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityNameUse"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNameUse"/>
       </binding>
     </element>
   </differential>

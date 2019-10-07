@@ -42,7 +42,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClassOrganizer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassOrganizer"/>
       </binding>
     </element>
     <element id="NonXMLBody.moodCode">
@@ -58,7 +58,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="NonXMLBody.text">
@@ -86,7 +86,7 @@
       </type>
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-HumanLanguage"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-HumanLanguage"/>
       </binding>
     </element>
   </differential>

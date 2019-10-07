@@ -42,7 +42,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassOrganization"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassOrganization"/>
       </binding>
     </element>
     <element id="Organization.determinerCode">
@@ -58,7 +58,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
     <element id="Organization.id">
@@ -102,7 +102,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-OrganizationIndustryClass"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-OrganizationIndustryClass"/>
       </binding>
     </element>
     <element id="Organization.asOrganizationPartOf">

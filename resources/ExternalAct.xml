@@ -40,7 +40,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActClass"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
       </binding>
     </element>
     <element id="ExternalAct.moodCode">
@@ -56,7 +56,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActMood"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
     <element id="ExternalAct.id">
@@ -76,7 +76,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ActCode"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActCode"/>
       </binding>
     </element>
     <element id="ExternalAct.text">

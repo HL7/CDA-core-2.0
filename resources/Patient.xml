@@ -42,7 +42,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityClassLivingSubject"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassLivingSubject"/>
       </binding>
     </element>
     <element id="Patient.determinerCode">
@@ -58,7 +58,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-EntityDeterminer"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
     </element>
     <element id="Patient.id">
@@ -97,7 +97,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-AdministrativeGender"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-AdministrativeGender"/>
       </binding>
     </element>
     <element id="Patient.birthTime">
@@ -139,7 +139,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-MaritalStatus"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-MaritalStatus"/>
       </binding>
     </element>
     <element id="Patient.religiousAffiliationCode">
@@ -151,7 +151,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-ReligiousAffiliation"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation"/>
       </binding>
     </element>
     <element id="Patient.raceCode">
@@ -163,7 +163,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-Race"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-Race"/>
       </binding>
     </element>
     <element id="Patient.ethnicGroupCode">
@@ -175,7 +175,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/v3-Ethnicity"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-Ethnicity"/>
       </binding>
     </element>
     <element id="Patient.guardian">
