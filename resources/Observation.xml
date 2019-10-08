@@ -219,6 +219,9 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
+      </type>
     </element>
     <element id="Observation.interpretationCode">
       <path value="Observation.interpretationCode"/>
