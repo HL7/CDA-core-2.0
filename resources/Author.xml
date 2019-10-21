@@ -20,7 +20,7 @@
   <description value="Represents the humans and/or machines that authored the document. In some cases, the role or function of the author is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is &quot;Medical Student Progress Note&quot;. The role of the author can also be recorded in the Author.functionCode or AssignedAuthor.code attribute. If either of these attributes is included, they should be equivalent to or further specialize the role inherent in the ClinicalDocument.code (such as where the ClinicalDocument.code is simply &quot;Physician Progress Note&quot; and the value of Author.functionCode is &quot;rounding physician&quot;), and shall not conflict with the role inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+  <type value="Author"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <differential>

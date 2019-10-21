@@ -20,7 +20,7 @@
   <description value="Represents the organization that is in charge of maintaining the document. The custodian is the steward that is entrusted with the care of the document. Every CDA document has exactly one custodian.The custodian participation satisfies the CDA definition of Stewardship (see What is the CDA (§ 1.1 )). Because CDA is an exchange standard and may not represent the original form of the authenticated document, the custodian represents the steward of the original source document."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
+  <type value="Custodian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
   <derivation value="specialization"/>
   <differential>
