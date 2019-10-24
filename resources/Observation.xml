@@ -65,6 +65,7 @@
       <path value="Observation.code"/>
       <min value="1"/>
       <max value="1"/>
+      <representation value="typeAttr"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
