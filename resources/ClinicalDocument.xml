@@ -62,15 +62,6 @@
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
-    </element>    
-    <element id="ClinicalDocument.ID">
-      <path value="ClinicalDocument.ID"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="ClinicalDocument.realmCode">
       <path value="ClinicalDocument.realmCode"/>
