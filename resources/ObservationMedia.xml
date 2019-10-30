@@ -93,6 +93,7 @@
     </element>
     <element id="ObservationMedia.value">
       <path value="ObservationMedia.value"/>
+      <representation value="typeAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
