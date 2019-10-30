@@ -61,6 +61,15 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
+    <element id="Section.ID">
+      <path value="Section.ID"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
     <element id="Section.id">
       <path value="Section.id"/>
       <min value="0"/>
