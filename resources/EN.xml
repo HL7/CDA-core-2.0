@@ -36,12 +36,16 @@
       <path value="EN.use"/>
       <representation value="xmlAttr"/>
       <label value="Use Code"/>
-      <definition value="A set of codes advising a system or user which name in a set of names to select for a given purpose."/>
+      <definition value="A set of codes advising a system or user which name in a set of like names to select for a given purpose. A name without specific use code might be a default name useful for any purpose, but a name with a specific use code would be preferred for that respective purpose"/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="code"/>
       </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNameUse"/>
+      </binding>
     </element>
     <element id="EN.delimiter">
       <path value="EN.delimiter"/>

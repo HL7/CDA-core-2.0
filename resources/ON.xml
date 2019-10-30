@@ -19,7 +19,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="A name for an organization. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for organization name values are &quot;Health Level Seven, Inc.&quot;, &quot;Hospital&quot;, etc. An organization name may be as simple as a character string or may consist of several person name parts, such as, &quot;Health Level 7&quot;, &quot;Inc.&quot;. ON differs from EN because certain person related name parts are not possible."/>
+  <description value="A name for an organization. A sequence of name parts. Examples for organization name values are &quot;Health Level Seven, Inc.&quot;, &quot;Hospital&quot;, etc. An organization name may be as simple as a character string or may consist of several person name parts, such as, &quot;Health Level 7&quot;, &quot;Inc.&quot;. ON differs from EN because certain person related name parts are not possible."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="ON"/>
@@ -28,16 +28,9 @@
   <differential>
     <element id="ON">
       <path value="ON"/>
-      <definition value="A name for an organization. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for organization name values are &quot;Health Level Seven, Inc.&quot;, &quot;Hospital&quot;, etc. An organization name may be as simple as a character string or may consist of several person name parts, such as, &quot;Health Level 7&quot;, &quot;Inc.&quot;. ON differs from EN because certain person related name parts are not possible."/>
+      <definition value="A name for an organization. A sequence of name parts. Examples for organization name values are &quot;Health Level Seven, Inc.&quot;, &quot;Hospital&quot;, etc. An organization name may be as simple as a character string or may consist of several person name parts, such as, &quot;Health Level 7&quot;, &quot;Inc.&quot;. ON differs from EN because certain person related name parts are not possible."/>
       <min value="1"/>
       <max value="*"/>
-    </element>
-    <element id="ON.use">
-      <path value="ON.use"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-OrganizationNameUse"/>
-      </binding>
     </element>
     <element id="ON.family">
       <path value="ON.family"/>
