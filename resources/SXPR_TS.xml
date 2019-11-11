@@ -22,8 +22,8 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="SXPR_TS.comp[x]">
-      <path value="SXPR_TS.comp[x]"/>
+    <element id="SXPR_TS.comp">
+      <path value="SXPR_TS.comp"/>
       <representation value="typeAttr"/>
       <min value="1"/>
       <max value="*"/>
