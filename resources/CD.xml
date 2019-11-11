@@ -141,6 +141,7 @@
       <definition value="A set of other concept descriptors that translate this concept descriptor into other code systems."/>
       <min value="0"/>
       <max value="*"/>
+      <representation value="typeAttr"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
