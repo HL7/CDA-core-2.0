@@ -10,7 +10,7 @@
     "specification": "http://build.fhir.org/"
   },
   "template" : "hl7.cda.template",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "fixed-business-version": "0.0.1",
   "license" : "CC0-1.0",
   "npm-name" : "hl7.fhir.cda",
