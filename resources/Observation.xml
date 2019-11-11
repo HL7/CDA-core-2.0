@@ -37,7 +37,7 @@
       <type>
         <code value="code"/>
       </type>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassObservation"/>
@@ -51,7 +51,15 @@
       <type>
         <code value="code"/>
       </type>
-      
+    </element>
+    <element id="Observation.negationInd">
+      <path value="Observation.negationInd"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
     </element>
     <element id="Observation.templateId">
       <path value="Observation.templateId"/>
@@ -78,20 +86,11 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
-      
+
       <binding>
         <strength value="extensible"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ObservationType"/>
       </binding>
-    </element>
-    <element id="Observation.negationInd">
-      <path value="Observation.negationInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
     </element>
     <element id="Observation.derivationExpr">
       <path value="Observation.derivationExpr"/>
@@ -266,38 +265,6 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.referenceRange.typeCode">
-      <path value="Observation.referenceRange.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="REFV"/>
-      <fixedCode value="REFV"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipPertains"/>
-      </binding>
-    </element>
-    <element id="Observation.referenceRange.observationRange">
-      <path value="Observation.referenceRange.observationRange"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationRange"/>
-      </type>
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
       <min value="0"/>
@@ -316,7 +283,7 @@
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
@@ -332,7 +299,7 @@
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
@@ -376,7 +343,7 @@
       </type>
       <defaultValueCode value="SPC"/>
       <fixedCode value="SPC"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
@@ -408,7 +375,7 @@
       </type>
       <defaultValueCode value="PRF"/>
       <fixedCode value="PRF"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"/>
@@ -468,7 +435,7 @@
       </type>
       <defaultValueCode value="INF"/>
       <fixedCode value="INF"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
@@ -484,7 +451,7 @@
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
@@ -522,7 +489,7 @@
       <type>
         <code value="code"/>
       </type>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -538,7 +505,7 @@
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
@@ -588,7 +555,7 @@
       <type>
         <code value="code"/>
       </type>
-      
+
     </element>
     <element id="Observation.entryRelationship.inversionInd">
       <path value="Observation.entryRelationship.inversionInd"/>
@@ -608,7 +575,7 @@
         <code value="boolean"/>
       </type>
       <defaultValueBoolean value="true"/>
-      
+
     </element>
     <element id="Observation.entryRelationship.sequenceNumber">
       <path value="Observation.entryRelationship.sequenceNumber"/>
@@ -723,7 +690,7 @@
       <type>
         <code value="code"/>
       </type>
-      
+
     </element>
     <element id="Observation.reference.seperatableInd">
       <path value="Observation.reference.seperatableInd"/>
@@ -783,7 +750,7 @@
       </type>
       <defaultValueCode value="PRCN"/>
       <fixedCode value="PRCN"/>
-      
+
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
@@ -795,6 +762,37 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Element"/>
+      </type>
+    </element>
+    <element id="Observation.referenceRange.typeCode">
+      <path value="Observation.referenceRange.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <defaultValueCode value="REFV"/>
+      <fixedCode value="REFV"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipPertains"/>
+      </binding>
+    </element>
+    <element id="Observation.referenceRange.observationRange">
+      <path value="Observation.referenceRange.observationRange"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationRange"/>
       </type>
     </element>
   </differential>
