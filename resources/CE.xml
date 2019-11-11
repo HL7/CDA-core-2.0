@@ -29,117 +29,14 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="CE.code">
-      <path value="CE.code"/>
-      <representation value="xmlAttr"/>
-      <label value="Code"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.codeSystem">
-      <path value="CE.codeSystem"/>
-      <representation value="xmlAttr"/>
-      <label value="Code System"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.codeSystemName">
-      <path value="CE.codeSystemName"/>
-      <representation value="xmlAttr"/>
-      <label value="Code System Name"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.codeSystemVersion">
-      <path value="CE.codeSystemVersion"/>
-      <representation value="xmlAttr"/>
-      <label value="Code System Version"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.displayName">
-      <path value="CE.displayName"/>
-      <representation value="xmlAttr"/>
-      <label value="Display Name"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.valueSet">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <path value="CE.valueSet"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="CD.valueSet"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.valueSetVersion">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <path value="CE.valueSetVersion"/>
-      <representation value="xmlAttr"/>
-      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CE.originalText">
-      <path value="CE.originalText"/>
-      <label value="Original Text"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
-      </type>
-    </element>
     <element id="CE.qualifier">
       <path value="CE.qualifier"/>
       <label value="Qualifier"/>
       <definition value="Specifies additional codes that increase the specificity of the the primary code."/>
       <min value="0"/>
       <max value="0"/>
-      <base>
-        <path value="CD.qualifier"/>
-        <min value="0"/>
-        <max value="*"/>
-      </base>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
-      </type>
-    </element>
-    <element id="CE.translation">
-      <path value="CE.translation"/>
-      <label value="Translation"/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
       </type>
     </element>
   </differential>
