@@ -53,6 +53,15 @@
       </type>
       
     </element>
+    <element id="Observation.templateId">
+      <path value="Observation.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
     <element id="Observation.id">
       <path value="Observation.id"/>
       <min value="0"/>
