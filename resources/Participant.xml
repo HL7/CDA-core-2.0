@@ -101,7 +101,7 @@
     </element>
     <element id="Participant.functionCode">
       <path value="Participant.functionCode"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
@@ -110,19 +110,19 @@
     </element>
     <element id="Participant.time">
       <path value="Participant.time"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       
     </element>
-    <element id="Participant.assignedEntity">
-      <path value="Participant.assignedEntity"/>
+    <element id="Participant.associatedEntity">
+      <path value="Participant.associatedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssociatedEntity"/>
       </type>
     </element>
   </differential>
