@@ -104,6 +104,7 @@
       <path value="Observation.text"/>
       <min value="0"/>
       <max value="1"/>
+      <representation value="typeAttr"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
