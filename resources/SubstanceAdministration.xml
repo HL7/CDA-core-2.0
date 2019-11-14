@@ -116,12 +116,15 @@
     </element>
     <element id="SubstanceAdministration.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="SXPR_TS"/>
+        <valueString value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
       </extension>
       <path value="SubstanceAdministration.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
+      </type>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
