@@ -72,10 +72,9 @@
       <path value="Order.id"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
-      
+      </type-->
     </element>
     <element id="Order.code">
       <path value="Order.code"/>

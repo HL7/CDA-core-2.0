@@ -56,9 +56,9 @@
       <path value="AssignedAuthor.id"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
+      </type-->
     </element>
     <element id="AssignedAuthor.code">
       <path value="AssignedAuthor.code"/>

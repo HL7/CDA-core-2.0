@@ -49,9 +49,9 @@
       <path value="AssignedEntity.id"/>
       <min value="1"/>
       <max value="*"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
+      </type-->
     </element>
     <element id="AssignedEntity.code">
       <path value="AssignedEntity.code"/>

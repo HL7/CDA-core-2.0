@@ -72,9 +72,9 @@
       <path value="ExternalDocument.id"/>
       <min value="0"/>
       <max value="*"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
+      </type-->
     </element>
     <element id="ExternalDocument.code">
       <path value="ExternalDocument.code"/>

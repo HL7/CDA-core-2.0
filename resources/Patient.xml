@@ -74,9 +74,9 @@
       <path value="Patient.id"/>
       <min value="0"/>
       <max value="1"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
+      </type-->
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>

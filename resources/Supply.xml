@@ -69,9 +69,9 @@
       <path value="Supply.id"/>
       <min value="0"/>
       <max value="*"/>
-      <type>
+      <!--type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
-      </type>
+      </type-->
     </element>
     <element id="Supply.code">
       <path value="Supply.code"/>
