@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SXPR-TS"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+  <name value="SXPR-TS"/>
+  <title value="SXPR-TS: Component part of GTS (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="A set-component that is itself made up of set-components that are evaluated as one value"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="SXPR-TS"/>
+  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="SXPR-TS">
+      <path value="SXPR-TS"/>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="SXPR-TS.comp">
+      <path value="SXPR-TS.comp"/>
+      <representation value="typeAttr"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
