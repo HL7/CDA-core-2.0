@@ -1,0 +1,144 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"SubstanceAdministration","","","",1,1,"","","","","","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"SubstanceAdministration.classCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBADM""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBADM""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActClass","",,,,"SubstanceAdministration.classCode",1,1,"",""
+"SubstanceAdministration.moodCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.moodCode",1,1,"",""
+"SubstanceAdministration.templateId","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.templateId",0,*,"",""
+"SubstanceAdministration.id","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.id",0,*,"",""
+"SubstanceAdministration.code","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CD {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-SubstanceAdministrationActCode","",,,,"SubstanceAdministration.code",0,1,"",""
+"SubstanceAdministration.negationInd","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.negationInd",0,1,"",""
+"SubstanceAdministration.text","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ED {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.text",0,1,"",""
+"SubstanceAdministration.statusCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActStatus","",,,,"SubstanceAdministration.statusCode",0,1,"",""
+"SubstanceAdministration.effectiveTime","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS {[]} {[]}
+http://hl7.org/fhir/cda/StructureDefinition/IVL-TS {[]} {[]}http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS {[]} {[]}http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS {[]} {[]}http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS {[]} {[]}","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.effectiveTime",0,*,"",""
+"SubstanceAdministration.priorityCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-ActPriority","",,,,"SubstanceAdministration.priorityCode",0,1,"",""
+"SubstanceAdministration.repeatNumber","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.repeatNumber",0,1,"",""
+"SubstanceAdministration.routeCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-RouteOfAdministration","",,,,"SubstanceAdministration.routeCode",0,1,"",""
+"SubstanceAdministration.approachSiteCode","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/CD {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-ActSite","",,,,"SubstanceAdministration.approachSiteCode",0,*,"",""
+"SubstanceAdministration.doseQuantity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.doseQuantity",0,1,"",""
+"SubstanceAdministration.rateQuantity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.rateQuantity",0,1,"",""
+"SubstanceAdministration.maxDoseQuantity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RTO-PQ-PQ {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.maxDoseQuantity",0,1,"",""
+"SubstanceAdministration.administrationUnitCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-AdministrableDrugForm","",,,,"SubstanceAdministration.administrationUnitCode",0,1,"",""
+"SubstanceAdministration.consumable","","","",1,1,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable",1,1,"",""
+"SubstanceAdministration.consumable.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""CSM""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""CSM""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect","",,,,"SubstanceAdministration.consumable.typeCode",1,1,"",""
+"SubstanceAdministration.consumable.manufacturedProduct","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.consumable.manufacturedProduct",1,1,"",""
+"SubstanceAdministration.subject","","","",0,1,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.subject",0,1,"",""
+"SubstanceAdministration.subject.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject","",,,,"SubstanceAdministration.subject.typeCode",1,1,"",""
+"SubstanceAdministration.subject.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"SubstanceAdministration.subject.contextControlCode",1,1,"",""
+"SubstanceAdministration.subject.awarenessCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-TargetAwareness","",,,,"SubstanceAdministration.subject.awarenessCode",0,1,"",""
+"SubstanceAdministration.subject.relatedSubject","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.subject.relatedSubject",1,1,"",""
+"SubstanceAdministration.specimen","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.specimen",0,*,"",""
+"SubstanceAdministration.specimen.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPC""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPC""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect","",,,,"SubstanceAdministration.specimen.typeCode",1,1,"",""
+"SubstanceAdministration.specimen.specimenRole","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.specimen.specimenRole",1,1,"",""
+"SubstanceAdministration.performer","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.performer",0,*,"",""
+"SubstanceAdministration.performer.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRF""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRF""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer","",,,,"SubstanceAdministration.performer.typeCode",1,1,"",""
+"SubstanceAdministration.performer.time","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.performer.time",0,1,"",""
+"SubstanceAdministration.performer.modeCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-ParticipationMode","",,,,"SubstanceAdministration.performer.modeCode",0,1,"",""
+"SubstanceAdministration.performer.assignedEntity","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.performer.assignedEntity",1,1,"",""
+"SubstanceAdministration.author","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/Author {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.author",0,*,"",""
+"SubstanceAdministration.informant","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.informant",0,*,"",""
+"SubstanceAdministration.informant.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator","",,,,"SubstanceAdministration.informant.typeCode",1,1,"",""
+"SubstanceAdministration.informant.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"SubstanceAdministration.informant.contextControlCode",1,1,"",""
+"SubstanceAdministration.informant.assignedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.informant.assignedEntity",0,1,"",""
+"SubstanceAdministration.informant.relatedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.informant.relatedEntity",0,1,"",""
+"SubstanceAdministration.participant","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant",0,*,"",""
+"SubstanceAdministration.participant.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationType","",,,,"SubstanceAdministration.participant.typeCode",1,1,"",""
+"SubstanceAdministration.participant.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"SubstanceAdministration.participant.contextControlCode",1,1,"",""
+"SubstanceAdministration.participant.time","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant.time",0,1,"",""
+"SubstanceAdministration.participant.awarenessCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-TargetAwareness","",,,,"SubstanceAdministration.participant.awarenessCode",0,1,"",""
+"SubstanceAdministration.participant.participantRole","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.participant.participantRole",1,1,"",""
+"SubstanceAdministration.entryRelationship","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship",0,*,"",""
+"SubstanceAdministration.entryRelationship.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.typeCode",1,1,"",""
+"SubstanceAdministration.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.inversionInd",0,1,"",""
+"SubstanceAdministration.entryRelationship.contextConductionInd","","","",1,1,"","","","boolean {[]} {[]}
+","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.contextConductionInd",1,1,"",""
+"SubstanceAdministration.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.sequenceNumber",0,1,"",""
+"SubstanceAdministration.entryRelationship.negationInd","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.negationInd",0,1,"",""
+"SubstanceAdministration.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.seperatableInd",0,1,"",""
+"SubstanceAdministration.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Observation {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.observation",0,1,"",""
+"SubstanceAdministration.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.regionOfInterest",0,1,"",""
+"SubstanceAdministration.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.observationMedia",0,1,"",""
+"SubstanceAdministration.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.substanceAdministration",0,1,"",""
+"SubstanceAdministration.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.supply",0,1,"",""
+"SubstanceAdministration.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.procedure",0,1,"",""
+"SubstanceAdministration.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.encounter",0,1,"",""
+"SubstanceAdministration.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.organizer",0,1,"",""
+"SubstanceAdministration.entryRelationship.act","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.entryRelationship.act",0,1,"",""
+"SubstanceAdministration.reference","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference",0,*,"",""
+"SubstanceAdministration.reference.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.typeCode",1,1,"",""
+"SubstanceAdministration.reference.seperatableInd","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.seperatableInd",0,1,"",""
+"SubstanceAdministration.reference.externalAct","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalAct {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.externalAct",0,1,"",""
+"SubstanceAdministration.reference.externalObservation","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.externalObservation",0,1,"",""
+"SubstanceAdministration.reference.externalProcedure","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.externalProcedure",0,1,"",""
+"SubstanceAdministration.reference.externalDocument","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.reference.externalDocument",0,1,"",""
+"SubstanceAdministration.precondition","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.precondition",0,*,"",""
+"SubstanceAdministration.precondition.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRCN""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRCN""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional","",,,,"SubstanceAdministration.precondition.typeCode",1,1,"",""
+"SubstanceAdministration.precondition.criterion","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Criterion {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.precondition.criterion",1,1,"",""

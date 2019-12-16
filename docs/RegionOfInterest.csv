@@ -1,0 +1,118 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"RegionOfInterest","","","",1,1,"","","","","","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"RegionOfInterest.classCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ROIOVL""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""ROIOVL""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActClassROI","",,,,"RegionOfInterest.classCode",1,1,"",""
+"RegionOfInterest.moodCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""EVN""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""EVN""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActMood","",,,,"RegionOfInterest.moodCode",1,1,"",""
+"RegionOfInterest.ID","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.ID",0,1,"",""
+"RegionOfInterest.templateId","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"RegionOfInterest.templateId",0,*,"",""
+"RegionOfInterest.id","","","",1,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.id",1,*,"",""
+"RegionOfInterest.code","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.code",1,1,"",""
+"RegionOfInterest.value","","","",1,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.value",1,*,"",""
+"RegionOfInterest.subject","","","",0,1,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.subject",0,1,"",""
+"RegionOfInterest.subject.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject","",,,,"RegionOfInterest.subject.typeCode",1,1,"",""
+"RegionOfInterest.subject.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"RegionOfInterest.subject.contextControlCode",1,1,"",""
+"RegionOfInterest.subject.awarenessCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-TargetAwareness","",,,,"RegionOfInterest.subject.awarenessCode",0,1,"",""
+"RegionOfInterest.subject.relatedSubject","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.subject.relatedSubject",1,1,"",""
+"RegionOfInterest.specimen","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.specimen",0,*,"",""
+"RegionOfInterest.specimen.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPC""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SPC""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect","",,,,"RegionOfInterest.specimen.typeCode",1,1,"",""
+"RegionOfInterest.specimen.specimenRole","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.specimen.specimenRole",1,1,"",""
+"RegionOfInterest.performer","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.performer",0,*,"",""
+"RegionOfInterest.performer.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRF""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRF""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer","",,,,"RegionOfInterest.performer.typeCode",1,1,"",""
+"RegionOfInterest.performer.time","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.performer.time",0,1,"",""
+"RegionOfInterest.performer.modeCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-ParticipationMode","",,,,"RegionOfInterest.performer.modeCode",0,1,"",""
+"RegionOfInterest.performer.assignedEntity","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.performer.assignedEntity",1,1,"",""
+"RegionOfInterest.author","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/Author {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.author",0,*,"",""
+"RegionOfInterest.informant","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.informant",0,*,"",""
+"RegionOfInterest.informant.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator","",,,,"RegionOfInterest.informant.typeCode",1,1,"",""
+"RegionOfInterest.informant.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"RegionOfInterest.informant.contextControlCode",1,1,"",""
+"RegionOfInterest.informant.assignedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.informant.assignedEntity",0,1,"",""
+"RegionOfInterest.informant.relatedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.informant.relatedEntity",0,1,"",""
+"RegionOfInterest.participant","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.participant",0,*,"",""
+"RegionOfInterest.participant.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationType","",,,,"RegionOfInterest.participant.typeCode",1,1,"",""
+"RegionOfInterest.participant.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"RegionOfInterest.participant.contextControlCode",1,1,"",""
+"RegionOfInterest.participant.time","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/IVL-TS {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.participant.time",0,1,"",""
+"RegionOfInterest.participant.awarenessCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-TargetAwareness","",,,,"RegionOfInterest.participant.awarenessCode",0,1,"",""
+"RegionOfInterest.participant.participantRole","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.participant.participantRole",1,1,"",""
+"RegionOfInterest.entryRelationship","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship",0,*,"",""
+"RegionOfInterest.entryRelationship.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.typeCode",1,1,"",""
+"RegionOfInterest.entryRelationship.inversionInd","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.inversionInd",0,1,"",""
+"RegionOfInterest.entryRelationship.contextConductionInd","","","",1,1,"","","","boolean {[]} {[]}
+","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.contextConductionInd",1,1,"",""
+"RegionOfInterest.entryRelationship.sequenceNumber","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/INT {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.sequenceNumber",0,1,"",""
+"RegionOfInterest.entryRelationship.negationInd","","","",0,1,"","","","boolean {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.negationInd",0,1,"",""
+"RegionOfInterest.entryRelationship.seperatableInd","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.seperatableInd",0,1,"",""
+"RegionOfInterest.entryRelationship.observation","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Observation {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.observation",0,1,"",""
+"RegionOfInterest.entryRelationship.regionOfInterest","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.regionOfInterest",0,1,"",""
+"RegionOfInterest.entryRelationship.observationMedia","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.observationMedia",0,1,"",""
+"RegionOfInterest.entryRelationship.substanceAdministration","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.substanceAdministration",0,1,"",""
+"RegionOfInterest.entryRelationship.supply","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.supply",0,1,"",""
+"RegionOfInterest.entryRelationship.procedure","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.procedure",0,1,"",""
+"RegionOfInterest.entryRelationship.encounter","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.encounter",0,1,"",""
+"RegionOfInterest.entryRelationship.organizer","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.organizer",0,1,"",""
+"RegionOfInterest.entryRelationship.act","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.entryRelationship.act",0,1,"",""
+"RegionOfInterest.reference","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference",0,*,"",""
+"RegionOfInterest.reference.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.typeCode",1,1,"",""
+"RegionOfInterest.reference.seperatableInd","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/BL {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.seperatableInd",0,1,"",""
+"RegionOfInterest.reference.externalAct","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalAct {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.externalAct",0,1,"",""
+"RegionOfInterest.reference.externalObservation","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.externalObservation",0,1,"",""
+"RegionOfInterest.reference.externalProcedure","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.externalProcedure",0,1,"",""
+"RegionOfInterest.reference.externalDocument","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.reference.externalDocument",0,1,"",""
+"RegionOfInterest.precondition","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.precondition",0,*,"",""
+"RegionOfInterest.precondition.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRCN""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""PRCN""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional","",,,,"RegionOfInterest.precondition.typeCode",1,1,"",""
+"RegionOfInterest.precondition.criterion","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Criterion {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"RegionOfInterest.precondition.criterion",1,1,"",""

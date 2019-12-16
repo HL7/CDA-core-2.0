@@ -1,0 +1,76 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Section","","","",1,1,"","","","","","","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Section.classCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DOCSECT""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""DOCSECT""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActClassOrganizer","",,,,"Section.classCode",1,1,"",""
+"Section.moodCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""EVN""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""EVN""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ActMood","",,,,"Section.moodCode",1,1,"",""
+"Section.ID","","","",0,1,"","","","string {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.ID",0,1,"",""
+"Section.templateId","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question","","","","","","","","","",,,,,"",,,,"Section.templateId",0,*,"",""
+"Section.id","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/II {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.id",0,1,"",""
+"Section.code","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-DocumentSectionType","",,,,"Section.code",0,1,"",""
+"Section.title","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ST {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.title",0,1,"",""
+"Section.text","","","",0,1,"Y","","","xhtml {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.text",0,1,"",""
+"Section.confidentialityCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.confidentialityCode",0,1,"",""
+"Section.languageCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CS {[]} {[]}
+","","","","","","","","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-HumanLanguage","",,,,"Section.languageCode",0,1,"",""
+"Section.subject","","","",0,1,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.subject",0,1,"",""
+"Section.subject.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBJ""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject","",,,,"Section.subject.typeCode",1,1,"",""
+"Section.subject.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"Section.subject.contextControlCode",1,1,"",""
+"Section.subject.awarenessCode","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/CE {[]} {[]}
+","","","","","","","","","","","",,"extensible","","http://terminology.hl7.org/ValueSet/v3-TargetAwareness","",,,,"Section.subject.awarenessCode",0,1,"",""
+"Section.subject.relatedSubject","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.subject.relatedSubject",1,1,"",""
+"Section.author","","","",0,*,"","","","http://hl7.org/fhir/cda/StructureDefinition/Author {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.author",0,*,"",""
+"Section.informant","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.informant",0,*,"",""
+"Section.informant.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INF""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator","",,,,"Section.informant.typeCode",1,1,"",""
+"Section.informant.contextControlCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""OP""/>","","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-ContextControl","",,,,"Section.informant.contextControlCode",1,1,"",""
+"Section.informant.assignedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.informant.assignedEntity",0,1,"",""
+"Section.informant.relatedEntity","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.informant.relatedEntity",0,1,"",""
+"Section.entry","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry",0,*,"",""
+"Section.entry.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","","","","",,,,,"",,,,"Section.entry.typeCode",1,1,"",""
+"Section.entry.contextConductionInd","","","",1,1,"","","","boolean {[]} {[]}
+","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"Section.entry.contextConductionInd",1,1,"",""
+"Section.entry.observation","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Observation {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.observation",0,1,"",""
+"Section.entry.regionOfInterest","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.regionOfInterest",0,1,"",""
+"Section.entry.observationMedia","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.observationMedia",0,1,"",""
+"Section.entry.substanceAdministration","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.substanceAdministration",0,1,"",""
+"Section.entry.supply","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Supply {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.supply",0,1,"",""
+"Section.entry.procedure","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Procedure {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.procedure",0,1,"",""
+"Section.entry.encounter","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Encounter {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.encounter",0,1,"",""
+"Section.entry.organizer","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Organizer {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.organizer",0,1,"",""
+"Section.entry.act","","","",0,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Act {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.entry.act",0,1,"",""
+"Section.component","","","",0,*,"","","","Element {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.component",0,*,"",""
+"Section.component.typeCode","","","",1,1,"","","","code {[]} {[]}
+","","Drawn from concept domain DocumentSectionType","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","<valueCode xmlns=""http://hl7.org/fhir"" value=""COMP""/>","","","","",,,,,"",,,,"Section.component.typeCode",1,1,"",""
+"Section.component.contextConductionInd","","","",1,1,"","","","boolean {[]} {[]}
+","","","","","<valueBoolean xmlns=""http://hl7.org/fhir"" value=""true""/>","","","","","","",,,,,"",,,,"Section.component.contextConductionInd",1,1,"",""
+"Section.component.section","","","",1,1,"","","","http://hl7.org/fhir/cda/StructureDefinition/Section {[]} {[]}
+","","","","","","","","","","","",,,,,"",,,,"Section.component.section",1,1,"",""

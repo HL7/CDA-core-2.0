@@ -1,0 +1,1893 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ObservationMedia",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>A derivative of the RIM Observation class that represents multimedia that is logically part of the current document. This class is only for multimedia that is logically part of the attested content of the document. Rendering a referenced ObservationMedia requires a software tool that recognizes the particular MIME media type.</p>\n      <p>An XML attribute &quot;ID&quot; of type XML ID, is added to ObservationMedia within the CDA Schema. This attribute serves as the target of a renderMultiMedia reference (see renderMultiMedia). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification).</p>\n      <p>The distinction between ObservationMedia and ExternalObservation is that ObservationMedia entries are part of the attested content of the document whereas ExternalObservations are not. For instance, when a clinician draws a picture as part of a progress note, that picture is represented as a CDA ObservationMedia. If that clinician is also describing a finding seen on a chest-x-ray, the referenced chest-x-ray is represented as a CDA ExternalObservation.</p>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace",
+      "valueUri": "urn:hl7-org:v3"
+    }
+  ],
+  "url": "http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia",
+  "version": "2.1.0",
+  "name": "CDAR2.ObservationMedia",
+  "title": "ObservationMedia (CDA Class)",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-12-16T15:43:01-08:00",
+  "publisher": "Health Level 7",
+  "description": "A derivative of the RIM Observation class that represents multimedia that is logically part of the current document. This class is only for multimedia that is logically part of the attested content of the document. Rendering a referenced ObservationMedia requires a software tool that recognizes the particular MIME media type.\nAn XML attribute \"ID\" of type XML ID, is added to ObservationMedia within the CDA Schema. This attribute serves as the target of a renderMultiMedia reference (see renderMultiMedia). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification).\nThe distinction between ObservationMedia and ExternalObservation is that ObservationMedia entries are part of the attested content of the document whereas ExternalObservations are not. For instance, when a clinician draws a picture as part of a progress note, that picture is represented as a CDA ObservationMedia. If that clinician is also describing a finding seen on a chest-x-ray, the referenced chest-x-ray is represented as a CDA ExternalObservation.",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "ObservationMedia",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "ObservationMedia",
+        "path": "ObservationMedia",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Base",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "ObservationMedia.classCode",
+        "path": "ObservationMedia.classCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.classCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OBS",
+        "fixedCode": "OBS",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActClassObservation"
+        }
+      },
+      {
+        "id": "ObservationMedia.moodCode",
+        "path": "ObservationMedia.moodCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.moodCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "EVN",
+        "fixedCode": "EVN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActMood"
+        }
+      },
+      {
+        "id": "ObservationMedia.ID",
+        "path": "ObservationMedia.ID",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.ID",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.templateId",
+        "path": "ObservationMedia.templateId",
+        "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.templateId",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.id",
+        "path": "ObservationMedia.id",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.id",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.languageCode",
+        "path": "ObservationMedia.languageCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.languageCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CS"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-HumanLanguage"
+        }
+      },
+      {
+        "id": "ObservationMedia.value",
+        "path": "ObservationMedia.value",
+        "representation": [
+          "typeAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.value",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ED"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.subject",
+        "path": "ObservationMedia.subject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.subject",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.subject.typeCode",
+        "path": "ObservationMedia.subject.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.subject.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SBJ",
+        "fixedCode": "SBJ",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.contextControlCode",
+        "path": "ObservationMedia.subject.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.subject.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.awarenessCode",
+        "path": "ObservationMedia.subject.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.subject.awarenessCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.relatedSubject",
+        "path": "ObservationMedia.subject.relatedSubject",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.subject.relatedSubject",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.specimen",
+        "path": "ObservationMedia.specimen",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.specimen",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.specimen.typeCode",
+        "path": "ObservationMedia.specimen.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.specimen.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SPC",
+        "fixedCode": "SPC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"
+        }
+      },
+      {
+        "id": "ObservationMedia.specimen.specimenRole",
+        "path": "ObservationMedia.specimen.specimenRole",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.specimen.specimenRole",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer",
+        "path": "ObservationMedia.performer",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.performer",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer.typeCode",
+        "path": "ObservationMedia.performer.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.performer.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRF",
+        "fixedCode": "PRF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"
+        }
+      },
+      {
+        "id": "ObservationMedia.performer.time",
+        "path": "ObservationMedia.performer.time",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.performer.time",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer.modeCode",
+        "path": "ObservationMedia.performer.modeCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.performer.modeCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationMode"
+        }
+      },
+      {
+        "id": "ObservationMedia.performer.assignedEntity",
+        "path": "ObservationMedia.performer.assignedEntity",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.performer.assignedEntity",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.author",
+        "path": "ObservationMedia.author",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.author",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Author"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant",
+        "path": "ObservationMedia.informant",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.informant",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant.typeCode",
+        "path": "ObservationMedia.informant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.informant.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "INF",
+        "fixedCode": "INF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"
+        }
+      },
+      {
+        "id": "ObservationMedia.informant.contextControlCode",
+        "path": "ObservationMedia.informant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.informant.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.informant.assignedEntity",
+        "path": "ObservationMedia.informant.assignedEntity",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.informant.assignedEntity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant.relatedEntity",
+        "path": "ObservationMedia.informant.relatedEntity",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.informant.relatedEntity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant",
+        "path": "ObservationMedia.participant",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.participant",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant.typeCode",
+        "path": "ObservationMedia.participant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.participant.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationType"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.contextControlCode",
+        "path": "ObservationMedia.participant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.participant.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.time",
+        "path": "ObservationMedia.participant.time",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.participant.time",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant.awarenessCode",
+        "path": "ObservationMedia.participant.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.participant.awarenessCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.participantRole",
+        "path": "ObservationMedia.participant.participantRole",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.participant.participantRole",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship",
+        "path": "ObservationMedia.entryRelationship",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.entryRelationship",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.typeCode",
+        "path": "ObservationMedia.entryRelationship.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.inversionInd",
+        "path": "ObservationMedia.entryRelationship.inversionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.inversionInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.contextConductionInd",
+        "path": "ObservationMedia.entryRelationship.contextConductionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.contextConductionInd",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "defaultValueBoolean": true
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.sequenceNumber",
+        "path": "ObservationMedia.entryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.sequenceNumber",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/INT"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.negationInd",
+        "path": "ObservationMedia.entryRelationship.negationInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.negationInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.seperatableInd",
+        "path": "ObservationMedia.entryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.seperatableInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.observation",
+        "path": "ObservationMedia.entryRelationship.observation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.observation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.regionOfInterest",
+        "path": "ObservationMedia.entryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.regionOfInterest",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.observationMedia",
+        "path": "ObservationMedia.entryRelationship.observationMedia",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.observationMedia",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.substanceAdministration",
+        "path": "ObservationMedia.entryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.substanceAdministration",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.supply",
+        "path": "ObservationMedia.entryRelationship.supply",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.supply",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Supply"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.procedure",
+        "path": "ObservationMedia.entryRelationship.procedure",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.procedure",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Procedure"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.encounter",
+        "path": "ObservationMedia.entryRelationship.encounter",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Encounter"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.organizer",
+        "path": "ObservationMedia.entryRelationship.organizer",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.organizer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Organizer"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.act",
+        "path": "ObservationMedia.entryRelationship.act",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.entryRelationship.act",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Act"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference",
+        "path": "ObservationMedia.reference",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.reference",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.typeCode",
+        "path": "ObservationMedia.reference.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.seperatableInd",
+        "path": "ObservationMedia.reference.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.seperatableInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalAct",
+        "path": "ObservationMedia.reference.externalAct",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.externalAct",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalObservation",
+        "path": "ObservationMedia.reference.externalObservation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.externalObservation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalProcedure",
+        "path": "ObservationMedia.reference.externalProcedure",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.externalProcedure",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalDocument",
+        "path": "ObservationMedia.reference.externalDocument",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.reference.externalDocument",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.precondition",
+        "path": "ObservationMedia.precondition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ObservationMedia.precondition",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.precondition.typeCode",
+        "path": "ObservationMedia.precondition.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.precondition.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRCN",
+        "fixedCode": "PRCN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"
+        }
+      },
+      {
+        "id": "ObservationMedia.precondition.criterion",
+        "path": "ObservationMedia.precondition.criterion",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ObservationMedia.precondition.criterion",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Criterion"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "ObservationMedia",
+        "path": "ObservationMedia",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ObservationMedia.classCode",
+        "path": "ObservationMedia.classCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OBS",
+        "fixedCode": "OBS",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActClassObservation"
+        }
+      },
+      {
+        "id": "ObservationMedia.moodCode",
+        "path": "ObservationMedia.moodCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "EVN",
+        "fixedCode": "EVN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActMood"
+        }
+      },
+      {
+        "id": "ObservationMedia.ID",
+        "path": "ObservationMedia.ID",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.templateId",
+        "path": "ObservationMedia.templateId",
+        "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.id",
+        "path": "ObservationMedia.id",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.languageCode",
+        "path": "ObservationMedia.languageCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CS"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-HumanLanguage"
+        }
+      },
+      {
+        "id": "ObservationMedia.value",
+        "path": "ObservationMedia.value",
+        "representation": [
+          "typeAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ED"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.subject",
+        "path": "ObservationMedia.subject",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.subject.typeCode",
+        "path": "ObservationMedia.subject.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SBJ",
+        "fixedCode": "SBJ",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.contextControlCode",
+        "path": "ObservationMedia.subject.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.awarenessCode",
+        "path": "ObservationMedia.subject.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "ObservationMedia.subject.relatedSubject",
+        "path": "ObservationMedia.subject.relatedSubject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.specimen",
+        "path": "ObservationMedia.specimen",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.specimen.typeCode",
+        "path": "ObservationMedia.specimen.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SPC",
+        "fixedCode": "SPC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"
+        }
+      },
+      {
+        "id": "ObservationMedia.specimen.specimenRole",
+        "path": "ObservationMedia.specimen.specimenRole",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer",
+        "path": "ObservationMedia.performer",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer.typeCode",
+        "path": "ObservationMedia.performer.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRF",
+        "fixedCode": "PRF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"
+        }
+      },
+      {
+        "id": "ObservationMedia.performer.time",
+        "path": "ObservationMedia.performer.time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.performer.modeCode",
+        "path": "ObservationMedia.performer.modeCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationMode"
+        }
+      },
+      {
+        "id": "ObservationMedia.performer.assignedEntity",
+        "path": "ObservationMedia.performer.assignedEntity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.author",
+        "path": "ObservationMedia.author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Author"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant",
+        "path": "ObservationMedia.informant",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant.typeCode",
+        "path": "ObservationMedia.informant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "INF",
+        "fixedCode": "INF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"
+        }
+      },
+      {
+        "id": "ObservationMedia.informant.contextControlCode",
+        "path": "ObservationMedia.informant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.informant.assignedEntity",
+        "path": "ObservationMedia.informant.assignedEntity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.informant.relatedEntity",
+        "path": "ObservationMedia.informant.relatedEntity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant",
+        "path": "ObservationMedia.participant",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant.typeCode",
+        "path": "ObservationMedia.participant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationType"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.contextControlCode",
+        "path": "ObservationMedia.participant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.time",
+        "path": "ObservationMedia.participant.time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.participant.awarenessCode",
+        "path": "ObservationMedia.participant.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "ObservationMedia.participant.participantRole",
+        "path": "ObservationMedia.participant.participantRole",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship",
+        "path": "ObservationMedia.entryRelationship",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.typeCode",
+        "path": "ObservationMedia.entryRelationship.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.inversionInd",
+        "path": "ObservationMedia.entryRelationship.inversionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.contextConductionInd",
+        "path": "ObservationMedia.entryRelationship.contextConductionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "defaultValueBoolean": true
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.sequenceNumber",
+        "path": "ObservationMedia.entryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/INT"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.negationInd",
+        "path": "ObservationMedia.entryRelationship.negationInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.seperatableInd",
+        "path": "ObservationMedia.entryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.observation",
+        "path": "ObservationMedia.entryRelationship.observation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.regionOfInterest",
+        "path": "ObservationMedia.entryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.observationMedia",
+        "path": "ObservationMedia.entryRelationship.observationMedia",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.substanceAdministration",
+        "path": "ObservationMedia.entryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.supply",
+        "path": "ObservationMedia.entryRelationship.supply",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Supply"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.procedure",
+        "path": "ObservationMedia.entryRelationship.procedure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Procedure"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.encounter",
+        "path": "ObservationMedia.entryRelationship.encounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Encounter"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.organizer",
+        "path": "ObservationMedia.entryRelationship.organizer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Organizer"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.entryRelationship.act",
+        "path": "ObservationMedia.entryRelationship.act",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Act"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference",
+        "path": "ObservationMedia.reference",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.typeCode",
+        "path": "ObservationMedia.reference.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.seperatableInd",
+        "path": "ObservationMedia.reference.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalAct",
+        "path": "ObservationMedia.reference.externalAct",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalObservation",
+        "path": "ObservationMedia.reference.externalObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalProcedure",
+        "path": "ObservationMedia.reference.externalProcedure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.reference.externalDocument",
+        "path": "ObservationMedia.reference.externalDocument",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.precondition",
+        "path": "ObservationMedia.precondition",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "ObservationMedia.precondition.typeCode",
+        "path": "ObservationMedia.precondition.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRCN",
+        "fixedCode": "PRCN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"
+        }
+      },
+      {
+        "id": "ObservationMedia.precondition.criterion",
+        "path": "ObservationMedia.precondition.criterion",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Criterion"
+          }
+        ]
+      }
+    ]
+  }
+}

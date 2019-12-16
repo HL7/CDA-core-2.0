@@ -1,0 +1,1937 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Encounter",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>A derivative of the RIM PatientEncounter class, used to represent related encounters, such as follow-up visits or referenced past encounters.</p>\n      <p>NOTE: The EncompassingEncounter class in the CDA Header (see Header Relationships (§ 4.2.3 )) represents the setting of the clinical encounter during which the documented act occurred. The Encounter class in the CDA Body is used to represent other related encounters.</p>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace",
+      "valueUri": "urn:hl7-org:v3"
+    }
+  ],
+  "url": "http://hl7.org/fhir/cda/StructureDefinition/Encounter",
+  "version": "2.1.0",
+  "name": "CDAR2.Encounter",
+  "title": "Encounter (CDA Class)",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-12-16T15:43:01-08:00",
+  "publisher": "Health Level 7",
+  "description": "A derivative of the RIM PatientEncounter class, used to represent related encounters, such as follow-up visits or referenced past encounters.\nNOTE: The EncompassingEncounter class in the CDA Header (see Header Relationships (§ 4.2.3 )) represents the setting of the clinical encounter during which the documented act occurred. The Encounter class in the CDA Body is used to represent other related encounters.",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Encounter",
+        "path": "Encounter",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Base",
+          "min": 0,
+          "max": "*"
+        },
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.classCode",
+        "path": "Encounter.classCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.classCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "ENC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActClass"
+        }
+      },
+      {
+        "id": "Encounter.moodCode",
+        "path": "Encounter.moodCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.moodCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.templateId",
+        "path": "Encounter.templateId",
+        "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.templateId",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.id",
+        "path": "Encounter.id",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.id",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.code",
+        "path": "Encounter.code",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CD"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+        }
+      },
+      {
+        "id": "Encounter.text",
+        "path": "Encounter.text",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.text",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ED"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.statusCode",
+        "path": "Encounter.statusCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.statusCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CS"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+        }
+      },
+      {
+        "id": "Encounter.effectiveTime",
+        "path": "Encounter.effectiveTime",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.effectiveTime",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.priorityCode",
+        "path": "Encounter.priorityCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.priorityCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.subject",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.subject.typeCode",
+        "path": "Encounter.subject.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.subject.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SBJ",
+        "fixedCode": "SBJ",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"
+        }
+      },
+      {
+        "id": "Encounter.subject.contextControlCode",
+        "path": "Encounter.subject.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.subject.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.subject.awarenessCode",
+        "path": "Encounter.subject.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.subject.awarenessCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "Encounter.subject.relatedSubject",
+        "path": "Encounter.subject.relatedSubject",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.subject.relatedSubject",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.specimen",
+        "path": "Encounter.specimen",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.specimen",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.specimen.typeCode",
+        "path": "Encounter.specimen.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.specimen.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SPC",
+        "fixedCode": "SPC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"
+        }
+      },
+      {
+        "id": "Encounter.specimen.specimenRole",
+        "path": "Encounter.specimen.specimenRole",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.specimen.specimenRole",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer",
+        "path": "Encounter.performer",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.performer",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer.typeCode",
+        "path": "Encounter.performer.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.performer.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRF",
+        "fixedCode": "PRF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"
+        }
+      },
+      {
+        "id": "Encounter.performer.time",
+        "path": "Encounter.performer.time",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.performer.time",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer.modeCode",
+        "path": "Encounter.performer.modeCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.performer.modeCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationMode"
+        }
+      },
+      {
+        "id": "Encounter.performer.assignedEntity",
+        "path": "Encounter.performer.assignedEntity",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.performer.assignedEntity",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.author",
+        "path": "Encounter.author",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.author",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Author"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant",
+        "path": "Encounter.informant",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.informant",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant.typeCode",
+        "path": "Encounter.informant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.informant.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "INF",
+        "fixedCode": "INF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"
+        }
+      },
+      {
+        "id": "Encounter.informant.contextControlCode",
+        "path": "Encounter.informant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.informant.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.informant.assignedEntity",
+        "path": "Encounter.informant.assignedEntity",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.informant.assignedEntity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant.relatedEntity",
+        "path": "Encounter.informant.relatedEntity",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.informant.relatedEntity",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.participant",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant.typeCode",
+        "path": "Encounter.participant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.participant.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationType"
+        }
+      },
+      {
+        "id": "Encounter.participant.contextControlCode",
+        "path": "Encounter.participant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.participant.contextControlCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.participant.time",
+        "path": "Encounter.participant.time",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.participant.time",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant.awarenessCode",
+        "path": "Encounter.participant.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.participant.awarenessCode",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "Encounter.participant.participantRole",
+        "path": "Encounter.participant.participantRole",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.participant.participantRole",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship",
+        "path": "Encounter.entryRelationship",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.entryRelationship",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.typeCode",
+        "path": "Encounter.entryRelationship.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.inversionInd",
+        "path": "Encounter.entryRelationship.inversionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.inversionInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.contextConductionInd",
+        "path": "Encounter.entryRelationship.contextConductionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.contextConductionInd",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "defaultValueBoolean": true
+      },
+      {
+        "id": "Encounter.entryRelationship.sequenceNumber",
+        "path": "Encounter.entryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.sequenceNumber",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/INT"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.negationInd",
+        "path": "Encounter.entryRelationship.negationInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.negationInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.seperatableInd",
+        "path": "Encounter.entryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.seperatableInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.observation",
+        "path": "Encounter.entryRelationship.observation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.observation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.regionOfInterest",
+        "path": "Encounter.entryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.regionOfInterest",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.observationMedia",
+        "path": "Encounter.entryRelationship.observationMedia",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.observationMedia",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.substanceAdministration",
+        "path": "Encounter.entryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.substanceAdministration",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.supply",
+        "path": "Encounter.entryRelationship.supply",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.supply",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Supply"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.procedure",
+        "path": "Encounter.entryRelationship.procedure",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.procedure",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Procedure"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.encounter",
+        "path": "Encounter.entryRelationship.encounter",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.encounter",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Encounter"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.organizer",
+        "path": "Encounter.entryRelationship.organizer",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.organizer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Organizer"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.act",
+        "path": "Encounter.entryRelationship.act",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.entryRelationship.act",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Act"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference",
+        "path": "Encounter.reference",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.reference",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.typeCode",
+        "path": "Encounter.reference.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.seperatableInd",
+        "path": "Encounter.reference.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.seperatableInd",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalAct",
+        "path": "Encounter.reference.externalAct",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.externalAct",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalObservation",
+        "path": "Encounter.reference.externalObservation",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.externalObservation",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalProcedure",
+        "path": "Encounter.reference.externalProcedure",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.externalProcedure",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalDocument",
+        "path": "Encounter.reference.externalDocument",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Encounter.reference.externalDocument",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.precondition",
+        "path": "Encounter.precondition",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Encounter.precondition",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.precondition.typeCode",
+        "path": "Encounter.precondition.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.precondition.typeCode",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRCN",
+        "fixedCode": "PRCN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"
+        }
+      },
+      {
+        "id": "Encounter.precondition.criterion",
+        "path": "Encounter.precondition.criterion",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Encounter.precondition.criterion",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Criterion"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter",
+        "path": "Encounter",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.classCode",
+        "path": "Encounter.classCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "fixedCode": "ENC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActClass"
+        }
+      },
+      {
+        "id": "Encounter.moodCode",
+        "path": "Encounter.moodCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.templateId",
+        "path": "Encounter.templateId",
+        "definition": "When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.id",
+        "path": "Encounter.id",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/II"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.code",
+        "path": "Encounter.code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CD"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
+        }
+      },
+      {
+        "id": "Encounter.text",
+        "path": "Encounter.text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ED"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.statusCode",
+        "path": "Encounter.statusCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CS"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActStatus"
+        }
+      },
+      {
+        "id": "Encounter.effectiveTime",
+        "path": "Encounter.effectiveTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.priorityCode",
+        "path": "Encounter.priorityCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.subject.typeCode",
+        "path": "Encounter.subject.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SBJ",
+        "fixedCode": "SBJ",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"
+        }
+      },
+      {
+        "id": "Encounter.subject.contextControlCode",
+        "path": "Encounter.subject.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.subject.awarenessCode",
+        "path": "Encounter.subject.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "Encounter.subject.relatedSubject",
+        "path": "Encounter.subject.relatedSubject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.specimen",
+        "path": "Encounter.specimen",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.specimen.typeCode",
+        "path": "Encounter.specimen.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "SPC",
+        "fixedCode": "SPC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"
+        }
+      },
+      {
+        "id": "Encounter.specimen.specimenRole",
+        "path": "Encounter.specimen.specimenRole",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer",
+        "path": "Encounter.performer",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer.typeCode",
+        "path": "Encounter.performer.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRF",
+        "fixedCode": "PRF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationPhysicalPerformer"
+        }
+      },
+      {
+        "id": "Encounter.performer.time",
+        "path": "Encounter.performer.time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.performer.modeCode",
+        "path": "Encounter.performer.modeCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationMode"
+        }
+      },
+      {
+        "id": "Encounter.performer.assignedEntity",
+        "path": "Encounter.performer.assignedEntity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.author",
+        "path": "Encounter.author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Author"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant",
+        "path": "Encounter.informant",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant.typeCode",
+        "path": "Encounter.informant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "INF",
+        "fixedCode": "INF",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"
+        }
+      },
+      {
+        "id": "Encounter.informant.contextControlCode",
+        "path": "Encounter.informant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.informant.assignedEntity",
+        "path": "Encounter.informant.assignedEntity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.informant.relatedEntity",
+        "path": "Encounter.informant.relatedEntity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant",
+        "path": "Encounter.participant",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant.typeCode",
+        "path": "Encounter.participant.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationType"
+        }
+      },
+      {
+        "id": "Encounter.participant.contextControlCode",
+        "path": "Encounter.participant.contextControlCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "OP",
+        "fixedCode": "OP",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ContextControl"
+        }
+      },
+      {
+        "id": "Encounter.participant.time",
+        "path": "Encounter.participant.time",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.participant.awarenessCode",
+        "path": "Encounter.participant.awarenessCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/CE"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-TargetAwareness"
+        }
+      },
+      {
+        "id": "Encounter.participant.participantRole",
+        "path": "Encounter.participant.participantRole",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship",
+        "path": "Encounter.entryRelationship",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.typeCode",
+        "path": "Encounter.entryRelationship.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.inversionInd",
+        "path": "Encounter.entryRelationship.inversionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.contextConductionInd",
+        "path": "Encounter.entryRelationship.contextConductionInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "defaultValueBoolean": true
+      },
+      {
+        "id": "Encounter.entryRelationship.sequenceNumber",
+        "path": "Encounter.entryRelationship.sequenceNumber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/INT"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.negationInd",
+        "path": "Encounter.entryRelationship.negationInd",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.seperatableInd",
+        "path": "Encounter.entryRelationship.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.observation",
+        "path": "Encounter.entryRelationship.observation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.regionOfInterest",
+        "path": "Encounter.entryRelationship.regionOfInterest",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.observationMedia",
+        "path": "Encounter.entryRelationship.observationMedia",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.substanceAdministration",
+        "path": "Encounter.entryRelationship.substanceAdministration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.supply",
+        "path": "Encounter.entryRelationship.supply",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Supply"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.procedure",
+        "path": "Encounter.entryRelationship.procedure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Procedure"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.encounter",
+        "path": "Encounter.entryRelationship.encounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Encounter"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.organizer",
+        "path": "Encounter.entryRelationship.organizer",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Organizer"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.entryRelationship.act",
+        "path": "Encounter.entryRelationship.act",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Act"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference",
+        "path": "Encounter.reference",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.typeCode",
+        "path": "Encounter.reference.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.seperatableInd",
+        "path": "Encounter.reference.seperatableInd",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/BL"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalAct",
+        "path": "Encounter.reference.externalAct",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalObservation",
+        "path": "Encounter.reference.externalObservation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalProcedure",
+        "path": "Encounter.reference.externalProcedure",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.reference.externalDocument",
+        "path": "Encounter.reference.externalDocument",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.precondition",
+        "path": "Encounter.precondition",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Element"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.precondition.typeCode",
+        "path": "Encounter.precondition.typeCode",
+        "representation": [
+          "xmlAttr"
+        ],
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "defaultValueCode": "PRCN",
+        "fixedCode": "PRCN",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"
+        }
+      },
+      {
+        "id": "Encounter.precondition.criterion",
+        "path": "Encounter.precondition.criterion",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.org/fhir/cda/StructureDefinition/Criterion"
+          }
+        ]
+      }
+    ]
+  }
+}
