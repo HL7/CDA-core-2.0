@@ -665,6 +665,25 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "code" : "http://hl7.org/fhir/cda/StructureDefinition/TEL"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "code" : "ANY"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -704,25 +723,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "http://hl7.org/fhir/cda/StructureDefinition/AD"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "java.lang.NullPointerException"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhir/cda/StructureDefinition/TEL"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -3630,25 +3630,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "code" : "TS"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://hl7.org/fhir/data-types"
-    },
-    {
-      "system" : "http://hl7.org/fhir/resource-types"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "java.lang.NullPointerException"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "http://hl7.org/fhirpath/System.String"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
