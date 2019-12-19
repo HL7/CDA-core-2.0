@@ -268,6 +268,11 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="only-one-statement" />
+        <human value="SHALL have no more than one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer or act." />
+        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1" />
+      </constraint>
     </element>
     <element id="Section.entry.typeCode">
       <path value="Section.entry.typeCode"/>
@@ -278,7 +283,6 @@
         <code value="code"/>
       </type>
       <defaultValueCode value="COMP"/>
-      
     </element>
     <element id="Section.entry.contextConductionInd">
       <path value="Section.entry.contextConductionInd"/>
@@ -289,7 +293,6 @@
         <code value="boolean"/>
       </type>
       <defaultValueBoolean value="true"/>
-      
     </element>
     <element id="Section.entry.observation">
       <path value="Section.entry.observation"/>
