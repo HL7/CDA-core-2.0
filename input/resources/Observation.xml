@@ -126,7 +126,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Observation.priorityCode">
@@ -146,7 +146,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-INT"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_INT"/>
       </type>
     </element>
     <element id="Observation.languageCode">
@@ -215,22 +215,22 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_PQ"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-PQ-PQ"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO_PQ_PQ"/>
       </type>
     </element>
     <element id="Observation.interpretationCode">
@@ -396,7 +396,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Observation.performer.modeCode">
@@ -526,7 +526,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Observation.participant.awarenessCode">

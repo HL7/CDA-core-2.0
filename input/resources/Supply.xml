@@ -107,26 +107,26 @@
     </element>
     <element id="Supply.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <valueString value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
       </extension>
       <path value="Supply.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
     </element>
     <element id="Supply.priorityCode">
@@ -146,7 +146,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-INT"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_INT"/>
       </type>
     </element>
     <element id="Supply.independentInd">
@@ -170,7 +170,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Supply.product">
@@ -328,7 +328,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Supply.performer.modeCode">
@@ -458,7 +458,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
     </element>
     <element id="Supply.participant.awarenessCode">

@@ -906,7 +906,7 @@
     </element>
     <element id="AD.useablePeriod[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="SXPR-TS"/>
+        <valueString value="SXPR_TS"/>
       </extension>
       <path value="AD.useablePeriod[x]"/>
       <representation value="typeAttr"/>
@@ -915,16 +915,16 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL_TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR_TS"/>
       </type>
     </element>
   </differential>
