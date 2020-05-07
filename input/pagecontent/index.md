@@ -96,6 +96,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-EN.html">EN: EntityName</a></li>
 				<li><a href="StructureDefinition-II.html">II: InstanceIdentifier</a></li>
 				<li><a href="StructureDefinition-INT.html">INT: IntegerNumber</a></li>
+				<li><a href="StructureDefinition-INT-POS.html">INT-POS: PositiveIntegerNumber</a></li>
 				<li><a href="StructureDefinition-IVL_INT.html">IVL_INT: Interval</a></li>
 				<li><a href="StructureDefinition-IVL_PQ.html">IVL_PQ: Interval</a></li>
 				<li><a href="StructureDefinition-IVL_TS.html">IVL_TS: Interval</a></li>

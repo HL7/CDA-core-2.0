@@ -257,6 +257,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/INT-POS" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/IntendedRecipient" />
 			</reference>
 		</resource>
