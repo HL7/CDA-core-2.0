@@ -139,6 +139,28 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
+    <element id="Patient.multipleBirthInd">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="Patient.multipleBirthInd"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="Patient.multipleBirthOrderNumber">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="Patient.multipleBirthOrderNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT_POS"/>
+      </type>
+    </element>
     <element id="Patient.maritalStatusCode">
       <path value="Patient.maritalStatusCode"/>
       <min value="0"/>
