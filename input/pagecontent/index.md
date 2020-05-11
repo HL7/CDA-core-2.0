@@ -83,6 +83,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 			<h3>V3 Data Types</h3>
 			<ul>
 				<li><a href="StructureDefinition-AD.html">AD: PostalAddress</a></li>
+				<li><a href="StructureDefinition-ADXP.html">ADXP: CharacterString</a></li>
 				<li><a href="StructureDefinition-ANY.html">ANY: DataValue</a></li>
 				<li><a href="StructureDefinition-BL.html">BL: Boolean</a></li>
 				<li><a href="StructureDefinition-CD.html">CD: ConceptDescriptor</a></li>
@@ -94,6 +95,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-ED.html">ED: EncapsulatedData</a></li>
 				<li><a href="StructureDefinition-EIVL_TS.html">EIVL_TS: EventRelatedPeriodicInterval</a></li>
 				<li><a href="StructureDefinition-EN.html">EN: EntityName</a></li>
+				<li><a href="StructureDefinition-ENXP.html">ENXP: EntityNamePart</a></li>
 				<li><a href="StructureDefinition-II.html">II: InstanceIdentifier</a></li>
 				<li><a href="StructureDefinition-INT.html">INT: IntegerNumber</a></li>
 				<li><a href="StructureDefinition-INT-POS.html">INT-POS: PositiveIntegerNumber</a></li>
@@ -102,6 +104,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-IVL_TS.html">IVL_TS: Interval</a></li>
 				<li><a href="StructureDefinition-MO.html">MO: MonetaryAmount</a></li>
 				<li><a href="StructureDefinition-PIVL_TS.html">PIVL_TS: PeriodicIntervalOfTime</a></li>
+				<li><a href="StructureDefinition-PN.html">PN: PersonName</a></li>
 				<li><a href="StructureDefinition-PQ.html">PQ: PhysicalQuantity</a></li>
 				<li><a href="StructureDefinition-PQR.html">PQR: PhysicalQuantityRepresentation</a></li>
 				<li><a href="StructureDefinition-QTY.html">QTY: Quantity</a></li>
@@ -113,6 +116,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-SXPR_TS.html">SXPR_TS: Component part of GTS</a></li>
 				<li><a href="StructureDefinition-TEL.html">TEL: TelecommunicationAddress</a></li>
 				<li><a href="StructureDefinition-TS.html">TS: PointInTime</a></li>
+				<li><a href="StructureDefinition-TN.html">TN: TrivialName</a></li>
 			</ul>
 		</td>
 	</tr>

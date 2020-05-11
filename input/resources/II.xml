@@ -51,22 +51,22 @@
         <code value="boolean"/>
       </type>
     </element>
-    <element id="II.extension">
-      <path value="II.extension"/>
+    <element id="II.root">
+      <path value="II.root"/>
       <representation value="xmlAttr"/>
-      <label value="Extension"/>
-      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
+      <label value="Root"/>
+      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
     </element>
-    <element id="II.root">
-      <path value="II.root"/>
+    <element id="II.extension">
+      <path value="II.extension"/>
       <representation value="xmlAttr"/>
-      <label value="Root"/>
-      <definition value="A unique identifier that guarantees the global uniqueness of the instance identifier. The root alone may be the entire instance identifier."/>
+      <label value="Extension"/>
+      <definition value="A character string as a unique identifier within the scope of the identifier root."/>
       <min value="0"/>
       <max value="1"/>
       <type>

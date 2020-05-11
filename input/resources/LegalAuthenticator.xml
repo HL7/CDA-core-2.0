@@ -109,7 +109,6 @@
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
-      
     </element>
     <element id="LegalAuthenticator.signatureCode">
       <path value="LegalAuthenticator.signatureCode"/>
@@ -117,6 +116,17 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="LegalAuthenticator.signatureText">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="LegalAuthenticator.signatureText"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="LegalAuthenticator.assignedEntity">
