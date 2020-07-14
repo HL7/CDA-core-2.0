@@ -201,14 +201,17 @@
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-Race"/>
       </binding>
     </element>
-    <element id="Patient.raceCode">
+    <element id="Patient.sdtcRaceCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="Patient.raceCode"/>
+	  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+		<valueString value="raceCode"/>
+	  </extension>
+      <path value="Patient.sdtcRaceCode"/>
       <min value="0"/>
       <max value="*"/>
-      <short value="sdtc:raceCode" />
+      <short value="sdtcRaceCode" />
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
