@@ -37,7 +37,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="ED.compression">
@@ -48,7 +48,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -74,7 +74,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -89,7 +89,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="ED.mediaType">
@@ -100,7 +100,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="ED.representation">
@@ -109,7 +109,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="ED.data[x]">

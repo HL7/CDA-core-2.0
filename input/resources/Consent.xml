@@ -34,7 +34,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="CONS"/>
       <fixedCode value="CONS"/>
@@ -50,7 +50,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>

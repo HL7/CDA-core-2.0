@@ -50,7 +50,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -76,7 +76,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
     </element>
     <element id="AD.delimiter">
@@ -105,7 +105,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DEL"/>
     </element>
@@ -135,7 +135,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="CNT"/>
     </element>
@@ -165,7 +165,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="STA"/>
     </element>
@@ -195,7 +195,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="CPA"/>
     </element>
@@ -225,7 +225,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="CTY"/>
     </element>
@@ -255,7 +255,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="ZIP"/>
     </element>
@@ -285,7 +285,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="SAL"/>
     </element>
@@ -315,7 +315,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="BNR"/>
     </element>
@@ -345,7 +345,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="BNN"/>
     </element>
@@ -375,7 +375,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DIR"/>
     </element>
@@ -405,7 +405,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="STR"/>
     </element>
@@ -435,7 +435,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="STB"/>
     </element>
@@ -465,7 +465,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="STTYP"/>
     </element>
@@ -495,7 +495,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="ADL"/>
     </element>
@@ -525,7 +525,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="UNID"/>
     </element>
@@ -555,7 +555,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="UNIT"/>
     </element>
@@ -585,7 +585,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="CAR"/>
     </element>
@@ -615,7 +615,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="CEN"/>
     </element>
@@ -645,7 +645,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DAL"/>
     </element>
@@ -675,7 +675,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DINST"/>
     </element>
@@ -705,7 +705,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DINSTA"/>
     </element>
@@ -735,7 +735,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DINSTQ"/>
     </element>
@@ -765,7 +765,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DMOD"/>
     </element>
@@ -795,7 +795,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="DMODID"/>
     </element>
@@ -825,7 +825,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="BNS"/>
     </element>
@@ -855,7 +855,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="POB"/>
     </element>
@@ -885,7 +885,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <fixedCode value="PRE"/>
     </element>

@@ -36,7 +36,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="OBS"/>
       <fixedCode value="OBS"/>
@@ -52,7 +52,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -124,7 +124,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
@@ -140,7 +140,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -184,7 +184,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="SPC"/>
       <fixedCode value="SPC"/>
@@ -216,7 +216,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="PRF"/>
       <fixedCode value="PRF"/>
@@ -276,7 +276,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="INF"/>
       <fixedCode value="INF"/>
@@ -292,7 +292,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -332,7 +332,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       
       <binding>
@@ -346,7 +346,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -398,7 +398,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       
     </element>
@@ -533,7 +533,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       
     </element>
@@ -591,7 +591,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="code"/>
       </type>
       <defaultValueCode value="PRCN"/>
       <fixedCode value="PRCN"/>
