@@ -68,7 +68,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>

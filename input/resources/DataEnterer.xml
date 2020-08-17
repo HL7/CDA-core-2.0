@@ -36,7 +36,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,7 +49,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <fixedCode value="ENT"/>
       
@@ -64,7 +64,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <fixedCode value="OP"/>
       

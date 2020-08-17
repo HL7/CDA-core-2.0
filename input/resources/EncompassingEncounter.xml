@@ -36,7 +36,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <defaultValueCode value="ENC"/>
       <fixedCode value="ENC"/>
@@ -52,7 +52,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -137,7 +137,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <defaultValueCode value="RESP"/>
       <fixedCode value="RESP"/>
@@ -169,7 +169,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       
     </element>
@@ -203,7 +203,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
       <defaultValueCode value="LOC"/>
       <fixedCode value="LOC"/>

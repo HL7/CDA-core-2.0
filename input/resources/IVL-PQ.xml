@@ -35,7 +35,7 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="code"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="IVL-PQ.value">
