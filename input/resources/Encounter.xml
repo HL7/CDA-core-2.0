@@ -404,6 +404,13 @@
       <type>
         <code value="Element"/>
       </type>
+      <constraint>
+        <key value="enc-er-1"/>
+        <severity value="error"/>
+        <human value="Only one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer, and act"/>
+        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1"/>
+        <source value=""/>
+      </constraint>
     </element>
     <element id="Encounter.entryRelationship.typeCode">
       <path value="Encounter.entryRelationship.typeCode"/>
