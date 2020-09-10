@@ -17,13 +17,13 @@
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="RTO-PQ-PQ">
-      <path value="RTO-PQ-PQ"/>
+    <element id="RTO_PQ_PQ">
+      <path value="RTO_PQ_PQ"/>
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="RTO-PQ-PQ.numerator">
-      <path value="RTO-PQ-PQ.numerator"/>
+    <element id="RTO_PQ_PQ.numerator">
+      <path value="RTO_PQ_PQ.numerator"/>
       <label value="Numerator"/>
       <definition value="The quantity that is being divided in the ratio. The default is the integer number 1 (one.)"/>
       <min value="0"/>
@@ -32,8 +32,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
       </type>
     </element>
-    <element id="RTO-PQ-PQ.denominator">
-      <path value="RTO-PQ-PQ.denominator"/>
+    <element id="RTO_PQ_PQ.denominator">
+      <path value="RTO_PQ_PQ.denominator"/>
       <label value="Denominator"/>
       <definition value="The quantity that devides the numerator in the ratio. The default is the integer number 1 (one.) The denominator must not be zero."/>
       <min value="0"/>

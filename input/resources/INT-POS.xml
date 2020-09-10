@@ -23,8 +23,8 @@
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="INT-POS">
-      <path value="INT-POS"/>
+    <element id="INT_POS">
+      <path value="INT_POS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
