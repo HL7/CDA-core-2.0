@@ -19,7 +19,7 @@
   <description value="An interval of time that recurs periodically. Periodic intervals have two properties, phase and period. The phase specifies the &quot;interval prototype&quot; that is repeated every period."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="PIVL-TS"/>
+  <type value="PIVL_TS"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
   <derivation value="specialization"/>
   <differential>

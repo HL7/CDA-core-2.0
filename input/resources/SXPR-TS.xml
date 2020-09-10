@@ -13,7 +13,7 @@
   <description value="A set-component that is itself made up of set-components that are evaluated as one value"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="SXPR-TS"/>
+  <type value="SXPR_TS"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
   <derivation value="specialization"/>
   <differential>

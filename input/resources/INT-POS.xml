@@ -19,7 +19,7 @@
   <description value="Positive integer numbers."/>
   <kind value="logical"/>
   <abstract value="true"/>
-  <type value="INT-POS"/>
+  <type value="INT_POS"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
   <derivation value="specialization"/>
   <differential>
