@@ -7,3 +7,4 @@ resources/ig-new.json
 resources/ig-new.xml
 resources/ig-validation-parameters.json
 org.hl7.fhir.publisher.jar
+input-cache/schemas/
