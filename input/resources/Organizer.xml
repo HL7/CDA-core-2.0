@@ -37,7 +37,6 @@
       <type>
         <code value="code"/>
       </type>
-      
     </element>
     <element id="Organizer.moodCode">
       <path value="Organizer.moodCode"/>
@@ -49,7 +48,6 @@
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>

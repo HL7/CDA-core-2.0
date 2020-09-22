@@ -31,7 +31,6 @@
       </type>
       <defaultValueCode value="MANU"/>
       <fixedCode value="MANU"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassManufacturedProduct"/>

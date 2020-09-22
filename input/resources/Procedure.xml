@@ -39,7 +39,6 @@
       </type>
       <defaultValueCode value="PROC"/>
       <fixedCode value="PROC"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassProcedure"/>

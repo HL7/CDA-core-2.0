@@ -40,7 +40,6 @@
       </type>
       <defaultValueCode value="SPLY"/>
       <fixedCode value="SPLY"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassSupply"/>
@@ -54,7 +53,6 @@
       <type>
         <code value="code"/>
       </type>
-      
     </element>
     <element id="Supply.templateId">
       <path value="Supply.templateId"/>

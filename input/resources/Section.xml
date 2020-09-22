@@ -286,6 +286,7 @@
       </type>
       <constraint>
         <key value="only-one-statement" />
+        <severity value="error" />
         <human value="SHALL have no more than one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer or act." />
         <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1" />
       </constraint>
