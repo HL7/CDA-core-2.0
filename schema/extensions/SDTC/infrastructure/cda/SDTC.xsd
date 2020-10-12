@@ -118,6 +118,11 @@
       precondition2, AllFalse, AllTrue, AtLeastOneFalse, AtLeastOneTrue, OnlyOneFalse, OnlyOneTrue
       NOT YET APPROVED BY SD
     </xs:documentation>
+    
+    <xs:documentation>
+      2020-10-12
+      Added alternateIdentification extension approved by SDWG on 2020-09
+    </xs:documentation>
   </xs:annotation>
   
   <xs:import namespace="urn:hl7-org:v3" schemaLocation="POCD_MT000040_SDTC.xsd" />
@@ -337,6 +342,23 @@
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
   
+  <xs:complexType name="IdentifiedBy">
+    <xs:sequence>
+      <xs:element name="alternateIdentification" type="AlternateIdentification" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="typeCode" type="hl7:RoleLinkType" use="required" fixed="REL" />
+  </xs:complexType>
+  
+  <xs:complexType name="AlternateIdentification">
+    <xs:sequence>
+      <xs:element name="id" type="hl7:II" minOccurs="1" maxOccurs="1" />
+      <xs:element name="code" type="hl7:CD" minOccurs="0" />
+      <xs:element name="statusCode" type="hl7:CS" minOccurs="0" />
+      <xs:element name="effectiveTime" type="hl7:IVL_TS" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute name="classCode" type="hl7:RoleClass" use="required" fixed="IDENT" />
+  </xs:complexType>
+  
   <!-- == End Data Types =================================================================== -->
   
   <!-- == Start Attributes =================================================================== -->
@@ -384,6 +406,8 @@
   
   
   <xs:element name="text" type="hl7:ED" />
+  
+  <xs:element name="identifiedBy" type="IdentifiedBy" />
   
   <!-- == End Elements =================================================================== -->
   
