@@ -5,7 +5,7 @@ CDA Schema and FHIR Logical model for CDA (supports the CCDA on FHIR guide, and 
 
 The `schema/normative` folder contains the CDA Schema, which was last updated in 2010. The package includes a `CDA.xsl` which was last updated in 2015.
 
-## CDA Extension
+## CDA Schema Extensions
 
 The `schema/extensions` folder contains an `SDTC` folder which has all SDTC extensions that are approved by HL7.
 
