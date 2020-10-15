@@ -38,7 +38,6 @@
       </type>
       <defaultValueCode value="PAT"/>
       <fixedCode value="PAT"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-RoleClassRelationshipFormal"/>
@@ -59,6 +58,17 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="PatientRole.identifiedBy">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="PatientRole.identifiedBy"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="PatientRole.addr">

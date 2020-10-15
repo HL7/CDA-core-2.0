@@ -53,6 +53,17 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
+    <element id="ParticipantRole.identifiedBy">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="ParticipantRole.identifiedBy"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+      </type>
+    </element>
     <element id="ParticipantRole.code">
       <path value="ParticipantRole.code"/>
       <min value="0"/>
