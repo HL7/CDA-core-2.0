@@ -4,7 +4,8 @@
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>Link to an additional Identifier for a role</p>
+      <p>Link to an additional Identifier for a role.</p>
+      <p>The id in the alternateIdentification field SHALL match an id in the linked role.</p>
     </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
