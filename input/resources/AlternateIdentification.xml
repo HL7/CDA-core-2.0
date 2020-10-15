@@ -26,7 +26,7 @@
     <element id="AlternateIdentification">
       <path value="AlternateIdentification"/>
       <min value="1"/>
-      <max value="*"/>
+      <max value="1"/>
     </element>
     <element id="AlternateIdentification.classCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
