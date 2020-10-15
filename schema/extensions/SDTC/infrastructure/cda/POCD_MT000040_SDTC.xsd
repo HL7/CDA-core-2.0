@@ -179,7 +179,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
@@ -210,7 +210,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
@@ -231,7 +231,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
@@ -690,7 +690,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
@@ -710,7 +710,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="location" type="POCD_MT000040.Place" minOccurs="0" />
@@ -760,7 +760,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
@@ -838,7 +838,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:choice>
         <xs:element name="manufacturedLabeledDrug" type="POCD_MT000040.LabeledDrug" />
@@ -994,7 +994,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="statusCode" type="CS" minOccurs="0" />
@@ -1085,7 +1085,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
@@ -1142,7 +1142,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
@@ -1452,7 +1452,7 @@
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:identifiedBy" minOccurs="0" />
+      <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="specimenPlayingEntity" type="POCD_MT000040.PlayingEntity" minOccurs="0" />
     </xs:sequence>

@@ -344,7 +344,7 @@
   
   <xs:complexType name="IdentifiedBy">
     <xs:sequence>
-      <xs:element name="alternateIdentification" type="AlternateIdentification" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element name="alternateIdentification" type="AlternateIdentification" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute name="typeCode" type="hl7:RoleLinkType" use="required" fixed="REL" />
   </xs:complexType>
