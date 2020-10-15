@@ -27,6 +27,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/AlternateIdentification" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/ANY" />
 			</reference>
 		</resource>
@@ -223,6 +228,11 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/HealthCareFacility" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/IdentifiedBy" />
 			</reference>
 		</resource>
 		<resource>
