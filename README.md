@@ -3,7 +3,7 @@ CDA Schema and FHIR Logical model for CDA (supports the CCDA on FHIR guide, and 
 
 ## CDA Schema
 
-The `schema/normative` folder contains the CDA Schema, which was last updated in 2010. The package includes a `CDA.xsl` which was last updated in 2015.
+The `schema/normative` folder contains the CDA Schema, which was last updated in 2010. The package includes a `schema/normative/infrastructure/cda/CDA.xsl` which was last updated in 2015.
 
 ## CDA Schema Extensions
 
