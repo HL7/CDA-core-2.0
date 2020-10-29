@@ -116,7 +116,6 @@
     <xs:documentation>
       2019-08-06  Extensions created for Form Definition Document IG include: 
       precondition2, AllFalse, AllTrue, AtLeastOneFalse, AtLeastOneTrue, OnlyOneFalse, OnlyOneTrue
-      NOT YET APPROVED BY SD
     </xs:documentation>
     
     <xs:documentation>
