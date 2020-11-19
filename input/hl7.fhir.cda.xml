@@ -2,8 +2,8 @@
 	<id value="hl7.fhir.cda"/>
 	<url value="http://hl7.org/fhir/cda/ImplementationGuide/cda-ig"/>
 	<version value="2.1.0" />
-	<name value="ClinicalDocumentArchitectureV21" />
-	<title value="Clinical Document Architecture V2.1" />
+	<name value="ClinicalDocumentArchitectureV201" />
+	<title value="Clinical Document Architecture V2.0.1" />
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="Health Level 7"/>
