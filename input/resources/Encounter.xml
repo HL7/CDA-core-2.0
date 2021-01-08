@@ -38,7 +38,6 @@
         <code value="code"/>
       </type>
       <fixedCode value="ENC"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
@@ -52,7 +51,6 @@
       <type>
         <code value="code"/>
       </type>
-      
     </element>
     <element id="Encounter.templateId">
       <path value="Encounter.templateId"/>
@@ -109,6 +107,18 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+      </type>
+    </element>
+    <element id="Encounter.dischargeDispositionCode">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <path value="Encounter.dischargeDispositionCode"/>
+      <short value="sdtc:dischargeDispositionCode" />
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="Encounter.priorityCode">
