@@ -93,6 +93,11 @@
       asPatientRelationship
     </xs:documentation>
     <xs:documentation>
+      2015-06-01 
+      Added extension approved by SDWG on 2014-11-06
+      admissionReferralSourceCode
+    </xs:documentation>
+    <xs:documentation>
       2016-05-12 
       Added extension approved by SDWG on 2016-01-28
       priorityNumber
@@ -136,7 +141,6 @@
       <xs:minInclusive value="1" />
     </xs:restriction>
   </xs:simpleType>
-  
   <xs:complexType name="INT_POS">
     <xs:annotation>
       <xs:documentation>Positive integer numbers</xs:documentation>
@@ -155,7 +159,40 @@
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <!-- == End Data Types =================================================================== -->
   
+  <!-- == Start Attributes =================================================================== -->
+  <xs:attribute name="valueSet" type="hl7:oid" />
+  <xs:attribute name="valueSetVersion" type="hl7:st" />
+  <!-- == End Attributes =================================================================== -->
+    
+  <!-- == Start Simple Elements =================================================================== -->
+  <xs:element name="admissionReferralSourceCode" type="hl7:CD" />
+  <xs:element name="raceCode" type="hl7:CE" />
+  <xs:element name="ethnicGroupCode" type="hl7:CE" />
+  <xs:element name="dischargeDispositionCode" type="hl7:CE" />
+  <xs:element name="id" type="hl7:II" />
+  <xs:element name="deceasedInd" type="hl7:BL" />
+  <xs:element name="deceasedTime" type="hl7:TS" />
+  <xs:element name="multipleBirthInd" type="hl7:BL" />
+  <xs:element name="multipleBirthOrderNumber" type="INT_POS" />
+  <xs:element name="birthTime" type="hl7:TS" />
+  <xs:element name="signatureText" type="hl7:ED" />
+  <xs:element name="statusCode" type="hl7:CS" />
+  <xs:element name="desc" type="hl7:ED" />
+  <xs:element name="inFulfillmentOf1" type="InFulfillmentOf1" />
+  <xs:element name="patient" type="SdtcPatient" />
+  <xs:element name="asPatientRelationship" type="AsPatientRelationship" />
+  <xs:element name="priorityNumber" type="hl7:INT" />
+  <xs:element name="functionCode" type="hl7:CE" />
+  <xs:element name="precondition1" type="Precondition1" />
+  <!-- created for Structured Form Definition -->
+  <xs:element name="precondition2" type="Precondition2" />
+  <xs:element name="text" type="hl7:ED" />
+  <xs:element name="identifiedBy" type="IdentifiedBy" />
+  <!-- == End Simple Elements =================================================================== -->
+  
+  <!-- == Start Complex Elements =================================================================== -->
   <!-- ActReference (created for QRDA) -->
   <xs:complexType name="ActReference">
     <xs:sequence>
@@ -168,7 +205,6 @@
     <xs:attribute name="moodCode" type="hl7:x_DocumentActMood" use="required" />
     <xs:attribute name="determinerCode" type="hl7:EntityDeterminer" use="optional" fixed="INSTANCE" />
   </xs:complexType>
-  
   <!-- Fulfills (created for QRDA) -->
   <xs:complexType name="InFulfillmentOf1">
     <xs:sequence>
@@ -181,13 +217,11 @@
     <xs:attribute name="inversionInd" type="hl7:bl" use="optional" />
     <xs:attribute name="negationInd" type="hl7:bl" use="optional" />
   </xs:complexType>
-  
   <xs:complexType name="SdtcPatient">
     <xs:sequence>
       <xs:element name="id" type="hl7:II" minOccurs="1" />
     </xs:sequence>
   </xs:complexType>
-  
   <xs:complexType name="AsPatientRelationship">
     <xs:sequence>
       <xs:element name="realmCode" type="hl7:CS" minOccurs="0" maxOccurs="unbounded" />
@@ -198,7 +232,6 @@
     <xs:attribute name="classCode" type="hl7:x_DocumentSubject" use="required" fixed="PRS" />
     <xs:attribute name="determinerCode" type="hl7:EntityDeterminer" use="optional" fixed="INSTANCE" />
   </xs:complexType>
-  
   <!-- Precondition1 (created for C-CDA Templates for Infectious Disease (lab reporting)) -->
   <xs:complexType name="Precondition1">
     <xs:sequence>
@@ -225,7 +258,6 @@
     <xs:attribute name="typeCode" type="hl7:ActRelationshipType" use="optional" fixed="PRCN" />
     
   </xs:complexType>
-  
   <!-- Precondition2 (created for Structured Form Definition) -->
   <xs:complexType name="Precondition2">
     <xs:sequence>
@@ -250,7 +282,6 @@
     <xs:attribute name="typeCode" type="hl7:ActRelationshipType" use="optional" fixed="PRCN" />
     <xs:attribute name="negationInd" type="xs:boolean" use="optional" fixed="true" />
   </xs:complexType>
-  
   <!-- AllFalse (created for Structured Form Definition) -->
   <xs:complexType name="AllFalse">
     <xs:sequence>
@@ -265,7 +296,6 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <!-- AllTrue (created for Structured Form Definition) -->
   <xs:complexType name="AllTrue">
     <xs:sequence>
@@ -280,7 +310,6 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <!-- AtLeastOneFalse (created for Structured Form Definition) -->
   <xs:complexType name="AtLeastOneFalse">
     <xs:sequence>
@@ -295,7 +324,6 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <!-- AtLeastOneTrue (created for Structured Form Definition) -->
   <xs:complexType name="AtLeastOneTrue">
     <xs:sequence>
@@ -310,7 +338,6 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <!-- OnlyOneFalse (created for Structured Form Definition) -->
   <xs:complexType name="OnlyOneFalse">
     <xs:sequence>
@@ -325,7 +352,6 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <!-- OnlyOneTrue (created for Structured Form Definition) -->
   <xs:complexType name="OnlyOneTrue">
     <xs:sequence>
@@ -340,14 +366,12 @@
     <xs:attribute name="classCode" type="hl7:ActClass" use="optional" fixed="CLUSTER" />
     <xs:attribute name="moodCode" type="hl7:ActMood" use="optional" fixed="EVN" />
   </xs:complexType>
-  
   <xs:complexType name="IdentifiedBy">
     <xs:sequence>
       <xs:element name="alternateIdentification" type="AlternateIdentification" minOccurs="1" maxOccurs="1" />
     </xs:sequence>
     <xs:attribute name="typeCode" type="hl7:RoleLinkType" use="required" fixed="REL" />
   </xs:complexType>
-  
   <xs:complexType name="AlternateIdentification">
     <xs:sequence>
       <xs:element name="id" type="hl7:II" minOccurs="1" maxOccurs="1" />
@@ -357,57 +381,5 @@
     </xs:sequence>
     <xs:attribute name="classCode" type="hl7:RoleClass" use="required" fixed="IDENT" />
   </xs:complexType>
-  
-  <!-- == End Data Types =================================================================== -->
-  
-  <!-- == Start Attributes =================================================================== -->
-  <xs:attribute name="valueSet" type="hl7:oid" />
-  <xs:attribute name="valueSetVersion" type="hl7:st" />
-  <!-- == End Attributes =================================================================== -->
-  
-  
-  <!-- == Start Elements =================================================================== -->
-  <xs:element name="raceCode" type="hl7:CE" />
-  <xs:element name="ethnicGroupCode" type="hl7:CE" />
-  
-  <xs:element name="dischargeDispositionCode" type="hl7:CE" />
-  
-  <xs:element name="id" type="hl7:II" />
-  
-  <xs:element name="deceasedInd" type="hl7:BL" />
-  <xs:element name="deceasedTime" type="hl7:TS" />
-  
-  <xs:element name="multipleBirthInd" type="hl7:BL" />
-  <xs:element name="multipleBirthOrderNumber" type="INT_POS" />
-  
-  <xs:element name="birthTime" type="hl7:TS" />
-  
-  <xs:element name="signatureText" type="hl7:ED" />
-  
-  <xs:element name="statusCode" type="hl7:CS" />
-  
-  <xs:element name="desc" type="hl7:ED" />
-  
-  <xs:element name="inFulfillmentOf1" type="InFulfillmentOf1" />
-  
-  <xs:element name="patient" type="SdtcPatient" />
-  
-  <xs:element name="asPatientRelationship" type="AsPatientRelationship" />
-  
-  <xs:element name="priorityNumber" type="hl7:INT" />
-  
-  <xs:element name="functionCode" type="hl7:CE" />
-  
-  <xs:element name="precondition1" type="Precondition1" />
-  
-  <!-- created for Structured Form Definition -->
-  <xs:element name="precondition2" type="Precondition2" />
-  
-  
-  <xs:element name="text" type="hl7:ED" />
-  
-  <xs:element name="identifiedBy" type="IdentifiedBy" />
-  
-  <!-- == End Elements =================================================================== -->
-  
+  <!-- == End Complex Elements =================================================================== -->
 </xs:schema>
