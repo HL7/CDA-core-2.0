@@ -98,6 +98,11 @@
       priorityNumber
     </xs:documentation>
     <xs:documentation>
+      2015-06-01
+      Added extension approved by SDWG on 2014-11-06
+      admissionReferralSourceCode
+    </xs:documentation>
+    <xs:documentation>
       2017-10-10 
       Added extension approved by SDWG on 2017-05-17
       functionCode
@@ -371,6 +376,8 @@
   <xs:element name="ethnicGroupCode" type="hl7:CE" />
   
   <xs:element name="dischargeDispositionCode" type="hl7:CE" />
+  
+  <xs:element name="admissionReferralSourceCode" type="hl7:CE" />
   
   <xs:element name="id" type="hl7:II" />
   

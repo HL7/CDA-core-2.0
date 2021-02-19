@@ -515,6 +515,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="effectiveTime" type="IVL_TS" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:admissionReferralSourceCode" minOccurs="0"/>
+      <!-- End Extension: (SDTC) -->
       <xs:element name="dischargeDispositionCode" type="CE" minOccurs="0" />
       <xs:element name="responsibleParty" type="POCD_MT000040.ResponsibleParty" minOccurs="0" />
       <xs:element name="encounterParticipant" type="POCD_MT000040.EncounterParticipant" minOccurs="0" maxOccurs="unbounded" />
