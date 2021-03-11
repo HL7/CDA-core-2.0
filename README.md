@@ -7,7 +7,7 @@ The `schema/normative` folder contains the original published CDA Schema. This i
 
 ### CDA Stylesheet
 
-The CDA Stylesheet is located [here](https://github.com/HL7/cda-core-xsl). It is currently being managed by Alex Hanket for SDWG.
+The CDA Stylesheet is located [here](https://github.com/HL7/cda-core-xsl). It is currently being managed by Alex Henket for SDWG.
 
 ## CDA Schema Extensions
 
