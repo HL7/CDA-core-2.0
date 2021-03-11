@@ -52,7 +52,22 @@
       <type>
         <code value="code"/>
       </type>
-      
+    </element>
+    <element id="Procedure.realmCode">
+      <path value="Procedure.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Procedure.typeId">
+      <path value="Procedure.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Procedure.templateId">
       <path value="Procedure.templateId"/>

@@ -37,7 +37,6 @@
         <code value="code"/>
       </type>
       <defaultValueCode value="ACT"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>

@@ -30,6 +30,15 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="ObservationMedia.ID">
+      <path value="ObservationMedia.ID"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
     <element id="ObservationMedia.classCode">
       <path value="ObservationMedia.classCode"/>
       <representation value="xmlAttr"/>
@@ -40,7 +49,6 @@
       </type>
       <defaultValueCode value="OBS"/>
       <fixedCode value="OBS"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClassObservation"/>
@@ -56,19 +64,25 @@
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>
       </binding>
     </element>
-    <element id="ObservationMedia.ID">
-      <path value="ObservationMedia.ID"/>
-      <representation value="xmlAttr"/>
+    <element id="ObservationMedia.realmCode">
+      <path value="ObservationMedia.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="ObservationMedia.typeId">
+      <path value="ObservationMedia.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ObservationMedia.templateId">

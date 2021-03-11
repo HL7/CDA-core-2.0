@@ -8,9 +8,6 @@
       <p>The id field SHALL match an id in the linked role.</p>
     </div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-    <valueUri value="urn:hl7-org:sdtc"/>
-  </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/AlternateIdentification"/>
   <name value="AlternateIdentification"/>
   <title value="AlternateIdentification (CDA Class)"/>
