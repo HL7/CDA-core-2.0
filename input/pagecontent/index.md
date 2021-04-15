@@ -30,6 +30,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-DocumentationOf.html">DocumentationOf</a></li>
 				<li><a href="StructureDefinition-EncompassingEncounter.html">EncompassingEncounter</a></li>
 				<li><a href="StructureDefinition-Encounter.html">Encounter</a></li>
+				<li><a href="StructureDefinition-EncounterParticipant.html">EncounterParticipant</a></li>
 				<li><a href="StructureDefinition-Entity.html">Entity</a></li>
 				<li><a href="StructureDefinition-ExternalAct.html">ExternalAct</a></li>
 				<li><a href="StructureDefinition-ExternalDocument.html">ExternalDocument</a></li>

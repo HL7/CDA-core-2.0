@@ -197,6 +197,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/EncounterParticipant" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/Entity" />
 			</reference>
 		</resource>

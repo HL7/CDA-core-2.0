@@ -160,33 +160,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="EncompassingEncounter.encounterParticipant.typeCode">
-      <path value="EncompassingEncounter.encounterParticipant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      
-    </element>
-    <element id="EncompassingEncounter.encounterParticipant.time">
-      <path value="EncompassingEncounter.encounterParticipant.time"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-      </type>
-    </element>
-    <element id="EncompassingEncounter.encounterParticipant.assignedEntity">
-      <path value="EncompassingEncounter.encounterParticipant.assignedEntity"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/EncounterParticipant"/>
       </type>
     </element>
     <element id="EncompassingEncounter.location">
