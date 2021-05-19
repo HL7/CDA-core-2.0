@@ -63,6 +63,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Patient.html">Patient</a></li>
 				<li><a href="StructureDefinition-PatientRole.html">PatientRole</a></li>
 				<li><a href="StructureDefinition-Performer1.html">Performer1</a></li>
+				<li><a href="StructureDefinition-Performer2.html">Performer2</a></li>
 				<li><a href="StructureDefinition-Person.html">Person</a></li>
 				<li><a href="StructureDefinition-Place.html">Place</a></li>
 				<li><a href="StructureDefinition-PlayingEntity.html">PlayingEntity</a></li>

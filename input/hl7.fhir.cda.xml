@@ -172,6 +172,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Performer2" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/ED" />
 			</reference>
 		</resource>
