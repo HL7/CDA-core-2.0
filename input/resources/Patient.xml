@@ -217,7 +217,7 @@
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value=""/>
+        <valueString value="raceCode"/>
       </extension>
       <path value="Patient.sdtcRaceCode"/>
       <min value="0"/>
