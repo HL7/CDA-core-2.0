@@ -78,9 +78,12 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
-    <element id="Person.asPatientRelationship">
+    <element id="Person.sdtcAsPatientRelationship">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="asPatientRelationship"/>
       </extension>
       <path value="Person.asPatientRelationship"/>
       <min value="0"/>

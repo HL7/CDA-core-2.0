@@ -77,9 +77,12 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
-    <element id="SubjectPerson.desc">
+    <element id="SubjectPerson.sdtcDesc">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="desc"/>
       </extension>
       <path value="SubjectPerson.desc"/>
       <min value="0"/>
@@ -108,9 +111,12 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="SubjectPerson.deceasedInd">
+    <element id="SubjectPerson.sdtcDeceasedInd">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="deceasedInd"/>
       </extension>
       <path value="SubjectPerson.deceasedInd"/>
       <min value="0"/>
@@ -119,9 +125,12 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
       </type>
     </element>
-    <element id="SubjectPerson.deceasedTime">
+    <element id="SubjectPerson.sdtcDeceasedTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="deceasedTime"/>
       </extension>
       <path value="SubjectPerson.deceasedTime"/>
       <min value="0"/>

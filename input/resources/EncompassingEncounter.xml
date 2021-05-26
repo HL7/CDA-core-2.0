@@ -100,9 +100,12 @@
       </type>
       
     </element>
-    <element id="EncompassingEncounter.admissionReferralSourceCode">
+    <element id="EncompassingEncounter.sdtcAdmissionReferralSourceCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="admissionReferralSourceCode"/>
       </extension>
       <path value="EncompassingEncounter.admissionReferralSourceCode"/>
       <min value="0"/>

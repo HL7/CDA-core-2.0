@@ -58,9 +58,11 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="AssociatedEntity.identifiedBy">
+    <element id="AssociatedEntity.sdtcIdentifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension><extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="identifiedBy"/>
       </extension>
       <path value="AssociatedEntity.identifiedBy"/>
       <min value="0"/>

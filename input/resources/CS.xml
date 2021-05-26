@@ -69,9 +69,12 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CS.valueSet">
+    <element id="CS.sdtcValueSet">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSet"/>
       </extension>
       <path value="CS.valueSet"/>
       <representation value="xmlAttr"/>
@@ -81,9 +84,12 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CS.valueSetVersion">
+    <element id="CS.sdtcValueSetVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSetVersion"/>
       </extension>
       <path value="CS.valueSetVersion"/>
       <representation value="xmlAttr"/>

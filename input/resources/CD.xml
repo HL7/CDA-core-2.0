@@ -84,9 +84,12 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSet">
+    <element id="CD.sdtcValueSet">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSet"/>
       </extension>
       <path value="CD.valueSet"/>
       <representation value="xmlAttr"/>
@@ -102,9 +105,12 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSetVersion">
+    <element id="CD.sdtcValueSetVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSetVersion"/>
       </extension>
       <path value="CD.valueSetVersion"/>
       <representation value="xmlAttr"/>
