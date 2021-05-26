@@ -93,7 +93,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="desc"/>
       </extension>
-      <path value="Patient.desc"/>
+      <path value="Patient.sdtcDesc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -127,7 +127,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedInd"/>
       </extension>
-      <path value="Patient.deceasedInd"/>
+      <path value="Patient.sdtcDeceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -141,7 +141,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedTime"/>
       </extension>
-      <path value="Patient.deceasedTime"/>
+      <path value="Patient.sdtcDeceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -155,7 +155,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="multipleBirthInd"/>
       </extension>
-      <path value="Patient.multipleBirthInd"/>
+      <path value="Patient.sdtcMultipleBirthInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -169,7 +169,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="multipleBirthOrderNumber"/>
       </extension>
-      <path value="Patient.multipleBirthOrderNumber"/>
+      <path value="Patient.sdtcMultipleBirthOrderNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>

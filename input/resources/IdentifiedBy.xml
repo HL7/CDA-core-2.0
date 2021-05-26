@@ -50,7 +50,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="alternateIdentification"/>
       </extension>
-      <path value="IdentifiedBy.alternateIdentification" />
+      <path value="IdentifiedBy.sdtcAlternateIdentification" />
       <min value="1" />
       <max value="1" />
       <type>

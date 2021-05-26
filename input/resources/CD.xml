@@ -91,7 +91,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="valueSet"/>
       </extension>
-      <path value="CD.valueSet"/>
+      <path value="CD.sdtcValueSet"/>
       <representation value="xmlAttr"/>
       <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
       <min value="0"/>
@@ -112,7 +112,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="valueSetVersion"/>
       </extension>
-      <path value="CD.valueSetVersion"/>
+      <path value="CD.sdtcValueSetVersion"/>
       <representation value="xmlAttr"/>
       <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
       <min value="0"/>

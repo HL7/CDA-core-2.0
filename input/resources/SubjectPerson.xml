@@ -84,7 +84,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="desc"/>
       </extension>
-      <path value="SubjectPerson.desc"/>
+      <path value="SubjectPerson.sdtcDesc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -118,7 +118,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedInd"/>
       </extension>
-      <path value="SubjectPerson.deceasedInd"/>
+      <path value="SubjectPerson.sdtcDeceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -132,7 +132,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="deceasedTime"/>
       </extension>
-      <path value="SubjectPerson.deceasedTime"/>
+      <path value="SubjectPerson.sdtcDeceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
