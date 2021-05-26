@@ -84,11 +84,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSet">
+    <element id="CD.sdtcValueSet">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CD.valueSet"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSet"/>
+      </extension>
+      <path value="CD.sdtcValueSet"/>
       <representation value="xmlAttr"/>
       <definition value="The valueSet extension adds an attribute for elements with a CD dataType which indicates the particular value set constraining the coded concept."/>
       <min value="0"/>
@@ -102,11 +105,14 @@
         <code value="string"/>
       </type>
     </element>
-    <element id="CD.valueSetVersion">
+    <element id="CD.sdtcValueSetVersion">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="CD.valueSetVersion"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="valueSetVersion"/>
+      </extension>
+      <path value="CD.sdtcValueSetVersion"/>
       <representation value="xmlAttr"/>
       <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
       <min value="0"/>

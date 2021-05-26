@@ -52,11 +52,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="HealthCareFacility.identifiedBy">
+    <element id="HealthCareFacility.sdtcIdentifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="HealthCareFacility.identifiedBy"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="identifiedBy"/>
+      </extension>
+      <path value="HealthCareFacility.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>

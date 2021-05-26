@@ -102,12 +102,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
       </type>
     </element>
-    <element id="Authenticator.signatureText">
+    <element id="Authenticator.sdtcSignatureText">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="Authenticator.signatureText"/>
-      <short value="sdtc:signatureText" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="signatureText"/>
+      </extension>
+      <path value="Authenticator.sdtcSignatureText"/>
       <min value="0"/>
       <max value="1"/>
       <type>

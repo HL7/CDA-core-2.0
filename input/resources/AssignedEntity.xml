@@ -53,11 +53,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="AssignedEntity.identifiedBy">
+    <element id="AssignedEntity.sdtcIdentifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="AssignedEntity.identifiedBy"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="identifiedBy"/>
+      </extension>
+      <path value="AssignedEntity.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>

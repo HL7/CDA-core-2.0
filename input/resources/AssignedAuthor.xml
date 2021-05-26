@@ -60,11 +60,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="AssignedAuthor.identifiedBy">
+    <element id="AssignedAuthor.sdtcIdentifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="AssignedAuthor.identifiedBy"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="identifiedBy"/>
+      </extension>
+      <path value="AssignedAuthor.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>

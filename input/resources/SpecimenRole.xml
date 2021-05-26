@@ -53,11 +53,14 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="SpecimenRole.identifiedBy">
+    <element id="SpecimenRole.sdtcIdentifiedBy">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="SpecimenRole.identifiedBy"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="identifiedBy"/>
+      </extension>
+      <path value="SpecimenRole.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
