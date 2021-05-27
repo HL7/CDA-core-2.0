@@ -10,14 +10,14 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 			<ul>
 				<li><a href="StructureDefinition-ClinicalDocument.html"><strong>ClinicalDocument</strong></a></li>
 				<li><a href="StructureDefinition-Act.html">Act</a></li>
-				<li><a href="StructureDefinition-Authenticator.html">Authenticator</a></li>
-				<li><a href="StructureDefinition-Author.html">Author</a></li>
-				<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice</a></li>
-				<li><a href="StructureDefinition-Authorization.html">Authorization</a></li>
 				<li><a href="StructureDefinition-AssignedAuthor.html">AssignedAuthor</a></li>
 				<li><a href="StructureDefinition-AssignedCustodian.html">AssignedCustodian</a></li>
 				<li><a href="StructureDefinition-AssignedEntity.html">AssignedEntity</a></li>
 				<li><a href="StructureDefinition-AssociatedEntity.html">AssociatedEntity</a></li>
+				<li><a href="StructureDefinition-Authenticator.html">Authenticator</a></li>
+				<li><a href="StructureDefinition-Author.html">Author</a></li>
+				<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice</a></li>
+				<li><a href="StructureDefinition-Authorization.html">Authorization</a></li>
 				<li><a href="StructureDefinition-Birthplace.html">Birthplace</a></li>
 				<li><a href="StructureDefinition-Component2.html">Component2</a></li>
 				<li><a href="StructureDefinition-ComponentOf.html">ComponentOf</a></li>
@@ -44,8 +44,8 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-InFulfillmentOf.html">InFulfillmentOf</a></li>
 				<li><a href="StructureDefinition-IntendedRecipient.html">IntendedRecipient</a></li>
 				<li><a href="StructureDefinition-LabeledDrug.html">LabeledDrug</a></li>
-				<li><a href="StructureDefinition-LegalAuthenticator.html">LegalAuthenticator</a></li>
 				<li><a href="StructureDefinition-LanguageCommunication.html">LanguageCommunication</a></li>
+				<li><a href="StructureDefinition-LegalAuthenticator.html">LegalAuthenticator</a></li>
 				<li><a href="StructureDefinition-MaintainedEntity.html">MaintainedEntity</a></li>
 				<li><a href="StructureDefinition-ManufacturedProduct.html">ManufacturedProduct</a></li>
 				<li><a href="StructureDefinition-Material.html">Material</a></li>
