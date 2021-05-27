@@ -76,6 +76,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-RelatedSubject.html">RelatedSubject</a></li>
 				<li><a href="StructureDefinition-Section.html">Section</a></li>
 				<li><a href="StructureDefinition-ServiceEvent.html">ServiceEvent</a></li>
+				<li><a href="StructureDefinition-Specimen.html">Specimen</a></li>
 				<li><a href="StructureDefinition-SpecimenRole.html">SpecimenRole</a></li>
 				<li><a href="StructureDefinition-StructuredBody.html">StructuredBody</a></li>
 				<li><a href="StructureDefinition-SubjectPerson.html">SubjectPerson</a></li>
