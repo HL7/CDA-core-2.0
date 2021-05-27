@@ -392,7 +392,12 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/Participant" />
+				<reference value="StructureDefinition/Participant1" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Participant2" />
 			</reference>
 		</resource>
 		<resource>

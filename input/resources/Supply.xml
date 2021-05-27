@@ -390,65 +390,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Supply.participant.typeCode">
-      <path value="Supply.participant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
-      </binding>
-    </element>
-    <element id="Supply.participant.contextControlCode">
-      <path value="Supply.participant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Supply.participant.time">
-      <path value="Supply.participant.time"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-      </type>
-    </element>
-    <element id="Supply.participant.awarenessCode">
-      <path value="Supply.participant.awarenessCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
-      </binding>
-    </element>
-    <element id="Supply.participant.participantRole">
-      <path value="Supply.participant.participantRole"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="Supply.entryRelationship">
