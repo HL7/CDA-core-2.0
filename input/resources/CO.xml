@@ -10,6 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+    <valueUri value="v3"/>
+  </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/CO"/>
   <name value="CO"/>
   <title value="CO: CodedOrdinal (V3 Data Type)"/>
