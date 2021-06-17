@@ -5,8 +5,8 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ"/>
-  <name value="IVL-PQ"/>
-  <title value="IVL-PQ: Interval (V3 Data Type)"/>
+  <name value="IVL_PQ"/>
+  <title value="IVL_PQ: Interval (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>

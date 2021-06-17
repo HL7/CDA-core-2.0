@@ -11,8 +11,8 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/INT-POS"/>
-  <name value="INT-POS"/>
-  <title value="INT-POS: Positive integer numbers (V3 Data Type)"/>
+  <name value="INT_POS"/>
+  <title value="INT_POS: Positive integer numbers (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>

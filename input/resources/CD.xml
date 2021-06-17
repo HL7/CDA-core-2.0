@@ -11,7 +11,7 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
-    <valueUri value="v3"/>
+    <valueCode value="RIM"/>
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
   <name value="CD"/>

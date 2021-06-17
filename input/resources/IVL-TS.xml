@@ -5,8 +5,8 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
-  <name value="IVL-TS"/>
-  <title value="IVL-TS: Interval (V3 Data Type)"/>
+  <name value="IVL_TS"/>
+  <title value="IVL_TS: Interval (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
