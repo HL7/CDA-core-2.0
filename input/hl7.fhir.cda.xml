@@ -137,6 +137,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/cs-prim" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/Custodian" />
 			</reference>
 		</resource>

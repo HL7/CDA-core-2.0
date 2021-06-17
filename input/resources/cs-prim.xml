@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="cs-prim"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Primitive type 'cs'</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/cs"/>
+  <name value="cs"/>
+  <title value="cs primitive (wrapper for code)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="cs primitive"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="code"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/code"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="code.extension">
+      <path value="code.extension"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

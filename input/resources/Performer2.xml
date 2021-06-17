@@ -50,6 +50,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/fhir/cda/StructureDefinition/cs"/>
       </type>
       <fixedCode value="PRF"/>
       <binding>
