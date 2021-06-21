@@ -517,6 +517,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Specimen" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/SpecimenRole" />
 			</reference>
 		</resource>
