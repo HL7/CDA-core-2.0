@@ -68,6 +68,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Person.html">Person</a></li>
 				<li><a href="StructureDefinition-Place.html">Place</a></li>
 				<li><a href="StructureDefinition-PlayingEntity.html">PlayingEntity</a></li>
+				<li><a href="StructureDefinition-Precondition.html">Precondition</a></li>
 				<li><a href="StructureDefinition-Procedure.html">Procedure</a></li>
 				<li><a href="StructureDefinition-RecordTarget.html">RecordTarget</a></li>
 				<li><a href="StructureDefinition-RegionOfInterest.html">RegionOfInterest</a></li>
