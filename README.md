@@ -1,4 +1,5 @@
 # cda-core-2.0
+
 CDA Schema and FHIR Logical model for CDA (supports the CCDA on FHIR guide, and other CDA/FHIR mapping projects)
 
 ## CDA Schema
