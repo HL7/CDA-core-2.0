@@ -457,6 +457,11 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Precondition" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/Procedure" />
 			</reference>
 		</resource>
@@ -513,6 +518,11 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/ServiceEvent" />
+			</reference>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Specimen" />
 			</reference>
 		</resource>
 		<resource>

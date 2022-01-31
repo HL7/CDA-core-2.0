@@ -345,31 +345,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.specimen.typeCode">
-      <path value="Observation.specimen.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="SPC"/>
-      <fixedCode value="SPC"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
-      </binding>
-    </element>
-    <element id="Observation.specimen.specimenRole">
-      <path value="Observation.specimen.specimenRole"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Observation.performer">
@@ -657,31 +633,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.precondition.typeCode">
-      <path value="Observation.precondition.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="PRCN"/>
-      <fixedCode value="PRCN"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
-      </binding>
-    </element>
-    <element id="Observation.precondition.criterion">
-      <path value="Observation.precondition.criterion"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
       </type>
     </element>
     <element id="Observation.referenceRange">

@@ -216,30 +216,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Act.specimen.typeCode">
-      <path value="Act.specimen.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="SPC"/>
-      <fixedCode value="SPC"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetDirect"/>
-      </binding>
-    </element>
-    <element id="Act.specimen.specimenRole">
-      <path value="Act.specimen.specimenRole"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SpecimenRole"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Act.performer">
@@ -522,30 +499,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Act.precondition.typeCode">
-      <path value="Act.precondition.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="PRCN"/>
-      <fixedCode value="PRCN"/>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipConditional"/>
-      </binding>
-    </element>
-    <element id="Act.precondition.criterion">
-      <path value="Act.precondition.criterion"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Criterion"/>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
       </type>
     </element>
   </differential>
