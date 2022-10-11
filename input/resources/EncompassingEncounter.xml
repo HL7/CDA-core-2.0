@@ -123,7 +123,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-EncounterDischargeDisposition"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-USEncounterDischargeDisposition"/>
       </binding>
     </element>
     <element id="EncompassingEncounter.responsibleParty">
