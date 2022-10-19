@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="hl7.fhir.cda"/>
 	<url value="http://hl7.org/fhir/cda/ImplementationGuide/cda-ig"/>
-	<version value="2.1.0" />
+	<version value="2.1.0-cibuild" />
 	<name value="ClinicalDocumentArchitectureV201" />
 	<title value="Clinical Document Architecture V2.0.1" />
 	<status value="active"/>
@@ -581,10 +581,12 @@
 			</reference>
 		</resource>
 		<page>
+			<sourceUrl value="index.html"/>
 			<name value="index.html"/>
 			<title value="IG Home Page"/>
 			<generation value="markdown"/>
 			<page>
+				<sourceUrl value="downloads.html"/>
 				<name value="downloads.html"/>
 				<title value="Downloads"/>
 				<generation value="markdown"/>
@@ -602,5 +604,12 @@
 			</code>
 			<value value="2019+" />
 		</parameter>
+		<parameter>
+			<code>
+  			<code value="apply-version" />
+			</code>
+			<value value="true" />
+		</parameter>
+		
 	</definition>
 </ImplementationGuide>
