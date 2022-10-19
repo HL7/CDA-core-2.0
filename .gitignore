@@ -8,3 +8,8 @@ resources/ig-new.xml
 resources/ig-validation-parameters.json
 org.hl7.fhir.publisher.jar
 input-cache/schemas/
+.DS_Store
+
+input-cache/workgroups.xml
+
+input-cache/txcache/

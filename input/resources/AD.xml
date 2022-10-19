@@ -906,7 +906,7 @@
     </element>
     <element id="AD.useablePeriod[x]">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="SXPR-TS"/>
+        <valueCanonical value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
       </extension>
       <path value="AD.useablePeriod[x]"/>
       <representation value="typeAttr"/>

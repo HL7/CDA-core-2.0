@@ -121,7 +121,7 @@
     </element>
     <element id="Supply.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <valueCanonical value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="Supply.effectiveTime"/>
       <representation value="typeAttr"/>

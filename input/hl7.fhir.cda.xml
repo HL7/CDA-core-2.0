@@ -8,7 +8,7 @@
 	<experimental value="false"/>
 	<publisher value="Health Level 7"/>
 	<packageId value="hl7.fhir.cda" />
-	<fhirVersion value="4.0.1" />
+	<fhirVersion value="5.0.0-ballot" />
 	<definition>
 		<resource>
 			<reference>
@@ -581,21 +581,25 @@
 			</reference>
 		</resource>
 		<page>
-			<nameUrl value="index.html"/>
+			<name value="index.html"/>
 			<title value="IG Home Page"/>
 			<generation value="markdown"/>
 			<page>
-				<nameUrl value="downloads.html"/>
+				<name value="downloads.html"/>
 				<title value="Downloads"/>
 				<generation value="markdown"/>
 			</page>
 		</page>
 		<parameter>
-			<code value="releaselabel" />
+			<code>
+			  <code value="releaselabel" />
+			</code>
 			<value value="CI Build" />
 		</parameter>
 		<parameter>
-			<code value="copyrightyear" />
+			<code>
+  			<code value="copyrightyear" />
+			</code>
 			<value value="2019+" />
 		</parameter>
 	</definition>

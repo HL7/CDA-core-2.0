@@ -68,6 +68,7 @@
     <element id="ED.representation">
       <path value="ED.representation"/>
       <representation value="xmlAttr"/>
+      <definition value="Specifies the representation of the binary data that is the content of the binary data value"/>
       <min value="0"/>
       <max value="1"/>
       <type>

@@ -131,7 +131,7 @@
     </element>
     <element id="SubstanceAdministration.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueString value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <valueCanonical value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="SubstanceAdministration.effectiveTime"/>
       <representation value="typeAttr"/>
