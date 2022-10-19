@@ -128,3 +128,15 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 	</tr>
 	</tbody>
 </table>
+
+## Other Information
+
+{% include ip-statements.xhtml %}
+
+<hr/>
+
+{% include dependency-table.xhtml %}
+
+<hr/>
+
+{% include globals-table.xhtml %}

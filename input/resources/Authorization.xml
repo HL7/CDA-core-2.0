@@ -4,7 +4,7 @@
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p></p>
+      <p>Represents an Authorization</p>
     </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
@@ -16,6 +16,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="Authorization (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="Authorization"/>

@@ -22,47 +22,47 @@
   <description value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="TN"/>
+  <type value="EN"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
-  <derivation value="specialization"/>
+  <derivation value="constraint"/>
   <differential>
-    <element id="TN">
-      <path value="TN"/>
+    <element id="EN">
+      <path value="EN"/>
       <definition value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="TN.delimiter">
-      <path value="TN.delimiter"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-    <element id="TN.family">
-      <path value="TN.family"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-    <element id="TN.given">
-      <path value="TN.given"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-    <element id="TN.prefix">
-      <path value="TN.prefix"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-    <element id="TN.suffix">
-      <path value="TN.suffix"/>
-      <min value="0"/>
-      <max value="0"/>
-    </element>
-    <element id="TN.use">
-      <path value="TN.use"/>
+    <element id="EN.use">
+      <path value="EN.use"/>
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNameUse"/>
       </binding>
+    </element>
+    <element id="EN.delimiter">
+      <path value="EN.delimiter"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.family">
+      <path value="EN.family"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.given">
+      <path value="EN.given"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.prefix">
+      <path value="EN.prefix"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
+    <element id="EN.suffix">
+      <path value="EN.suffix"/>
+      <min value="0"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

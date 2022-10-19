@@ -34,6 +34,9 @@
       <representation value="xmlAttr" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="code"/>
+      </type>
       <fixedCode value="IDENT" />
       <binding>
         <strength value="required" />

@@ -24,17 +24,14 @@
   <derivation value="specialization"/>
   <differential>
     <element id="TS">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-timeformat">
-        <valueCode value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
-      </extension>
       <path value="TS"/>
       <definition value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."></definition>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="TS.value">
-      <extension url="http://www.healthintersections.com.au/fhir/StructureDefinition/elementdefinition-dateformat">
-        <valueString value="v3"/>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-date-format">
+        <valueCode value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
       </extension>
       <path value="TS.value"/>
       <representation value="xmlAttr"/>

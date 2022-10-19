@@ -10,6 +10,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
+  <description value="ManufacturedProduct (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="ManufacturedProduct"/>
