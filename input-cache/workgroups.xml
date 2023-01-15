@@ -31,7 +31,7 @@
   <workgroup key="fm" webcode="fm" name="Financial Mgmt"/>
   <workgroup key="hcd" webcode="hcd" name="Health Care Devices"/>
   <workgroup key="hsi" name="Health Standards Integration" deprecated="true"/>
-  <workgroup key="hss" webcode="hss" name="Human and Social Services"/>
+  <workgroup key="hss" webcode="hsswg" name="Human and Social Services"/>
   <workgroup key="hta" webcode="termauth" name="HL7 Terminology Authority"/>
   <workgroup key="ic" webcode="ic" name="International Council"/>
   <workgroup key="project" name="IG Project" deprecated="true"/>

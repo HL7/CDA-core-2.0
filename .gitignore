@@ -12,3 +12,5 @@ input-cache/schemas/
 input-cache/workgroups.xml
 input-cache/txcache/
 input-cache/publisher.jar
+
+FHIR-cda.xml
