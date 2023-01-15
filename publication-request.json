@@ -1,0 +1,13 @@
+{
+  "package-id" : "hl7.fhir.cda",
+  "version" : "2.1.0-draft1",
+  "path" : "http://hl7.org/cda/stds/base/draft1",
+  "milestone" : false,
+  "status" : "draft",
+  "sequence" : "CDA 2.1",
+  "desc" : "First draft to support the publication of CCDA 2.1",
+  "title" : "CDA: Clinical Document Architecture",
+  "ci-build" : "https://build.fhir.org/ig/HL7/CDA-core-2.0",
+  "category" : "CDA",
+  "introduction" : "The base CDA specification republished using the FHIR publication tooling"
+}
