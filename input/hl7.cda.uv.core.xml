@@ -1,6 +1,6 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-	<id value="hl7.fhir.cda"/>
-	<url value="http://hl7.org/fhir/cda/ImplementationGuide/cda-ig"/>
+	<id value="hl7.cda.uv.core"/>
+	<url value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
 	<version value="2.1.0-draft1" />
 	<name value="ClinicalDocumentArchitectureV201" />
 	<title value="Clinical Document Architecture V2.0.1" />
@@ -18,8 +18,8 @@
       <value value="cgp@lists.HL7.org"/>
     </telecom>
   </contact>
-	<packageId value="hl7.fhir.cda" />
-	<fhirVersion value="5.0.0-ballot" />
+	<packageId value="hl7.cda.uv.core" />
+	<fhirVersion value="5.0.0-snapshot3" />
 	<definition>
 		<resource>
 			<reference>
