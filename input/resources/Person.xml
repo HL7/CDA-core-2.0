@@ -78,7 +78,15 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
       </type>
     </element>
-    <element id="Person.sdtcAsPatientRelationship">
+    <element id="Person.birthTime">
+      <path value="Person.birthTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="Person.asPatientRelationship">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
