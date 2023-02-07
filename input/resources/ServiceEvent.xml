@@ -87,6 +87,20 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
       </type>
     </element>
+    <element id="ServiceEvent.statusCode">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:oid:1.3.6.1.4.1.19376.1.3.2"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="statusCode"/>
+      </extension>
+      <path value="ServiceEvent.statusCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
     <element id="ServiceEvent.effectiveTime">
       <path value="ServiceEvent.effectiveTime"/>
       <min value="0"/>

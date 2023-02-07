@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="LabPrecondition"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:oid:1.3.6.1.4.1.19376.1.3.2"/>
+   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="LabPrecondition"/>
+  </extension>
+  <text>
+  <status value="generated"/>
+  <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>The precondition class, derived from the ActRelationship class, is used along with the LabPrecondition class to express a condition that must hold true before some over activity occurs.</p>
+  </div>
+  </text>
+  <url value="http://hl7.org/fhir/cda/StructureDefinition/LabPrecondition"/>
+  <name value="CDAR2.LabPrecondition"/>
+  <title value="LabPrecondition (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="IHE Lab extension, [see confluence](https://confluence.hl7.org/display/SD/CDA+Extensions)"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="LabPrecondition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="LabPrecondition">
+      <path value="LabPrecondition"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="LabPrecondition.nullFlavor">
+      <path value="LabPrecondition.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
+    <element id="LabPrecondition.typeCode">
+      <path value="LabPrecondition.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipType"/>
+      </binding>
+    </element>
+    <element id="LabPrecondition.realmCode">
+      <path value="LabPrecondition.realmCode"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="LabPrecondition.typeId">
+      <path value="LabPrecondition.typeId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="LabPrecondition.templateId">
+      <path value="LabPrecondition.templateId"/>
+      <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="LabPrecondition.criterion">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:oid:1.3.6.1.4.1.19376.1.3.2"/>
+      </extension>
+      <path value="LabPrecondition.criterion"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/LabCriterion"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
