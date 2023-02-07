@@ -118,6 +118,20 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
       </type>
     </element>
+    <element id="ClinicalDocument.statusCode">
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueString value="statusCode"/>
+      </extension>
+      <path value="ClinicalDocument.statusCode"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+      </type>
+    </element>
     <element id="ClinicalDocument.effectiveTime">
       <path value="ClinicalDocument.effectiveTime"/>
       <min value="1"/>
