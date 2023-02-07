@@ -1,0 +1,48 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+   <id value="PharmContent"/>
+   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+      <valueUri value="urn:ihe:pharm"/>
+   </extension>
+   <url value="http://hl7.org/fhir/cda/StructureDefinition/PharmContent"/>
+   <name value="CDAR2.PharmContent"/>
+   <title value="PharmContent (CDA Pharm Class)"/>
+   <status value="active"/>
+   <experimental value="false"/>
+   <publisher value="HL7"/>
+   <description value="IHE PHARM extension, [see confluence](https://confluence.hl7.org/display/SD/CDA+Extensions)"/>
+   <kind value="logical"/>
+   <abstract value="false"/>
+   <type value="PharmContent"/>
+   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+   <derivation value="specialization"/>
+   <differential>
+      <element id="PharmContent">
+         <path value="PharmContent"/>
+         <min value="1"/>
+         <max value="1"/>
+      </element>
+      <element id="PharmContent.classCode">
+         <path value="PharmContent.classCode"/>
+         <representation value="xmlAttr"/>
+         <min value="1"/>
+         <max value="1"/>
+         <type>
+            <code value="code"/>
+         </type>
+         <defaultValueCode value="CONT"/>
+         <fixedCode value="CONT"/>
+         <mustSupport value="true"/>
+      </element>
+     <element id="PharmContent.containerPackagedMedicine">
+         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+            <valueUri value="urn:ihe:pharm"/>
+         </extension>     
+         <path value="PharmContent.containerPackagedMedicine"/>
+         <min value="0"/>
+         <max value="1"/>
+         <type>
+            <code value="http://hl7.org/fhir/cda/StructureDefinition/PharmPackagedMedicine"/>
+         </type>
+      </element>      
+   </differential>
+</StructureDefinition>
