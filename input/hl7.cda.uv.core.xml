@@ -19,7 +19,7 @@
     </telecom>
   </contact>
 	<packageId value="hl7.cda.uv.core" />
-	<fhirVersion value="5.0.0-snapshot3" />
+	<fhirVersion value="5.0.0" />
 	<definition>
 		<resource>
 			<reference>
