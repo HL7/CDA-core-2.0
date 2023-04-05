@@ -83,8 +83,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
       </type>
       <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ManufacturerModelName"/>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ManufacturerModelNameExample"/>
       </binding>
     </element>
     <element id="AuthoringDevice.softwareName">
@@ -95,8 +95,8 @@
         <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
       </type>
       <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SoftwareName"/>
+        <strength value="example"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SoftwareNameExample"/>
       </binding>
     </element>
     <element id="AuthoringDevice.asMaintainedEntity">
