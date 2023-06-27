@@ -13,7 +13,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-bind"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/CO"/>

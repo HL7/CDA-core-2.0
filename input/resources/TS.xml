@@ -31,7 +31,7 @@
     </element>
     <element id="TS.value">
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-date-format">
-        <valueCode value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
+        <valueString value="YYYYMMDDHHMMSS.UUUU[+|-ZZzz]"/>
       </extension>
       <path value="TS.value"/>
       <representation value="xmlAttr"/>
