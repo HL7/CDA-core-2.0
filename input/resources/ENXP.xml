@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
   <name value="ENXP"/>
   <title value="ENXP: Entity Name Part (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="A character string token representing a part of a name. May have a type code signifying the role of the part in the whole entity name, and a qualifier code for more detail about the name part type. Typical name parts for person names are given names, and family names, titles, etc."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
   <derivation value="specialization"/>
   <differential>
     <element id="ENXP">

@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf"/>
   <name value="CDAR2.InFulfillmentOf"/>
   <title value="InFulfillmentOf (CDA Class)"/>
   <status value="active"/>
@@ -19,7 +19,7 @@
   <description value="This class represents those orders that are fulfilled by this document. For instance, a provider orders an X-Ray. The X-Ray is performed. A radiologist reads the X-Ray and generates a report. The X-Ray order identifier is transmitted in the Order class, the performed X-Ray procedure is transmitted in the ServiceEvent class, and the ClinicalDocument.code would be valued with &quot;Diagnostic Imaging Report&quot;."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/InFulfillmentOf"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -64,7 +64,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="InFulfillmentOf.typeId">
@@ -73,7 +73,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="InFulfillmentOf.templateId">
@@ -82,7 +82,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="InFulfillmentOf.order">
@@ -90,7 +90,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Order"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Order"/>
       </type>
     </element>
   </differential>

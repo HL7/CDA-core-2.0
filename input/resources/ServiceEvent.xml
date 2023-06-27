@@ -12,7 +12,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ServiceEvent"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ServiceEvent"/>
   <name value="CDAR2.ServiceEvent"/>
   <title value="ServiceEvent (CDA Class)"/>
   <status value="active"/>
@@ -21,7 +21,7 @@
   <description value="This class represents the main Act, such as a colonoscopy or an appendectomy, being documented.&#10;In some cases, the ServiceEvent is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is &quot;History and Physical Report&quot; and the procedure being documented is a &quot;History and Physical&quot; act. A ServiceEvent can further specialize the act inherent in the ClinicalDocument.code, such as where the ClinicalDocument.code is simply &quot;Procedure Report&quot; and the procedure was a &quot;colonoscopy&quot;. If ServiceEvent is included, it must be equivalent to or further specialize the value inherent in the ClinicalDocument.code, and shall not conflict with the value inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation.&#10;ServiceEvent.effectiveTime can be used to indicate the time the actual event (as opposed to the encounter surrounding the event) took place."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/ServiceEvent"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ServiceEvent"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -67,7 +67,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ServiceEvent.id">
@@ -75,7 +75,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ServiceEvent.code">
@@ -84,7 +84,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="ServiceEvent.effectiveTime">
@@ -92,7 +92,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
     <element id="ServiceEvent.performer">
@@ -100,7 +100,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer1"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer1"/>
       </type>
     </element>
   </differential>

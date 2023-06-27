@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
   <name value="PQ"/>
   <title value="PQ: PhysicalQuantity (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="A dimensioned quantity expressing the result of measuring."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/QTY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/QTY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="PQ">
@@ -68,7 +68,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQR"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQR"/>
       </type>
     </element>
   </differential>

@@ -13,10 +13,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-bind"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
   <name value="SC"/>
   <title value="SC: CharacterStringWithCode (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +25,8 @@
   <description value="A character string that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
   <derivation value="specialization"/>
   <differential>
     <element id="SC">

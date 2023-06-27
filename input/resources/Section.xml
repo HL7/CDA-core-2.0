@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Section"/>
   <name value="CDAR2.Section"/>
   <title value="Section (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <description value="Document sections can nest, can override context propagated from the header (See CDA Context), and can contain narrative and CDA entries.&#10;An XML attribute &quot;ID&quot; of type XML ID, is added to Section within the CDA Schema. This attribute serves as the target of a linkHtml reference (see linkHtml). All values of attributes of type XML ID must be unique within the document (per the W3C XML specification)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Section"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -92,7 +92,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Section.id">
@@ -100,7 +100,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Section.code">
@@ -108,7 +108,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -120,7 +120,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="Section.text">
@@ -138,7 +138,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="Section.languageCode">
@@ -146,7 +146,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -198,7 +198,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -210,7 +210,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="Section.author">
@@ -218,7 +218,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Section.informant">
@@ -266,7 +266,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="Section.informant.relatedEntity">
@@ -274,7 +274,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="Section.entry">
@@ -316,7 +316,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="Section.entry.regionOfInterest">
@@ -324,7 +324,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Section.entry.observationMedia">
@@ -332,7 +332,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="Section.entry.substanceAdministration">
@@ -340,7 +340,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="Section.entry.supply">
@@ -348,7 +348,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="Section.entry.procedure">
@@ -356,7 +356,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="Section.entry.encounter">
@@ -364,7 +364,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="Section.entry.organizer">
@@ -372,7 +372,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="Section.entry.act">
@@ -380,7 +380,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="Section.component">
@@ -420,7 +420,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Section"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Section"/>
       </type>
     </element>
   </differential>

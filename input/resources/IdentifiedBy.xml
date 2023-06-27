@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:sdtc"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
   <name value="IdentifiedBy"/>
   <title value="IdentifiedBy (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <description value="Link to an additional Identifier for a role"/>
   <kind value="logical"/>
   <abstract value="true"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -57,7 +57,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AlternateIdentification" />
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AlternateIdentification" />
       </type>
     </element>
   </differential>

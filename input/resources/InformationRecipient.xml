@@ -12,7 +12,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/InformationRecipient"/>
   <name value="CDAR2.InformationRecipient"/>
   <title value="InformationRecipient (CDA Class)"/>
   <status value="active"/>
@@ -21,7 +21,7 @@
   <description value="Represents the participant who has transformed a dictated note into text."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/InformationRecipient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -66,7 +66,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="InformationRecipient.typeId">
@@ -75,7 +75,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="InformationRecipient.templateId">
@@ -84,7 +84,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="InformationRecipient.intendedRecipient">
@@ -92,7 +92,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IntendedRecipient"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IntendedRecipient"/>
       </type>
     </element>
   </differential>
