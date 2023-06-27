@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
   <name value="ST"/>
   <title value="ST: CharacterString (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="The character string data type stands for text data, primarily intended for machine processing (e.g., sorting, querying, indexing, etc.) Used for names, symbols, and formal expressions."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ED"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
   <derivation value="constraint"/>
   <differential>
     <element id="ED">

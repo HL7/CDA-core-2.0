@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
   <name value="BL"/>
   <title value="BL: Boolean (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="BL"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="BL">

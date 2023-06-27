@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
   <name value="CDAR2.Act"/>
   <title value="Act (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <description value="A derivative of the RIM Act class, to be used when the other more specific classes aren't appropriate.&#10;Act.negationInd, when set to &quot;true&quot;, is a positive assertion that the Act as a whole is negated. Some properties such as Act.id, Act.moodCode, and the participations are not affected. These properties always have the same meaning: i.e., the author remains the author of the negative Act. An act statement with negationInd is still a statement about the specific fact described by the Act. For instance, a negated &quot;finding of wheezing on July 1&quot; means that the author positively denies that there was wheezing on July 1, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Act"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -52,7 +52,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Act.typeId">
@@ -60,7 +60,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Act.templateId">
@@ -69,7 +69,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Act.id">
@@ -77,7 +77,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Act.code">
@@ -85,7 +85,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -106,7 +106,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Act.statusCode">
@@ -114,7 +114,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -126,7 +126,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
     <element id="Act.priorityCode">
@@ -134,7 +134,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -146,7 +146,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -196,7 +196,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -208,7 +208,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="Act.specimen">
@@ -216,7 +216,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Act.performer">
@@ -224,7 +224,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
       </type>
     </element>
     <element id="Act.author">
@@ -232,7 +232,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Act.informant">
@@ -278,7 +278,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="Act.informant.relatedEntity">
@@ -286,7 +286,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="Act.participant">
@@ -294,7 +294,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="Act.entryRelationship">
@@ -345,7 +345,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="Act.entryRelationship.negationInd">
@@ -362,7 +362,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Act.entryRelationship.observation">
@@ -370,7 +370,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="Act.entryRelationship.regionOfInterest">
@@ -378,7 +378,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Act.entryRelationship.observationMedia">
@@ -386,7 +386,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="Act.entryRelationship.substanceAdministration">
@@ -394,7 +394,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="Act.entryRelationship.supply">
@@ -402,7 +402,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="Act.entryRelationship.procedure">
@@ -410,7 +410,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="Act.entryRelationship.encounter">
@@ -418,7 +418,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="Act.entryRelationship.organizer">
@@ -426,7 +426,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="Act.entryRelationship.act">
@@ -434,7 +434,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="Act.reference">
@@ -459,7 +459,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Act.reference.externalAct">
@@ -467,7 +467,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
       </type>
     </element>
     <element id="Act.reference.externalObservation">
@@ -475,7 +475,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
       </type>
     </element>
     <element id="Act.reference.externalProcedure">
@@ -483,7 +483,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
       </type>
     </element>
     <element id="Act.reference.externalDocument">
@@ -491,7 +491,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
       </type>
     </element>
     <element id="Act.precondition">
@@ -499,7 +499,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
       </type>
     </element>
   </differential>

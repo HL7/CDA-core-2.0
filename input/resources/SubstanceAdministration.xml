@@ -13,7 +13,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
   <name value="CDAR2.SubstanceAdministration"/>
   <title value="SubstanceAdministration (CDA Class)"/>
   <status value="active"/>
@@ -22,7 +22,7 @@
   <description value="A derivative of the RIM SubstanceAdministration class, used for representing medication-related events such as medication history or planned medication administration orders.&#10;SubstanceAdministration.negationInd, when set to &quot;true&quot;, is a positive assertion that the SubstanceAdministration as a whole is negated. Some properties such as SubstanceAdministration.id, SubstanceAdministration.moodCode, and the participations are not affected. These properties always have the same meaning: i.e., the author remains the author of the negative SubstanceAdministration. A substance administration statement with negationInd is still a statement about the specific fact described by the SubstanceAdministration. For instance, a negated &quot;aspirin administration&quot; means that the author positively denies that aspirin is being administered, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation.&#10;SubstanceAdministration.priorityCode categorizes the priority of a substance administration. SubstanceAdministration.doseQuantity indicates how much medication is given per dose. SubstanceAdministration.rateQuantity can be used to indicate the rate at which the dose is to be administered (e.g., the flow rate for intravenous infusions). SubstanceAdministration.maxDoseQuantity is used to capture the maximum dose of the medication that can be given over a stated time interval (e.g., maximum daily dose of morphine, maximum lifetime dose of doxorubicin). SubstanceAdministration.effectiveTime is used to describe the timing of administration. It is modeled using the GTS data type to accommodate various dosing scenarios.&#10;The capture of medication-related information also involves the interrelationship of SubstanceAdministration with several other classes. The consumable participation is used to bring in the LabeledDrug or Material entity that describes the administered substance. The LabeledDrug class, which is an Entity class playing the Role of Manufactured Product, identifies the drug that is consumed in the substance administration. The medication is identified by means of the LabeledDrug.code or the LabeledDrug.name. The Material entity is used to identify non-drug administered substances such as vaccines and blood products."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="SubstanceAdministration"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -60,7 +60,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="SubstanceAdministration.typeId">
@@ -68,7 +68,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="SubstanceAdministration.templateId">
@@ -77,7 +77,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="SubstanceAdministration.id">
@@ -85,7 +85,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="SubstanceAdministration.code">
@@ -93,7 +93,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -114,7 +114,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="SubstanceAdministration.statusCode">
@@ -122,7 +122,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -131,26 +131,26 @@
     </element>
     <element id="SubstanceAdministration.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueCanonical value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <valueCanonical value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="SubstanceAdministration.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
       </type>
     </element>
     <element id="SubstanceAdministration.priorityCode">
@@ -158,7 +158,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -170,7 +170,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"/>
       </type>
     </element>
     <element id="SubstanceAdministration.routeCode">
@@ -178,7 +178,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -190,7 +190,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -202,7 +202,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
       </type>
     </element>
     <element id="SubstanceAdministration.rateQuantity">
@@ -210,7 +210,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
       </type>
     </element>
     <element id="SubstanceAdministration.maxDoseQuantity">
@@ -218,7 +218,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-PQ-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"/>
       </type>
     </element>
     <element id="SubstanceAdministration.administrationUnitCode">
@@ -226,7 +226,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -262,7 +262,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct"/>
       </type>
     </element>
     <element id="SubstanceAdministration.subject">
@@ -310,7 +310,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -322,7 +322,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="SubstanceAdministration.specimen">
@@ -330,7 +330,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="SubstanceAdministration.performer">
@@ -338,7 +338,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
       </type>
     </element>
     <element id="SubstanceAdministration.author">
@@ -346,7 +346,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="SubstanceAdministration.informant">
@@ -394,7 +394,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="SubstanceAdministration.informant.relatedEntity">
@@ -402,7 +402,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="SubstanceAdministration.participant">
@@ -410,7 +410,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship">
@@ -463,7 +463,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.negationInd">
@@ -480,7 +480,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.observation">
@@ -488,7 +488,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.regionOfInterest">
@@ -496,7 +496,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.observationMedia">
@@ -504,7 +504,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.substanceAdministration">
@@ -512,7 +512,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.supply">
@@ -520,7 +520,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.procedure">
@@ -528,7 +528,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.encounter">
@@ -536,7 +536,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.organizer">
@@ -544,7 +544,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="SubstanceAdministration.entryRelationship.act">
@@ -552,7 +552,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="SubstanceAdministration.reference">
@@ -578,7 +578,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="SubstanceAdministration.reference.externalAct">
@@ -586,7 +586,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
       </type>
     </element>
     <element id="SubstanceAdministration.reference.externalObservation">
@@ -594,7 +594,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
       </type>
     </element>
     <element id="SubstanceAdministration.reference.externalProcedure">
@@ -602,7 +602,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
       </type>
     </element>
     <element id="SubstanceAdministration.reference.externalDocument">
@@ -610,7 +610,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
       </type>
     </element>
     <element id="SubstanceAdministration.precondition">
@@ -618,7 +618,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
       </type>
     </element>
   </differential>

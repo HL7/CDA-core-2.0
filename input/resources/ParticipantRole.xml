@@ -4,7 +4,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ParticipantRole"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole"/>
   <name value="CDAR2.ParticipantRole"/>
   <title value="ParticipantRole (CDA Class)"/>
   <status value="active"/>
@@ -13,7 +13,7 @@
   <description value="ParticipantRole (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ParticipantRole"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ParticipantRole"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -43,7 +43,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ParticipantRole.id">
@@ -51,7 +51,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ParticipantRole.sdtcIdentifiedBy">
@@ -65,7 +65,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="ParticipantRole.code">
@@ -73,7 +73,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -85,7 +85,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="ParticipantRole.telecom">
@@ -93,7 +93,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="ParticipantRole.playingDevice">
@@ -101,7 +101,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Device"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Device"/>
       </type>
     </element>
     <element id="ParticipantRole.playingEntity">
@@ -109,7 +109,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PlayingEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity"/>
       </type>
     </element>
     <element id="ParticipantRole.scopingEntity">
@@ -117,7 +117,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Entity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Entity"/>
       </type>
     </element>
   </differential>

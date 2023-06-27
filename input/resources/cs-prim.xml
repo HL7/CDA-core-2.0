@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/cs-prim"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/cs-prim"/>
   <name value="cs"/>
   <title value="cs primitive (wrapper for code)"/>
   <status value="active"/>

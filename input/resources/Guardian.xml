@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Guardian"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Guardian"/>
   <name value="CDAR2.Guardian"/>
   <title value="Guardian (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <description value="A patient's guardian is a person or organization in the role of guardian (Guardian class). The entity playing the role of guardian is a person (Person class) or organization (Organization class). The entity scoping the role is the patient (Patient class).&#10;Where a guardian is not explicitly stated, the value should default to local business practice (e.g. the patient makes their own health care decisions unless incapacitated in which case healthcare decisions are made by the patient's spouse)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Guardian"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Guardian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -51,7 +51,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Guardian.id">
@@ -59,7 +59,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Guardian.sdtcIdentifiedBy">
@@ -73,7 +73,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="Guardian.code">
@@ -81,7 +81,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -93,7 +93,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="Guardian.telecom">
@@ -101,7 +101,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="Guardian.guardianPerson">
@@ -109,7 +109,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
       </type>
     </element>
     <element id="Guardian.guardianOrganization">
@@ -117,7 +117,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

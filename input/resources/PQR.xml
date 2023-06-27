@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/PQR"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/PQR"/>
   <name value="PQR"/>
   <title value="PQR: PhysicalQuantityRepresentation (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="An extension of the coded value data type representating a physical quantity using a unit from any code system. Used to show alternative representation for a physical quantity."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="PQR"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/PQR"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
   <derivation value="specialization"/>
   <differential>
     <element id="PQR">

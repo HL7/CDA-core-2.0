@@ -13,7 +13,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-no-order">
     <valueBoolean value="true"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
   <name value="EN"/>
   <title value="EN: EntityName (V3 Data Type)"/>
   <status value="active"/>
@@ -22,8 +22,8 @@
   <description value="A name for a person, organization, place or thing. A sequence of name parts, such as given name or family name, prefix, suffix, etc. Examples for entity name values are &quot;Jim Bob Walton, Jr.&quot;, &quot;Health Level Seven, Inc.&quot;, &quot;Lake Tahoe&quot;, etc. An entity name may be as simple as a character string or may consist of several entity name parts, such as, &quot;Jim&quot;, &quot;Bob&quot;, &quot;Walton&quot;, and &quot;Jr.&quot;, &quot;Health Level Seven&quot; and &quot;Inc.&quot;, &quot;Lake&quot; and &quot;Tahoe&quot;."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="EN"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="EN">
@@ -52,7 +52,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.family">
@@ -60,7 +60,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.given">
@@ -68,7 +68,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.prefix">
@@ -76,7 +76,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.suffix">
@@ -84,7 +84,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ENXP"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ENXP"/>
       </type>
     </element>
     <element id="EN.other">
@@ -103,7 +103,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
   </differential>

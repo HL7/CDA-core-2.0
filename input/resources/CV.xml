@@ -16,7 +16,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
   <name value="CV"/>
   <title value="CV: CodedValue (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +25,8 @@
   <description value="Coded data, specifying only a code, code system, and optionally display name and original text. Used only as the data type for other data types' properties."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CV"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CV">

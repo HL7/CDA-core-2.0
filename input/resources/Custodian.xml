@@ -11,7 +11,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Custodian"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Custodian"/>
   <name value="CDAR2.Custodian"/>
   <title value="Custodian (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +20,7 @@
   <description value="Represents the organization that is in charge of maintaining the document. The custodian is the steward that is entrusted with the care of the document. Every CDA document has exactly one custodian.The custodian participation satisfies the CDA definition of Stewardship (see What is the CDA (§ 1.1 )). Because CDA is an exchange standard and may not represent the original form of the authenticated document, the custodian represents the steward of the original source document."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Custodian"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Custodian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -65,7 +65,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Custodian.typeId">
@@ -74,7 +74,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Custodian.templateId">
@@ -83,7 +83,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Custodian.assignedCustodian">
@@ -91,7 +91,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedCustodian"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedCustodian"/>
       </type>
     </element>
   </differential>

@@ -8,7 +8,7 @@
       <p>The id field SHALL match an id in the linked role.</p>
     </div>
   </text>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/AlternateIdentification"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/AlternateIdentification"/>
   <name value="AlternateIdentification"/>
   <title value="AlternateIdentification (CDA Class)"/>
   <status value="active"/>
@@ -17,7 +17,7 @@
   <description value="Alternate Identifier for a role"/>
   <kind value="logical"/>
   <abstract value="true"/>
-  <type value="AlternateIdentification"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/AlternateIdentification"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -51,7 +51,7 @@
       <min value="1" />
       <max value="1" />
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="AlternateIdentification.code">
@@ -62,7 +62,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
     <element id="AlternateIdentification.statusCode">
@@ -73,7 +73,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -88,7 +88,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
   </differential>

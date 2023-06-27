@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Informant"/>
   <name value="CDAR2.Informant"/>
   <title value="Informant (CDA Class)"/>
   <status value="active"/>
@@ -19,7 +19,7 @@
   <description value="An informant (or source of information) is a person that provides relevant information, such as the parent of a comatose patient who describes the patient's behavior prior to the onset of coma."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Informant"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Informant"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -79,7 +79,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Informant.typeId">
@@ -88,7 +88,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Informant.templateId">
@@ -97,7 +97,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <!-- TODO: Need to figure out how to constrain assignedEntity and relatedEntity so that only one may be chosen at a time. It is a choice of either assignedEntity and relatedEntity. -->
@@ -106,7 +106,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="Informant.relatedEntity">
@@ -114,7 +114,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
   </differential>

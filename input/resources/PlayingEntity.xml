@@ -4,7 +4,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/PlayingEntity"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity"/>
   <name value="CDAR2.PlayingEntity"/>
   <title value="PlayingEntity (CDA Class)"/>
   <status value="active"/>
@@ -13,7 +13,7 @@
   <description value="PlayingEntity (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="PlayingEntity"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -59,7 +59,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="PlayingEntity.code">
@@ -67,7 +67,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -79,7 +79,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="PlayingEntity.name">
@@ -87,7 +87,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
       </type>
     </element>
     <element id="PlayingEntity.desc">
@@ -95,7 +95,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
   </differential>

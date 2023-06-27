@@ -12,7 +12,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
   <name value="CDAR2Supply"/>
   <title value="Supply (CDA Class)"/>
   <status value="active"/>
@@ -21,7 +21,7 @@
   <description value="A derivative of the RIM Supply class, used for representing the provision of a material by one entity to another.&#10;The dispensed product is associated with the Supply act via a product participant, which connects to the same ManufacturedProduct role used for SubstanceAdministration.&#10;The Supply class represents dispensing, whereas the SubstanceAdministration class represents administration. Prescriptions are complex activities that involve both an administration request to the patient (e.g. take digoxin 0.125mg by mouth once per day) and a supply request to the pharmacy (e.g. dispense 30 tablets, with 5 refills). This should be represented in CDA by a SubstanceAdministration entry that has a component Supply entry. The nested Supply entry can have Supply.independentInd set to &quot;false&quot; to signal that the Supply cannot stand alone, without it's containing SubstanceAdministration. The following example illustrates a prescription representation in CDA."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Supply"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -59,7 +59,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Supply.typeId">
@@ -67,7 +67,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Supply.templateId">
@@ -76,7 +76,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Supply.id">
@@ -84,7 +84,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Supply.code">
@@ -92,7 +92,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -104,7 +104,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Supply.statusCode">
@@ -112,7 +112,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -121,26 +121,26 @@
     </element>
     <element id="Supply.effectiveTime">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
-        <valueCanonical value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <valueCanonical value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="Supply.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXCM-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
       </type>
     </element>
     <element id="Supply.priorityCode">
@@ -148,7 +148,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -160,7 +160,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"/>
       </type>
     </element>
     <element id="Supply.independentInd">
@@ -168,7 +168,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Supply.quantity">
@@ -176,7 +176,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
       </type>
     </element>
     <element id="Supply.expectedUseTime">
@@ -184,7 +184,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
     <element id="Supply.product">
@@ -217,7 +217,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct"/>
       </type>
       
     </element>
@@ -266,7 +266,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -278,7 +278,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
       </type>
     </element>
     <element id="Supply.specimen">
@@ -286,7 +286,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Supply.performer">
@@ -294,7 +294,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
       </type>
     </element>
     <element id="Supply.author">
@@ -302,7 +302,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Supply.informant">
@@ -350,7 +350,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
       </type>
     </element>
     <element id="Supply.informant.relatedEntity">
@@ -358,7 +358,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedEntity"/>
       </type>
     </element>
     <element id="Supply.participant">
@@ -366,7 +366,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="Supply.entryRelationship">
@@ -419,7 +419,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.negationInd">
@@ -436,7 +436,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.observation">
@@ -444,7 +444,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.regionOfInterest">
@@ -452,7 +452,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.observationMedia">
@@ -460,7 +460,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.substanceAdministration">
@@ -468,7 +468,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.supply">
@@ -476,7 +476,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.procedure">
@@ -484,7 +484,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.encounter">
@@ -492,7 +492,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.organizer">
@@ -500,7 +500,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
       </type>
     </element>
     <element id="Supply.entryRelationship.act">
@@ -508,7 +508,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
       </type>
     </element>
     <element id="Supply.reference">
@@ -534,7 +534,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Supply.reference.externalAct">
@@ -542,7 +542,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
       </type>
     </element>
     <element id="Supply.reference.externalObservation">
@@ -550,7 +550,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
       </type>
     </element>
     <element id="Supply.reference.externalProcedure">
@@ -558,7 +558,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
       </type>
     </element>
     <element id="Supply.reference.externalDocument">
@@ -566,7 +566,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
       </type>
     </element>
     <element id="Supply.precondition">
@@ -574,7 +574,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
       </type>
     </element>
   </differential>

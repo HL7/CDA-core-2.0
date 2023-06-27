@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ComponentOf"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ComponentOf"/>
   <name value="CDAR2.ComponentOf"/>
   <title value="ComponentOf (CDA Class)"/>
   <status value="active"/>
@@ -19,7 +19,7 @@
   <description value="ComponentOf (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ComponentOf"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ComponentOf"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -63,7 +63,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="ComponentOf.typeId">
@@ -72,7 +72,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ComponentOf.templateId">
@@ -81,7 +81,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ComponentOf.encompassingEncounter">
@@ -89,7 +89,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EncompassingEncounter"/>
       </type>
     </element>
   </differential>

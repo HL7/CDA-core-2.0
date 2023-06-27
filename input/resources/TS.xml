@@ -10,7 +10,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
   <name value="TS"/>
   <title value="TS: PointInTime (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +19,8 @@
   <description value="A quantity specifying a point on the axis of natural time. A point in time is most often represented as a calendar expression."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="TS"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="TS">

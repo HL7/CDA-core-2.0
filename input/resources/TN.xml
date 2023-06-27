@@ -13,7 +13,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-no-order">
     <valueBoolean value="true"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/TN"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/TN"/>
   <name value="TN"/>
   <title value="TN: TrivialName (V3 Data Type)"/>
   <status value="active"/>
@@ -22,8 +22,8 @@
   <description value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="EN"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
   <derivation value="constraint"/>
   <differential>
     <element id="EN">

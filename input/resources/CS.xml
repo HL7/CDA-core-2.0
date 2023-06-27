@@ -16,7 +16,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
   <name value="CS"/>
   <title value="CS: CodedSimpleValue (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +25,8 @@
   <description value="XCoded data in its simplest form, where only the code is not predetermined. The code system and code system version are fixed by the context in which the CS value occurs. CS is used for coded attributes that have a single HL7-defined value set."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CS"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CS">
@@ -112,7 +112,7 @@
       <min value="0"/>
       <max value="0"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
   </differential>
