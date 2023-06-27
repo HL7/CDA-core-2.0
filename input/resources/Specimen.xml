@@ -19,7 +19,7 @@
   <description value="A specimen is a part of some entity, typically the subject, that is the target of focused laboratory, radiology or other observations. In many clinical observations, such as physical examination of a patient, the patient is the subject of the observation, and there is no specimen. The specimen participant is only used when observations are made against some substance or object that is taken or derived from the subject."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Specimen"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/InfrastructureRoot"/>
   <derivation value="specialization"/>
   <differential>

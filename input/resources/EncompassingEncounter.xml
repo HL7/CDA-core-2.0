@@ -21,7 +21,7 @@
   <description value="This optional class represents the setting of the clinical encounter during which the documented act(s) or ServiceEvent occurred. Documents are not necessarily generated during an encounter, such as when a clinician, in response to an abnormal lab result, attempts to contact the patient but can't, and writes a Progress Note.&#10;In some cases, the setting of the encounter is inherent in the ClinicalDocument.code, such as where ClinicalDocument.code is &quot;Diabetes Clinic Progress Note&quot;. The setting of an encounter can also be transmitted in the HealthCareFacility.code attribute. If HealthCareFacility.code is sent, it should be equivalent to or further specialize the value inherent in the ClinicalDocument.code (such as where the ClinicalDocument.code is simply &quot;Clinic Progress Note&quot; and the value of HealthCareFacility.code is &quot;cardiology clinic&quot;), and shall not conflict with the value inherent in the ClinicalDocument.code, as such a conflict would constitute an ambiguous situation.&#10;EncompassingEncounter.dischargeDispositionCode can be used to depict the disposition of the patient at the time of hospital discharge (e.g., discharged to home, expired, against medical advice, etc.)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="EncompassingEncounter"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/EncompassingEncounter"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

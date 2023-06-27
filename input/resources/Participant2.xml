@@ -19,7 +19,7 @@
   <description value="Can be used to represent any other participant that cannot be represented with one of the more specific participants. The participant can be ascribed to a CDA entry, and propagates to nested CDA entries, unless overridden."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Participant2"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

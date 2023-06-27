@@ -20,7 +20,7 @@
   <description value="A ManufacturedMaterial used in an activity without being substantially changed through that activity.&#10;This includes durable (reusable) medical equipment as well as disposable equipment. The kind of device is identified by the code attribute inherited from Entity."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Device"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Device"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

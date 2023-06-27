@@ -21,7 +21,7 @@
   <description value="The language communication capabilities of an Entity.&#10;While it may seem on the surface that this class would be restricted in usage to only the LivingSubject subtypes, Devices also have the ability to communicate, such as automated telephony devices that transmit patient information to live operators on a triage line or provide automated laboratory results to clinicians.&#10;A patient who originally came from Mexico may have fluent language capabilities to speak, read and write in Spanish, and rudimentary capabilities in English. A person from Russia may have the capability to communicate equally well in spoken language in Russian, Armenian or Ukrainian, and a preference to speak in Armenian."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="LanguageCommunication"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/LanguageCommunication"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

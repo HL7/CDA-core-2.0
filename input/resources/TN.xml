@@ -22,7 +22,7 @@
   <description value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="EN"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
   <derivation value="constraint"/>
   <differential>

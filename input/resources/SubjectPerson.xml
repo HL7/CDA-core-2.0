@@ -19,7 +19,7 @@
   <description value="The entity playing the role is a person (SubjectPerson class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="SubjectPerson"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/SubjectPerson"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

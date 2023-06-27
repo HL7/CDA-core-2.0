@@ -19,7 +19,7 @@
   <description value="A Patient's birthplace is represented as a relationship between a patient and a place. The Birthplace class is played by a place (Place class), and scoped by the patient (Patient class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Birthplace"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Birthplace"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

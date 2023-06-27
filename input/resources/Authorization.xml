@@ -19,7 +19,7 @@
   <description value="Authorization (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Authorization"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Authorization"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

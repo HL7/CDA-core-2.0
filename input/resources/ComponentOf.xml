@@ -19,7 +19,7 @@
   <description value="ComponentOf (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ComponentOf"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/ComponentOf"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

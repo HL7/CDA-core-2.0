@@ -13,7 +13,7 @@
   <description value="ManufacturedProduct (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ManufacturedProduct"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

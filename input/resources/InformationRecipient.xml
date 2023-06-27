@@ -21,7 +21,7 @@
   <description value="Represents the participant who has transformed a dictated note into text."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="InformationRecipient"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/InformationRecipient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

@@ -20,7 +20,7 @@
   <description value="A derivative of the RIM Act class, which can be used to create arbitrary groupings of other CDA entries that share a common context. An Organizer can contain other Organizers and/or other CDA entries, by traversing the component relationship. An Organizer can refer to external acts by traversing the reference relationship. An Organizer cannot be the source of an entryRelationship relationship.&#10;NOTE: CDA entries such as Observation can also contain other CDA entries by traversing the entryRelationship class. There is no requirement that the Organizer entry be used in order to group CDA entries."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Organizer"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

@@ -13,7 +13,7 @@
   <description value="HealthCareFacility (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="HealthCareFacility"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/HealthCareFacility"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

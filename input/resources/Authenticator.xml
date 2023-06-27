@@ -20,7 +20,7 @@
   <description value="Represents a participant who has attested to the accuracy of the document, but who does not have privileges to legally authenticate the document. An example would be a resident physician who sees a patient and dictates a note, then later signs it. A clinical document can have zero to many authenticators. While electronic signatures are not captured in a CDA document, both authentication and legal authentication require that a document has been signed manually or electronically by the responsible individual. An authenticator has a required authenticator.time indicating the time of authentication, and a required authenticator.signatureCode, indicating that a signature has been obtained and is on file."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Authenticator"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Authenticator"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

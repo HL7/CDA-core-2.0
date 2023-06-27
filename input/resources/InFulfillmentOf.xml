@@ -19,7 +19,7 @@
   <description value="This class represents those orders that are fulfilled by this document. For instance, a provider orders an X-Ray. The X-Ray is performed. A radiologist reads the X-Ray and generates a report. The X-Ray order identifier is transmitted in the Order class, the performed X-Ray procedure is transmitted in the ServiceEvent class, and the ClinicalDocument.code would be valued with &quot;Diagnostic Imaging Report&quot;."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="InFulfillmentOf"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/InFulfillmentOf"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

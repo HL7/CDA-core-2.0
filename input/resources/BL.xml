@@ -19,7 +19,7 @@
   <description value="The Boolean type stands for the values of two-valued logic. A Boolean value can be either true or false, or, as any other value may be NULL."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="BL"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
   <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>

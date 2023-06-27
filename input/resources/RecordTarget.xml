@@ -23,7 +23,7 @@
   <description value="The recordTarget represents the medical record that this document belongs to. A clinical document typically has exactly one recordTarget participant. In the uncommon case where a clinical document (such as a group encounter note) is placed into more than one patient chart, more than one recordTarget participants can be stated. The recordTarget(s) of a document are stated in the header and propagate to nested content, where they cannot be overridden (see See CDA Context (§ 4.4 ))."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="RecordTarget"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

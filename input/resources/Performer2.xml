@@ -19,7 +19,7 @@
   <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Performer2"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

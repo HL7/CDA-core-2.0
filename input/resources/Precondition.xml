@@ -19,7 +19,7 @@
   <description value="The precondition class, derived from the ActRelationship class, is used along with the Precondition class to express a condition that must hold true before some over activity occurs."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Precondition"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

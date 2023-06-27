@@ -19,7 +19,7 @@
   <description value="Used to represent other participants not explicitly mentioned by other classes, that were somehow involved in the documented acts."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Participant1"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Participant1"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

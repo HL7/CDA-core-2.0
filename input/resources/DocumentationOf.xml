@@ -19,7 +19,7 @@
   <description value="TODO"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="DocumentationOf"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/DocumentationOf"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

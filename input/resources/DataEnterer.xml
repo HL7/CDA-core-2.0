@@ -19,7 +19,7 @@
   <description value="Represents the participant who has transformed a dictated note into text."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="DataEnterer"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/DataEnterer"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

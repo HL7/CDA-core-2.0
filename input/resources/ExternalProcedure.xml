@@ -19,7 +19,7 @@
   <description value="ExternalProcedure is a derivative of the RIM Procedure class, used for representing external procedures."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ExternalProcedure"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

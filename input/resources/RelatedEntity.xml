@@ -19,7 +19,7 @@
   <description value="The RelatedEntity role is used to represent an informant without a role.id (e.g. a parent or guy on the street)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="RelatedEntity"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

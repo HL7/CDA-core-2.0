@@ -19,7 +19,7 @@
   <description value="An informant (or source of information) is a person that provides relevant information, such as the parent of a comatose patient who describes the patient's behavior prior to the onset of coma."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Informant"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Informant"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

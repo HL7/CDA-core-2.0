@@ -19,7 +19,7 @@
   <description value="ExternalAct is a derivative of the RIM Act class, to be used when the other more specific classes are not appropriate."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ExternalAct"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

@@ -20,7 +20,7 @@
   <description value="A patient's guardian is a person or organization in the role of guardian (Guardian class). The entity playing the role of guardian is a person (Person class) or organization (Organization class). The entity scoping the role is the patient (Patient class).&#10;Where a guardian is not explicitly stated, the value should default to local business practice (e.g. the patient makes their own health care decisions unless incapacitated in which case healthcare decisions are made by the patient's spouse)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Guardian"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/Guardian"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>

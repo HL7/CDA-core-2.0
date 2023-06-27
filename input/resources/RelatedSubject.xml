@@ -19,7 +19,7 @@
   <description value="A subject is a person playing one of several possible roles (RelatedSubject class). The entity playing the role is a person (SubjectPerson class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="RelatedSubject"/>
+  <type value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
