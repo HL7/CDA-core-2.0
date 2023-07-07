@@ -6,6 +6,8 @@
 
 # CDA type names have _ in them
 Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 
 # CDA type names are UpperCamelCase
 Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
+Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
