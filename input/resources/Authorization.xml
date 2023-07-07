@@ -25,6 +25,7 @@
   <differential>
     <element id="Authorization">
       <path value="Authorization"/>
+      <definition value="Element Authorization"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,6 +46,7 @@
     </element>
     <element id="Authorization.typeCode">
       <path value="Authorization.typeCode"/>
+      <definition value="Element Authorization.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -86,6 +88,7 @@
     </element>
     <element id="Authorization.consent">
       <path value="Authorization.consent"/>
+      <definition value="Element Authorization.consent"/>
       <min value="1"/>
       <max value="1"/>
       <type>

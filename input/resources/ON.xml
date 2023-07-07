@@ -34,10 +34,12 @@
     </element>
     <element id="ON.family">
       <path value="ON.family"/>
+      <definition value="Element ON.family"/>
       <max value="0"/>
     </element>
     <element id="ON.given">
       <path value="ON.given"/>
+      <definition value="Element ON.given"/>
       <max value="0"/>
     </element>
   </differential>

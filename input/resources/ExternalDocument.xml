@@ -25,11 +25,13 @@
   <differential>
     <element id="ExternalDocument">
       <path value="ExternalDocument"/>
+      <definition value="Element ExternalDocument"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ExternalDocument.classCode">
       <path value="ExternalDocument.classCode"/>
+      <definition value="Element ExternalDocument.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -44,6 +46,7 @@
     </element>
     <element id="ExternalDocument.moodCode">
       <path value="ExternalDocument.moodCode"/>
+      <definition value="Element ExternalDocument.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -68,6 +71,7 @@
     </element>
     <element id="ExternalDocument.id">
       <path value="ExternalDocument.id"/>
+      <definition value="Element ExternalDocument.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -76,6 +80,7 @@
     </element>
     <element id="ExternalDocument.code">
       <path value="ExternalDocument.code"/>
+      <definition value="Element ExternalDocument.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -88,6 +93,7 @@
     </element>
     <element id="ExternalDocument.text">
       <path value="ExternalDocument.text"/>
+      <definition value="Element ExternalDocument.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -96,6 +102,7 @@
     </element>
     <element id="ExternalDocument.setId">
       <path value="ExternalDocument.setId"/>
+      <definition value="Element ExternalDocument.setId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -104,6 +111,7 @@
     </element>
     <element id="ExternalDocument.versionNumber">
       <path value="ExternalDocument.versionNumber"/>
+      <definition value="Element ExternalDocument.versionNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>

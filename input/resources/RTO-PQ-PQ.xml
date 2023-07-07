@@ -19,6 +19,7 @@
   <differential>
     <element id="RTO_PQ_PQ">
       <path value="RTO_PQ_PQ"/>
+      <definition value="Element RTO_PQ_PQ"/>
       <min value="1"/>
       <max value="*"/>
     </element>

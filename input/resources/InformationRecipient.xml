@@ -27,6 +27,7 @@
   <differential>
     <element id="InformationRecipient">
       <path value="InformationRecipient"/>
+      <definition value="Element InformationRecipient"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -47,6 +48,7 @@
     </element>
     <element id="InformationRecipient.typeCode">
       <path value="InformationRecipient.typeCode"/>
+      <definition value="Element InformationRecipient.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -89,6 +91,7 @@
     </element>
     <element id="InformationRecipient.intendedRecipient">
       <path value="InformationRecipient.intendedRecipient"/>
+      <definition value="Element InformationRecipient.intendedRecipient"/>
       <min value="1"/>
       <max value="1"/>
       <type>

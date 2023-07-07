@@ -27,6 +27,7 @@
   <differential>
     <element id="InfrastructureRoot">
       <path value="InfrastructureRoot"/>
+      <definition value="Element InfrastructureRoot"/>
       <min value="1"/>
       <max value="*"/>
     </element>

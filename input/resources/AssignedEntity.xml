@@ -19,11 +19,13 @@
   <differential>
     <element id="AssignedEntity">
       <path value="AssignedEntity"/>
+      <definition value="Element AssignedEntity"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="AssignedEntity.classCode">
       <path value="AssignedEntity.classCode"/>
+      <definition value="Element AssignedEntity.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -39,6 +41,7 @@
     </element>
     <element id="AssignedEntity.templateId">
       <path value="AssignedEntity.templateId"/>
+      <definition value="Element AssignedEntity.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -48,6 +51,7 @@
     </element>
     <element id="AssignedEntity.id">
       <path value="AssignedEntity.id"/>
+      <definition value="Element AssignedEntity.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -61,6 +65,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="identifiedBy"/>
       </extension>
+      <definition value="Element AssignedEntity.sdtcIdentifiedBy"/>
       <path value="AssignedEntity.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
@@ -70,6 +75,7 @@
     </element>
     <element id="AssignedEntity.code">
       <path value="AssignedEntity.code"/>
+      <definition value="Element AssignedEntity.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -82,6 +88,7 @@
     </element>
     <element id="AssignedEntity.addr">
       <path value="AssignedEntity.addr"/>
+      <definition value="Element AssignedEntity.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -90,6 +97,7 @@
     </element>
     <element id="AssignedEntity.telecom">
       <path value="AssignedEntity.telecom"/>
+      <definition value="Element AssignedEntity.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -98,6 +106,7 @@
     </element>
     <element id="AssignedEntity.assignedPerson">
       <path value="AssignedEntity.assignedPerson"/>
+      <definition value="Element AssignedEntity.assignedPerson"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -106,6 +115,7 @@
     </element>
     <element id="AssignedEntity.representedOrganization">
       <path value="AssignedEntity.representedOrganization"/>
+      <definition value="Element AssignedEntity.representedOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

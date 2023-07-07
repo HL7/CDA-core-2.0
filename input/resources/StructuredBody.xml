@@ -26,11 +26,13 @@
   <differential>
     <element id="StructuredBody">
       <path value="StructuredBody"/>
+      <definition value="Element StructuredBody"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="StructuredBody.classCode">
       <path value="StructuredBody.classCode"/>
+      <definition value="Element StructuredBody.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -47,6 +49,7 @@
     </element>
     <element id="StructuredBody.moodCode">
       <path value="StructuredBody.moodCode"/>
+      <definition value="Element StructuredBody.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -63,6 +66,7 @@
     </element>
     <element id="StructuredBody.confidentialityCode">
       <path value="StructuredBody.confidentialityCode"/>
+      <definition value="Element StructuredBody.confidentialityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -71,6 +75,7 @@
     </element>
     <element id="StructuredBody.languageCode">
       <path value="StructuredBody.languageCode"/>
+      <definition value="Element StructuredBody.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -83,6 +88,7 @@
     </element>
     <element id="StructuredBody.component">
       <path value="StructuredBody.component"/>
+      <definition value="Element StructuredBody.component"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -91,6 +97,7 @@
     </element>
     <element id="StructuredBody.component.typeCode">
       <path value="StructuredBody.component.typeCode"/>
+      <definition value="Element StructuredBody.component.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -103,6 +110,7 @@
     </element>
     <element id="StructuredBody.component.contextConductionInd">
       <path value="StructuredBody.component.contextConductionInd"/>
+      <definition value="Element StructuredBody.component.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -114,6 +122,7 @@
     </element>
     <element id="StructuredBody.component.section">
       <path value="StructuredBody.component.section"/>
+      <definition value="Element StructuredBody.component.section"/>
       <min value="1"/>
       <max value="1"/>
       <type>

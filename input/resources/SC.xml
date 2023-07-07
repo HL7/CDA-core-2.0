@@ -37,6 +37,7 @@
     </element>
     <element id="SC.code">
       <path value="SC.code"/>
+      <definition value="Element SC.code"/>
       <representation value="xmlAttr"/>
       <label value="Code"/>
       <min value="0"/>
@@ -47,6 +48,7 @@
     </element>
     <element id="SC.codeSystem">
       <path value="SC.codeSystem"/>
+      <definition value="Element SC.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
       <min value="0"/>
@@ -57,6 +59,7 @@
     </element>
     <element id="SC.codeSystemName">
       <path value="SC.codeSystemName"/>
+      <definition value="Element SC.codeSystemName"/>
       <representation value="xmlAttr"/>
       <label value="Code System Name"/>
       <min value="0"/>
@@ -67,6 +70,7 @@
     </element>
     <element id="SC.codeSystemVersion">
       <path value="SC.codeSystemVersion"/>
+      <definition value="Element SC.codeSystemVersion"/>
       <representation value="xmlAttr"/>
       <label value="Code System Version"/>
       <min value="0"/>
@@ -77,6 +81,7 @@
     </element>
     <element id="SC.displayName">
       <path value="SC.displayName"/>
+      <definition value="Element SC.displayName"/>
       <representation value="xmlAttr"/>
       <label value="Display Name"/>
       <min value="0"/>

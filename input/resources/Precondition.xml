@@ -25,6 +25,7 @@
   <differential>
     <element id="Precondition">
       <path value="Precondition"/>
+      <definition value="Element Precondition"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,6 +46,7 @@
     </element>
     <element id="Precondition.typeCode">
       <path value="Precondition.typeCode"/>
+      <definition value="Element Precondition.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -85,6 +87,7 @@
     </element>
     <element id="Precondition.criterion">
       <path value="Precondition.criterion"/>
+      <definition value="Element Precondition.criterion"/>
       <min value="1"/>
       <max value="1"/>
       <type>

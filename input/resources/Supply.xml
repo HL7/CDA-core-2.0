@@ -27,11 +27,13 @@
   <differential>
     <element id="Supply">
       <path value="Supply"/>
+      <definition value="Element Supply"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Supply.classCode">
       <path value="Supply.classCode"/>
+      <definition value="Element Supply.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -47,6 +49,7 @@
     </element>
     <element id="Supply.moodCode">
       <path value="Supply.moodCode"/>
+      <definition value="Element Supply.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -56,6 +59,7 @@
     </element>
     <element id="Supply.realmCode">
       <path value="Supply.realmCode"/>
+      <definition value="Element Supply.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -64,6 +68,7 @@
     </element>
     <element id="Supply.typeId">
       <path value="Supply.typeId"/>
+      <definition value="Element Supply.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -81,6 +86,7 @@
     </element>
     <element id="Supply.id">
       <path value="Supply.id"/>
+      <definition value="Element Supply.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -89,6 +95,7 @@
     </element>
     <element id="Supply.code">
       <path value="Supply.code"/>
+      <definition value="Element Supply.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -101,6 +108,7 @@
     </element>
     <element id="Supply.text">
       <path value="Supply.text"/>
+      <definition value="Element Supply.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -109,6 +117,7 @@
     </element>
     <element id="Supply.statusCode">
       <path value="Supply.statusCode"/>
+      <definition value="Element Supply.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -124,6 +133,7 @@
         <valueCanonical value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="Supply.effectiveTime"/>
+      <definition value="Element Supply.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
@@ -145,6 +155,7 @@
     </element>
     <element id="Supply.priorityCode">
       <path value="Supply.priorityCode"/>
+      <definition value="Element Supply.priorityCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -157,6 +168,7 @@
     </element>
     <element id="Supply.repeatNumber">
       <path value="Supply.repeatNumber"/>
+      <definition value="Element Supply.repeatNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -165,6 +177,7 @@
     </element>
     <element id="Supply.independentInd">
       <path value="Supply.independentInd"/>
+      <definition value="Element Supply.independentInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -173,6 +186,7 @@
     </element>
     <element id="Supply.quantity">
       <path value="Supply.quantity"/>
+      <definition value="Element Supply.quantity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -181,6 +195,7 @@
     </element>
     <element id="Supply.expectedUseTime">
       <path value="Supply.expectedUseTime"/>
+      <definition value="Element Supply.expectedUseTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -189,6 +204,7 @@
     </element>
     <element id="Supply.product">
       <path value="Supply.product"/>
+      <definition value="Element Supply.product"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -198,6 +214,7 @@
     </element>
     <element id="Supply.product.typeCode">
       <path value="Supply.product.typeCode"/>
+      <definition value="Element Supply.product.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -214,6 +231,7 @@
     </element>
     <element id="Supply.product.manufacturedProduct">
       <path value="Supply.product.manufacturedProduct"/>
+      <definition value="Element Supply.product.manufacturedProduct"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -223,6 +241,7 @@
     </element>
     <element id="Supply.subject">
       <path value="Supply.subject"/>
+      <definition value="Element Supply.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -231,6 +250,7 @@
     </element>
     <element id="Supply.subject.typeCode">
       <path value="Supply.subject.typeCode"/>
+      <definition value="Element Supply.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -247,6 +267,7 @@
     </element>
     <element id="Supply.subject.contextControlCode">
       <path value="Supply.subject.contextControlCode"/>
+      <definition value="Element Supply.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -263,6 +284,7 @@
     </element>
     <element id="Supply.subject.awarenessCode">
       <path value="Supply.subject.awarenessCode"/>
+      <definition value="Element Supply.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -275,6 +297,7 @@
     </element>
     <element id="Supply.subject.relatedSubject">
       <path value="Supply.subject.relatedSubject"/>
+      <definition value="Element Supply.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -283,6 +306,7 @@
     </element>
     <element id="Supply.specimen">
       <path value="Supply.specimen"/>
+      <definition value="Element Supply.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -291,6 +315,7 @@
     </element>
     <element id="Supply.performer">
       <path value="Supply.performer"/>
+      <definition value="Element Supply.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -299,6 +324,7 @@
     </element>
     <element id="Supply.author">
       <path value="Supply.author"/>
+      <definition value="Element Supply.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -307,6 +333,7 @@
     </element>
     <element id="Supply.informant">
       <path value="Supply.informant"/>
+      <definition value="Element Supply.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -315,6 +342,7 @@
     </element>
     <element id="Supply.informant.typeCode">
       <path value="Supply.informant.typeCode"/>
+      <definition value="Element Supply.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -331,6 +359,7 @@
     </element>
     <element id="Supply.informant.contextControlCode">
       <path value="Supply.informant.contextControlCode"/>
+      <definition value="Element Supply.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -347,6 +376,7 @@
     </element>
     <element id="Supply.informant.assignedEntity">
       <path value="Supply.informant.assignedEntity"/>
+      <definition value="Element Supply.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -355,6 +385,7 @@
     </element>
     <element id="Supply.informant.relatedEntity">
       <path value="Supply.informant.relatedEntity"/>
+      <definition value="Element Supply.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -363,6 +394,7 @@
     </element>
     <element id="Supply.participant">
       <path value="Supply.participant"/>
+      <definition value="Element Supply.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -371,6 +403,7 @@
     </element>
     <element id="Supply.entryRelationship">
       <path value="Supply.entryRelationship"/>
+      <definition value="Element Supply.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -386,6 +419,7 @@
     </element>
     <element id="Supply.entryRelationship.typeCode">
       <path value="Supply.entryRelationship.typeCode"/>
+      <definition value="Element Supply.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -396,6 +430,7 @@
     </element>
     <element id="Supply.entryRelationship.inversionInd">
       <path value="Supply.entryRelationship.inversionInd"/>
+      <definition value="Element Supply.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -405,6 +440,7 @@
     </element>
     <element id="Supply.entryRelationship.contextConductionInd">
       <path value="Supply.entryRelationship.contextConductionInd"/>
+      <definition value="Element Supply.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -416,6 +452,7 @@
     </element>
     <element id="Supply.entryRelationship.sequenceNumber">
       <path value="Supply.entryRelationship.sequenceNumber"/>
+      <definition value="Element Supply.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -424,6 +461,7 @@
     </element>
     <element id="Supply.entryRelationship.negationInd">
       <path value="Supply.entryRelationship.negationInd"/>
+      <definition value="Element Supply.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -433,6 +471,7 @@
     </element>
     <element id="Supply.entryRelationship.seperatableInd">
       <path value="Supply.entryRelationship.seperatableInd"/>
+      <definition value="Element Supply.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -441,6 +480,7 @@
     </element>
     <element id="Supply.entryRelationship.observation">
       <path value="Supply.entryRelationship.observation"/>
+      <definition value="Element Supply.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -449,6 +489,7 @@
     </element>
     <element id="Supply.entryRelationship.regionOfInterest">
       <path value="Supply.entryRelationship.regionOfInterest"/>
+      <definition value="Element Supply.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -457,6 +498,7 @@
     </element>
     <element id="Supply.entryRelationship.observationMedia">
       <path value="Supply.entryRelationship.observationMedia"/>
+      <definition value="Element Supply.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -465,6 +507,7 @@
     </element>
     <element id="Supply.entryRelationship.substanceAdministration">
       <path value="Supply.entryRelationship.substanceAdministration"/>
+      <definition value="Element Supply.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -473,6 +516,7 @@
     </element>
     <element id="Supply.entryRelationship.supply">
       <path value="Supply.entryRelationship.supply"/>
+      <definition value="Element Supply.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -481,6 +525,7 @@
     </element>
     <element id="Supply.entryRelationship.procedure">
       <path value="Supply.entryRelationship.procedure"/>
+      <definition value="Element Supply.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -489,6 +534,7 @@
     </element>
     <element id="Supply.entryRelationship.encounter">
       <path value="Supply.entryRelationship.encounter"/>
+      <definition value="Element Supply.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -497,6 +543,7 @@
     </element>
     <element id="Supply.entryRelationship.organizer">
       <path value="Supply.entryRelationship.organizer"/>
+      <definition value="Element Supply.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -505,6 +552,7 @@
     </element>
     <element id="Supply.entryRelationship.act">
       <path value="Supply.entryRelationship.act"/>
+      <definition value="Element Supply.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -513,6 +561,7 @@
     </element>
     <element id="Supply.reference">
       <path value="Supply.reference"/>
+      <definition value="Element Supply.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -521,6 +570,7 @@
     </element>
     <element id="Supply.reference.typeCode">
       <path value="Supply.reference.typeCode"/>
+      <definition value="Element Supply.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -531,6 +581,7 @@
     </element>
     <element id="Supply.reference.seperatableInd">
       <path value="Supply.reference.seperatableInd"/>
+      <definition value="Element Supply.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -539,6 +590,7 @@
     </element>
     <element id="Supply.reference.externalAct">
       <path value="Supply.reference.externalAct"/>
+      <definition value="Element Supply.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -547,6 +599,7 @@
     </element>
     <element id="Supply.reference.externalObservation">
       <path value="Supply.reference.externalObservation"/>
+      <definition value="Element Supply.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -555,6 +608,7 @@
     </element>
     <element id="Supply.reference.externalProcedure">
       <path value="Supply.reference.externalProcedure"/>
+      <definition value="Element Supply.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -563,6 +617,7 @@
     </element>
     <element id="Supply.reference.externalDocument">
       <path value="Supply.reference.externalDocument"/>
+      <definition value="Element Supply.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -571,6 +626,7 @@
     </element>
     <element id="Supply.precondition">
       <path value="Supply.precondition"/>
+      <definition value="Element Supply.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

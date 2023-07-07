@@ -25,6 +25,7 @@
   <differential>
     <element id="code.extension">
       <path value="code.extension"/>
+      <definition value="Element code.extension"/>
       <max value="0"/>
     </element>
   </differential>

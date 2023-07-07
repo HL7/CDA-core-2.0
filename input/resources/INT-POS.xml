@@ -25,6 +25,7 @@
   <differential>
     <element id="INT_POS">
       <path value="INT_POS"/>
+      <definition value="Element INT_POS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
