@@ -25,11 +25,13 @@
   <differential>
     <element id="Specimen">
       <path value="Specimen"/>
+      <definition value="Element Specimen"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Specimen.typeCode">
       <path value="Specimen.typeCode"/>
+      <definition value="Element Specimen.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -45,6 +47,7 @@
     </element>
     <element id="Specimen.specimenRole">
       <path value="Specimen.specimenRole"/>
+      <definition value="Element Specimen.specimenRole"/>
       <min value="1"/>
       <max value="1"/>
       <type>

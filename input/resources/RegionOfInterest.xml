@@ -26,11 +26,13 @@
   <differential>
     <element id="RegionOfInterest">
       <path value="RegionOfInterest"/>
+      <definition value="Element RegionOfInterest"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="RegionOfInterest.ID">
       <path value="RegionOfInterest.ID"/>
+      <definition value="Element RegionOfInterest.ID"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -40,6 +42,7 @@
     </element>
     <element id="RegionOfInterest.classCode">
       <path value="RegionOfInterest.classCode"/>
+      <definition value="Element RegionOfInterest.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -55,6 +58,7 @@
     </element>
     <element id="RegionOfInterest.moodCode">
       <path value="RegionOfInterest.moodCode"/>
+      <definition value="Element RegionOfInterest.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -70,6 +74,7 @@
     </element>
     <element id="RegionOfInterest.realmCode">
       <path value="RegionOfInterest.realmCode"/>
+      <definition value="Element RegionOfInterest.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -78,6 +83,7 @@
     </element>
     <element id="RegionOfInterest.typeId">
       <path value="RegionOfInterest.typeId"/>
+      <definition value="Element RegionOfInterest.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -86,6 +92,7 @@
     </element>
     <element id="RegionOfInterest.templateId">
       <path value="RegionOfInterest.templateId"/>
+      <definition value="Element RegionOfInterest.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -95,6 +102,7 @@
     </element>
     <element id="RegionOfInterest.id">
       <path value="RegionOfInterest.id"/>
+      <definition value="Element RegionOfInterest.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -103,6 +111,7 @@
     </element>
     <element id="RegionOfInterest.code">
       <path value="RegionOfInterest.code"/>
+      <definition value="Element RegionOfInterest.code"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -112,6 +121,7 @@
     </element>
     <element id="RegionOfInterest.value">
       <path value="RegionOfInterest.value"/>
+      <definition value="Element RegionOfInterest.value"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -121,6 +131,7 @@
     </element>
     <element id="RegionOfInterest.subject">
       <path value="RegionOfInterest.subject"/>
+      <definition value="Element RegionOfInterest.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -129,6 +140,7 @@
     </element>
     <element id="RegionOfInterest.subject.typeCode">
       <path value="RegionOfInterest.subject.typeCode"/>
+      <definition value="Element RegionOfInterest.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -145,6 +157,7 @@
     </element>
     <element id="RegionOfInterest.subject.contextControlCode">
       <path value="RegionOfInterest.subject.contextControlCode"/>
+      <definition value="Element RegionOfInterest.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -161,6 +174,7 @@
     </element>
     <element id="RegionOfInterest.subject.awarenessCode">
       <path value="RegionOfInterest.subject.awarenessCode"/>
+      <definition value="Element RegionOfInterest.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -173,6 +187,7 @@
     </element>
     <element id="RegionOfInterest.subject.relatedSubject">
       <path value="RegionOfInterest.subject.relatedSubject"/>
+      <definition value="Element RegionOfInterest.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -181,6 +196,7 @@
     </element>
     <element id="RegionOfInterest.specimen">
       <path value="RegionOfInterest.specimen"/>
+      <definition value="Element RegionOfInterest.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -189,6 +205,7 @@
     </element>
     <element id="RegionOfInterest.performer">
       <path value="RegionOfInterest.performer"/>
+      <definition value="Element RegionOfInterest.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -197,6 +214,7 @@
     </element>
     <element id="RegionOfInterest.author">
       <path value="RegionOfInterest.author"/>
+      <definition value="Element RegionOfInterest.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -205,6 +223,7 @@
     </element>
     <element id="RegionOfInterest.informant">
       <path value="RegionOfInterest.informant"/>
+      <definition value="Element RegionOfInterest.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -213,6 +232,7 @@
     </element>
     <element id="RegionOfInterest.informant.typeCode">
       <path value="RegionOfInterest.informant.typeCode"/>
+      <definition value="Element RegionOfInterest.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -229,6 +249,7 @@
     </element>
     <element id="RegionOfInterest.informant.contextControlCode">
       <path value="RegionOfInterest.informant.contextControlCode"/>
+      <definition value="Element RegionOfInterest.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -245,6 +266,7 @@
     </element>
     <element id="RegionOfInterest.informant.assignedEntity">
       <path value="RegionOfInterest.informant.assignedEntity"/>
+      <definition value="Element RegionOfInterest.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -253,6 +275,7 @@
     </element>
     <element id="RegionOfInterest.informant.relatedEntity">
       <path value="RegionOfInterest.informant.relatedEntity"/>
+      <definition value="Element RegionOfInterest.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -261,6 +284,7 @@
     </element>
     <element id="RegionOfInterest.participant">
       <path value="RegionOfInterest.participant"/>
+      <definition value="Element RegionOfInterest.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -269,6 +293,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship">
       <path value="RegionOfInterest.entryRelationship"/>
+      <definition value="Element RegionOfInterest.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -284,6 +309,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.typeCode">
       <path value="RegionOfInterest.entryRelationship.typeCode"/>
+      <definition value="Element RegionOfInterest.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -294,6 +320,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.inversionInd">
       <path value="RegionOfInterest.entryRelationship.inversionInd"/>
+      <definition value="Element RegionOfInterest.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -303,6 +330,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.contextConductionInd">
       <path value="RegionOfInterest.entryRelationship.contextConductionInd"/>
+      <definition value="Element RegionOfInterest.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -314,6 +342,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.sequenceNumber">
       <path value="RegionOfInterest.entryRelationship.sequenceNumber"/>
+      <definition value="Element RegionOfInterest.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -322,6 +351,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.negationInd">
       <path value="RegionOfInterest.entryRelationship.negationInd"/>
+      <definition value="Element RegionOfInterest.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -331,6 +361,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.seperatableInd">
       <path value="RegionOfInterest.entryRelationship.seperatableInd"/>
+      <definition value="Element RegionOfInterest.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -339,6 +370,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.observation">
       <path value="RegionOfInterest.entryRelationship.observation"/>
+      <definition value="Element RegionOfInterest.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -347,6 +379,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.regionOfInterest">
       <path value="RegionOfInterest.entryRelationship.regionOfInterest"/>
+      <definition value="Element RegionOfInterest.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -355,6 +388,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.observationMedia">
       <path value="RegionOfInterest.entryRelationship.observationMedia"/>
+      <definition value="Element RegionOfInterest.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -363,6 +397,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.substanceAdministration">
       <path value="RegionOfInterest.entryRelationship.substanceAdministration"/>
+      <definition value="Element RegionOfInterest.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -371,6 +406,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.supply">
       <path value="RegionOfInterest.entryRelationship.supply"/>
+      <definition value="Element RegionOfInterest.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -379,6 +415,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.procedure">
       <path value="RegionOfInterest.entryRelationship.procedure"/>
+      <definition value="Element RegionOfInterest.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -387,6 +424,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.encounter">
       <path value="RegionOfInterest.entryRelationship.encounter"/>
+      <definition value="Element RegionOfInterest.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -395,6 +433,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.organizer">
       <path value="RegionOfInterest.entryRelationship.organizer"/>
+      <definition value="Element RegionOfInterest.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -403,6 +442,7 @@
     </element>
     <element id="RegionOfInterest.entryRelationship.act">
       <path value="RegionOfInterest.entryRelationship.act"/>
+      <definition value="Element RegionOfInterest.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -411,6 +451,7 @@
     </element>
     <element id="RegionOfInterest.reference">
       <path value="RegionOfInterest.reference"/>
+      <definition value="Element RegionOfInterest.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -419,6 +460,7 @@
     </element>
     <element id="RegionOfInterest.reference.typeCode">
       <path value="RegionOfInterest.reference.typeCode"/>
+      <definition value="Element RegionOfInterest.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -429,6 +471,7 @@
     </element>
     <element id="RegionOfInterest.reference.seperatableInd">
       <path value="RegionOfInterest.reference.seperatableInd"/>
+      <definition value="Element RegionOfInterest.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -437,6 +480,7 @@
     </element>
     <element id="RegionOfInterest.reference.externalAct">
       <path value="RegionOfInterest.reference.externalAct"/>
+      <definition value="Element RegionOfInterest.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -445,6 +489,7 @@
     </element>
     <element id="RegionOfInterest.reference.externalObservation">
       <path value="RegionOfInterest.reference.externalObservation"/>
+      <definition value="Element RegionOfInterest.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -453,6 +498,7 @@
     </element>
     <element id="RegionOfInterest.reference.externalProcedure">
       <path value="RegionOfInterest.reference.externalProcedure"/>
+      <definition value="Element RegionOfInterest.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -461,6 +507,7 @@
     </element>
     <element id="RegionOfInterest.reference.externalDocument">
       <path value="RegionOfInterest.reference.externalDocument"/>
+      <definition value="Element RegionOfInterest.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -469,6 +516,7 @@
     </element>
     <element id="RegionOfInterest.precondition">
       <path value="RegionOfInterest.precondition"/>
+      <definition value="Element RegionOfInterest.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

@@ -27,6 +27,7 @@
   <differential>
     <element id="LegalAuthenticator">
       <path value="LegalAuthenticator"/>
+      <definition value="Element LegalAuthenticator"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -47,6 +48,7 @@
     </element>
     <element id="LegalAuthenticator.typeCode">
       <path value="LegalAuthenticator.typeCode"/>
+      <definition value="Element LegalAuthenticator.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -62,6 +64,7 @@
     </element>
     <element id="LegalAuthenticator.contextControlCode">
       <path value="LegalAuthenticator.contextControlCode"/>
+      <definition value="Element LegalAuthenticator.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -104,6 +107,7 @@
     </element>
     <element id="LegalAuthenticator.time">
       <path value="LegalAuthenticator.time"/>
+      <definition value="Element LegalAuthenticator.time"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -112,6 +116,7 @@
     </element>
     <element id="LegalAuthenticator.signatureCode">
       <path value="LegalAuthenticator.signatureCode"/>
+      <definition value="Element LegalAuthenticator.signatureCode"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -126,6 +131,7 @@
         <valueString value="signatureText"/>
       </extension>
       <path value="LegalAuthenticator.sdtcSignatureText"/>
+      <definition value="Element LegalAuthenticator.sdtcSignatureText"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -134,6 +140,7 @@
     </element>
     <element id="LegalAuthenticator.assignedEntity">
       <path value="LegalAuthenticator.assignedEntity"/>
+      <definition value="Element LegalAuthenticator.assignedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -26,11 +26,13 @@
   <differential>
     <element id="Device">
       <path value="Device"/>
+      <definition value="Element Device"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Device.classCode">
       <path value="Device.classCode"/>
+      <definition value="Element Device.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -46,6 +48,7 @@
     </element>
     <element id="Device.determinerCode">
       <path value="Device.determinerCode"/>
+      <definition value="Element Device.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -71,6 +74,7 @@
     </element>
     <element id="Device.code">
       <path value="Device.code"/>
+      <definition value="Element Device.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -83,6 +87,7 @@
     </element>
     <element id="Device.manufacturerModelName">
       <path value="Device.manufacturerModelName"/>
+      <definition value="Element Device.manufacturerModelName"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -95,6 +100,7 @@
     </element>
     <element id="Device.softwareName">
       <path value="Device.softwareName"/>
+      <definition value="Element Device.softwareName"/>
       <min value="0"/>
       <max value="1"/>
       <type>

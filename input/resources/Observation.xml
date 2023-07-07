@@ -26,11 +26,13 @@
   <differential>
     <element id="Observation">
       <path value="Observation"/>
+      <definition value="Element Observation"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Observation.classCode">
       <path value="Observation.classCode"/>
+      <definition value="Element Observation.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -44,6 +46,7 @@
     </element>
     <element id="Observation.moodCode">
       <path value="Observation.moodCode"/>
+      <definition value="Element Observation.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -53,6 +56,7 @@
     </element>
     <element id="Observation.negationInd">
       <path value="Observation.negationInd"/>
+      <definition value="Element Observation.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -62,6 +66,7 @@
     </element>
     <element id="Observation.realmCode">
       <path value="Observation.realmCode"/>
+      <definition value="Element Observation.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -70,6 +75,7 @@
     </element>
     <element id="Observation.typeId">
       <path value="Observation.typeId"/>
+      <definition value="Element Observation.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -87,6 +93,7 @@
     </element>
     <element id="Observation.id">
       <path value="Observation.id"/>
+      <definition value="Element Observation.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -95,6 +102,7 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
+      <definition value="Element Observation.code"/>
       <min value="1"/>
       <max value="1"/>
       <representation value="typeAttr"/>
@@ -108,6 +116,7 @@
     </element>
     <element id="Observation.derivationExpr">
       <path value="Observation.derivationExpr"/>
+      <definition value="Element Observation.derivationExpr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -116,6 +125,7 @@
     </element>
     <element id="Observation.text">
       <path value="Observation.text"/>
+      <definition value="Element Observation.text"/>
       <min value="0"/>
       <max value="1"/>
       <representation value="typeAttr"/>
@@ -125,6 +135,7 @@
     </element>
     <element id="Observation.statusCode">
       <path value="Observation.statusCode"/>
+      <definition value="Element Observation.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -137,6 +148,7 @@
     </element>
     <element id="Observation.effectiveTime">
       <path value="Observation.effectiveTime"/>
+      <definition value="Element Observation.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -145,6 +157,7 @@
     </element>
     <element id="Observation.priorityCode">
       <path value="Observation.priorityCode"/>
+      <definition value="Element Observation.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -157,6 +170,7 @@
     </element>
     <element id="Observation.repeatNumber">
       <path value="Observation.repeatNumber"/>
+      <definition value="Element Observation.repeatNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -165,6 +179,7 @@
     </element>
     <element id="Observation.languageCode">
       <path value="Observation.languageCode"/>
+      <definition value="Element Observation.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -177,6 +192,7 @@
     </element>
     <element id="Observation.value">
       <path value="Observation.value"/>
+      <definition value="Element Observation.value"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
@@ -249,6 +265,7 @@
     </element>
     <element id="Observation.interpretationCode">
       <path value="Observation.interpretationCode"/>
+      <definition value="Element Observation.interpretationCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -261,6 +278,7 @@
     </element>
     <element id="Observation.methodCode">
       <path value="Observation.methodCode"/>
+      <definition value="Element Observation.methodCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -282,6 +300,7 @@
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject"/>
+      <definition value="Element Observation.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -290,6 +309,7 @@
     </element>
     <element id="Observation.subject.typeCode">
       <path value="Observation.subject.typeCode"/>
+      <definition value="Element Observation.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -306,6 +326,7 @@
     </element>
     <element id="Observation.subject.contextControlCode">
       <path value="Observation.subject.contextControlCode"/>
+      <definition value="Element Observation.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -322,6 +343,7 @@
     </element>
     <element id="Observation.subject.awarenessCode">
       <path value="Observation.subject.awarenessCode"/>
+      <definition value="Element Observation.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -334,6 +356,7 @@
     </element>
     <element id="Observation.subject.relatedSubject">
       <path value="Observation.subject.relatedSubject"/>
+      <definition value="Element Observation.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -342,6 +365,7 @@
     </element>
     <element id="Observation.specimen">
       <path value="Observation.specimen"/>
+      <definition value="Element Observation.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -350,6 +374,7 @@
     </element>
     <element id="Observation.performer">
       <path value="Observation.performer"/>
+      <definition value="Element Observation.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -358,6 +383,7 @@
     </element>
     <element id="Observation.author">
       <path value="Observation.author"/>
+      <definition value="Element Observation.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -366,6 +392,7 @@
     </element>
     <element id="Observation.informant">
       <path value="Observation.informant"/>
+      <definition value="Element Observation.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -374,6 +401,7 @@
     </element>
     <element id="Observation.informant.typeCode">
       <path value="Observation.informant.typeCode"/>
+      <definition value="Element Observation.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -390,6 +418,7 @@
     </element>
     <element id="Observation.informant.contextControlCode">
       <path value="Observation.informant.contextControlCode"/>
+      <definition value="Element Observation.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -406,6 +435,7 @@
     </element>
     <element id="Observation.informant.assignedEntity">
       <path value="Observation.informant.assignedEntity"/>
+      <definition value="Element Observation.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -414,6 +444,7 @@
     </element>
     <element id="Observation.informant.relatedEntity">
       <path value="Observation.informant.relatedEntity"/>
+      <definition value="Element Observation.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -422,6 +453,7 @@
     </element>
     <element id="Observation.participant">
       <path value="Observation.participant"/>
+      <definition value="Element Observation.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -430,6 +462,7 @@
     </element>
     <element id="Observation.entryRelationship">
       <path value="Observation.entryRelationship"/>
+      <definition value="Element Observation.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -445,6 +478,7 @@
     </element>
     <element id="Observation.entryRelationship.typeCode">
       <path value="Observation.entryRelationship.typeCode"/>
+      <definition value="Element Observation.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -455,6 +489,7 @@
     </element>
     <element id="Observation.entryRelationship.inversionInd">
       <path value="Observation.entryRelationship.inversionInd"/>
+      <definition value="Element Observation.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -464,6 +499,7 @@
     </element>
     <element id="Observation.entryRelationship.contextConductionInd">
       <path value="Observation.entryRelationship.contextConductionInd"/>
+      <definition value="Element Observation.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -475,6 +511,7 @@
     </element>
     <element id="Observation.entryRelationship.sequenceNumber">
       <path value="Observation.entryRelationship.sequenceNumber"/>
+      <definition value="Element Observation.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -483,6 +520,7 @@
     </element>
     <element id="Observation.entryRelationship.negationInd">
       <path value="Observation.entryRelationship.negationInd"/>
+      <definition value="Element Observation.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -492,6 +530,7 @@
     </element>
     <element id="Observation.entryRelationship.seperatableInd">
       <path value="Observation.entryRelationship.seperatableInd"/>
+      <definition value="Element Observation.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -500,6 +539,7 @@
     </element>
     <element id="Observation.entryRelationship.observation">
       <path value="Observation.entryRelationship.observation"/>
+      <definition value="Element Observation.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -508,6 +548,7 @@
     </element>
     <element id="Observation.entryRelationship.regionOfInterest">
       <path value="Observation.entryRelationship.regionOfInterest"/>
+      <definition value="Element Observation.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -516,6 +557,7 @@
     </element>
     <element id="Observation.entryRelationship.observationMedia">
       <path value="Observation.entryRelationship.observationMedia"/>
+      <definition value="Element Observation.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -524,6 +566,7 @@
     </element>
     <element id="Observation.entryRelationship.substanceAdministration">
       <path value="Observation.entryRelationship.substanceAdministration"/>
+      <definition value="Element Observation.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -532,6 +575,7 @@
     </element>
     <element id="Observation.entryRelationship.supply">
       <path value="Observation.entryRelationship.supply"/>
+      <definition value="Element Observation.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -540,6 +584,7 @@
     </element>
     <element id="Observation.entryRelationship.procedure">
       <path value="Observation.entryRelationship.procedure"/>
+      <definition value="Element Observation.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -548,6 +593,7 @@
     </element>
     <element id="Observation.entryRelationship.encounter">
       <path value="Observation.entryRelationship.encounter"/>
+      <definition value="Element Observation.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -556,6 +602,7 @@
     </element>
     <element id="Observation.entryRelationship.organizer">
       <path value="Observation.entryRelationship.organizer"/>
+      <definition value="Element Observation.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -564,6 +611,7 @@
     </element>
     <element id="Observation.entryRelationship.act">
       <path value="Observation.entryRelationship.act"/>
+      <definition value="Element Observation.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -572,6 +620,7 @@
     </element>
     <element id="Observation.reference">
       <path value="Observation.reference"/>
+      <definition value="Element Observation.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -580,6 +629,7 @@
     </element>
     <element id="Observation.reference.typeCode">
       <path value="Observation.reference.typeCode"/>
+      <definition value="Element Observation.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -590,6 +640,7 @@
     </element>
     <element id="Observation.reference.seperatableInd">
       <path value="Observation.reference.seperatableInd"/>
+      <definition value="Element Observation.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -598,6 +649,7 @@
     </element>
     <element id="Observation.reference.externalAct">
       <path value="Observation.reference.externalAct"/>
+      <definition value="Element Observation.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -606,6 +658,7 @@
     </element>
     <element id="Observation.reference.externalObservation">
       <path value="Observation.reference.externalObservation"/>
+      <definition value="Element Observation.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -614,6 +667,7 @@
     </element>
     <element id="Observation.reference.externalProcedure">
       <path value="Observation.reference.externalProcedure"/>
+      <definition value="Element Observation.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -622,6 +676,7 @@
     </element>
     <element id="Observation.reference.externalDocument">
       <path value="Observation.reference.externalDocument"/>
+      <definition value="Element Observation.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -630,6 +685,7 @@
     </element>
     <element id="Observation.precondition">
       <path value="Observation.precondition"/>
+      <definition value="Element Observation.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -638,6 +694,7 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>
+      <definition value="Element Observation.referenceRange"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -646,6 +703,7 @@
     </element>
     <element id="Observation.referenceRange.typeCode">
       <path value="Observation.referenceRange.typeCode"/>
+      <definition value="Element Observation.referenceRange.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -661,6 +719,7 @@
     </element>
     <element id="Observation.referenceRange.observationRange">
       <path value="Observation.referenceRange.observationRange"/>
+      <definition value="Element Observation.referenceRange.observationRange"/>
       <min value="1"/>
       <max value="1"/>
       <type>

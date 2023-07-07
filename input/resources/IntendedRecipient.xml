@@ -19,11 +19,13 @@
   <differential>
     <element id="IntendedRecipient">
       <path value="IntendedRecipient"/>
+      <definition value="Element IntendedRecipient"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="IntendedRecipient.classCode">
       <path value="IntendedRecipient.classCode"/>
+      <definition value="Element IntendedRecipient.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -43,6 +45,7 @@
     </element>
     <element id="IntendedRecipient.id">
       <path value="IntendedRecipient.id"/>
+      <definition value="Element IntendedRecipient.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -57,6 +60,7 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="IntendedRecipient.sdtcIdentifiedBy"/>
+      <definition value="Element IntendedRecipient.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -65,6 +69,7 @@
     </element>
     <element id="IntendedRecipient.addr">
       <path value="IntendedRecipient.addr"/>
+      <definition value="Element IntendedRecipient.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -73,6 +78,7 @@
     </element>
     <element id="IntendedRecipient.telecom">
       <path value="IntendedRecipient.telecom"/>
+      <definition value="Element IntendedRecipient.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -81,6 +87,7 @@
     </element>
     <element id="IntendedRecipient.informationRecipient">
       <path value="IntendedRecipient.informationRecipient"/>
+      <definition value="Element IntendedRecipient.informationRecipient"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -89,6 +96,7 @@
     </element>
     <element id="IntendedRecipient.receivedOrganization">
       <path value="IntendedRecipient.receivedOrganization"/>
+      <definition value="Element IntendedRecipient.receivedOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

@@ -26,11 +26,13 @@
   <differential>
     <element id="Act">
       <path value="Act"/>
+      <definition value="Element Act"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Act.classCode">
       <path value="Act.classCode"/>
+			<definition value="Element Act.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -40,6 +42,7 @@
     </element>
     <element id="Act.moodCode">
       <path value="Act.moodCode"/>
+      <definition value="Element Act.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -49,6 +52,7 @@
     </element>
     <element id="Act.realmCode">
       <path value="Act.realmCode"/>
+      <definition value="Element Act.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -57,6 +61,7 @@
     </element>
     <element id="Act.typeId">
       <path value="Act.typeId"/>
+      <definition value="Element Act.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -74,6 +79,7 @@
     </element>
     <element id="Act.id">
       <path value="Act.id"/>
+      <definition value="Element Act.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -82,6 +88,7 @@
     </element>
     <element id="Act.code">
       <path value="Act.code"/>
+      <definition value="Element Act.code"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -94,6 +101,7 @@
     </element>
     <element id="Act.negationInd">
       <path value="Act.negationInd"/>
+      <definition value="Element Act.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -103,6 +111,7 @@
     </element>
     <element id="Act.text">
       <path value="Act.text"/>
+      <definition value="Element Act.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -111,6 +120,7 @@
     </element>
     <element id="Act.statusCode">
       <path value="Act.statusCode"/>
+      <definition value="Element Act.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,6 +133,7 @@
     </element>
     <element id="Act.effectiveTime">
       <path value="Act.effectiveTime"/>
+      <definition value="Element Act.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -131,6 +142,7 @@
     </element>
     <element id="Act.priorityCode">
       <path value="Act.priorityCode"/>
+      <definition value="Element Act.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -143,6 +155,7 @@
     </element>
     <element id="Act.languageCode">
       <path value="Act.languageCode"/>
+      <definition value="Element Act.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -155,6 +168,7 @@
     </element>
     <element id="Act.subject">
       <path value="Act.subject"/>
+      <definition value="Element Act.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -163,6 +177,7 @@
     </element>
     <element id="Act.subject.typeCode">
       <path value="Act.subject.typeCode"/>
+      <definition value="Element Act.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -178,6 +193,7 @@
     </element>
     <element id="Act.subject.contextControlCode">
       <path value="Act.subject.contextControlCode"/>
+      <definition value="Element Act.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -193,6 +209,7 @@
     </element>
     <element id="Act.subject.awarenessCode">
       <path value="Act.subject.awarenessCode"/>
+      <definition value="Element Act.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -205,6 +222,7 @@
     </element>
     <element id="Act.subject.relatedSubject">
       <path value="Act.subject.relatedSubject"/>
+      <definition value="Element Act.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -213,6 +231,7 @@
     </element>
     <element id="Act.specimen">
       <path value="Act.specimen"/>
+      <definition value="Element Act.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -221,6 +240,7 @@
     </element>
     <element id="Act.performer">
       <path value="Act.performer"/>
+      <definition value="Element Act.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -229,6 +249,7 @@
     </element>
     <element id="Act.author">
       <path value="Act.author"/>
+      <definition value="Element Act.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -237,6 +258,7 @@
     </element>
     <element id="Act.informant">
       <path value="Act.informant"/>
+      <definition value="Element Act.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -245,6 +267,7 @@
     </element>
     <element id="Act.informant.typeCode">
       <path value="Act.informant.typeCode"/>
+      <definition value="Element Act.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -260,6 +283,7 @@
     </element>
     <element id="Act.informant.contextControlCode">
       <path value="Act.informant.contextControlCode"/>
+      <definition value="Element Act.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -275,6 +299,7 @@
     </element>
     <element id="Act.informant.assignedEntity">
       <path value="Act.informant.assignedEntity"/>
+      <definition value="Element Act.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -283,6 +308,7 @@
     </element>
     <element id="Act.informant.relatedEntity">
       <path value="Act.informant.relatedEntity"/>
+      <definition value="Element Act.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -291,6 +317,7 @@
     </element>
     <element id="Act.participant">
       <path value="Act.participant"/>
+      <definition value="Element Act.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -299,6 +326,7 @@
     </element>
     <element id="Act.entryRelationship">
       <path value="Act.entryRelationship"/>
+      <definition value="Element Act.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -314,6 +342,7 @@
     </element>
     <element id="Act.entryRelationship.typeCode">
       <path value="Act.entryRelationship.typeCode"/>
+      <definition value="Element Act.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -323,6 +352,7 @@
     </element>
     <element id="Act.entryRelationship.inversionInd">
       <path value="Act.entryRelationship.inversionInd"/>
+      <definition value="Element Act.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -332,6 +362,7 @@
     </element>
     <element id="Act.entryRelationship.contextConductionInd">
       <path value="Act.entryRelationship.contextConductionInd"/>
+      <definition value="Element Act.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -342,6 +373,7 @@
     </element>
     <element id="Act.entryRelationship.sequenceNumber">
       <path value="Act.entryRelationship.sequenceNumber"/>
+      <definition value="Element Act.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -350,6 +382,7 @@
     </element>
     <element id="Act.entryRelationship.negationInd">
       <path value="Act.entryRelationship.negationInd"/>
+      <definition value="Element Act.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -359,6 +392,7 @@
     </element>
     <element id="Act.entryRelationship.seperatableInd">
       <path value="Act.entryRelationship.seperatableInd"/>
+      <definition value="Element Act.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -367,6 +401,7 @@
     </element>
     <element id="Act.entryRelationship.observation">
       <path value="Act.entryRelationship.observation"/>
+      <definition value="Element Act.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -375,6 +410,7 @@
     </element>
     <element id="Act.entryRelationship.regionOfInterest">
       <path value="Act.entryRelationship.regionOfInterest"/>
+      <definition value="Element Act.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -383,6 +419,7 @@
     </element>
     <element id="Act.entryRelationship.observationMedia">
       <path value="Act.entryRelationship.observationMedia"/>
+      <definition value="Element Act.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -391,6 +428,7 @@
     </element>
     <element id="Act.entryRelationship.substanceAdministration">
       <path value="Act.entryRelationship.substanceAdministration"/>
+      <definition value="Element Act.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -399,6 +437,7 @@
     </element>
     <element id="Act.entryRelationship.supply">
       <path value="Act.entryRelationship.supply"/>
+      <definition value="Element Act.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -407,6 +446,7 @@
     </element>
     <element id="Act.entryRelationship.procedure">
       <path value="Act.entryRelationship.procedure"/>
+      <definition value="Element Act.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -415,6 +455,7 @@
     </element>
     <element id="Act.entryRelationship.encounter">
       <path value="Act.entryRelationship.encounter"/>
+      <definition value="Element Act.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -423,6 +464,7 @@
     </element>
     <element id="Act.entryRelationship.organizer">
       <path value="Act.entryRelationship.organizer"/>
+      <definition value="Element Act.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -431,6 +473,7 @@
     </element>
     <element id="Act.entryRelationship.act">
       <path value="Act.entryRelationship.act"/>
+      <definition value="Element Act.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -439,6 +482,7 @@
     </element>
     <element id="Act.reference">
       <path value="Act.reference"/>
+      <definition value="Element Act.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -447,6 +491,7 @@
     </element>
     <element id="Act.reference.typeCode">
       <path value="Act.reference.typeCode"/>
+      <definition value="Element Act.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -456,6 +501,7 @@
     </element>
     <element id="Act.reference.seperatableInd">
       <path value="Act.reference.seperatableInd"/>
+      <definition value="Element Act.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -464,6 +510,7 @@
     </element>
     <element id="Act.reference.externalAct">
       <path value="Act.reference.externalAct"/>
+      <definition value="Element Act.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -472,6 +519,7 @@
     </element>
     <element id="Act.reference.externalObservation">
       <path value="Act.reference.externalObservation"/>
+      <definition value="Element Act.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -480,6 +528,7 @@
     </element>
     <element id="Act.reference.externalProcedure">
       <path value="Act.reference.externalProcedure"/>
+      <definition value="Element Act.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -488,6 +537,7 @@
     </element>
     <element id="Act.reference.externalDocument">
       <path value="Act.reference.externalDocument"/>
+      <definition value="Element Act.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -496,6 +546,7 @@
     </element>
     <element id="Act.precondition">
       <path value="Act.precondition"/>
+      <definition value="Element Act.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

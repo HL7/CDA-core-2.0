@@ -19,11 +19,13 @@
   <differential>
     <element id="ManufacturedProduct">
       <path value="ManufacturedProduct"/>
+      <definition value="Element ManufacturedProduct"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ManufacturedProduct.classCode">
       <path value="ManufacturedProduct.classCode"/>
+      <definition value="Element ManufacturedProduct.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -48,6 +50,7 @@
     </element>
     <element id="ManufacturedProduct.id">
       <path value="ManufacturedProduct.id"/>
+      <definition value="Element ManufacturedProduct.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -62,6 +65,7 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="ManufacturedProduct.sdtcIdentifiedBy"/>
+      <definition value="Element ManufacturedProduct.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -70,6 +74,7 @@
     </element>
     <element id="ManufacturedProduct.manufacturedLabeledDrug">
       <path value="ManufacturedProduct.manufacturedLabeledDrug"/>
+      <definition value="Element ManufacturedProduct.manufacturedLabeledDrug"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -78,6 +83,7 @@
     </element>
     <element id="ManufacturedProduct.manufacturedMaterial">
       <path value="ManufacturedProduct.manufacturedMaterial"/>
+      <definition value="Element ManufacturedProduct.manufacturedMaterial"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -86,6 +92,7 @@
     </element>
     <element id="ManufacturedProduct.manufacturerOrganization">
       <path value="ManufacturedProduct.manufacturerOrganization"/>
+      <definition value="Element ManufacturedProduct.manufacturerOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

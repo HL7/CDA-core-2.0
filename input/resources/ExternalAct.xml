@@ -25,11 +25,13 @@
   <differential>
     <element id="ExternalAct">
       <path value="ExternalAct"/>
+      <definition value="Element ExternalAct"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ExternalAct.classCode">
       <path value="ExternalAct.classCode"/>
+      <definition value="Element ExternalAct.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -45,6 +47,7 @@
     </element>
     <element id="ExternalAct.moodCode">
       <path value="ExternalAct.moodCode"/>
+      <definition value="Element ExternalAct.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -70,6 +73,7 @@
     </element>
     <element id="ExternalAct.id">
       <path value="ExternalAct.id"/>
+      <definition value="Element ExternalAct.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -78,6 +82,7 @@
     </element>
     <element id="ExternalAct.code">
       <path value="ExternalAct.code"/>
+      <definition value="Element ExternalAct.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -90,6 +95,7 @@
     </element>
     <element id="ExternalAct.text">
       <path value="ExternalAct.text"/>
+      <definition value="Element ExternalAct.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>

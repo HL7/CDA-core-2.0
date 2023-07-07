@@ -28,12 +28,14 @@
   <differential>
     <element id="EN">
       <path value="EN"/>
+      <definition value="Element EN"/>
       <definition value="A restriction of entity name that is effectively a simple string used for a simple name for things and places."/>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="EN.use">
       <path value="EN.use"/>
+      <definition value="Element EN.use"/>
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityNameUse"/>
@@ -41,26 +43,31 @@
     </element>
     <element id="EN.delimiter">
       <path value="EN.delimiter"/>
+      <definition value="Element EN.delimiter"/>
       <min value="0"/>
       <max value="0"/>
     </element>
     <element id="EN.family">
       <path value="EN.family"/>
+      <definition value="Element EN.family"/>
       <min value="0"/>
       <max value="0"/>
     </element>
     <element id="EN.given">
       <path value="EN.given"/>
+      <definition value="Element EN.given"/>
       <min value="0"/>
       <max value="0"/>
     </element>
     <element id="EN.prefix">
       <path value="EN.prefix"/>
+      <definition value="Element EN.prefix"/>
       <min value="0"/>
       <max value="0"/>
     </element>
     <element id="EN.suffix">
       <path value="EN.suffix"/>
+      <definition value="Element EN.suffix"/>
       <min value="0"/>
       <max value="0"/>
     </element>

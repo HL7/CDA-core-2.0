@@ -25,6 +25,7 @@
   <differential>
     <element id="ENXP">
       <path value="ENXP"/>
+      <definition value="Element ENXP"/>
       <min value="1"/>
       <max value="*"/>
     </element>

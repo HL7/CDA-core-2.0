@@ -27,11 +27,13 @@
   <differential>
     <element id="EncompassingEncounter">
       <path value="EncompassingEncounter"/>
+      <definition value="Element EncompassingEncounter"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="EncompassingEncounter.classCode">
       <path value="EncompassingEncounter.classCode"/>
+      <definition value="Element EncompassingEncounter.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -48,6 +50,7 @@
     </element>
     <element id="EncompassingEncounter.moodCode">
       <path value="EncompassingEncounter.moodCode"/>
+      <definition value="Element EncompassingEncounter.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -73,6 +76,7 @@
     </element>
     <element id="EncompassingEncounter.id">
       <path value="EncompassingEncounter.id"/>
+      <definition value="Element EncompassingEncounter.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -81,6 +85,7 @@
     </element>
     <element id="EncompassingEncounter.code">
       <path value="EncompassingEncounter.code"/>
+      <definition value="Element EncompassingEncounter.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -93,6 +98,7 @@
     </element>
     <element id="EncompassingEncounter.effectiveTime">
       <path value="EncompassingEncounter.effectiveTime"/>
+      <definition value="Element EncompassingEncounter.effectiveTime"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -108,6 +114,7 @@
         <valueString value="admissionReferralSourceCode"/>
       </extension>
       <path value="EncompassingEncounter.sdtcAdmissionReferralSourceCode"/>
+      <definition value="Element EncompassingEncounter.sdtcAdmissionReferralSourceCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -116,6 +123,7 @@
     </element>
     <element id="EncompassingEncounter.dischargeDispositionCode">
       <path value="EncompassingEncounter.dischargeDispositionCode"/>
+      <definition value="Element EncompassingEncounter.dischargeDispositionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -128,6 +136,7 @@
     </element>
     <element id="EncompassingEncounter.responsibleParty">
       <path value="EncompassingEncounter.responsibleParty"/>
+      <definition value="Element EncompassingEncounter.responsibleParty"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -136,6 +145,7 @@
     </element>
     <element id="EncompassingEncounter.responsibleParty.typeCode">
       <path value="EncompassingEncounter.responsibleParty.typeCode"/>
+      <definition value="Element EncompassingEncounter.responsibleParty.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -152,6 +162,7 @@
     </element>
     <element id="EncompassingEncounter.responsibleParty.assignedEntity">
       <path value="EncompassingEncounter.responsibleParty.assignedEntity"/>
+      <definition value="Element EncompassingEncounter.responsibleParty.assignedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -160,6 +171,7 @@
     </element>
     <element id="EncompassingEncounter.encounterParticipant">
       <path value="EncompassingEncounter.encounterParticipant"/>
+      <definition value="Element EncompassingEncounter.encounterParticipant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -168,6 +180,7 @@
     </element>
     <element id="EncompassingEncounter.location">
       <path value="EncompassingEncounter.location"/>
+      <definition value="Element EncompassingEncounter.location"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -176,6 +189,7 @@
     </element>
     <element id="EncompassingEncounter.location.typeCode">
       <path value="EncompassingEncounter.location.typeCode"/>
+      <definition value="Element EncompassingEncounter.location.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -192,6 +206,7 @@
     </element>
     <element id="EncompassingEncounter.location.healthCareFacility">
       <path value="EncompassingEncounter.location.healthCareFacility"/>
+      <definition value="Element EncompassingEncounter.location.healthCareFacility"/>
       <min value="1"/>
       <max value="1"/>
       <type>

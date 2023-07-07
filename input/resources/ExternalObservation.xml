@@ -25,11 +25,13 @@
   <differential>
     <element id="ExternalObservation">
       <path value="ExternalObservation"/>
+      <definition value="Element ExternalObservation"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ExternalObservation.classCode">
       <path value="ExternalObservation.classCode"/>
+      <definition value="Element ExternalObservation.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -45,6 +47,7 @@
     </element>
     <element id="ExternalObservation.moodCode">
       <path value="ExternalObservation.moodCode"/>
+      <definition value="Element ExternalObservation.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -70,6 +73,7 @@
     </element>
     <element id="ExternalObservation.id">
       <path value="ExternalObservation.id"/>
+      <definition value="Element ExternalObservation.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -78,6 +82,7 @@
     </element>
     <element id="ExternalObservation.code">
       <path value="ExternalObservation.code"/>
+      <definition value="Element ExternalObservation.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -90,6 +95,7 @@
     </element>
     <element id="ExternalObservation.text">
       <path value="ExternalObservation.text"/>
+      <definition value="Element ExternalObservation.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>

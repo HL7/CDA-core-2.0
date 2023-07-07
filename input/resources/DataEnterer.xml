@@ -25,6 +25,7 @@
   <differential>
     <element id="DataEnterer">
       <path value="DataEnterer"/>
+      <definition value="Element DataEnterer"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,6 +46,7 @@
     </element>
     <element id="DataEnterer.typeCode">
       <path value="DataEnterer.typeCode"/>
+      <definition value="Element DataEnterer.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -60,6 +62,7 @@
     </element>
     <element id="DataEnterer.contextControlCode">
       <path value="DataEnterer.contextControlCode"/>
+      <definition value="Element DataEnterer.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -102,6 +105,7 @@
     </element>
     <element id="DataEnterer.time">
       <path value="DataEnterer.time"/>
+      <definition value="Element DataEnterer.time"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -111,6 +115,7 @@
     </element>
     <element id="DataEnterer.assignedEntity">
       <path value="DataEnterer.assignedEntity"/>
+      <definition value="Element DataEnterer.assignedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>

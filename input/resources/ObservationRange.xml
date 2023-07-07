@@ -19,11 +19,13 @@
   <differential>
     <element id="ObservationRange">
       <path value="ObservationRange"/>
+      <definition value="Element ObservationRange"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ObservationRange.classCode">
       <path value="ObservationRange.classCode"/>
+      <definition value="Element ObservationRange.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -39,6 +41,7 @@
     </element>
     <element id="ObservationRange.moodCode">
       <path value="ObservationRange.moodCode"/>
+      <definition value="Element ObservationRange.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -64,6 +67,7 @@
     </element>
     <element id="ObservationRange.code">
       <path value="ObservationRange.code"/>
+      <definition value="Element ObservationRange.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -76,6 +80,7 @@
     </element>
     <element id="ObservationRange.text">
       <path value="ObservationRange.text"/>
+      <definition value="Element ObservationRange.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -84,6 +89,7 @@
     </element>
     <element id="ObservationRange.value">
       <path value="ObservationRange.value"/>
+      <definition value="Element ObservationRange.value"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -153,6 +159,7 @@
     </element>
     <element id="ObservationRange.interpretationCode">
       <path value="ObservationRange.interpretationCode"/>
+      <definition value="Element ObservationRange.interpretationCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>

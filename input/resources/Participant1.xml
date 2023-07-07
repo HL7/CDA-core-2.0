@@ -25,6 +25,7 @@
   <differential>
     <element id="Participant1">
       <path value="Participant1"/>
+      <definition value="Element Participant1"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,6 +46,7 @@
     </element>
     <element id="Participant1.typeCode">
       <path value="Participant1.typeCode"/>
+      <definition value="Element Participant1.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -58,6 +60,7 @@
     </element>
     <element id="Participant1.contextControlCode">
       <path value="Participant1.contextControlCode"/>
+      <definition value="Element Participant1.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -100,6 +103,7 @@
     </element>
     <element id="Participant1.functionCode">
       <path value="Participant1.functionCode"/>
+      <definition value="Element Participant1.functionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -109,6 +113,7 @@
     </element>
     <element id="Participant1.time">
       <path value="Participant1.time"/>
+      <definition value="Element Participant1.time"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -118,6 +123,7 @@
     </element>
     <element id="Participant1.associatedEntity">
       <path value="Participant1.associatedEntity"/>
+      <definition value="Element Participant1.associatedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>

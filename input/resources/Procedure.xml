@@ -26,11 +26,13 @@
   <differential>
     <element id="Procedure">
       <path value="Procedure"/>
+      <definition value="Element Procedure"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Procedure.classCode">
       <path value="Procedure.classCode"/>
+      <definition value="Element Procedure.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -46,6 +48,7 @@
     </element>
     <element id="Procedure.moodCode">
       <path value="Procedure.moodCode"/>
+      <definition value="Element Procedure.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -55,6 +58,7 @@
     </element>
     <element id="Procedure.realmCode">
       <path value="Procedure.realmCode"/>
+      <definition value="Element Procedure.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -63,6 +67,7 @@
     </element>
     <element id="Procedure.typeId">
       <path value="Procedure.typeId"/>
+      <definition value="Element Procedure.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -71,6 +76,7 @@
     </element>
     <element id="Procedure.templateId">
       <path value="Procedure.templateId"/>
+      <definition value="Element Procedure.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -80,6 +86,7 @@
     </element>
     <element id="Procedure.id">
       <path value="Procedure.id"/>
+      <definition value="Element Procedure.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -88,6 +95,7 @@
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code"/>
+      <definition value="Element Procedure.code"/>
       <definition value="Drawn from concept domain ActCode"/>
       <min value="0"/>
       <max value="1"/>
@@ -97,6 +105,7 @@
     </element>
     <element id="Procedure.negationInd">
       <path value="Procedure.negationInd"/>
+      <definition value="Element Procedure.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -106,6 +115,7 @@
     </element>
     <element id="Procedure.text">
       <path value="Procedure.text"/>
+      <definition value="Element Procedure.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -114,6 +124,7 @@
     </element>
     <element id="Procedure.statusCode">
       <path value="Procedure.statusCode"/>
+      <definition value="Element Procedure.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -126,6 +137,7 @@
     </element>
     <element id="Procedure.effectiveTime">
       <path value="Procedure.effectiveTime"/>
+      <definition value="Element Procedure.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -134,6 +146,7 @@
     </element>
     <element id="Procedure.priorityCode">
       <path value="Procedure.priorityCode"/>
+      <definition value="Element Procedure.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -146,6 +159,7 @@
     </element>
     <element id="Procedure.languageCode">
       <path value="Procedure.languageCode"/>
+      <definition value="Element Procedure.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -158,6 +172,7 @@
     </element>
     <element id="Procedure.methodCode">
       <path value="Procedure.methodCode"/>
+      <definition value="Element Procedure.methodCode"/>
       <definition value="Drawn from concept domain ProcedureMethod"/>
       <min value="0"/>
       <max value="*"/>
@@ -167,6 +182,7 @@
     </element>
     <element id="Procedure.approachSiteCode">
       <path value="Procedure.approachSiteCode"/>
+      <definition value="Element Procedure.approachSiteCode"/>
       <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
@@ -176,6 +192,7 @@
     </element>
     <element id="Procedure.targetSiteCode">
       <path value="Procedure.targetSiteCode"/>
+      <definition value="Element Procedure.targetSiteCode"/>
       <definition value="Drawn from concept domain ActSite"/>
       <min value="0"/>
       <max value="*"/>
@@ -185,6 +202,7 @@
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject"/>
+      <definition value="Element Procedure.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -193,6 +211,7 @@
     </element>
     <element id="Procedure.subject.typeCode">
       <path value="Procedure.subject.typeCode"/>
+      <definition value="Element Procedure.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -209,6 +228,7 @@
     </element>
     <element id="Procedure.subject.contextControlCode">
       <path value="Procedure.subject.contextControlCode"/>
+      <definition value="Element Procedure.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -225,6 +245,7 @@
     </element>
     <element id="Procedure.subject.awarenessCode">
       <path value="Procedure.subject.awarenessCode"/>
+      <definition value="Element Procedure.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -237,6 +258,7 @@
     </element>
     <element id="Procedure.subject.relatedSubject">
       <path value="Procedure.subject.relatedSubject"/>
+      <definition value="Element Procedure.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -245,6 +267,7 @@
     </element>
     <element id="Procedure.specimen">
       <path value="Procedure.specimen"/>
+      <definition value="Element Procedure.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -253,6 +276,7 @@
     </element>
     <element id="Procedure.performer">
       <path value="Procedure.performer"/>
+      <definition value="Element Procedure.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -261,6 +285,7 @@
     </element>
     <element id="Procedure.author">
       <path value="Procedure.author"/>
+      <definition value="Element Procedure.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -269,6 +294,7 @@
     </element>
     <element id="Procedure.informant">
       <path value="Procedure.informant"/>
+      <definition value="Element Procedure.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -277,6 +303,7 @@
     </element>
     <element id="Procedure.informant.typeCode">
       <path value="Procedure.informant.typeCode"/>
+      <definition value="Element Procedure.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -293,6 +320,7 @@
     </element>
     <element id="Procedure.informant.contextControlCode">
       <path value="Procedure.informant.contextControlCode"/>
+      <definition value="Element Procedure.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -309,6 +337,7 @@
     </element>
     <element id="Procedure.informant.assignedEntity">
       <path value="Procedure.informant.assignedEntity"/>
+      <definition value="Element Procedure.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -317,6 +346,7 @@
     </element>
     <element id="Procedure.informant.relatedEntity">
       <path value="Procedure.informant.relatedEntity"/>
+      <definition value="Element Procedure.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -325,6 +355,7 @@
     </element>
     <element id="Procedure.participant">
       <path value="Procedure.participant"/>
+      <definition value="Element Procedure.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -333,6 +364,7 @@
     </element>
     <element id="Procedure.entryRelationship">
       <path value="Procedure.entryRelationship"/>
+      <definition value="Element Procedure.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -348,6 +380,7 @@
     </element>
     <element id="Procedure.entryRelationship.typeCode">
       <path value="Procedure.entryRelationship.typeCode"/>
+      <definition value="Element Procedure.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -358,6 +391,7 @@
     </element>
     <element id="Procedure.entryRelationship.inversionInd">
       <path value="Procedure.entryRelationship.inversionInd"/>
+      <definition value="Element Procedure.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -367,6 +401,7 @@
     </element>
     <element id="Procedure.entryRelationship.contextConductionInd">
       <path value="Procedure.entryRelationship.contextConductionInd"/>
+      <definition value="Element Procedure.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -378,6 +413,7 @@
     </element>
     <element id="Procedure.entryRelationship.sequenceNumber">
       <path value="Procedure.entryRelationship.sequenceNumber"/>
+      <definition value="Element Procedure.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -386,6 +422,7 @@
     </element>
     <element id="Procedure.entryRelationship.negationInd">
       <path value="Procedure.entryRelationship.negationInd"/>
+      <definition value="Element Procedure.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -395,6 +432,7 @@
     </element>
     <element id="Procedure.entryRelationship.seperatableInd">
       <path value="Procedure.entryRelationship.seperatableInd"/>
+      <definition value="Element Procedure.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -403,6 +441,7 @@
     </element>
     <element id="Procedure.entryRelationship.observation">
       <path value="Procedure.entryRelationship.observation"/>
+      <definition value="Element Procedure.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -411,6 +450,7 @@
     </element>
     <element id="Procedure.entryRelationship.regionOfInterest">
       <path value="Procedure.entryRelationship.regionOfInterest"/>
+      <definition value="Element Procedure.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -419,6 +459,7 @@
     </element>
     <element id="Procedure.entryRelationship.observationMedia">
       <path value="Procedure.entryRelationship.observationMedia"/>
+      <definition value="Element Procedure.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -427,6 +468,7 @@
     </element>
     <element id="Procedure.entryRelationship.substanceAdministration">
       <path value="Procedure.entryRelationship.substanceAdministration"/>
+      <definition value="Element Procedure.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -435,6 +477,7 @@
     </element>
     <element id="Procedure.entryRelationship.supply">
       <path value="Procedure.entryRelationship.supply"/>
+      <definition value="Element Procedure.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -443,6 +486,7 @@
     </element>
     <element id="Procedure.entryRelationship.procedure">
       <path value="Procedure.entryRelationship.procedure"/>
+      <definition value="Element Procedure.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -451,6 +495,7 @@
     </element>
     <element id="Procedure.entryRelationship.encounter">
       <path value="Procedure.entryRelationship.encounter"/>
+      <definition value="Element Procedure.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -459,6 +504,7 @@
     </element>
     <element id="Procedure.entryRelationship.organizer">
       <path value="Procedure.entryRelationship.organizer"/>
+      <definition value="Element Procedure.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -467,6 +513,7 @@
     </element>
     <element id="Procedure.entryRelationship.act">
       <path value="Procedure.entryRelationship.act"/>
+      <definition value="Element Procedure.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -475,6 +522,7 @@
     </element>
     <element id="Procedure.reference">
       <path value="Procedure.reference"/>
+      <definition value="Element Procedure.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -483,6 +531,7 @@
     </element>
     <element id="Procedure.reference.typeCode">
       <path value="Procedure.reference.typeCode"/>
+      <definition value="Element Procedure.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -493,6 +542,7 @@
     </element>
     <element id="Procedure.reference.seperatableInd">
       <path value="Procedure.reference.seperatableInd"/>
+      <definition value="Element Procedure.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -501,6 +551,7 @@
     </element>
     <element id="Procedure.reference.externalAct">
       <path value="Procedure.reference.externalAct"/>
+      <definition value="Element Procedure.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -509,6 +560,7 @@
     </element>
     <element id="Procedure.reference.externalObservation">
       <path value="Procedure.reference.externalObservation"/>
+      <definition value="Element Procedure.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -517,6 +569,7 @@
     </element>
     <element id="Procedure.reference.externalProcedure">
       <path value="Procedure.reference.externalProcedure"/>
+      <definition value="Element Procedure.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -525,6 +578,7 @@
     </element>
     <element id="Procedure.reference.externalDocument">
       <path value="Procedure.reference.externalDocument"/>
+      <definition value="Element Procedure.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -533,6 +587,7 @@
     </element>
     <element id="Procedure.precondition">
       <path value="Procedure.precondition"/>
+      <definition value="Element Procedure.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

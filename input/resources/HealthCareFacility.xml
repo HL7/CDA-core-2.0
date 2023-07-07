@@ -19,11 +19,13 @@
   <differential>
     <element id="HealthCareFacility">
       <path value="HealthCareFacility"/>
+      <definition value="Element HealthCareFacility"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="HealthCareFacility.classCode">
       <path value="HealthCareFacility.classCode"/>
+      <definition value="Element HealthCareFacility.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -47,6 +49,7 @@
     </element>
     <element id="HealthCareFacility.id">
       <path value="HealthCareFacility.id"/>
+      <definition value="Element HealthCareFacility.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -61,6 +64,7 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="HealthCareFacility.sdtcIdentifiedBy"/>
+      <definition value="Element HealthCareFacility.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -69,6 +73,7 @@
     </element>
     <element id="HealthCareFacility.code">
       <path value="HealthCareFacility.code"/>
+      <definition value="Element HealthCareFacility.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -81,6 +86,7 @@
     </element>
     <element id="HealthCareFacility.location">
       <path value="HealthCareFacility.location"/>
+      <definition value="Element HealthCareFacility.location"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -89,6 +95,7 @@
     </element>
     <element id="HealthCareFacility.serviceProviderOrganization">
       <path value="HealthCareFacility.serviceProviderOrganization"/>
+      <definition value="Element HealthCareFacility.serviceProviderOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>
