@@ -1088,11 +1088,7 @@ RoseTree XML to Schema: $Id: VocabXMLtoXSD.xsl,v 1.6 2005/05/24 00:14:18 lmckenz
       <xs:annotation>
          <xs:documentation>abstDomain: V14900 (C-0-D10317-V10329-V14900-cpt)</xs:documentation>
       </xs:annotation>
-      <xs:union memberTypes="ActRelationshipCostTracking ActRelationshipPosting">
-         <xs:simpleType>
-            <xs:restriction base="cs"/>
-         </xs:simpleType>
-      </xs:union>
+      <xs:union memberTypes="ActRelationshipCostTracking ActRelationshipPosting" />
    </xs:simpleType>
    <xs:simpleType name="ActRelationshipCostTracking">
       <xs:annotation>
@@ -1775,11 +1771,7 @@ RoseTree XML to Schema: $Id: VocabXMLtoXSD.xsl,v 1.6 2005/05/24 00:14:18 lmckenz
       <xs:annotation>
          <xs:documentation>abstDomain: V19313 (C-0-D11555-V13940-V19313-cpt)</xs:documentation>
       </xs:annotation>
-      <xs:union memberTypes="RoleClassMutualRelationship RoleClassPassive">
-         <xs:simpleType>
-            <xs:restriction base="cs"/>
-         </xs:simpleType>
-      </xs:union>
+      <xs:union memberTypes="RoleClassMutualRelationship RoleClassPassive" />
    </xs:simpleType>
    <xs:simpleType name="RoleClassMutualRelationship">
       <xs:annotation>
