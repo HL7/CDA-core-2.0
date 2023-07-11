@@ -96,6 +96,21 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
       </type>
     </element>
+    <element id="PlayingEntity.sdtcBirthTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueUri value="birthTime"/>
+      </extension>
+      <path value="PlayingEntity.sdtcBirthTime"/>
+      <definition value="Element PlayingEntity.sdtcBirthTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+      </type>
+    </element>
     <element id="PlayingEntity.desc">
       <path value="PlayingEntity.desc"/>
       <definition value="Element PlayingEntity.desc"/>

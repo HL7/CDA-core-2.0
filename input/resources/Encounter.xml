@@ -135,13 +135,15 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
-    <element id="Encounter.dischargeDispositionCode">
+    <element id="Encounter.sdtcDischargeDispositionCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="Encounter.dischargeDispositionCode"/>
-      <definition value="Element Encounter.dischargeDispositionCode"/>
-      <short value="sdtc:dischargeDispositionCode" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueUri value="dischargeDispositionCode"/>
+      </extension>
+      <path value="Encounter.sdtcDischargeDispositionCode"/>
+      <definition value="Element Encounter.sdtcDischargeDispositionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>

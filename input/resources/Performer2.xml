@@ -87,12 +87,15 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
-    <element id="Performer2.functionCode">
+    <element id="Performer2.sdtcFunctionCode">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
         <valueUri value="urn:hl7-org:sdtc"/>
       </extension>
-      <path value="Performer2.functionCode"/>
-      <definition value="Element Performer2.functionCode"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueUri value="functionCode"/>
+      </extension>
+      <path value="Performer2.sdtcFunctionCode"/>
+      <definition value="Element Performer2.sdtcFunctionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
