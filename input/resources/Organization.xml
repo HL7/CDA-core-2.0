@@ -30,6 +30,22 @@
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="Organization.nullFlavor">
+      <path value="Organization.nullFlavor"/>
+      <definition value="Element Organization.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Organization.classCode">
       <path value="Organization.classCode"/>
       <definition value="Element Organization.classCode"/>
@@ -63,6 +79,24 @@
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
+    </element>
+    <element id="Organization.realmCode">
+      <path value="Organization.realmCode"/>
+      <definition value="Element Organization.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Organization.typeId">
+      <path value="Organization.typeId"/>
+      <definition value="Element Organization.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Organization.templateId">
       <path value="Organization.templateId"/>
