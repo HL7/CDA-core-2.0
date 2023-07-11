@@ -33,16 +33,6 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="IVL_TS.high">
-      <path value="IVL_TS.high"/>
-      <label value="High Boundary"/>
-      <definition value="This is the high limit of the interval."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
-      </type>
-    </element>
     <element id="IVL_TS.width">
       <path value="IVL_TS.width"/>
       <label value="Width"/>
@@ -51,6 +41,16 @@
       <max value="1"/>
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+      </type>
+    </element>
+    <element id="IVL_TS.high">
+      <path value="IVL_TS.high"/>
+      <label value="High Boundary"/>
+      <definition value="This is the high limit of the interval."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="IVL_TS.center">
