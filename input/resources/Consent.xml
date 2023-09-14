@@ -115,8 +115,8 @@
       <type>
         <code value="string"/>
       </type>
-      <defaultValueCode value="completed"/>
-      <fixedCode value="completed"/>
+      <defaultValueString value="completed"/>
+      <fixedString value="completed"/>
     </element>
   </differential>
 </StructureDefinition>

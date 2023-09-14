@@ -1,9 +1,5 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
-# (And include comments like this justifying why)
-
 # CDA type names have _ in them
 Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 Rule sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -11,3 +7,6 @@ Rule sdf-0: 'Name should be usable as an identifier for the module by machine pr
 # CDA type names are UpperCamelCase
 Rule eld-20: 'The first component of the path should be UpperCamelCase.  Additional components (following a '.') should be lowerCamelCase.  If this syntax is not adhered to, code generation tools may be broken. Logical models may be less concerned about this implication.' Failed
 Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+
+# We want to fix a bunch of coded fields
+Rule eld-24: 'pattern[x] should be used rather than fixed[x]' Failed (Best Practice Recommendation)

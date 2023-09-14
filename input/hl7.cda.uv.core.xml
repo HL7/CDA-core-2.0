@@ -1,25 +1,30 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="hl7.cda.uv.core"/>
 	<url value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
-	<version value="2.1.0-draft1" />
-	<name value="ClinicalDocumentArchitectureV201" />
-	<title value="Clinical Document Architecture V2.0.1" />
+	<version value="2.0.1" />
+	<name value="ClinicalDocumentArchitecture" />
+	<title value="Clinical Document Architecture" />
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="Health Level 7"/>
   <contact>
-    <name value="HL7 International - Cross-Group Projects"/>
+    <name value="HL7 International - Structured Documents"/>
     <telecom>
       <system value="url"/>
-      <value value="http://www.hl7.org/Special/committees/cgp"/>
+      <value value="http://www.hl7.org/Special/committees/structdoc"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="cgp@lists.HL7.org"/>
+      <value value="structdog@lists.HL7.org"/>
     </telecom>
   </contact>
 	<packageId value="hl7.cda.uv.core" />
 	<fhirVersion value="5.0.0" />
+	<dependsOn id="terminology">
+		<uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+		<packageId value="hl7.terminology"/>
+		<version value="5.2.0"/>
+	</dependsOn>
 	<definition>
 		<resource>
 			<reference>
@@ -603,13 +608,6 @@
 				<generation value="markdown"/>
 			</page>
 		</page>
-		<parameter>
-			<code>
-			  <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-			  <code value="releaselabel" />
-			</code>
-			<value value="1st Draft" />
-		</parameter>
 		<parameter>
 			<code>
 			  <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
