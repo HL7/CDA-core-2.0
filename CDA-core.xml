@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="current" defaultWorkgroup="cgp" url="http://hl7.org/cda/stds/core">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="current" defaultWorkgroup="" url="http://hl7.org/cda/stds/core">
 <version code="current" url="https://build.fhir.org/ig/HL7/CDA-core-2.0"/>
+<version code="2.0.0" url="http://hl7.org/cda/stds/core/"/>
 <version code="2.1.0-draft1" url="http://hl7.org/cda/stds/core/draft1"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
