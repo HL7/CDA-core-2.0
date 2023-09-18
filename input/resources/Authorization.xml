@@ -53,7 +53,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="AUT"/>
+      <fixedCode value="AUTH"/>
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
