@@ -42,9 +42,6 @@
       <label value="Code System"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="CS.codeSystemName">
       <path value="CS.codeSystemName"/>
