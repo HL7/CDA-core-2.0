@@ -128,21 +128,20 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 		<td>
 			<h3>V3 Simple Data Types</h3>
 				<ul>
-					<li><a href="StructureDefinition-bin.html">bin: BinaryData</a></li>
-					<li><a href="StructureDefinition-bin">bin: Binary Data</a></li>
-					<li><a href="StructureDefinition-bl-simple">bl: Boolean</a></li>
-					<li><a href="StructureDefinition-bn">bn: BooleanNonNull</a></li>
-					<li><a href="StructureDefinition-cs-simple">cs: Coded Simple Value</a></li>
-					<li><a href="StructureDefinition-int-simple">int: Integer Number</a></li>
-					<li><a href="StructureDefinition-oid">oid: ISO Object Identifier</a></li>
-					<li><a href="StructureDefinition-probability">probability: Probability</a></li>
-					<li><a href="StructureDefinition-real-simple">real: Real Number</a></li>
-					<li><a href="StructureDefinition-ruid">ruid: HL7 Reserved Identifier Scheme</a></li>
-					<li><a href="StructureDefinition-st-simple">st: Character String</a></li>
-					<li><a href="StructureDefinition-ts-simple">ts: Point in Time</a></li>
-					<li><a href="StructureDefinition-uid">uid: Unique Identifier String</a></li>
-					<li><a href="StructureDefinition-url">url: Universal Resource Locator</a></li>
-					<li><a href="StructureDefinition-uuid">uuid: DCE Universal Unique Identifier</a></li>
+					<li><a href="StructureDefinition-bin.html">bin: Binary Data</a></li>
+					<li><a href="StructureDefinition-bl-simple.html">bl: Boolean</a></li>
+					<li><a href="StructureDefinition-bn.html">bn: BooleanNonNull</a></li>
+					<li><a href="StructureDefinition-cs-simple.html">cs: Coded Simple Value</a></li>
+					<li><a href="StructureDefinition-int-simple.html">int: Integer Number</a></li>
+					<li><a href="StructureDefinition-oid.html">oid: ISO Object Identifier</a></li>
+					<li><a href="StructureDefinition-probability.html">probability: Probability</a></li>
+					<li><a href="StructureDefinition-real-simple.html">real: Real Number</a></li>
+					<li><a href="StructureDefinition-ruid.html">ruid: HL7 Reserved Identifier Scheme</a></li>
+					<li><a href="StructureDefinition-st-simple.html">st: Character String</a></li>
+					<li><a href="StructureDefinition-ts-simple.html">ts: Point in Time</a></li>
+					<li><a href="StructureDefinition-uid.html">uid: Unique Identifier String</a></li>
+					<li><a href="StructureDefinition-url.html">url: Universal Resource Locator</a></li>
+					<li><a href="StructureDefinition-uuid.html">uuid: DCE Universal Unique Identifier</a></li>
 				</ul>
 		</td>
 	</tr>
