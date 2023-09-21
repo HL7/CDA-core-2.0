@@ -37,6 +37,7 @@
       <max value="1"/>
       <type>
         <code value="uri"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/url"/>
       </type>
     </element>
     <element id="TEL.useablePeriod">

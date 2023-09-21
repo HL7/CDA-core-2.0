@@ -37,6 +37,7 @@
       </base>
       <type>
         <code value="integer"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/int-simple"/>
       </type>
     </element>
     <element id="IVL_INT.low">

@@ -19,22 +19,22 @@
   <description value="A globally unique string representing an ISO Object Identifier (OID) in a form that consists only of numbers and dots (e.g., '2.16.840.1.113883.3.1')."/>
   <kind value="primitive-type"/>
   <abstract value="false"/>
-  <type value="string"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
+  <type value="id"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/id"/>
   <derivation value="constraint"/> 
   <differential>
-    <element id="string.id">
-      <path value="string.id"/>
+    <element id="id.id">
+      <path value="id.id"/>
       <max value="0"/>
     </element>
-    <element id="string.extension">
-      <path value="string.extension"/>
+    <element id="id.extension">
+      <path value="id.extension"/>
       <max value="0"/>
     </element>
-    <element id="string.value">
-      <path value="string.value"/>
+    <element id="id.value">
+      <path value="id.value"/>
       <constraint>
-        <key value="uid-value"/>
+        <key value="oid-value"/>
         <severity value="error"/>
         <human value="Must conform to OID (#.#.#), UUID (32 hexadecimal digits separated by hyphens), or RUID (a letter followed by any combination of letters, numbers or hyphens)"/>
         <expression value="matches('^[0-2](/.(0|[1-9][0-9]*))+$')"/>

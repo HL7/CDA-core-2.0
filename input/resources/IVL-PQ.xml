@@ -54,6 +54,7 @@
       </base>
       <type>
         <code value="decimal"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/real-simple"/>
       </type>
     </element>
     <element id="IVL_PQ.low">

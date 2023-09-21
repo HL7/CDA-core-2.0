@@ -19,20 +19,20 @@
   <description value="A unique identifier string is a character string which identifies an object in a globally unique and timeless manner. The allowable formats and values and procedures of this data type are strictly controlled by HL7. At this time, user-assigned identifiers may be certain character representations of ISO Object Identifiers (OID) and DCE Universally Unique Identifiers (UUID). HL7 also reserves the right to assign other forms of UIDs (RUID), such as mnemonic identifiers for code systems."/>
   <kind value="primitive-type"/>
   <abstract value="false"/>
-  <type value="string"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
+  <type value="id"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/id"/>
   <derivation value="constraint"/> 
   <differential>
-    <element id="string.id">
-      <path value="string.id"/>
+    <element id="id.id">
+      <path value="id.id"/>
       <max value="0"/>
     </element>
-    <element id="string.extension">
-      <path value="string.extension"/>
+    <element id="id.extension">
+      <path value="id.extension"/>
       <max value="0"/>
     </element>
-    <element id="string.value">
-      <path value="string.value"/>
+    <element id="id.value">
+      <path value="id.value"/>
       <representation value="xmlAttr"/>
       <constraint>
         <key value="uid-value"/>

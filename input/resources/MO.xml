@@ -46,7 +46,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/REAL"/>
+        <code value="decimal"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/real-simple"/>
       </type>
     </element>
   </differential>
