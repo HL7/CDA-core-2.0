@@ -153,7 +153,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/cs-prim" />
+				<reference value="StructureDefinition/cs-simple" />
 			</reference>
 		</resource>
 		<resource>

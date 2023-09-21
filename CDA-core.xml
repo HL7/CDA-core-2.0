@@ -119,7 +119,20 @@
 <artifact id="StructureDefinition/TEL" key="StructureDefinition-TEL" name="TEL: TelecommunicationAddress (V3 Data Type)"/>
 <artifact id="StructureDefinition/TN" key="StructureDefinition-TN" name="TN: TrivialName (V3 Data Type)"/>
 <artifact id="StructureDefinition/TS" key="StructureDefinition-TS" name="TS: PointInTime (V3 Data Type)"/>
-<artifact id="StructureDefinition/cs-prim" key="StructureDefinition-cs-prim" name="cs primitive (wrapper for code)"/>
+<artifact id="StructureDefinition/bin" key="StructureDefinition-bin" name="bin: Binary Data"/>
+<artifact id="StructureDefinition/bl-simple" key="StructureDefinition-bl-simple" name="bl: Boolean"/>
+<artifact id="StructureDefinition/bn" key="StructureDefinition-bn" name="bn: BooleanNonNull"/>
+<artifact id="StructureDefinition/cs-simple" key="StructureDefinition-cs-simple" name="cs: Coded Simple Value"/>
+<artifact id="StructureDefinition/int-simple" key="StructureDefinition-int-simple" name="int: Integer Number"/>
+<artifact id="StructureDefinition/oid" key="StructureDefinition-oid" name="oid: ISO Object Identifier"/>
+<artifact id="StructureDefinition/probability" key="StructureDefinition-probability" name="probability: Probability"/>
+<artifact id="StructureDefinition/real-simple" key="StructureDefinition-real-simple" name="real: Real Number"/>
+<artifact id="StructureDefinition/ruid" key="StructureDefinition-ruid" name="ruid: HL7 Reserved Identifier Scheme"/>
+<artifact id="StructureDefinition/st-simple" key="StructureDefinition-st-simple" name="st: Character String"/>
+<artifact id="StructureDefinition/ts-simple" key="StructureDefinition-ts-simple" name="ts: Point in Time"/>
+<artifact id="StructureDefinition/uid" key="StructureDefinition-uid" name="uid: Unique Identifier String"/>
+<artifact id="StructureDefinition/url" key="StructureDefinition-url" name="url: Universal Resource Locator"/>
+<artifact id="StructureDefinition/uuid" key="StructureDefinition-uuid" name="uuid: DCE Universal Unique Identifier"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
