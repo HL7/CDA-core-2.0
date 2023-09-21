@@ -66,6 +66,7 @@
       <max value="1"/>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.integrityCheckAlgorithm">
@@ -130,6 +131,7 @@
       </type>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.reference">
