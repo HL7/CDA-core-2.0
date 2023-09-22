@@ -28,13 +28,11 @@
   <differential>
     <element id="Material">
       <path value="Material"/>
-      <definition value="Element Material"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Material.classCode">
       <path value="Material.classCode"/>
-      <definition value="Element Material.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -52,7 +50,6 @@
     </element>
     <element id="Material.determinerCode">
       <path value="Material.determinerCode"/>
-      <definition value="Element Material.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -95,7 +92,6 @@
     </element>
     <element id="Material.code">
       <path value="Material.code"/>
-      <definition value="Element Material.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -108,7 +104,6 @@
     </element>
     <element id="Material.name">
       <path value="Material.name"/>
-      <definition value="Element Material.name"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -117,7 +112,6 @@
     </element>
     <element id="Material.lotNumberText">
       <path value="Material.lotNumberText"/>
-      <definition value="Element Material.lotNumberText"/>
       <min value="0"/>
       <max value="1"/>
       <type>

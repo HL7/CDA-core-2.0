@@ -25,7 +25,6 @@
   <differential>
     <element id="DocumentationOf">
       <path value="DocumentationOf"/>
-      <definition value="Element DocumentationOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -47,7 +46,6 @@
     </element>
     <element id="DocumentationOf.typeCode">
       <path value="DocumentationOf.typeCode"/>
-      <definition value="Element DocumentationOf.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -91,7 +89,6 @@
     </element>
     <element id="DocumentationOf.serviceEvent">
       <path value="DocumentationOf.serviceEvent"/>
-      <definition value="Element DocumentationOf.serviceEvent"/>
       <min value="1"/>
       <max value="1"/>
       <type>

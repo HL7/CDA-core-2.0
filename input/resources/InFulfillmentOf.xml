@@ -25,7 +25,6 @@
   <differential>
     <element id="InFulfillmentOf">
       <path value="InFulfillmentOf"/>
-      <definition value="Element InFulfillmentOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -47,7 +46,6 @@
     </element>
     <element id="InFulfillmentOf.typeCode">
       <path value="InFulfillmentOf.typeCode"/>
-      <definition value="Element InFulfillmentOf.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -91,7 +89,6 @@
     </element>
     <element id="InFulfillmentOf.order">
       <path value="InFulfillmentOf.order"/>
-      <definition value="Element InFulfillmentOf.order"/>
       <min value="1"/>
       <max value="1"/>
       <type>

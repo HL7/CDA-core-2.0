@@ -25,13 +25,11 @@
   <differential>
     <element id="LabeledDrug">
       <path value="LabeledDrug"/>
-      <definition value="Element LabeledDrug"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="LabeledDrug.nullFlavor">
       <path value="LabeledDrug.nullFlavor"/>
-      <definition value="Element LabeledDrug.nullFlavor"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -51,7 +49,6 @@
     </element>
     <element id="LabeledDrug.classCode">
       <path value="LabeledDrug.classCode"/>
-      <definition value="Element LabeledDrug.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -69,7 +66,6 @@
     </element>
     <element id="LabeledDrug.determinerCode">
       <path value="LabeledDrug.determinerCode"/>
-      <definition value="Element LabeledDrug.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -96,7 +92,6 @@
     </element>
     <element id="LabeledDrug.code">
       <path value="LabeledDrug.code"/>
-      <definition value="Element LabeledDrug.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -109,7 +104,6 @@
     </element>
     <element id="LabeledDrug.name">
       <path value="LabeledDrug.name"/>
-      <definition value="Element LabeledDrug.name"/>
       <min value="0"/>
       <max value="1"/>
       <type>

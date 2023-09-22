@@ -26,13 +26,11 @@
   <differential>
     <element id="Author">
       <path value="Author"/>
-      <definition value="Element Author"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Author.nullFlavor">
       <path value="Author.nullFlavor"/>
-      <definition value="Element Author.nullFlavor"/>
       <representation value="xmlAttr"/>
       <label value="Exceptional Value Detail"/>
       <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
@@ -49,7 +47,6 @@
     </element>
     <element id="Author.typeCode">
       <path value="Author.typeCode"/>
-      <definition value="Element Author.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -66,7 +63,6 @@
     </element>
     <element id="Author.contextControlCode">
       <path value="Author.contextControlCode"/>
-      <definition value="Element Author.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -83,7 +79,6 @@
     </element>
     <element id="Author.realmCode">
       <path value="Author.realmCode"/>
-      <definition value="Element Author.realmCode"/>
       <definition value="When valued in an instance, this attribute signals the imposition of realm-specific constraints. The value of this attribute identifies the realm in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -93,7 +88,6 @@
     </element>
     <element id="Author.typeId">
       <path value="Author.typeId"/>
-      <definition value="Element Author.typeId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of constraints defined in an HL7-specified message type. This might be a common type (also known as CMET in the messaging communication environment), or content included within a wrapper. The value of this attribute provides a unique identifier for the type in question."/>
       <min value="0"/>
       <max value="1"/>
@@ -103,7 +97,6 @@
     </element>
     <element id="Author.templateId">
       <path value="Author.templateId"/>
-      <definition value="Element Author.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -113,7 +106,6 @@
     </element>
     <element id="Author.functionCode">
       <path value="Author.functionCode"/>
-      <definition value="Element Author.functionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,7 +115,6 @@
     </element>
     <element id="Author.time">
       <path value="Author.time"/>
-      <definition value="Element Author.time"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -133,7 +124,6 @@
     </element>
     <element id="Author.assignedAuthor">
       <path value="Author.assignedAuthor"/>
-      <definition value="Element Author.assignedAuthor"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -26,7 +26,6 @@
   <differential>
     <element id="IdentifiedBy">
       <path value="IdentifiedBy"/>
-      <definition value="Element IdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
     </element>

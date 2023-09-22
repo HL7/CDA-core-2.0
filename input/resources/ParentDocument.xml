@@ -25,13 +25,11 @@
   <differential>
     <element id="ParentDocument">
       <path value="ParentDocument"/>
-      <definition value="Element ParentDocument"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ParentDocument.classCode">
       <path value="ParentDocument.classCode"/>
-      <definition value="Element ParentDocument.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -49,7 +47,6 @@
     </element>
     <element id="ParentDocument.moodCode">
       <path value="ParentDocument.moodCode"/>
-      <definition value="Element ParentDocument.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -76,7 +73,6 @@
     </element>
     <element id="ParentDocument.id">
       <path value="ParentDocument.id"/>
-      <definition value="Element ParentDocument.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -85,7 +81,6 @@
     </element>
     <element id="ParentDocument.code">
       <path value="ParentDocument.code"/>
-      <definition value="Element ParentDocument.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -98,7 +93,6 @@
     </element>
     <element id="ParentDocument.text">
       <path value="ParentDocument.text"/>
-      <definition value="Element ParentDocument.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -107,7 +101,6 @@
     </element>
     <element id="ParentDocument.setId">
       <path value="ParentDocument.setId"/>
-      <definition value="Element ParentDocument.setId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -116,7 +109,6 @@
     </element>
     <element id="ParentDocument.versionNumber">
       <path value="ParentDocument.versionNumber"/>
-      <definition value="Element ParentDocument.versionNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>

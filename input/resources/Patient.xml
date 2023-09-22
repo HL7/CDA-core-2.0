@@ -26,13 +26,11 @@
   <differential>
     <element id="Patient">
       <path value="Patient"/>
-      <definition value="Element Patient"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Patient.classCode">
       <path value="Patient.classCode"/>
-      <definition value="Element Patient.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -50,7 +48,6 @@
     </element>
     <element id="Patient.determinerCode">
       <path value="Patient.determinerCode"/>
-      <definition value="Element Patient.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -77,7 +74,6 @@
     </element>
     <element id="Patient.id">
       <path value="Patient.id"/>
-      <definition value="Element Patient.id"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -86,7 +82,6 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
-      <definition value="Element Patient.name"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -101,7 +96,6 @@
         <valueString value="desc"/>
       </extension>
       <path value="Patient.sdtcDesc"/>
-      <definition value="Element Patient.sdtcDesc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -110,7 +104,6 @@
     </element>
     <element id="Patient.administrativeGenderCode">
       <path value="Patient.administrativeGenderCode"/>
-      <definition value="Element Patient.administrativeGenderCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,7 +116,6 @@
     </element>
     <element id="Patient.birthTime">
       <path value="Patient.birthTime"/>
-      <definition value="Element Patient.birthTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -138,7 +130,6 @@
         <valueString value="deceasedInd"/>
       </extension>
       <path value="Patient.sdtcDeceasedInd"/>
-      <definition value="Element Patient.sdtcDeceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -153,7 +144,6 @@
         <valueString value="deceasedTime"/>
       </extension>
       <path value="Patient.sdtcDeceasedTime"/>
-      <definition value="Element Patient.sdtcDeceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -168,7 +158,6 @@
         <valueString value="multipleBirthInd"/>
       </extension>
       <path value="Patient.sdtcMultipleBirthInd"/>
-      <definition value="Element Patient.sdtcMultipleBirthInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -183,7 +172,6 @@
         <valueString value="multipleBirthOrderNumber"/>
       </extension>
       <path value="Patient.sdtcMultipleBirthOrderNumber"/>
-      <definition value="Element Patient.sdtcMultipleBirthOrderNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -192,7 +180,6 @@
     </element>
     <element id="Patient.maritalStatusCode">
       <path value="Patient.maritalStatusCode"/>
-      <definition value="Element Patient.maritalStatusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -205,7 +192,6 @@
     </element>
     <element id="Patient.religiousAffiliationCode">
       <path value="Patient.religiousAffiliationCode"/>
-      <definition value="Element Patient.religiousAffiliationCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -218,7 +204,6 @@
     </element>
     <element id="Patient.raceCode">
       <path value="Patient.raceCode"/>
-      <definition value="Element Patient.raceCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -237,7 +222,6 @@
         <valueString value="raceCode"/>
       </extension>
       <path value="Patient.sdtcRaceCode"/>
-      <definition value="Element Patient.sdtcRaceCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -250,7 +234,6 @@
     </element>
     <element id="Patient.ethnicGroupCode">
       <path value="Patient.ethnicGroupCode"/>
-      <definition value="Element Patient.ethnicGroupCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -269,7 +252,6 @@
         <valueString value="ethnicGroupCode"/>
       </extension>
       <path value="Patient.sdtcEthnicGroupCode"/>
-      <definition value="Element Patient.sdtcEthnicGroupCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -282,7 +264,6 @@
     </element>
     <element id="Patient.guardian">
       <path value="Patient.guardian"/>
-      <definition value="Element Patient.guardian"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -291,7 +272,6 @@
     </element>
     <element id="Patient.birthplace">
       <path value="Patient.birthplace"/>
-      <definition value="Element Patient.birthplace"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -300,7 +280,6 @@
     </element>
     <element id="Patient.languageCommunication">
       <path value="Patient.languageCommunication"/>
-      <definition value="Element Patient.languageCommunication"/>
       <min value="0"/>
       <max value="*"/>
       <type>

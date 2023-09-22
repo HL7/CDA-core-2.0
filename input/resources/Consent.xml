@@ -25,13 +25,11 @@
   <differential>
     <element id="Consent">
       <path value="Consent"/>
-      <definition value="Element Consent"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Consent.classCode">
       <path value="Consent.classCode"/>
-      <definition value="Element Consent.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -48,7 +46,6 @@
     </element>
     <element id="Consent.moodCode">
       <path value="Consent.moodCode"/>
-      <definition value="Element Consent.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -75,7 +72,6 @@
     </element>
     <element id="Consent.id">
       <path value="Consent.id"/>
-      <definition value="Element Consent.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -84,7 +80,6 @@
     </element>
     <element id="Consent.code">
       <path value="Consent.code"/>
-      <definition value="Element Consent.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -97,7 +92,6 @@
     </element>
     <element id="Consent.statusCode">
       <path value="Consent.statusCode"/>
-      <definition value="Element Consent.statusCode"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -110,7 +104,6 @@
     </element>
     <element id="Consent.statusCode.code">
       <path value="Consent.statusCode.code"/>
-      <definition value="Element Consent.statusCode.code"/>
       <comment value="Consents referenced in the CDA Header have been finalized (Consent.statusCode must equal &quot;completed&quot;) and should be on file."/>
       <representation value="xmlAttr"/>
       <min value="1"/>

@@ -28,13 +28,11 @@
   <differential>
     <element id="SubstanceAdministration">
       <path value="SubstanceAdministration"/>
-      <definition value="Element SubstanceAdministration"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="SubstanceAdministration.classCode">
       <path value="SubstanceAdministration.classCode"/>
-      <definition value="Element SubstanceAdministration.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -51,7 +49,6 @@
     </element>
     <element id="SubstanceAdministration.moodCode">
       <path value="SubstanceAdministration.moodCode"/>
-      <definition value="Element SubstanceAdministration.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -62,7 +59,6 @@
     </element>
     <element id="SubstanceAdministration.realmCode">
       <path value="SubstanceAdministration.realmCode"/>
-      <definition value="Element SubstanceAdministration.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -71,7 +67,6 @@
     </element>
     <element id="SubstanceAdministration.typeId">
       <path value="SubstanceAdministration.typeId"/>
-      <definition value="Element SubstanceAdministration.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -89,7 +84,6 @@
     </element>
     <element id="SubstanceAdministration.id">
       <path value="SubstanceAdministration.id"/>
-      <definition value="Element SubstanceAdministration.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -98,7 +92,6 @@
     </element>
     <element id="SubstanceAdministration.code">
       <path value="SubstanceAdministration.code"/>
-      <definition value="Element SubstanceAdministration.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -111,7 +104,6 @@
     </element>
     <element id="SubstanceAdministration.negationInd">
       <path value="SubstanceAdministration.negationInd"/>
-      <definition value="Element SubstanceAdministration.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -122,7 +114,6 @@
     </element>
     <element id="SubstanceAdministration.text">
       <path value="SubstanceAdministration.text"/>
-      <definition value="Element SubstanceAdministration.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -131,7 +122,6 @@
     </element>
     <element id="SubstanceAdministration.statusCode">
       <path value="SubstanceAdministration.statusCode"/>
-      <definition value="Element SubstanceAdministration.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -147,7 +137,6 @@
         <valueCanonical value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
       </extension>
       <path value="SubstanceAdministration.effectiveTime"/>
-      <definition value="Element SubstanceAdministration.effectiveTime"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="*"/>
@@ -169,7 +158,6 @@
     </element>
     <element id="SubstanceAdministration.priorityCode">
       <path value="SubstanceAdministration.priorityCode"/>
-      <definition value="Element SubstanceAdministration.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -182,7 +170,6 @@
     </element>
     <element id="SubstanceAdministration.repeatNumber">
       <path value="SubstanceAdministration.repeatNumber"/>
-      <definition value="Element SubstanceAdministration.repeatNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -191,7 +178,6 @@
     </element>
     <element id="SubstanceAdministration.routeCode">
       <path value="SubstanceAdministration.routeCode"/>
-      <definition value="Element SubstanceAdministration.routeCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -204,7 +190,6 @@
     </element>
     <element id="SubstanceAdministration.approachSiteCode">
       <path value="SubstanceAdministration.approachSiteCode"/>
-      <definition value="Element SubstanceAdministration.approachSiteCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -217,7 +202,6 @@
     </element>
     <element id="SubstanceAdministration.doseQuantity">
       <path value="SubstanceAdministration.doseQuantity"/>
-      <definition value="Element SubstanceAdministration.doseQuantity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -226,7 +210,6 @@
     </element>
     <element id="SubstanceAdministration.rateQuantity">
       <path value="SubstanceAdministration.rateQuantity"/>
-      <definition value="Element SubstanceAdministration.rateQuantity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -235,7 +218,6 @@
     </element>
     <element id="SubstanceAdministration.maxDoseQuantity">
       <path value="SubstanceAdministration.maxDoseQuantity"/>
-      <definition value="Element SubstanceAdministration.maxDoseQuantity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -244,7 +226,6 @@
     </element>
     <element id="SubstanceAdministration.administrationUnitCode">
       <path value="SubstanceAdministration.administrationUnitCode"/>
-      <definition value="Element SubstanceAdministration.administrationUnitCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -257,7 +238,6 @@
     </element>
     <element id="SubstanceAdministration.consumable">
       <path value="SubstanceAdministration.consumable"/>
-      <definition value="Element SubstanceAdministration.consumable"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -266,7 +246,6 @@
     </element>
     <element id="SubstanceAdministration.consumable.typeCode">
       <path value="SubstanceAdministration.consumable.typeCode"/>
-      <definition value="Element SubstanceAdministration.consumable.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -284,7 +263,6 @@
     </element>
     <element id="SubstanceAdministration.consumable.manufacturedProduct">
       <path value="SubstanceAdministration.consumable.manufacturedProduct"/>
-      <definition value="Element SubstanceAdministration.consumable.manufacturedProduct"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -293,7 +271,6 @@
     </element>
     <element id="SubstanceAdministration.subject">
       <path value="SubstanceAdministration.subject"/>
-      <definition value="Element SubstanceAdministration.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -302,7 +279,6 @@
     </element>
     <element id="SubstanceAdministration.subject.typeCode">
       <path value="SubstanceAdministration.subject.typeCode"/>
-      <definition value="Element SubstanceAdministration.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -320,7 +296,6 @@
     </element>
     <element id="SubstanceAdministration.subject.contextControlCode">
       <path value="SubstanceAdministration.subject.contextControlCode"/>
-      <definition value="Element SubstanceAdministration.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -338,7 +313,6 @@
     </element>
     <element id="SubstanceAdministration.subject.awarenessCode">
       <path value="SubstanceAdministration.subject.awarenessCode"/>
-      <definition value="Element SubstanceAdministration.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -351,7 +325,6 @@
     </element>
     <element id="SubstanceAdministration.subject.relatedSubject">
       <path value="SubstanceAdministration.subject.relatedSubject"/>
-      <definition value="Element SubstanceAdministration.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -360,7 +333,6 @@
     </element>
     <element id="SubstanceAdministration.specimen">
       <path value="SubstanceAdministration.specimen"/>
-      <definition value="Element SubstanceAdministration.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -369,7 +341,6 @@
     </element>
     <element id="SubstanceAdministration.performer">
       <path value="SubstanceAdministration.performer"/>
-      <definition value="Element SubstanceAdministration.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -378,7 +349,6 @@
     </element>
     <element id="SubstanceAdministration.author">
       <path value="SubstanceAdministration.author"/>
-      <definition value="Element SubstanceAdministration.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -387,7 +357,6 @@
     </element>
     <element id="SubstanceAdministration.informant">
       <path value="SubstanceAdministration.informant"/>
-      <definition value="Element SubstanceAdministration.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -396,7 +365,6 @@
     </element>
     <element id="SubstanceAdministration.informant.typeCode">
       <path value="SubstanceAdministration.informant.typeCode"/>
-      <definition value="Element SubstanceAdministration.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -414,7 +382,6 @@
     </element>
     <element id="SubstanceAdministration.informant.contextControlCode">
       <path value="SubstanceAdministration.informant.contextControlCode"/>
-      <definition value="Element SubstanceAdministration.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -432,7 +399,6 @@
     </element>
     <element id="SubstanceAdministration.informant.assignedEntity">
       <path value="SubstanceAdministration.informant.assignedEntity"/>
-      <definition value="Element SubstanceAdministration.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -441,7 +407,6 @@
     </element>
     <element id="SubstanceAdministration.informant.relatedEntity">
       <path value="SubstanceAdministration.informant.relatedEntity"/>
-      <definition value="Element SubstanceAdministration.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -450,7 +415,6 @@
     </element>
     <element id="SubstanceAdministration.participant">
       <path value="SubstanceAdministration.participant"/>
-      <definition value="Element SubstanceAdministration.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -459,7 +423,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship">
       <path value="SubstanceAdministration.entryRelationship"/>
-      <definition value="Element SubstanceAdministration.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -475,7 +438,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.typeCode">
       <path value="SubstanceAdministration.entryRelationship.typeCode"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -487,7 +449,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.inversionInd">
       <path value="SubstanceAdministration.entryRelationship.inversionInd"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -498,7 +459,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.contextConductionInd">
       <path value="SubstanceAdministration.entryRelationship.contextConductionInd"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -511,7 +471,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.sequenceNumber">
       <path value="SubstanceAdministration.entryRelationship.sequenceNumber"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -520,7 +479,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.negationInd">
       <path value="SubstanceAdministration.entryRelationship.negationInd"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -531,7 +489,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.seperatableInd">
       <path value="SubstanceAdministration.entryRelationship.seperatableInd"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -540,7 +497,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.observation">
       <path value="SubstanceAdministration.entryRelationship.observation"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -549,7 +505,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.regionOfInterest">
       <path value="SubstanceAdministration.entryRelationship.regionOfInterest"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -558,7 +513,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.observationMedia">
       <path value="SubstanceAdministration.entryRelationship.observationMedia"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -567,7 +521,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.substanceAdministration">
       <path value="SubstanceAdministration.entryRelationship.substanceAdministration"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -576,7 +529,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.supply">
       <path value="SubstanceAdministration.entryRelationship.supply"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -585,7 +537,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.procedure">
       <path value="SubstanceAdministration.entryRelationship.procedure"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -594,7 +545,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.encounter">
       <path value="SubstanceAdministration.entryRelationship.encounter"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -603,7 +553,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.organizer">
       <path value="SubstanceAdministration.entryRelationship.organizer"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -612,7 +561,6 @@
     </element>
     <element id="SubstanceAdministration.entryRelationship.act">
       <path value="SubstanceAdministration.entryRelationship.act"/>
-      <definition value="Element SubstanceAdministration.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -621,7 +569,6 @@
     </element>
     <element id="SubstanceAdministration.reference">
       <path value="SubstanceAdministration.reference"/>
-      <definition value="Element SubstanceAdministration.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -630,7 +577,6 @@
     </element>
     <element id="SubstanceAdministration.reference.typeCode">
       <path value="SubstanceAdministration.reference.typeCode"/>
-      <definition value="Element SubstanceAdministration.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -642,7 +588,6 @@
     </element>
     <element id="SubstanceAdministration.reference.seperatableInd">
       <path value="SubstanceAdministration.reference.seperatableInd"/>
-      <definition value="Element SubstanceAdministration.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -651,7 +596,6 @@
     </element>
     <element id="SubstanceAdministration.reference.externalAct">
       <path value="SubstanceAdministration.reference.externalAct"/>
-      <definition value="Element SubstanceAdministration.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -660,7 +604,6 @@
     </element>
     <element id="SubstanceAdministration.reference.externalObservation">
       <path value="SubstanceAdministration.reference.externalObservation"/>
-      <definition value="Element SubstanceAdministration.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -669,7 +612,6 @@
     </element>
     <element id="SubstanceAdministration.reference.externalProcedure">
       <path value="SubstanceAdministration.reference.externalProcedure"/>
-      <definition value="Element SubstanceAdministration.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -678,7 +620,6 @@
     </element>
     <element id="SubstanceAdministration.reference.externalDocument">
       <path value="SubstanceAdministration.reference.externalDocument"/>
-      <definition value="Element SubstanceAdministration.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -687,7 +628,6 @@
     </element>
     <element id="SubstanceAdministration.precondition">
       <path value="SubstanceAdministration.precondition"/>
-      <definition value="Element SubstanceAdministration.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

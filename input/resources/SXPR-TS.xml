@@ -19,13 +19,11 @@
   <differential>
     <element id="SXPR_TS">
       <path value="SXPR_TS"/>
-      <definition value="Element SXPR_TS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="SXPR_TS.comp">
       <path value="SXPR_TS.comp"/>
-      <definition value="Element SXPR_TS.comp"/>
       <representation value="typeAttr"/>
       <min value="1"/>
       <max value="*"/>

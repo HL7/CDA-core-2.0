@@ -26,13 +26,11 @@
   <differential>
     <element id="Organizer">
       <path value="Organizer"/>
-      <definition value="Element Organizer"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Organizer.classCode">
       <path value="Organizer.classCode"/>
-      <definition value="Element Organizer.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -47,7 +45,6 @@
     </element>
     <element id="Organizer.moodCode">
       <path value="Organizer.moodCode"/>
-      <definition value="Element Organizer.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -64,7 +61,6 @@
     </element>
     <element id="Organizer.realmCode">
       <path value="Organizer.realmCode"/>
-      <definition value="Element Organizer.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -73,7 +69,6 @@
     </element>
     <element id="Organizer.typeId">
       <path value="Organizer.typeId"/>
-      <definition value="Element Organizer.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -82,7 +77,6 @@
     </element>
     <element id="Organizer.templateId">
       <path value="Organizer.templateId"/>
-      <definition value="Element Organizer.templateId"/>
       <definition value="When valued in an instance, this attribute signals the imposition of a set of template-defined constraints. The value of this attribute provides a unique identifier for the templates in question"/>
       <min value="0"/>
       <max value="*"/>
@@ -92,7 +86,6 @@
     </element>
     <element id="Organizer.id">
       <path value="Organizer.id"/>
-      <definition value="Element Organizer.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -101,7 +94,6 @@
     </element>
     <element id="Organizer.code">
       <path value="Organizer.code"/>
-      <definition value="Element Organizer.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -114,7 +106,6 @@
     </element>
     <element id="Organizer.statusCode">
       <path value="Organizer.statusCode"/>
-      <definition value="Element Organizer.statusCode"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -127,7 +118,6 @@
     </element>
     <element id="Organizer.effectiveTime">
       <path value="Organizer.effectiveTime"/>
-      <definition value="Element Organizer.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -137,7 +127,6 @@
     
     <element id="Organizer.subject">
       <path value="Organizer.subject"/>
-      <definition value="Element Organizer.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -146,7 +135,6 @@
     </element>
     <element id="Organizer.subject.typeCode">
       <path value="Organizer.subject.typeCode"/>
-      <definition value="Element Organizer.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -163,7 +151,6 @@
     </element>
     <element id="Organizer.subject.contextControlCode">
       <path value="Organizer.subject.contextControlCode"/>
-      <definition value="Element Organizer.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -180,7 +167,6 @@
     </element>
     <element id="Organizer.subject.awarenessCode">
       <path value="Organizer.subject.awarenessCode"/>
-      <definition value="Element Organizer.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -193,7 +179,6 @@
     </element>
     <element id="Organizer.subject.relatedSubject">
       <path value="Organizer.subject.relatedSubject"/>
-      <definition value="Element Organizer.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -202,7 +187,6 @@
     </element>
     <element id="Organizer.specimen">
       <path value="Organizer.specimen"/>
-      <definition value="Element Organizer.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -211,7 +195,6 @@
     </element>
     <element id="Organizer.performer">
       <path value="Organizer.performer"/>
-      <definition value="Element Organizer.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -220,7 +203,6 @@
     </element>
     <element id="Organizer.author">
       <path value="Organizer.author"/>
-      <definition value="Element Organizer.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -229,7 +211,6 @@
     </element>
     <element id="Organizer.informant">
       <path value="Organizer.informant"/>
-      <definition value="Element Organizer.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -238,7 +219,6 @@
     </element>
     <element id="Organizer.informant.typeCode">
       <path value="Organizer.informant.typeCode"/>
-      <definition value="Element Organizer.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -255,7 +235,6 @@
     </element>
     <element id="Organizer.informant.contextControlCode">
       <path value="Organizer.informant.contextControlCode"/>
-      <definition value="Element Organizer.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -272,7 +251,6 @@
     </element>
     <element id="Organizer.informant.assignedEntity">
       <path value="Organizer.informant.assignedEntity"/>
-      <definition value="Element Organizer.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -281,7 +259,6 @@
     </element>
     <element id="Organizer.informant.relatedEntity">
       <path value="Organizer.informant.relatedEntity"/>
-      <definition value="Element Organizer.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -290,7 +267,6 @@
     </element>
     <element id="Organizer.participant">
       <path value="Organizer.participant"/>
-      <definition value="Element Organizer.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -299,7 +275,6 @@
     </element>
     <element id="Organizer.reference">
       <path value="Organizer.reference"/>
-      <definition value="Element Organizer.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -308,7 +283,6 @@
     </element>
     <element id="Organizer.reference.typeCode">
       <path value="Organizer.reference.typeCode"/>
-      <definition value="Element Organizer.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -320,7 +294,6 @@
     </element>
     <element id="Organizer.reference.seperatableInd">
       <path value="Organizer.reference.seperatableInd"/>
-      <definition value="Element Organizer.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -329,7 +302,6 @@
     </element>
     <element id="Organizer.reference.externalAct">
       <path value="Organizer.reference.externalAct"/>
-      <definition value="Element Organizer.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -338,7 +310,6 @@
     </element>
     <element id="Organizer.reference.externalObservation">
       <path value="Organizer.reference.externalObservation"/>
-      <definition value="Element Organizer.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -347,7 +318,6 @@
     </element>
     <element id="Organizer.reference.externalProcedure">
       <path value="Organizer.reference.externalProcedure"/>
-      <definition value="Element Organizer.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -356,7 +326,6 @@
     </element>
     <element id="Organizer.reference.externalDocument">
       <path value="Organizer.reference.externalDocument"/>
-      <definition value="Element Organizer.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -365,7 +334,6 @@
     </element>
     <element id="Organizer.precondition">
       <path value="Organizer.precondition"/>
-      <definition value="Element Organizer.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -374,7 +342,6 @@
     </element>
     <element id="Organizer.component">
       <path value="Organizer.component"/>
-      <definition value="Element Organizer.component"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -383,7 +350,6 @@
     </element>
     <element id="Organizer.component.typeCode">
       <path value="Organizer.component.typeCode"/>
-      <definition value="Element Organizer.component.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -396,7 +362,6 @@
     </element>
     <element id="Organizer.component.contextConductionInd">
       <path value="Organizer.component.contextConductionInd"/>
-      <definition value="Element Organizer.component.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -408,7 +373,6 @@
     </element>
     <element id="Organizer.component.sequenceNumber">
       <path value="Organizer.component.sequenceNumber"/>
-      <definition value="Element Organizer.component.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -417,7 +381,6 @@
     </element>
     <element id="Organizer.component.seperatableInd">
       <path value="Organizer.component.seperatableInd"/>
-      <definition value="Element Organizer.component.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -426,7 +389,6 @@
     </element>
     <element id="Organizer.component.observation">
       <path value="Organizer.component.observation"/>
-      <definition value="Element Organizer.component.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -435,7 +397,6 @@
     </element>
     <element id="Organizer.component.regionOfInterest">
       <path value="Organizer.component.regionOfInterest"/>
-      <definition value="Element Organizer.component.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -444,7 +405,6 @@
     </element>
     <element id="Organizer.component.observationMedia">
       <path value="Organizer.component.observationMedia"/>
-      <definition value="Element Organizer.component.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -453,7 +413,6 @@
     </element>
     <element id="Organizer.component.substanceAdministration">
       <path value="Organizer.component.substanceAdministration"/>
-      <definition value="Element Organizer.component.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -462,7 +421,6 @@
     </element>
     <element id="Organizer.component.supply">
       <path value="Organizer.component.supply"/>
-      <definition value="Element Organizer.component.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -471,7 +429,6 @@
     </element>
     <element id="Organizer.component.procedure">
       <path value="Organizer.component.procedure"/>
-      <definition value="Element Organizer.component.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -480,7 +437,6 @@
     </element>
     <element id="Organizer.component.encounter">
       <path value="Organizer.component.encounter"/>
-      <definition value="Element Organizer.component.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -489,7 +445,6 @@
     </element>
     <element id="Organizer.component.organizer">
       <path value="Organizer.component.organizer"/>
-      <definition value="Element Organizer.component.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -498,7 +453,6 @@
     </element>
     <element id="Organizer.component.act">
       <path value="Organizer.component.act"/>
-      <definition value="Element Organizer.component.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>

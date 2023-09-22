@@ -19,13 +19,11 @@
   <differential>
     <element id="SpecimenRole">
       <path value="SpecimenRole"/>
-      <definition value="Element SpecimenRole"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="SpecimenRole.classCode">
       <path value="SpecimenRole.classCode"/>
-      <definition value="Element SpecimenRole.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -51,7 +49,6 @@
     </element>
     <element id="SpecimenRole.id">
       <path value="SpecimenRole.id"/>
-      <definition value="Element SpecimenRole.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -66,7 +63,6 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="SpecimenRole.sdtcIdentifiedBy"/>
-      <definition value="Element SpecimenRole.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -75,7 +71,6 @@
     </element>
     <element id="SpecimenRole.specimenPlayingEntity">
       <path value="SpecimenRole.specimenPlayingEntity"/>
-      <definition value="Element SpecimenRole.specimenPlayingEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>

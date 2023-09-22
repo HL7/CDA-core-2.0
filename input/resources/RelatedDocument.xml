@@ -25,7 +25,6 @@
   <differential>
     <element id="RelatedDocument">
       <path value="RelatedDocument"/>
-      <definition value="Element RelatedDocument"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -47,7 +46,6 @@
     </element>
     <element id="RelatedDocument.typeCode">
       <path value="RelatedDocument.typeCode"/>
-      <definition value="Element RelatedDocument.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -90,7 +88,6 @@
     </element>
     <element id="RelatedDocument.parentDocument">
       <path value="RelatedDocument.parentDocument"/>
-      <definition value="Element RelatedDocument.parentDocument"/>
       <min value="1"/>
       <max value="1"/>
       <type>

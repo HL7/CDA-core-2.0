@@ -26,13 +26,11 @@
   <differential>
     <element id="Encounter">
       <path value="Encounter"/>
-      <definition value="Element Encounter"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Encounter.classCode">
       <path value="Encounter.classCode"/>
-      <definition value="Element Encounter.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -48,7 +46,6 @@
     </element>
     <element id="Encounter.moodCode">
       <path value="Encounter.moodCode"/>
-      <definition value="Element Encounter.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -59,7 +56,6 @@
     </element>
     <element id="Encounter.realmCode">
       <path value="Encounter.realmCode"/>
-      <definition value="Element Encounter.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -68,7 +64,6 @@
     </element>
     <element id="Encounter.typeId">
       <path value="Encounter.typeId"/>
-      <definition value="Element Encounter.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -86,7 +81,6 @@
     </element>
     <element id="Encounter.id">
       <path value="Encounter.id"/>
-      <definition value="Element Encounter.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -95,7 +89,6 @@
     </element>
     <element id="Encounter.code">
       <path value="Encounter.code"/>
-      <definition value="Element Encounter.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -108,7 +101,6 @@
     </element>
     <element id="Encounter.text">
       <path value="Encounter.text"/>
-      <definition value="Element Encounter.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -117,7 +109,6 @@
     </element>
     <element id="Encounter.statusCode">
       <path value="Encounter.statusCode"/>
-      <definition value="Element Encounter.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -130,7 +121,6 @@
     </element>
     <element id="Encounter.effectiveTime">
       <path value="Encounter.effectiveTime"/>
-      <definition value="Element Encounter.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -145,7 +135,6 @@
         <valueUri value="dischargeDispositionCode"/>
       </extension>
       <path value="Encounter.sdtcDischargeDispositionCode"/>
-      <definition value="Element Encounter.sdtcDischargeDispositionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -154,7 +143,6 @@
     </element>
     <element id="Encounter.priorityCode">
       <path value="Encounter.priorityCode"/>
-      <definition value="Element Encounter.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -167,7 +155,6 @@
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject"/>
-      <definition value="Element Encounter.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -176,7 +163,6 @@
     </element>
     <element id="Encounter.subject.typeCode">
       <path value="Encounter.subject.typeCode"/>
-      <definition value="Element Encounter.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -194,7 +180,6 @@
     </element>
     <element id="Encounter.subject.contextControlCode">
       <path value="Encounter.subject.contextControlCode"/>
-      <definition value="Element Encounter.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -212,7 +197,6 @@
     </element>
     <element id="Encounter.subject.awarenessCode">
       <path value="Encounter.subject.awarenessCode"/>
-      <definition value="Element Encounter.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -225,7 +209,6 @@
     </element>
     <element id="Encounter.subject.relatedSubject">
       <path value="Encounter.subject.relatedSubject"/>
-      <definition value="Element Encounter.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -234,7 +217,6 @@
     </element>
     <element id="Encounter.specimen">
       <path value="Encounter.specimen"/>
-      <definition value="Element Encounter.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -243,7 +225,6 @@
     </element>
     <element id="Encounter.performer">
       <path value="Encounter.performer"/>
-      <definition value="Element Encounter.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -252,7 +233,6 @@
     </element>
     <element id="Encounter.author">
       <path value="Encounter.author"/>
-      <definition value="Element Encounter.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -261,7 +241,6 @@
     </element>
     <element id="Encounter.informant">
       <path value="Encounter.informant"/>
-      <definition value="Element Encounter.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -270,7 +249,6 @@
     </element>
     <element id="Encounter.informant.typeCode">
       <path value="Encounter.informant.typeCode"/>
-      <definition value="Element Encounter.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -287,7 +265,6 @@
     </element>
     <element id="Encounter.informant.contextControlCode">
       <path value="Encounter.informant.contextControlCode"/>
-      <definition value="Element Encounter.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -304,7 +281,6 @@
     </element>
     <element id="Encounter.informant.assignedEntity">
       <path value="Encounter.informant.assignedEntity"/>
-      <definition value="Element Encounter.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -313,7 +289,6 @@
     </element>
     <element id="Encounter.informant.relatedEntity">
       <path value="Encounter.informant.relatedEntity"/>
-      <definition value="Element Encounter.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -322,7 +297,6 @@
     </element>
     <element id="Encounter.participant">
       <path value="Encounter.participant"/>
-      <definition value="Element Encounter.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -331,7 +305,6 @@
     </element>
     <element id="Encounter.entryRelationship">
       <path value="Encounter.entryRelationship"/>
-      <definition value="Element Encounter.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -347,7 +320,6 @@
     </element>
     <element id="Encounter.entryRelationship.typeCode">
       <path value="Encounter.entryRelationship.typeCode"/>
-      <definition value="Element Encounter.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -358,7 +330,6 @@
     </element>
     <element id="Encounter.entryRelationship.inversionInd">
       <path value="Encounter.entryRelationship.inversionInd"/>
-      <definition value="Element Encounter.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -369,7 +340,6 @@
     </element>
     <element id="Encounter.entryRelationship.contextConductionInd">
       <path value="Encounter.entryRelationship.contextConductionInd"/>
-      <definition value="Element Encounter.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -382,7 +352,6 @@
     </element>
     <element id="Encounter.entryRelationship.sequenceNumber">
       <path value="Encounter.entryRelationship.sequenceNumber"/>
-      <definition value="Element Encounter.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -391,7 +360,6 @@
     </element>
     <element id="Encounter.entryRelationship.negationInd">
       <path value="Encounter.entryRelationship.negationInd"/>
-      <definition value="Element Encounter.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -402,7 +370,6 @@
     </element>
     <element id="Encounter.entryRelationship.seperatableInd">
       <path value="Encounter.entryRelationship.seperatableInd"/>
-      <definition value="Element Encounter.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -411,7 +378,6 @@
     </element>
     <element id="Encounter.entryRelationship.observation">
       <path value="Encounter.entryRelationship.observation"/>
-      <definition value="Element Encounter.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -420,7 +386,6 @@
     </element>
     <element id="Encounter.entryRelationship.regionOfInterest">
       <path value="Encounter.entryRelationship.regionOfInterest"/>
-      <definition value="Element Encounter.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -429,7 +394,6 @@
     </element>
     <element id="Encounter.entryRelationship.observationMedia">
       <path value="Encounter.entryRelationship.observationMedia"/>
-      <definition value="Element Encounter.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -438,7 +402,6 @@
     </element>
     <element id="Encounter.entryRelationship.substanceAdministration">
       <path value="Encounter.entryRelationship.substanceAdministration"/>
-      <definition value="Element Encounter.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -447,7 +410,6 @@
     </element>
     <element id="Encounter.entryRelationship.supply">
       <path value="Encounter.entryRelationship.supply"/>
-      <definition value="Element Encounter.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -456,7 +418,6 @@
     </element>
     <element id="Encounter.entryRelationship.procedure">
       <path value="Encounter.entryRelationship.procedure"/>
-      <definition value="Element Encounter.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -465,7 +426,6 @@
     </element>
     <element id="Encounter.entryRelationship.encounter">
       <path value="Encounter.entryRelationship.encounter"/>
-      <definition value="Element Encounter.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -474,7 +434,6 @@
     </element>
     <element id="Encounter.entryRelationship.organizer">
       <path value="Encounter.entryRelationship.organizer"/>
-      <definition value="Element Encounter.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -483,7 +442,6 @@
     </element>
     <element id="Encounter.entryRelationship.act">
       <path value="Encounter.entryRelationship.act"/>
-      <definition value="Element Encounter.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -492,7 +450,6 @@
     </element>
     <element id="Encounter.reference">
       <path value="Encounter.reference"/>
-      <definition value="Element Encounter.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -501,7 +458,6 @@
     </element>
     <element id="Encounter.reference.typeCode">
       <path value="Encounter.reference.typeCode"/>
-      <definition value="Element Encounter.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -513,7 +469,6 @@
     </element>
     <element id="Encounter.reference.seperatableInd">
       <path value="Encounter.reference.seperatableInd"/>
-      <definition value="Element Encounter.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -522,7 +477,6 @@
     </element>
     <element id="Encounter.reference.externalAct">
       <path value="Encounter.reference.externalAct"/>
-      <definition value="Element Encounter.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -531,7 +485,6 @@
     </element>
     <element id="Encounter.reference.externalObservation">
       <path value="Encounter.reference.externalObservation"/>
-      <definition value="Element Encounter.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -540,7 +493,6 @@
     </element>
     <element id="Encounter.reference.externalProcedure">
       <path value="Encounter.reference.externalProcedure"/>
-      <definition value="Element Encounter.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -549,7 +501,6 @@
     </element>
     <element id="Encounter.reference.externalDocument">
       <path value="Encounter.reference.externalDocument"/>
-      <definition value="Element Encounter.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -558,7 +509,6 @@
     </element>
     <element id="Encounter.precondition">
       <path value="Encounter.precondition"/>
-      <definition value="Element Encounter.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

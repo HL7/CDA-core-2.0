@@ -31,7 +31,6 @@
     </element>
     <element id="REAL.value">
       <path value="REAL.value"/>
-      <definition value="Element REAL.value"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
