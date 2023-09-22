@@ -133,6 +133,7 @@
 <artifact id="StructureDefinition/uid" key="StructureDefinition-uid" name="uid: Unique Identifier String"/>
 <artifact id="StructureDefinition/url" key="StructureDefinition-url" name="url: Universal Resource Locator"/>
 <artifact id="StructureDefinition/uuid" key="StructureDefinition-uuid" name="uuid: DCE Universal Unique Identifier"/>
+<artifact id="StructureDefinition/xs-ID" key="StructureDefinition-xs-ID" name="xs:ID"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

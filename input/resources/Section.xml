@@ -38,6 +38,7 @@
       <max value="1"/>
       <type>
         <code value="id"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/xs-ID"/>
       </type>
     </element>
     <element id="Section.nullFlavor">
