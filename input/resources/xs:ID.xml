@@ -13,7 +13,7 @@
   </extension>
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/xs-ID"/>
   <name value="xs:ID"/>
-  <title value="xs:ID "/>
+  <title value="xs:ID"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
