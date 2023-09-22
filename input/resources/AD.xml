@@ -809,9 +809,9 @@
       <definition value="Textual representation of (part of) the address"/>
       <min value="0"/>
       <max value="1"/>
-      
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="AD.useablePeriod[x]">

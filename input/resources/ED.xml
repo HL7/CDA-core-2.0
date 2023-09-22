@@ -128,6 +128,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
       <type>
         <code value="base64Binary"/>

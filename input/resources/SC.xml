@@ -43,7 +43,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="SC.codeSystem">
@@ -54,7 +55,10 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="id"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid"/>
       </type>
     </element>
     <element id="SC.codeSystemName">
@@ -66,6 +70,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="SC.codeSystemVersion">
@@ -77,6 +82,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="SC.displayName">
@@ -88,6 +94,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
   </differential>

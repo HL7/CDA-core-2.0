@@ -39,7 +39,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="dateTime"/>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ts-simple"/>
       </type>
     </element>
     <element id="TS.inclusive">

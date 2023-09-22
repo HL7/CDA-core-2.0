@@ -43,7 +43,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="CD.codeSystem">
@@ -69,6 +70,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.codeSystemVersion">
@@ -80,6 +82,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.displayName">
@@ -91,6 +94,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.sdtcValueSet">
@@ -111,7 +115,8 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="CD.sdtcValueSetVersion">
@@ -128,6 +133,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.originalText">

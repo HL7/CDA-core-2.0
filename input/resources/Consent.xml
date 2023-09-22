@@ -111,14 +111,15 @@
     <element id="Consent.statusCode.code">
       <path value="Consent.statusCode.code"/>
       <definition value="Element Consent.statusCode.code"/>
+      <comment value="Consents referenced in the CDA Header have been finalized (Consent.statusCode must equal &quot;completed&quot;) and should be on file."/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueString value="completed"/>
-      <fixedString value="completed"/>
+      <fixedCode value="completed"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -38,6 +38,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="II.displayable">
@@ -75,6 +76,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
   </differential>
