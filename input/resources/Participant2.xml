@@ -25,7 +25,6 @@
   <differential>
     <element id="Participant2">
       <path value="Participant2"/>
-      <definition value="Element Participant2"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -38,6 +37,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -46,12 +46,12 @@
     </element>
     <element id="Participant2.typeCode">
       <path value="Participant2.typeCode"/>
-      <definition value="Element Participant2.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -60,12 +60,12 @@
     </element>
     <element id="Participant2.contextControlCode">
       <path value="Participant2.contextControlCode"/>
-      <definition value="Element Participant2.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="OP"/>
       <binding>
@@ -108,7 +108,6 @@
         <valueString value="functionCode"/>
       </extension>
       <path value="Participant2.sdtcFunctionCode"/>
-      <definition value="Element Participant2.sdtcFunctionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -117,7 +116,6 @@
     </element>
     <element id="Participant2.time">
       <path value="Participant2.time"/>
-      <definition value="Element Participant2.time"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -126,7 +124,6 @@
     </element>
     <element id="Participant2.awarenessCode">
       <path value="Participant2.awarenessCode"/>
-      <definition value="Element Participant2.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -135,7 +132,6 @@
     </element>
     <element id="Participant2.participantRole">
       <path value="Participant2.participantRole"/>
-      <definition value="Element Participant2.participantRole"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -19,7 +19,6 @@
   <differential>
     <element id="IVL_PQ">
       <path value="IVL_PQ"/>
-      <definition value="Element IVL_PQ"/>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -37,6 +36,7 @@
       </base>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="IVL_PQ.value">
@@ -53,6 +53,7 @@
       </base>
       <type>
         <code value="decimal"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/real-simple"/>
       </type>
     </element>
     <element id="IVL_PQ.low">

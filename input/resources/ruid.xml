@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ruid"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Primitive type 'ruid'</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ruid"/>
+  <name value="ruid"/>
+  <title value="ruid: HL7 Reserved Identifier Scheme"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="HL7 Reserved Identifier Scheme (RUID)\nA globally unique string defined exclusively by HL7. Identifiers in this scheme are only defined by balloted HL7 specifications. Local communities or systems must never use such reserved identifiers based on bilateral negotiations.\n\nHL7 reserved identifiers are strings that consist only of (US-ASCII) letters, digits and hyphens, where the first character must be a letter. HL7 may assign these reserved identifiers as mnemonic identifiers for major concepts of interest to HL7."/>
+  <kind value="primitive-type"/>
+  <abstract value="false"/>
+  <type value="string"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
+  <derivation value="constraint"/> 
+  <differential>
+    <element id="string.id">
+      <path value="string.id"/>
+      <min value="0"/>
+    </element>
+    <element id="string.extension">
+      <path value="string.extension"/>
+      <min value="0"/>
+    </element>
+    <element id="string.value">
+      <path value="string.value"/>
+      <representation value="xmlAttr"/>
+      <constraint>
+        <key value="ruid-value"/>
+        <severity value="error"/>
+        <human value="An identifier that starts with a letter and contains any combination of letters, numbers, and hyphen."/>
+        <expression value="matches('^[A-Za-z][A-Za-z0-9\\-]*$')"/>
+      </constraint>
+    </element>
+  </differential>
+</StructureDefinition>

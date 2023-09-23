@@ -19,18 +19,17 @@
   <differential>
     <element id="OrganizationPartOf">
       <path value="OrganizationPartOf"/>
-      <definition value="Element OrganizationPartOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="OrganizationPartOf.classCode">
       <path value="OrganizationPartOf.classCode"/>
-      <definition value="Element OrganizationPartOf.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PART"/>
       <fixedCode value="PART"/>
@@ -50,7 +49,6 @@
     </element>
     <element id="OrganizationPartOf.id">
       <path value="OrganizationPartOf.id"/>
-      <definition value="Element OrganizationPartOf.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -74,7 +72,6 @@
     </element>
     <element id="OrganizationPartOf.code">
       <path value="OrganizationPartOf.code"/>
-      <definition value="Element OrganizationPartOf.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -87,7 +84,6 @@
     </element>
     <element id="OrganizationPartOf.statusCode">
       <path value="OrganizationPartOf.statusCode"/>
-      <definition value="Element OrganizationPartOf.statusCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -96,7 +92,6 @@
     </element>
     <element id="OrganizationPartOf.effectiveTime">
       <path value="OrganizationPartOf.effectiveTime"/>
-      <definition value="Element OrganizationPartOf.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -105,7 +100,6 @@
     </element>
     <element id="OrganizationPartOf.wholeOrganization">
       <path value="OrganizationPartOf.wholeOrganization"/>
-      <definition value="Element OrganizationPartOf.wholeOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

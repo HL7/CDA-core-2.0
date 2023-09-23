@@ -25,18 +25,17 @@
   <differential>
     <element id="RelatedSubject">
       <path value="RelatedSubject"/>
-      <definition value="Element RelatedSubject"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="RelatedSubject.classCode">
       <path value="RelatedSubject.classCode"/>
-      <definition value="Element RelatedSubject.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PRS"/>
       
@@ -52,7 +51,6 @@
     </element>
     <element id="RelatedSubject.code">
       <path value="RelatedSubject.code"/>
-      <definition value="Element RelatedSubject.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -65,7 +63,6 @@
     </element>
     <element id="RelatedSubject.addr">
       <path value="RelatedSubject.addr"/>
-      <definition value="Element RelatedSubject.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -74,7 +71,6 @@
     </element>
     <element id="RelatedSubject.telecom">
       <path value="RelatedSubject.telecom"/>
-      <definition value="Element RelatedSubject.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -83,7 +79,6 @@
     </element>
     <element id="RelatedSubject.subject">
       <path value="RelatedSubject.subject"/>
-      <definition value="Element RelatedSubject.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>

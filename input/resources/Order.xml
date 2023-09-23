@@ -25,18 +25,17 @@
   <differential>
     <element id="Order">
       <path value="Order"/>
-      <definition value="Element Order"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Order.classCode">
       <path value="Order.classCode"/>
-      <definition value="Element Order.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ACT"/>
       <binding>
@@ -46,12 +45,12 @@
     </element>
     <element id="Order.moodCode">
       <path value="Order.moodCode"/>
-      <definition value="Element Order.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="RQO"/>
       <fixedCode value="RQO"/>
@@ -72,7 +71,6 @@
     </element>
     <element id="Order.id">
       <path value="Order.id"/>
-      <definition value="Element Order.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -81,7 +79,6 @@
     </element>
     <element id="Order.code">
       <path value="Order.code"/>
-      <definition value="Element Order.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -94,7 +91,6 @@
     </element>
     <element id="Order.priorityCode">
       <path value="Order.priorityCode"/>
-      <definition value="Element Order.priorityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>

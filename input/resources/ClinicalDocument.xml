@@ -28,18 +28,17 @@
   <differential>
     <element id="ClinicalDocument">
       <path value="ClinicalDocument"/>
-      <definition value="Element ClinicalDocument"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ClinicalDocument.classCode">
       <path value="ClinicalDocument.classCode"/>
-      <definition value="Element ClinicalDocument.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="DOCCLIN"/>
       <fixedCode value="DOCCLIN"/>
@@ -51,12 +50,12 @@
     </element>
     <element id="ClinicalDocument.moodCode">
       <path value="ClinicalDocument.moodCode"/>
-      <definition value="Element ClinicalDocument.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -95,7 +94,6 @@
     </element>
     <element id="ClinicalDocument.id">
       <path value="ClinicalDocument.id"/>
-      <definition value="Element ClinicalDocument.id"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -104,7 +102,6 @@
     </element>
     <element id="ClinicalDocument.code">
       <path value="ClinicalDocument.code"/>
-      <definition value="Element ClinicalDocument.code"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -117,7 +114,6 @@
     </element>
     <element id="ClinicalDocument.title">
       <path value="ClinicalDocument.title"/>
-      <definition value="Element ClinicalDocument.title"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -126,7 +122,6 @@
     </element>
     <element id="ClinicalDocument.effectiveTime">
       <path value="ClinicalDocument.effectiveTime"/>
-      <definition value="Element ClinicalDocument.effectiveTime"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -135,7 +130,6 @@
     </element>
     <element id="ClinicalDocument.confidentialityCode">
       <path value="ClinicalDocument.confidentialityCode"/>
-      <definition value="Element ClinicalDocument.confidentialityCode"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -144,7 +138,6 @@
     </element>
     <element id="ClinicalDocument.languageCode">
       <path value="ClinicalDocument.languageCode"/>
-      <definition value="Element ClinicalDocument.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -157,7 +150,6 @@
     </element>
     <element id="ClinicalDocument.setId">
       <path value="ClinicalDocument.setId"/>
-      <definition value="Element ClinicalDocument.setId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -166,7 +158,6 @@
     </element>
     <element id="ClinicalDocument.versionNumber">
       <path value="ClinicalDocument.versionNumber"/>
-      <definition value="Element ClinicalDocument.versionNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -175,7 +166,6 @@
     </element>
     <element id="ClinicalDocument.copyTime">
       <path value="ClinicalDocument.copyTime"/>
-      <definition value="Element ClinicalDocument.copyTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -184,7 +174,6 @@
     </element>
     <element id="ClinicalDocument.recordTarget">
       <path value="ClinicalDocument.recordTarget"/>
-      <definition value="Element ClinicalDocument.recordTarget"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -193,7 +182,6 @@
     </element>
     <element id="ClinicalDocument.author">
       <path value="ClinicalDocument.author"/>
-      <definition value="Element ClinicalDocument.author"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -202,7 +190,6 @@
     </element>
     <element id="ClinicalDocument.dataEnterer">
       <path value="ClinicalDocument.dataEnterer"/>
-      <definition value="Element ClinicalDocument.dataEnterer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -211,7 +198,6 @@
     </element>
     <element id="ClinicalDocument.informant">
       <path value="ClinicalDocument.informant"/>
-      <definition value="Element ClinicalDocument.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -220,7 +206,6 @@
     </element>
     <element id="ClinicalDocument.custodian">
       <path value="ClinicalDocument.custodian"/>
-      <definition value="Element ClinicalDocument.custodian"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -229,7 +214,6 @@
     </element>
     <element id="ClinicalDocument.informationRecipient">
       <path value="ClinicalDocument.informationRecipient"/>
-      <definition value="Element ClinicalDocument.informationRecipient"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -238,7 +222,6 @@
     </element>
     <element id="ClinicalDocument.legalAuthenticator">
       <path value="ClinicalDocument.legalAuthenticator"/>
-      <definition value="Element ClinicalDocument.legalAuthenticator"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -247,7 +230,6 @@
     </element>
     <element id="ClinicalDocument.authenticator">
       <path value="ClinicalDocument.authenticator"/>
-      <definition value="Element ClinicalDocument.authenticator"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -256,7 +238,6 @@
     </element>
     <element id="ClinicalDocument.participant">
       <path value="ClinicalDocument.participant"/>
-      <definition value="Element ClinicalDocument.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -265,7 +246,6 @@
     </element>
     <element id="ClinicalDocument.inFulfillmentOf">
       <path value="ClinicalDocument.inFulfillmentOf"/>
-      <definition value="Element ClinicalDocument.inFulfillmentOf"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -274,7 +254,6 @@
     </element>
     <element id="ClinicalDocument.documentationOf">
       <path value="ClinicalDocument.documentationOf"/>
-      <definition value="Element ClinicalDocument.documentationOf"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -283,7 +262,6 @@
     </element>
     <element id="ClinicalDocument.relatedDocument">
       <path value="ClinicalDocument.relatedDocument"/>
-      <definition value="Element ClinicalDocument.relatedDocument"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -292,7 +270,6 @@
     </element>
     <element id="ClinicalDocument.authorization">
       <path value="ClinicalDocument.authorization"/>
-      <definition value="Element ClinicalDocument.authorization"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -301,7 +278,6 @@
     </element>
     <element id="ClinicalDocument.componentOf">
       <path value="ClinicalDocument.componentOf"/>
-      <definition value="Element ClinicalDocument.componentOf"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -310,7 +286,6 @@
     </element>
     <element id="ClinicalDocument.component">
       <path value="ClinicalDocument.component"/>
-      <definition value="Element ClinicalDocument.component"/>
       <min value="1"/>
       <max value="1"/>
       <type>

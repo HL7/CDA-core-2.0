@@ -26,23 +26,21 @@
   <differential>
     <element id="Section">
       <path value="Section"/>
-      <definition value="Element Section"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Section.ID">
       <path value="Section.ID"/>
-      <definition value="Element Section.ID"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="id"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/xs-ID"/>
       </type>
     </element>
     <element id="Section.nullFlavor">
       <path value="Section.nullFlavor"/>
-      <definition value="Element Section.nullFlavor"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -53,6 +51,7 @@
       </base>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -61,12 +60,12 @@
     </element>
     <element id="Section.classCode">
       <path value="Section.classCode"/>
-      <definition value="Element Section.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="DOCSECT"/>
       <fixedCode value="DOCSECT"/>
@@ -77,12 +76,12 @@
     </element>
     <element id="Section.moodCode">
       <path value="Section.moodCode"/>
-      <definition value="Element Section.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -102,7 +101,6 @@
     </element>
     <element id="Section.id">
       <path value="Section.id"/>
-      <definition value="Element Section.id"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -111,7 +109,6 @@
     </element>
     <element id="Section.code">
       <path value="Section.code"/>
-      <definition value="Element Section.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -124,7 +121,6 @@
     </element>
     <element id="Section.title">
       <path value="Section.title"/>
-      <definition value="Element Section.title"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -133,7 +129,6 @@
     </element>
     <element id="Section.text">
       <path value="Section.text"/>
-      <definition value="Element Section.text"/>
       <representation value="cdaText"/>
       <min value="0"/>
       <max value="1"/>
@@ -144,7 +139,6 @@
     </element>
     <element id="Section.confidentialityCode">
       <path value="Section.confidentialityCode"/>
-      <definition value="Element Section.confidentialityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -153,7 +147,6 @@
     </element>
     <element id="Section.languageCode">
       <path value="Section.languageCode"/>
-      <definition value="Element Section.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -166,7 +159,6 @@
     </element>
     <element id="Section.subject">
       <path value="Section.subject"/>
-      <definition value="Element Section.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -175,12 +167,12 @@
     </element>
     <element id="Section.subject.typeCode">
       <path value="Section.subject.typeCode"/>
-      <definition value="Element Section.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
@@ -192,12 +184,12 @@
     </element>
     <element id="Section.subject.contextControlCode">
       <path value="Section.subject.contextControlCode"/>
-      <definition value="Element Section.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -209,7 +201,6 @@
     </element>
     <element id="Section.subject.awarenessCode">
       <path value="Section.subject.awarenessCode"/>
-      <definition value="Element Section.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -222,7 +213,6 @@
     </element>
     <element id="Section.subject.relatedSubject">
       <path value="Section.subject.relatedSubject"/>
-      <definition value="Element Section.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -231,7 +221,6 @@
     </element>
     <element id="Section.author">
       <path value="Section.author"/>
-      <definition value="Element Section.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -240,7 +229,6 @@
     </element>
     <element id="Section.informant">
       <path value="Section.informant"/>
-      <definition value="Element Section.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -249,12 +237,12 @@
     </element>
     <element id="Section.informant.typeCode">
       <path value="Section.informant.typeCode"/>
-      <definition value="Element Section.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="INF"/>
       <fixedCode value="INF"/>
@@ -266,12 +254,12 @@
     </element>
     <element id="Section.informant.contextControlCode">
       <path value="Section.informant.contextControlCode"/>
-      <definition value="Element Section.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -283,7 +271,6 @@
     </element>
     <element id="Section.informant.assignedEntity">
       <path value="Section.informant.assignedEntity"/>
-      <definition value="Element Section.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -292,7 +279,6 @@
     </element>
     <element id="Section.informant.relatedEntity">
       <path value="Section.informant.relatedEntity"/>
-      <definition value="Element Section.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -301,7 +287,6 @@
     </element>
     <element id="Section.entry">
       <path value="Section.entry"/>
-      <definition value="Element Section.entry"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -316,29 +301,28 @@
     </element>
     <element id="Section.entry.typeCode">
       <path value="Section.entry.typeCode"/>
-      <definition value="Element Section.entry.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="COMP"/>
     </element>
     <element id="Section.entry.contextConductionInd">
       <path value="Section.entry.contextConductionInd"/>
-      <definition value="Element Section.entry.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
       <defaultValueBoolean value="true"/>
     </element>
     <element id="Section.entry.observation">
       <path value="Section.entry.observation"/>
-      <definition value="Element Section.entry.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -347,7 +331,6 @@
     </element>
     <element id="Section.entry.regionOfInterest">
       <path value="Section.entry.regionOfInterest"/>
-      <definition value="Element Section.entry.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -356,7 +339,6 @@
     </element>
     <element id="Section.entry.observationMedia">
       <path value="Section.entry.observationMedia"/>
-      <definition value="Element Section.entry.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -365,7 +347,6 @@
     </element>
     <element id="Section.entry.substanceAdministration">
       <path value="Section.entry.substanceAdministration"/>
-      <definition value="Element Section.entry.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -374,7 +355,6 @@
     </element>
     <element id="Section.entry.supply">
       <path value="Section.entry.supply"/>
-      <definition value="Element Section.entry.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -383,7 +363,6 @@
     </element>
     <element id="Section.entry.procedure">
       <path value="Section.entry.procedure"/>
-      <definition value="Element Section.entry.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -392,7 +371,6 @@
     </element>
     <element id="Section.entry.encounter">
       <path value="Section.entry.encounter"/>
-      <definition value="Element Section.entry.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -401,7 +379,6 @@
     </element>
     <element id="Section.entry.organizer">
       <path value="Section.entry.organizer"/>
-      <definition value="Element Section.entry.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -410,7 +387,6 @@
     </element>
     <element id="Section.entry.act">
       <path value="Section.entry.act"/>
-      <definition value="Element Section.entry.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -419,7 +395,6 @@
     </element>
     <element id="Section.component">
       <path value="Section.component"/>
-      <definition value="Element Section.component"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -428,13 +403,13 @@
     </element>
     <element id="Section.component.typeCode">
       <path value="Section.component.typeCode"/>
-      <definition value="Element Section.component.typeCode"/>
       <definition value="Drawn from concept domain DocumentSectionType"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
@@ -442,19 +417,18 @@
     </element>
     <element id="Section.component.contextConductionInd">
       <path value="Section.component.contextConductionInd"/>
-      <definition value="Element Section.component.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
       <defaultValueBoolean value="true"/>
       
     </element>
     <element id="Section.component.section">
       <path value="Section.component.section"/>
-      <definition value="Element Section.component.section"/>
       <min value="1"/>
       <max value="1"/>
       <type>

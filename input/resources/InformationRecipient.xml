@@ -27,7 +27,6 @@
   <differential>
     <element id="InformationRecipient">
       <path value="InformationRecipient"/>
-      <definition value="Element InformationRecipient"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -40,6 +39,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -48,12 +48,12 @@
     </element>
     <element id="InformationRecipient.typeCode">
       <path value="InformationRecipient.typeCode"/>
-      <definition value="Element InformationRecipient.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PRCP"/>
       
@@ -91,7 +91,6 @@
     </element>
     <element id="InformationRecipient.intendedRecipient">
       <path value="InformationRecipient.intendedRecipient"/>
-      <definition value="Element InformationRecipient.intendedRecipient"/>
       <min value="1"/>
       <max value="1"/>
       <type>

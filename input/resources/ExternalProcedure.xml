@@ -25,18 +25,17 @@
   <differential>
     <element id="ExternalProcedure">
       <path value="ExternalProcedure"/>
-      <definition value="Element ExternalProcedure"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ExternalProcedure.classCode">
       <path value="ExternalProcedure.classCode"/>
-      <definition value="Element ExternalProcedure.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PROC"/>
       <fixedCode value="PROC"/>
@@ -48,12 +47,12 @@
     </element>
     <element id="ExternalProcedure.moodCode">
       <path value="ExternalProcedure.moodCode"/>
-      <definition value="Element ExternalProcedure.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -74,7 +73,6 @@
     </element>
     <element id="ExternalProcedure.id">
       <path value="ExternalProcedure.id"/>
-      <definition value="Element ExternalProcedure.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -83,7 +81,6 @@
     </element>
     <element id="ExternalProcedure.code">
       <path value="ExternalProcedure.code"/>
-      <definition value="Element ExternalProcedure.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -96,7 +93,6 @@
     </element>
     <element id="ExternalProcedure.text">
       <path value="ExternalProcedure.text"/>
-      <definition value="Element ExternalProcedure.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>

@@ -25,18 +25,17 @@
   <differential>
     <element id="TEL">
       <path value="TEL"/>
-      <definition value="Element TEL"/>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="TEL.value">
       <path value="TEL.value"/>
-      <definition value="Element TEL.value"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="uri"/>
+        <code value="url"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/url"/>
       </type>
     </element>
     <element id="TEL.useablePeriod">
@@ -71,6 +70,7 @@
       <max value="*"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>

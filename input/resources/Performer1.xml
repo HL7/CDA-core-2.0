@@ -25,7 +25,6 @@
   <differential>
     <element id="Performer1">
       <path value="Performer1"/>
-      <definition value="Element Performer1"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -38,6 +37,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -46,12 +46,12 @@
     </element>
     <element id="Performer1.typeCode">
       <path value="Performer1.typeCode"/>
-      <definition value="Element Performer1.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <!-- SG 20230709 Removed the fixed code here - spurious -->
       <!-- <fixedCode value="DOC"/> -->
@@ -89,7 +89,6 @@
     </element>
     <element id="Performer1.functionCode">
       <path value="Performer1.functionCode"/>
-      <definition value="Element Performer1.functionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -98,7 +97,6 @@
     </element>
     <element id="Performer1.time">
       <path value="Performer1.time"/>
-      <definition value="Element Performer1.time"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -107,7 +105,6 @@
     </element>
     <element id="Performer1.assignedEntity">
       <path value="Performer1.assignedEntity"/>
-      <definition value="Element Performer1.assignedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>

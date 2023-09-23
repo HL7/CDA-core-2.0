@@ -26,18 +26,17 @@
   <differential>
     <element id="Guardian">
       <path value="Guardian"/>
-      <definition value="Element Guardian"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Guardian.classCode">
       <path value="Guardian.classCode"/>
-      <definition value="Element Guardian.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="GUARD"/>
       <fixedCode value="GUARD"/>
@@ -58,7 +57,6 @@
     </element>
     <element id="Guardian.id">
       <path value="Guardian.id"/>
-      <definition value="Element Guardian.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -73,7 +71,6 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="Guardian.sdtcIdentifiedBy"/>
-      <definition value="Element Guardian.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -82,7 +79,6 @@
     </element>
     <element id="Guardian.code">
       <path value="Guardian.code"/>
-      <definition value="Element Guardian.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -95,7 +91,6 @@
     </element>
     <element id="Guardian.addr">
       <path value="Guardian.addr"/>
-      <definition value="Element Guardian.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -104,7 +99,6 @@
     </element>
     <element id="Guardian.telecom">
       <path value="Guardian.telecom"/>
-      <definition value="Element Guardian.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -113,7 +107,6 @@
     </element>
     <element id="Guardian.guardianPerson">
       <path value="Guardian.guardianPerson"/>
-      <definition value="Element Guardian.guardianPerson"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -122,7 +115,6 @@
     </element>
     <element id="Guardian.guardianOrganization">
       <path value="Guardian.guardianOrganization"/>
-      <definition value="Element Guardian.guardianOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

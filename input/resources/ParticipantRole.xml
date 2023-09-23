@@ -19,18 +19,17 @@
   <differential>
     <element id="ParticipantRole">
       <path value="ParticipantRole"/>
-      <definition value="Element ParticipantRole"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ParticipantRole.classCode">
       <path value="ParticipantRole.classCode"/>
-      <definition value="Element ParticipantRole.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ROL"/>
       
@@ -50,7 +49,6 @@
     </element>
     <element id="ParticipantRole.id">
       <path value="ParticipantRole.id"/>
-      <definition value="Element ParticipantRole.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -65,7 +63,6 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="ParticipantRole.sdtcIdentifiedBy"/>
-      <definition value="Element ParticipantRole.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -74,7 +71,6 @@
     </element>
     <element id="ParticipantRole.code">
       <path value="ParticipantRole.code"/>
-      <definition value="Element ParticipantRole.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -87,7 +83,6 @@
     </element>
     <element id="ParticipantRole.addr">
       <path value="ParticipantRole.addr"/>
-      <definition value="Element ParticipantRole.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -96,7 +91,6 @@
     </element>
     <element id="ParticipantRole.telecom">
       <path value="ParticipantRole.telecom"/>
-      <definition value="Element ParticipantRole.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -105,7 +99,6 @@
     </element>
     <element id="ParticipantRole.playingDevice">
       <path value="ParticipantRole.playingDevice"/>
-      <definition value="Element ParticipantRole.playingDevice"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -114,7 +107,6 @@
     </element>
     <element id="ParticipantRole.playingEntity">
       <path value="ParticipantRole.playingEntity"/>
-      <definition value="Element ParticipantRole.playingEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,7 +115,6 @@
     </element>
     <element id="ParticipantRole.scopingEntity">
       <path value="ParticipantRole.scopingEntity"/>
-      <definition value="Element ParticipantRole.scopingEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>

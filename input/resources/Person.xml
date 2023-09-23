@@ -26,18 +26,17 @@
   <differential>
     <element id="Person">
       <path value="Person"/>
-      <definition value="Element Person"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Person.classCode">
       <path value="Person.classCode"/>
-      <definition value="Element Person.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PSN"/>
       <fixedCode value="PSN"/>
@@ -49,12 +48,12 @@
     </element>
     <element id="Person.determinerCode">
       <path value="Person.determinerCode"/>
-      <definition value="Element Person.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="INSTANCE"/>
       <fixedCode value="INSTANCE"/>
@@ -75,7 +74,6 @@
     </element>
     <element id="Person.name">
       <path value="Person.name"/>
-      <definition value="Element Person.name"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -90,7 +88,6 @@
         <valueString value="asPatientRelationship"/>
       </extension>
       <path value="Person.sdtcAsPatientRelationship"/>
-      <definition value="Element Person.sdtcAsPatientRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>

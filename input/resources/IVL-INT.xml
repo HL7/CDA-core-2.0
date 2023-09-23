@@ -19,14 +19,12 @@
   <differential>
     <element id="IVL_INT">
       <path value="IVL_INT"/>
-      <definition value="Element IVL_INT"/>
       <definition value="Interval of integers"/>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="IVL_INT.value">
       <path value="IVL_INT.value"/>
-      <definition value="Element IVL_INT.value"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -37,6 +35,7 @@
       </base>
       <type>
         <code value="integer"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/int-simple"/>
       </type>
     </element>
     <element id="IVL_INT.low">

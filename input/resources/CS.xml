@@ -22,7 +22,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
-  <description value="XCoded data in its simplest form, where only the code is not predetermined. The code system and code system version are fixed by the context in which the CS value occurs. CS is used for coded attributes that have a single HL7-defined value set."/>
+  <description value="Coded data in its simplest form, where only the code is not predetermined. The code system and code system version are fixed by the context in which the CS value occurs. CS is used for coded attributes that have a single HL7-defined value set."/>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
@@ -31,95 +31,43 @@
   <differential>
     <element id="CS">
       <path value="CS"/>
-      <definition value="Coded data, consists of a code, display name, code system, and original text. Used when a single code value must be sent."/>
+      <definition value="Coded data in its simplest form, where only the code is not predetermined. Used when a single code value must be sent."/>
       <min value="1"/>
       <max value="*"/>
     </element>
     <element id="CS.codeSystem">
       <path value="CS.codeSystem"/>
-      <definition value="Element CS.codeSystem"/>
       <representation value="xmlAttr"/>
       <label value="Code System"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="CS.codeSystemName">
       <path value="CS.codeSystemName"/>
-      <definition value="Element CS.codeSystemName"/>
       <representation value="xmlAttr"/>
       <label value="Code System Name"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="CS.codeSystemVersion">
       <path value="CS.codeSystemVersion"/>
-      <definition value="Element CS.codeSystemVersion"/>
       <representation value="xmlAttr"/>
       <label value="Code System Version"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="CS.displayName">
       <path value="CS.displayName"/>
-      <definition value="Element CS.displayName"/>
       <representation value="xmlAttr"/>
       <label value="Display Name"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CS.sdtcValueSet">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="valueSet"/>
-      </extension>
-      <path value="CS.sdtcValueSet"/>
-      <definition value="Element CS.sdtcValueSet"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
-    </element>
-    <element id="CS.sdtcValueSetVersion">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
-        <valueUri value="urn:hl7-org:sdtc"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-        <valueString value="valueSetVersion"/>
-      </extension>
-      <path value="CS.sdtcValueSetVersion"/>
-      <representation value="xmlAttr"/>
-      <definition value="The valueSetVersion extension adds an attribute for elements with a CD dataType which indicates the version of the particular value set constraining the coded concept."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="string"/>
-      </type>
     </element>
     <element id="CS.originalText">
       <path value="CS.originalText"/>
-      <definition value="Element CS.originalText"/>
       <label value="Original Text"/>
       <min value="0"/>
       <max value="0"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
-      </type>
     </element>
   </differential>
 </StructureDefinition>

@@ -25,18 +25,17 @@
   <differential>
     <element id="AssignedAuthor">
       <path value="AssignedAuthor"/>
-      <definition value="Element AssignedAuthor"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="AssignedAuthor.classCode">
       <path value="AssignedAuthor.classCode"/>
-      <definition value="Element AssignedAuthor.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
@@ -56,7 +55,6 @@
     </element>
     <element id="AssignedAuthor.id">
       <path value="AssignedAuthor.id"/>
-      <definition value="Element AssignedAuthor.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -71,7 +69,6 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="AssignedAuthor.sdtcIdentifiedBy"/>
-      <definition value="Element AssignedAuthor.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -80,7 +77,6 @@
     </element>
     <element id="AssignedAuthor.code">
       <path value="AssignedAuthor.code"/>
-      <definition value="Element AssignedAuthor.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -93,7 +89,6 @@
     </element>
     <element id="AssignedAuthor.addr">
       <path value="AssignedAuthor.addr"/>
-      <definition value="Element AssignedAuthor.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -102,7 +97,6 @@
     </element>
     <element id="AssignedAuthor.telecom">
       <path value="AssignedAuthor.telecom"/>
-      <definition value="Element AssignedAuthor.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -111,7 +105,6 @@
     </element>
     <element id="AssignedAuthor.assignedPerson">
       <path value="AssignedAuthor.assignedPerson"/>
-      <definition value="Element AssignedAuthor.assignedPerson"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -120,7 +113,6 @@
     </element>
     <element id="AssignedAuthor.assignedAuthoringDevice">
       <path value="AssignedAuthor.assignedAuthoringDevice"/>
-      <definition value="Element AssignedAuthor.assignedAuthoringDevice"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -129,7 +121,6 @@
     </element>
     <element id="AssignedAuthor.representedOrganization">
       <path value="AssignedAuthor.representedOrganization"/>
-      <definition value="Element AssignedAuthor.representedOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

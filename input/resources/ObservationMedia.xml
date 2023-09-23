@@ -27,28 +27,27 @@
   <differential>
     <element id="ObservationMedia">
       <path value="ObservationMedia"/>
-      <definition value="Element ObservationMedia"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ObservationMedia.ID">
       <path value="ObservationMedia.ID"/>
-      <definition value="Element ObservationMedia.ID"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="id"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/xs-ID"/>
       </type>
     </element>
     <element id="ObservationMedia.classCode">
       <path value="ObservationMedia.classCode"/>
-      <definition value="Element ObservationMedia.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OBS"/>
       <fixedCode value="OBS"/>
@@ -59,12 +58,12 @@
     </element>
     <element id="ObservationMedia.moodCode">
       <path value="ObservationMedia.moodCode"/>
-      <definition value="Element ObservationMedia.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
@@ -75,7 +74,6 @@
     </element>
     <element id="ObservationMedia.realmCode">
       <path value="ObservationMedia.realmCode"/>
-      <definition value="Element ObservationMedia.realmCode"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -84,7 +82,6 @@
     </element>
     <element id="ObservationMedia.typeId">
       <path value="ObservationMedia.typeId"/>
-      <definition value="Element ObservationMedia.typeId"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -102,7 +99,6 @@
     </element>
     <element id="ObservationMedia.id">
       <path value="ObservationMedia.id"/>
-      <definition value="Element ObservationMedia.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -111,7 +107,6 @@
     </element>
     <element id="ObservationMedia.languageCode">
       <path value="ObservationMedia.languageCode"/>
-      <definition value="Element ObservationMedia.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -124,7 +119,6 @@
     </element>
     <element id="ObservationMedia.value">
       <path value="ObservationMedia.value"/>
-      <definition value="Element ObservationMedia.value"/>
       <representation value="typeAttr"/>
       <min value="1"/>
       <max value="1"/>
@@ -135,7 +129,6 @@
     </element>
     <element id="ObservationMedia.subject">
       <path value="ObservationMedia.subject"/>
-      <definition value="Element ObservationMedia.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -144,12 +137,12 @@
     </element>
     <element id="ObservationMedia.subject.typeCode">
       <path value="ObservationMedia.subject.typeCode"/>
-      <definition value="Element ObservationMedia.subject.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="SBJ"/>
       <fixedCode value="SBJ"/>
@@ -161,12 +154,12 @@
     </element>
     <element id="ObservationMedia.subject.contextControlCode">
       <path value="ObservationMedia.subject.contextControlCode"/>
-      <definition value="Element ObservationMedia.subject.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -178,7 +171,6 @@
     </element>
     <element id="ObservationMedia.subject.awarenessCode">
       <path value="ObservationMedia.subject.awarenessCode"/>
-      <definition value="Element ObservationMedia.subject.awarenessCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -191,7 +183,6 @@
     </element>
     <element id="ObservationMedia.subject.relatedSubject">
       <path value="ObservationMedia.subject.relatedSubject"/>
-      <definition value="Element ObservationMedia.subject.relatedSubject"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -200,7 +191,6 @@
     </element>
     <element id="ObservationMedia.specimen">
       <path value="ObservationMedia.specimen"/>
-      <definition value="Element ObservationMedia.specimen"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -209,7 +199,6 @@
     </element>
     <element id="ObservationMedia.performer">
       <path value="ObservationMedia.performer"/>
-      <definition value="Element ObservationMedia.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -218,7 +207,6 @@
     </element>
     <element id="ObservationMedia.author">
       <path value="ObservationMedia.author"/>
-      <definition value="Element ObservationMedia.author"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -227,7 +215,6 @@
     </element>
     <element id="ObservationMedia.informant">
       <path value="ObservationMedia.informant"/>
-      <definition value="Element ObservationMedia.informant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -236,12 +223,12 @@
     </element>
     <element id="ObservationMedia.informant.typeCode">
       <path value="ObservationMedia.informant.typeCode"/>
-      <definition value="Element ObservationMedia.informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="INF"/>
       <fixedCode value="INF"/>
@@ -253,12 +240,12 @@
     </element>
     <element id="ObservationMedia.informant.contextControlCode">
       <path value="ObservationMedia.informant.contextControlCode"/>
-      <definition value="Element ObservationMedia.informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OP"/>
       <fixedCode value="OP"/>
@@ -270,7 +257,6 @@
     </element>
     <element id="ObservationMedia.informant.assignedEntity">
       <path value="ObservationMedia.informant.assignedEntity"/>
-      <definition value="Element ObservationMedia.informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -279,7 +265,6 @@
     </element>
     <element id="ObservationMedia.informant.relatedEntity">
       <path value="ObservationMedia.informant.relatedEntity"/>
-      <definition value="Element ObservationMedia.informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -288,7 +273,6 @@
     </element>
     <element id="ObservationMedia.participant">
       <path value="ObservationMedia.participant"/>
-      <definition value="Element ObservationMedia.participant"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -297,7 +281,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship">
       <path value="ObservationMedia.entryRelationship"/>
-      <definition value="Element ObservationMedia.entryRelationship"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -306,40 +289,39 @@
     </element>
     <element id="ObservationMedia.entryRelationship.typeCode">
       <path value="ObservationMedia.entryRelationship.typeCode"/>
-      <definition value="Element ObservationMedia.entryRelationship.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       
     </element>
     <element id="ObservationMedia.entryRelationship.inversionInd">
       <path value="ObservationMedia.entryRelationship.inversionInd"/>
-      <definition value="Element ObservationMedia.entryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.contextConductionInd">
       <path value="ObservationMedia.entryRelationship.contextConductionInd"/>
-      <definition value="Element ObservationMedia.entryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
       <defaultValueBoolean value="true"/>
       
     </element>
     <element id="ObservationMedia.entryRelationship.sequenceNumber">
       <path value="ObservationMedia.entryRelationship.sequenceNumber"/>
-      <definition value="Element ObservationMedia.entryRelationship.sequenceNumber"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -348,17 +330,16 @@
     </element>
     <element id="ObservationMedia.entryRelationship.negationInd">
       <path value="ObservationMedia.entryRelationship.negationInd"/>
-      <definition value="Element ObservationMedia.entryRelationship.negationInd"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
     <element id="ObservationMedia.entryRelationship.seperatableInd">
       <path value="ObservationMedia.entryRelationship.seperatableInd"/>
-      <definition value="Element ObservationMedia.entryRelationship.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -367,7 +348,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.observation">
       <path value="ObservationMedia.entryRelationship.observation"/>
-      <definition value="Element ObservationMedia.entryRelationship.observation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -376,7 +356,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.regionOfInterest">
       <path value="ObservationMedia.entryRelationship.regionOfInterest"/>
-      <definition value="Element ObservationMedia.entryRelationship.regionOfInterest"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -385,7 +364,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.observationMedia">
       <path value="ObservationMedia.entryRelationship.observationMedia"/>
-      <definition value="Element ObservationMedia.entryRelationship.observationMedia"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -394,7 +372,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.substanceAdministration">
       <path value="ObservationMedia.entryRelationship.substanceAdministration"/>
-      <definition value="Element ObservationMedia.entryRelationship.substanceAdministration"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -403,7 +380,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.supply">
       <path value="ObservationMedia.entryRelationship.supply"/>
-      <definition value="Element ObservationMedia.entryRelationship.supply"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -412,7 +388,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.procedure">
       <path value="ObservationMedia.entryRelationship.procedure"/>
-      <definition value="Element ObservationMedia.entryRelationship.procedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -421,7 +396,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.encounter">
       <path value="ObservationMedia.entryRelationship.encounter"/>
-      <definition value="Element ObservationMedia.entryRelationship.encounter"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -430,7 +404,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.organizer">
       <path value="ObservationMedia.entryRelationship.organizer"/>
-      <definition value="Element ObservationMedia.entryRelationship.organizer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -439,7 +412,6 @@
     </element>
     <element id="ObservationMedia.entryRelationship.act">
       <path value="ObservationMedia.entryRelationship.act"/>
-      <definition value="Element ObservationMedia.entryRelationship.act"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -448,7 +420,6 @@
     </element>
     <element id="ObservationMedia.reference">
       <path value="ObservationMedia.reference"/>
-      <definition value="Element ObservationMedia.reference"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -457,18 +428,17 @@
     </element>
     <element id="ObservationMedia.reference.typeCode">
       <path value="ObservationMedia.reference.typeCode"/>
-      <definition value="Element ObservationMedia.reference.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       
     </element>
     <element id="ObservationMedia.reference.seperatableInd">
       <path value="ObservationMedia.reference.seperatableInd"/>
-      <definition value="Element ObservationMedia.reference.seperatableInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -477,7 +447,6 @@
     </element>
     <element id="ObservationMedia.reference.externalAct">
       <path value="ObservationMedia.reference.externalAct"/>
-      <definition value="Element ObservationMedia.reference.externalAct"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -486,7 +455,6 @@
     </element>
     <element id="ObservationMedia.reference.externalObservation">
       <path value="ObservationMedia.reference.externalObservation"/>
-      <definition value="Element ObservationMedia.reference.externalObservation"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -495,7 +463,6 @@
     </element>
     <element id="ObservationMedia.reference.externalProcedure">
       <path value="ObservationMedia.reference.externalProcedure"/>
-      <definition value="Element ObservationMedia.reference.externalProcedure"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -504,7 +471,6 @@
     </element>
     <element id="ObservationMedia.reference.externalDocument">
       <path value="ObservationMedia.reference.externalDocument"/>
-      <definition value="Element ObservationMedia.reference.externalDocument"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -513,7 +479,6 @@
     </element>
     <element id="ObservationMedia.precondition">
       <path value="ObservationMedia.precondition"/>
-      <definition value="Element ObservationMedia.precondition"/>
       <min value="0"/>
       <max value="*"/>
       <type>

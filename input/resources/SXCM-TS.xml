@@ -19,7 +19,6 @@
   <differential>
     <element id="SXCM_TS">
       <path value="SXCM_TS"/>
-      <definition value="Element SXCM_TS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
@@ -31,6 +30,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
   </differential>

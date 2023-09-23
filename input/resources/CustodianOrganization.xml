@@ -25,18 +25,17 @@
   <differential>
     <element id="CustodianOrganization">
       <path value="CustodianOrganization"/>
-      <definition value="Element CustodianOrganization"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="CustodianOrganization.classCode">
       <path value="CustodianOrganization.classCode"/>
-      <definition value="Element CustodianOrganization.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ORG"/>
       <fixedCode value="ORG"/>
@@ -48,12 +47,12 @@
     </element>
     <element id="CustodianOrganization.determinerCode">
       <path value="CustodianOrganization.determinerCode"/>
-      <definition value="Element CustodianOrganization.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="INSTANCE"/>
       <fixedCode value="INSTANCE"/>
@@ -74,7 +73,6 @@
     </element>
     <element id="CustodianOrganization.id">
       <path value="CustodianOrganization.id"/>
-      <definition value="Element CustodianOrganization.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -83,7 +81,6 @@
     </element>
     <element id="CustodianOrganization.name">
       <path value="CustodianOrganization.name"/>
-      <definition value="Element CustodianOrganization.name"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -92,7 +89,6 @@
     </element>
     <element id="CustodianOrganization.telecom">
       <path value="CustodianOrganization.telecom"/>
-      <definition value="Element CustodianOrganization.telecom"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -101,7 +97,6 @@
     </element>
     <element id="CustodianOrganization.addr">
       <path value="CustodianOrganization.addr"/>
-      <definition value="Element CustodianOrganization.addr"/>
       <min value="0"/>
       <max value="1"/>
       <type>

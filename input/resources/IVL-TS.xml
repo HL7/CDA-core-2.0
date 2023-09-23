@@ -19,7 +19,6 @@
   <differential>
     <element id="IVL_TS">
       <path value="IVL_TS"/>
-      <definition value="Element IVL_TS"/>
       <min value="1"/>
       <max value="*"/>
     </element>

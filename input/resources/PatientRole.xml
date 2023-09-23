@@ -25,18 +25,17 @@
   <differential>
     <element id="PatientRole">
       <path value="PatientRole"/>
-      <definition value="Element PatientRole"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="PatientRole.classCode">
       <path value="PatientRole.classCode"/>
-      <definition value="Element PatientRole.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PAT"/>
       <fixedCode value="PAT"/>
@@ -56,7 +55,6 @@
     </element>
     <element id="PatientRole.id">
       <path value="PatientRole.id"/>
-      <definition value="Element PatientRole.id"/>
       <min value="1"/>
       <max value="*"/>
       <type>
@@ -71,7 +69,6 @@
         <valueString value="identifiedBy"/>
       </extension>
       <path value="PatientRole.sdtcIdentifiedBy"/>
-      <definition value="Element PatientRole.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -80,7 +77,6 @@
     </element>
     <element id="PatientRole.addr">
       <path value="PatientRole.addr"/>
-      <definition value="Element PatientRole.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -89,7 +85,6 @@
     </element>
     <element id="PatientRole.telecom">
       <path value="PatientRole.telecom"/>
-      <definition value="Element PatientRole.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -98,7 +93,6 @@
     </element>
     <element id="PatientRole.patient">
       <path value="PatientRole.patient"/>
-      <definition value="Element PatientRole.patient"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -107,7 +101,6 @@
     </element>
     <element id="PatientRole.providerOrganization">
       <path value="PatientRole.providerOrganization"/>
-      <definition value="Element PatientRole.providerOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

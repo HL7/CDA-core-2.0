@@ -25,7 +25,6 @@
   <differential>
     <element id="Performer2">
       <path value="Performer2"/>
-      <definition value="Element Performer2"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -38,6 +37,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -46,13 +46,12 @@
     </element>
     <element id="Performer2.typeCode">
       <path value="Performer2.typeCode"/>
-      <definition value="Element Performer2.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-prim"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="PRF"/>
       <binding>
@@ -95,7 +94,6 @@
         <valueUri value="functionCode"/>
       </extension>
       <path value="Performer2.sdtcFunctionCode"/>
-      <definition value="Element Performer2.sdtcFunctionCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -104,7 +102,6 @@
     </element>
     <element id="Performer2.time">
       <path value="Performer2.time"/>
-      <definition value="Element Performer2.time"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -113,7 +110,6 @@
     </element>
     <element id="Performer2.modeCode">
       <path value="Performer2.modeCode"/>
-      <definition value="Element Performer2.modeCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -122,7 +118,6 @@
     </element>
     <element id="Performer2.assignedEntity">
       <path value="Performer2.assignedEntity"/>
-      <definition value="Element Performer2.assignedEntity"/>
       <min value="1"/>
       <max value="1"/>
       <type>

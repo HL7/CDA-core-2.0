@@ -25,7 +25,6 @@
   <differential>
     <element id="ComponentOf">
       <path value="ComponentOf"/>
-      <definition value="Element ComponentOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -38,6 +37,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -46,12 +46,12 @@
     </element>
     <element id="ComponentOf.typeCode">
       <path value="ComponentOf.typeCode"/>
-      <definition value="Element ComponentOf.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="AUT"/>
       <binding>
@@ -88,7 +88,6 @@
     </element>
     <element id="ComponentOf.encompassingEncounter">
       <path value="ComponentOf.encompassingEncounter"/>
-      <definition value="Element ComponentOf.encompassingEncounter"/>
       <min value="1"/>
       <max value="1"/>
       <type>
