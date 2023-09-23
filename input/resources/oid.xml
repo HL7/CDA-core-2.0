@@ -19,20 +19,20 @@
   <description value="A globally unique string representing an ISO Object Identifier (OID) in a form that consists only of numbers and dots (e.g., '2.16.840.1.113883.3.1')."/>
   <kind value="primitive-type"/>
   <abstract value="false"/>
-  <type value="id"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/id"/>
+  <type value="string"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
   <derivation value="constraint"/> 
   <differential>
-    <element id="id.id">
-      <path value="id.id"/>
+    <element id="string.id">
+      <path value="string.id"/>
       <max value="0"/>
     </element>
-    <element id="id.extension">
-      <path value="id.extension"/>
+    <element id="string.extension">
+      <path value="string.extension"/>
       <max value="0"/>
     </element>
-    <element id="id.value">
-      <path value="id.value"/>
+    <element id="string.value">
+      <path value="string.value"/>
       <constraint>
         <key value="oid-value"/>
         <severity value="error"/>
