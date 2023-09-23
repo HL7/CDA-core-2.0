@@ -38,7 +38,7 @@
         <key value="uid-value"/>
         <severity value="error"/>
         <human value="Must conform to OID (#.#.#), UUID (32 hexadecimal digits separated by hyphens), or RUID (a letter followed by any combination of letters, numbers or hyphens)"/>
-        <expression value="matches('^([0-2](/.(0|[1-9][0-9]*))+)|([0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{12})|([A-Za-z][A-Za-z0-9/-]*)$')"/>
+        <expression value="matches('^([0-2](\\.(0|[1-9][0-9]*))+)|([0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{12})|([A-Za-z][A-Za-z0-9\\-]*)$')"/>
       </constraint>
     </element>
   </differential>

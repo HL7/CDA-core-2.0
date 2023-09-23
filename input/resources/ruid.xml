@@ -38,7 +38,7 @@
         <key value="ruid-value"/>
         <severity value="error"/>
         <human value="An identifier that starts with a letter and contains any combination of letters, numbers, and hyphen."/>
-        <expression value="matches('^[A-Za-z][A-Za-z0-9/-]*$')"/>
+        <expression value="matches('^[A-Za-z][A-Za-z0-9\\-]*$')"/>
       </constraint>
     </element>
   </differential>

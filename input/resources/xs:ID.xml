@@ -39,7 +39,7 @@
         <key value="uid-value"/>
         <severity value="error"/>
         <human value="Must match the format specified by XML Schema's definition for ID"/>
-        <expression value="matches('^[/i-[:]][/c-[:]]*$')"/>
+        <expression value="matches('^[\\i-[:]][\\c-[:]]*$')"/>
       </constraint>
     </element>
   </differential>
