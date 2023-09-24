@@ -184,70 +184,29 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/REAL"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/MO"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/REAL"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/MO"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"/>
       </type>
     </element>
     <element id="Observation.interpretationCode">

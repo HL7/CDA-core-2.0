@@ -142,18 +142,10 @@
       <max value="*"/>
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
-      </type>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
       </type>
     </element>
     <element id="SubstanceAdministration.priorityCode">
