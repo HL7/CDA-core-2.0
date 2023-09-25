@@ -23,7 +23,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
   <derivation value="constraint"/> 
   <differential>
-    <element value="string">
+    <element id="string">
       <path value="string"/>
       <constraint>
         <key value="oid-pattern"/>
