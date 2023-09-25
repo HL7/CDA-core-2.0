@@ -56,7 +56,7 @@
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-xActRelationshipDocument"/>
       </binding>
     </element>
     <element id="RelatedDocument.realmCode">
