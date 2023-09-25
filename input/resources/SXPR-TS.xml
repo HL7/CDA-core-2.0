@@ -13,17 +13,17 @@
   <description value="A set-component that is itself made up of set-components that are evaluated as one value"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR_TS"/>
   <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="SXPR-TS">
-      <path value="SXPR-TS"/>
+    <element id="SXPR_TS">
+      <path value="SXPR_TS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="SXPR-TS.comp">
-      <path value="SXPR-TS.comp"/>
+    <element id="SXPR_TS.comp">
+      <path value="SXPR_TS.comp"/>
       <representation value="typeAttr"/>
       <min value="1"/>
       <max value="*"/>

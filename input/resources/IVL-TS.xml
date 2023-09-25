@@ -13,17 +13,17 @@
   <description value="A set of consecutive values of an ordered base data type."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/IVL_TS"/>
   <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="IVL-TS">
-      <path value="IVL-TS"/>
+    <element id="IVL_TS">
+      <path value="IVL_TS"/>
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="IVL-TS.low">
-      <path value="IVL-TS.low"/>
+    <element id="IVL_TS.low">
+      <path value="IVL_TS.low"/>
       <label value="Low Boundary"/>
       <definition value="This is the low limit of the interval."/>
       <min value="0"/>
@@ -32,8 +32,8 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="IVL-TS.width">
-      <path value="IVL-TS.width"/>
+    <element id="IVL_TS.width">
+      <path value="IVL_TS.width"/>
       <label value="Width"/>
       <definition value="The difference between high and low boundary. The purpose of distinguishing a width property is to handle all cases of incomplete information symmetrically. In any interval representation only two of the three properties high, low, and width need to be stated and the third can be derived."/>
       <min value="0"/>
@@ -42,8 +42,8 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
       </type>
     </element>
-    <element id="IVL-TS.high">
-      <path value="IVL-TS.high"/>
+    <element id="IVL_TS.high">
+      <path value="IVL_TS.high"/>
       <label value="High Boundary"/>
       <definition value="This is the high limit of the interval."/>
       <min value="0"/>
@@ -52,8 +52,8 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
-    <element id="IVL-TS.center">
-      <path value="IVL-TS.center"/>
+    <element id="IVL_TS.center">
+      <path value="IVL_TS.center"/>
       <label value="Central Value"/>
       <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
       <min value="0"/>
