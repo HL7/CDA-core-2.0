@@ -19,12 +19,12 @@
   <description value="Positive integer numbers."/>
   <kind value="logical"/>
   <abstract value="true"/>
-  <type value="http://hl7.org/cda/stds/core/StructureDefinition/INT-POS"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/INT_POS"/>
   <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="INT-POS">
-      <path value="INT-POS"/>
+    <element id="INT_POS">
+      <path value="INT_POS"/>
       <min value="1"/>
       <max value="*"/>
     </element>

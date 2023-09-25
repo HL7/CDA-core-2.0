@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="current" defaultWorkgroup="" url="http://hl7.org/cda/stds/core">
 <version code="current" url="https://build.fhir.org/ig/HL7/CDA-core-2.0"/>
-<version code="2.0.0" url="http://hl7.org/cda/stds/core/"/>
 <version code="2.1.0-draft1" url="http://hl7.org/cda/stds/core/draft1"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -79,7 +78,7 @@
 <artifact id="StructureDefinition/Organization" key="StructureDefinition-Organization" name="Organization (CDA Class)"/>
 <artifact id="StructureDefinition/OrganizationPartOf" key="StructureDefinition-OrganizationPartOf" name="OrganizationPartOf (CDA Class)"/>
 <artifact id="StructureDefinition/Organizer" key="StructureDefinition-Organizer" name="Organizer (CDA Class)"/>
-<artifact id="StructureDefinition/PIVL-TS" key="StructureDefinition-PIVL-TS" name="PIVL-TS: PeriodicIntervalOfTime (V3 Data Type)"/>
+<artifact id="StructureDefinition/PIVL-TS" key="StructureDefinition-PIVL-TS" name="PIVL_TS: PeriodicIntervalOfTime (V3 Data Type)"/>
 <artifact id="StructureDefinition/PN" key="StructureDefinition-PN" name="PN: PersonName (V3 Data Type)"/>
 <artifact id="StructureDefinition/PQ" key="StructureDefinition-PQ" name="PQ: PhysicalQuantity (V3 Data Type)"/>
 <artifact id="StructureDefinition/PQR" key="StructureDefinition-PQR" name="PQR: PhysicalQuantityRepresentation (V3 Data Type)"/>
@@ -98,7 +97,7 @@
 <artifact id="StructureDefinition/Procedure" key="StructureDefinition-Procedure" name="Procedure (CDA Class)"/>
 <artifact id="StructureDefinition/QTY" key="StructureDefinition-QTY" name="QTY: Quantity (V3 Data Type)"/>
 <artifact id="StructureDefinition/REAL" key="StructureDefinition-REAL" name="REAL: RealNumber (V3 Data Type)"/>
-<artifact id="StructureDefinition/RTO-PQ-PQ" key="StructureDefinition-RTO-PQ-PQ" name="RTO-PQ-PQ: Ratio (V3 Data Type)"/>
+<artifact id="StructureDefinition/RTO-PQ-PQ" key="StructureDefinition-RTO-PQ-PQ" name="RTO_PQ_PQ: Ratio (V3 Data Type)"/>
 <artifact id="StructureDefinition/RecordTarget" key="StructureDefinition-RecordTarget" name="RecordTarget (CDA Class)"/>
 <artifact id="StructureDefinition/RegionOfInterest" key="StructureDefinition-RegionOfInterest" name="RegionOfInterest (CDA Class)"/>
 <artifact id="StructureDefinition/RelatedDocument" key="StructureDefinition-RelatedDocument" name="RelatedDocument (CDA Class)"/>
@@ -106,8 +105,8 @@
 <artifact id="StructureDefinition/RelatedSubject" key="StructureDefinition-RelatedSubject" name="RelatedSubject (CDA Class)"/>
 <artifact id="StructureDefinition/SC" key="StructureDefinition-SC" name="SC: CharacterStringWithCode (V3 Data Type)"/>
 <artifact id="StructureDefinition/ST" key="StructureDefinition-ST" name="ST: CharacterString (V3 Data Type)"/>
-<artifact id="StructureDefinition/SXCM-TS" key="StructureDefinition-SXCM-TS" name="SXCM-TS: GeneralTimingSpecification (V3 Data Type)"/>
-<artifact id="StructureDefinition/SXPR-TS" key="StructureDefinition-SXPR-TS" name="SXPR-TS: Component part of GTS (V3 Data Type)"/>
+<artifact id="StructureDefinition/SXCM-TS" key="StructureDefinition-SXCM-TS" name="SXCM_TS: GeneralTimingSpecification (V3 Data Type)"/>
+<artifact id="StructureDefinition/SXPR-TS" key="StructureDefinition-SXPR-TS" name="SXPR_TS: Component part of GTS (V3 Data Type)"/>
 <artifact id="StructureDefinition/Section" key="StructureDefinition-Section" name="Section (CDA Class)"/>
 <artifact id="StructureDefinition/ServiceEvent" key="StructureDefinition-ServiceEvent" name="ServiceEvent (CDA Class)"/>
 <artifact id="StructureDefinition/Specimen" key="StructureDefinition-Specimen" name="Specimen (CDA Class)"/>
