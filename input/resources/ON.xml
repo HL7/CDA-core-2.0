@@ -13,9 +13,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-no-order">
     <valueBoolean value="true"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-    <valueUri value="on"/>
-  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/ON"/>
   <name value="ON"/>
   <title value="ON: OrganizationName (V3 Data Type)"/>

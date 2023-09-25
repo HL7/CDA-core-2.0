@@ -10,9 +10,6 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
-    <valueUri value="adxp"/>
-</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/ADXP"/>
   <name value="ADXP"/>
   <title value="ADXP: CharacterString (V3 Data Type)"/>
