@@ -150,7 +150,6 @@
 			</reference>
 			<groupingId value="classes"/>
 		</resource>
-		<!--
 		<resource>
 			<extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
 					<valueCode value="application/xml"/>
@@ -162,7 +161,7 @@
 			<description value="Example CDA document"/>
 			<isExample value="true"/>
 			<profile value="http://hl7.org/cda/stds/core/StructureDefinition/ClinicalDocument"/>
-	</resource>-->
+		</resource>
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/CO" />
