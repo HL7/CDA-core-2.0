@@ -4,6 +4,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="playingEntity"/>
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/PlayingEntity"/>
   <name value="CDAR2.PlayingEntity"/>
   <title value="PlayingEntity (CDA Class)"/>

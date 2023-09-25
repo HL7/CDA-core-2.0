@@ -11,6 +11,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="custodian"/>
+</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Custodian"/>
   <name value="CDAR2.Custodian"/>
   <title value="Custodian (CDA Class)"/>
