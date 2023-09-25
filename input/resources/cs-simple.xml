@@ -23,6 +23,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/code"/>
   <derivation value="constraint"/>
   <differential>
+    <element id="code">
+      <path value="code"/>
+      <constraint>
+        <key value="cs-pattern"/>
+        <severity value="error"/>
+        <human value="cs attributes must not contain any whitespace"/>
+        <expression value="matches('^[^\\s]+$')"/>
+      </constraint>
+    </element>
     <element id="code.id">
       <path value="code.id"/>
       <max value="0"/>
@@ -30,16 +39,6 @@
     <element id="code.extension">
       <path value="code.extension"/>
       <max value="0"/>
-    </element>
-    <element id="code.value">
-      <path value="code.value"/>
-      <representation value="xmlAttr"/>
-      <constraint>
-        <key value="cs-value"/>
-        <severity value="error"/>
-        <human value="cs attributes must not contain any whitespace"/>
-        <expression value="matches('^[^\\s]+$')"/>
-      </constraint>
     </element>
   </differential>
 </StructureDefinition>

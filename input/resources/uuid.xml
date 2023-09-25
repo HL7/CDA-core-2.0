@@ -23,6 +23,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/string"/>
   <derivation value="constraint"/> 
   <differential>
+    <element id="string">
+      <path value="string"/>
+      <constraint>
+        <key value="uuid-pattern"/>
+        <severity value="error"/>
+        <human value="Must contain 5 hyphen-separated groups of upper-case hexadecimal digits having 8, 4, 4, 4, and 12 places respectively."/>
+        <expression value="matches('^[0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{12}$')"/>
+      </constraint>
+    </element>
     <element id="string.id">
       <path value="string.id"/>
       <max value="0"/>
@@ -30,16 +39,6 @@
     <element id="string.extension">
       <path value="string.extension"/>
       <max value="0"/>
-    </element>
-    <element id="string.value">
-      <path value="string.value"/>
-      <representation value="xmlAttr"/>
-      <constraint>
-        <key value="uuid-value"/>
-        <severity value="error"/>
-        <human value="Must contain 5 hyphen-separated groups of upper-case hexadecimal digits having 8, 4, 4, 4, and 12 places respectively."/>
-        <expression value="matches('^[0-9A-Z]{8}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{4}-[0-9A-Z]{12}$')"/>
-      </constraint>
     </element>
   </differential>
 </StructureDefinition>
