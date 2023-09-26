@@ -45,7 +45,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-INT"/>
       </type>
     </element>
     <element id="IVL_INT.center">
@@ -75,7 +75,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-INT"/>
       </type>
     </element>
   </differential>

@@ -63,7 +63,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ"/>
       </type>
     </element>
     <element id="IVL_PQ.center">
@@ -93,7 +93,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ"/>
       </type>
     </element>
   </differential>
