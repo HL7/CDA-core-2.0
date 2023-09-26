@@ -66,6 +66,11 @@
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
+      <defaultValueCode value="I"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SetOperator"/>
+      </binding>
     </element>
     <element id="IVL_PQ.low">
       <path value="IVL_PQ.low"/>
