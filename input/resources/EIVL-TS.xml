@@ -29,6 +29,12 @@
       <min value="1"/>
       <max value="*"/>
     </element>
+    <element id="EIVL_TS.value">
+      <path value="EIVL_TS.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="0"/>
+    </element>
     <element id="EIVL_TS.event">
       <path value="EIVL_TS.event"/>
       <label value="Event"/>
