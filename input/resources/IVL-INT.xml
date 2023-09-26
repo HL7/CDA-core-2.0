@@ -38,6 +38,17 @@
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/int-simple"/>
       </type>
     </element>
+    <element id="IVL_INT.operator">
+      <path value="IVL_INT.operator"/>
+      <representation value="xmlAttr"/>
+      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
+      </type>
+    </element>
     <element id="IVL_INT.low">
       <path value="IVL_INT.low"/>
       <label value="Low Boundary"/>
@@ -65,7 +76,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
     </element>
     <element id="IVL_INT.high">
