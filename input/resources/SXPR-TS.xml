@@ -25,7 +25,7 @@
     <element id="SXPR_TS.comp">
       <path value="SXPR_TS.comp"/>
       <representation value="typeAttr"/>
-      <min value="1"/>
+      <min value="2"/>
       <max value="*"/>
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXCM-TS"/>
