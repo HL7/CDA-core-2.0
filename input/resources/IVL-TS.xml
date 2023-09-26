@@ -32,6 +32,16 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
+    <element id="IVL_TS.center">
+      <path value="IVL_TS.center"/>
+      <label value="Central Value"/>
+      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+      </type>
+    </element>
     <element id="IVL_TS.width">
       <path value="IVL_TS.width"/>
       <label value="Width"/>
@@ -46,16 +56,6 @@
       <path value="IVL_TS.high"/>
       <label value="High Boundary"/>
       <definition value="This is the high limit of the interval."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
-      </type>
-    </element>
-    <element id="IVL_TS.center">
-      <path value="IVL_TS.center"/>
-      <label value="Central Value"/>
-      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
       <min value="0"/>
       <max value="1"/>
       <type>
