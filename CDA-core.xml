@@ -44,6 +44,7 @@
 <artifact id="StructureDefinition/Encounter" key="StructureDefinition-Encounter" name="Encounter (CDA Class)"/>
 <artifact id="StructureDefinition/EncounterParticipant" key="StructureDefinition-EncounterParticipant" name="EncounterParticipant (CDA Class)"/>
 <artifact id="StructureDefinition/Entity" key="StructureDefinition-Entity" name="Entity (CDA Class)"/>
+<artifact id="Binary/clinicaldocument-example" key="Binary-clinicaldocument-example" name="Example CDA document"/>
 <artifact id="StructureDefinition/ExternalAct" key="StructureDefinition-ExternalAct" name="ExternalAct (CDA Class)"/>
 <artifact id="StructureDefinition/ExternalDocument" key="StructureDefinition-ExternalDocument" name="ExternalDocument (CDA Class)"/>
 <artifact id="StructureDefinition/ExternalObservation" key="StructureDefinition-ExternalObservation" name="ExternalObservation (CDA Class)"/>
@@ -56,11 +57,14 @@
 <artifact id="StructureDefinition/IVL-INT" key="StructureDefinition-IVL-INT" name="IVL_INT: Interval (V3 Data Type)"/>
 <artifact id="StructureDefinition/IVL-PQ" key="StructureDefinition-IVL-PQ" name="IVL_PQ: Interval (V3 Data Type)"/>
 <artifact id="StructureDefinition/IVL-TS" key="StructureDefinition-IVL-TS" name="IVL_TS: Interval (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-INT" key="StructureDefinition-IVXB-INT" name="IVXB_INT: Interval Boundary IntegerNumber (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-PQ" key="StructureDefinition-IVXB-PQ" name="IVXB_PQ: Interval Boundary PhysicalQuantity (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-TS" key="StructureDefinition-IVXB-TS" name="IVXB_TS: Interval Boundary PointInTime (V3 Data Type)"/>
 <artifact id="StructureDefinition/IdentifiedBy" key="StructureDefinition-IdentifiedBy" name="IdentifiedBy (CDA Class)"/>
 <artifact id="StructureDefinition/InFulfillmentOf" key="StructureDefinition-InFulfillmentOf" name="InFulfillmentOf (CDA Class)"/>
 <artifact id="StructureDefinition/Informant" key="StructureDefinition-Informant" name="Informant (CDA Class)"/>
 <artifact id="StructureDefinition/InformationRecipient" key="StructureDefinition-InformationRecipient" name="InformationRecipient (CDA Class)"/>
-<artifact id="StructureDefinition/InfrastructureRoot" key="StructureDefinition-InfrastructureRoot" name="InfrastructureRoot"/>
+<artifact id="StructureDefinition/InfrastructureRoot" key="StructureDefinition-InfrastructureRoot" name="InfrastructureRoot (Base Type for all CDA Classes)"/>
 <artifact id="StructureDefinition/IntendedRecipient" key="StructureDefinition-IntendedRecipient" name="IntendedRecipient (CDA Class)"/>
 <artifact id="StructureDefinition/LabeledDrug" key="StructureDefinition-LabeledDrug" name="LabeledDrug (CDA Class)"/>
 <artifact id="StructureDefinition/LanguageCommunication" key="StructureDefinition-LanguageCommunication" name="LanguageCommunication (CDA Class)"/>
@@ -112,6 +116,7 @@
 <artifact id="StructureDefinition/Specimen" key="StructureDefinition-Specimen" name="Specimen (CDA Class)"/>
 <artifact id="StructureDefinition/SpecimenRole" key="StructureDefinition-SpecimenRole" name="SpecimenRole (CDA Class)"/>
 <artifact id="StructureDefinition/StructuredBody" key="StructureDefinition-StructuredBody" name="StructuredBody (CDA Class)"/>
+<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="Subject (CDA Class)"/>
 <artifact id="StructureDefinition/SubjectPerson" key="StructureDefinition-SubjectPerson" name="SubjectPerson (CDA Class)"/>
 <artifact id="StructureDefinition/SubstanceAdministration" key="StructureDefinition-SubstanceAdministration" name="SubstanceAdministration (CDA Class)"/>
 <artifact id="StructureDefinition/Supply" key="StructureDefinition-Supply" name="Supply (CDA Class)"/>

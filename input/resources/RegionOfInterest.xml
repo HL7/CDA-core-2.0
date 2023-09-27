@@ -111,7 +111,6 @@
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
-      
     </element>
     <element id="RegionOfInterest.value">
       <path value="RegionOfInterest.value"/>
@@ -120,68 +119,13 @@
       <type>
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
-      
     </element>
     <element id="RegionOfInterest.subject">
       <path value="RegionOfInterest.subject"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="RegionOfInterest.subject.typeCode">
-      <path value="RegionOfInterest.subject.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-      <defaultValueCode value="SBJ"/>
-      <fixedCode value="SBJ"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
-      </binding>
-    </element>
-    <element id="RegionOfInterest.subject.contextControlCode">
-      <path value="RegionOfInterest.subject.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="RegionOfInterest.subject.awarenessCode">
-      <path value="RegionOfInterest.subject.awarenessCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
-      </binding>
-    </element>
-    <element id="RegionOfInterest.subject.relatedSubject">
-      <path value="RegionOfInterest.subject.relatedSubject"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Subject"/>
       </type>
     </element>
     <element id="RegionOfInterest.specimen">
