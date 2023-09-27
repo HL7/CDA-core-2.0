@@ -22,6 +22,12 @@
       <definition value="Interval of integers"/>
       <min value="1"/>
       <max value="*"/>
+      <constraint>
+        <key value="ivl-int-center"/>
+        <severity value="error"/>
+        <human value="Center cannot co-exist with low or high"/>
+        <expression value="center.empty() or (low.empty() and high.empty())"/>
+      </constraint>
     </element>
     <element id="IVL_INT.value">
       <path value="IVL_INT.value"/>

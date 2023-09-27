@@ -21,6 +21,12 @@
       <path value="IVL_TS"/>
       <min value="1"/>
       <max value="*"/>
+      <constraint>
+        <key value="ivl-ts-center"/>
+        <severity value="error"/>
+        <human value="Center cannot co-exist with low or high"/>
+        <expression value="center.empty() or (low.empty() and high.empty())"/>
+      </constraint>
     </element>
     <element id="IVL_TS.low">
       <path value="IVL_TS.low"/>
