@@ -43,8 +43,7 @@
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="ACT"/>
-      
+      <defaultValueCode value="ACT"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActClass"/>
@@ -54,14 +53,12 @@
       <path value="ServiceEvent.moodCode"/>
       <definition value="Element ServiceEvent.moodCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="EVN"/>
-      <fixedCode value="EVN"/>
-      
+      <fixedCode value="EVN"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>

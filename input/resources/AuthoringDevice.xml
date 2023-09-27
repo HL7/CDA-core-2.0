@@ -30,14 +30,12 @@
       <path value="AuthoringDevice.classCode"/>
       <definition value="Element AuthoringDevice.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="DEV"/>
-      <fixedCode value="DEV"/>
-      
+      <fixedCode value="DEV"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassDevice"/>
@@ -47,14 +45,12 @@
       <path value="AuthoringDevice.determinerCode"/>
       <definition value="Element AuthoringDevice.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="INSTANCE"/>
-      <fixedCode value="INSTANCE"/>
-      
+      <fixedCode value="INSTANCE"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>

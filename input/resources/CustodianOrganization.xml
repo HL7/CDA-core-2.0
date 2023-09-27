@@ -36,14 +36,12 @@
       <path value="CustodianOrganization.classCode"/>
       <definition value="Element CustodianOrganization.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="ORG"/>
-      <fixedCode value="ORG"/>
-      
+      <fixedCode value="ORG"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassOrganization"/>
@@ -53,14 +51,12 @@
       <path value="CustodianOrganization.determinerCode"/>
       <definition value="Element CustodianOrganization.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="INSTANCE"/>
-      <fixedCode value="INSTANCE"/>
-      
+      <fixedCode value="INSTANCE"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>

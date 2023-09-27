@@ -30,12 +30,11 @@
       <path value="OrganizationPartOf.classCode"/>
       <definition value="Element OrganizationPartOf.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="PART"/>
       <fixedCode value="PART"/>
       <binding>
         <strength value="required"/>

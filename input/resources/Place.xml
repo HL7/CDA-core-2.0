@@ -38,14 +38,12 @@
       <path value="Place.classCode"/>
       <definition value="Element Place.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="PLC"/>
-      <fixedCode value="PLC"/>
-      
+      <fixedCode value="PLC"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassPlace"/>
@@ -55,14 +53,12 @@
       <path value="Place.determinerCode"/>
       <definition value="Element Place.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="INSTANCE"/>
-      <fixedCode value="INSTANCE"/>
-      
+      <fixedCode value="INSTANCE"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>

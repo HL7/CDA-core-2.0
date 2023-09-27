@@ -58,8 +58,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="AUT"/>
-      
+      <fixedCode value="AUT"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -74,8 +73,7 @@
       <type>
         <code value="code"/>
       </type>
-      <fixedCode value="OP"/>
-      
+      <fixedCode value="OP"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>

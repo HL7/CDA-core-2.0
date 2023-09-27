@@ -55,14 +55,12 @@
       <path value="LabeledDrug.classCode"/>
       <definition value="Element LabeledDrug.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="MMAT"/>
-      <fixedCode value="MMAT"/>
-      
+      <fixedCode value="MMAT"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassManufacturedMaterial"/>
@@ -72,14 +70,12 @@
       <path value="LabeledDrug.determinerCode"/>
       <definition value="Element LabeledDrug.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="KIND"/>
-      <fixedCode value="KIND"/>
-      
+      <fixedCode value="KIND"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminerDetermined"/>

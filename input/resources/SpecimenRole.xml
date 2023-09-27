@@ -30,12 +30,11 @@
       <path value="SpecimenRole.classCode"/>
       <definition value="Element SpecimenRole.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="SPEC"/>
       <fixedCode value="SPEC"/>
       <binding>
         <strength value="required"/>

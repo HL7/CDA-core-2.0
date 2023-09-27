@@ -36,12 +36,11 @@
       <path value="Consent.classCode"/>
       <definition value="Element Consent.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="CONS"/>
       <fixedCode value="CONS"/>
       <binding>
         <strength value="required"/>
@@ -52,14 +51,12 @@
       <path value="Consent.moodCode"/>
       <definition value="Element Consent.moodCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="EVN"/>
-      <fixedCode value="EVN"/>
-      
+      <fixedCode value="EVN"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActMood"/>

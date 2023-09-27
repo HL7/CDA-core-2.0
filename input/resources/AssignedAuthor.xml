@@ -36,12 +36,11 @@
       <path value="AssignedAuthor.classCode"/>
       <definition value="Element AssignedAuthor.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
       </type>
-      <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
       <binding>
         <strength value="required"/>
