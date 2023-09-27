@@ -63,7 +63,7 @@
         <code value="boolean"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
-      <defaultValueBoolean value="true"/>
+      <fixedBoolean value="true"/>
     </element>
     <element id="Entry.act">
       <path value="Entry.act"/>

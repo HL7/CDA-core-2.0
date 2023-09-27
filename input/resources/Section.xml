@@ -220,7 +220,6 @@
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
       <fixedBoolean value="true"/>
-      
     </element>
     <element id="Section.component.section">
       <path value="Section.component.section"/>
