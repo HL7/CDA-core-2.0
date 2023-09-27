@@ -11,6 +11,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="section"/>
+</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Section"/>
   <name value="CDAR2.Section"/>
   <title value="Section (CDA Class)"/>
@@ -61,13 +64,12 @@
     <element id="Section.classCode">
       <path value="Section.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="DOCSECT"/>
       <fixedCode value="DOCSECT"/>
       <binding>
         <strength value="required"/>
@@ -77,13 +79,12 @@
     <element id="Section.moodCode">
       <path value="Section.moodCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="EVN"/>
       <fixedCode value="EVN"/>
       <binding>
         <strength value="required"/>

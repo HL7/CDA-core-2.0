@@ -11,6 +11,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:sdtc"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="identifiedBy"/>
+</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
   <name value="IdentifiedBy"/>
   <title value="IdentifiedBy (CDA Class)"/>

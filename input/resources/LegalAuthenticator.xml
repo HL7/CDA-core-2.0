@@ -12,6 +12,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="legalAuthenticator"/>
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/LegalAuthenticator"/>
   <name value="CDAR2.LegalAuthenticator"/>
   <title value="LegalAuthenticator (CDA Class)"/>

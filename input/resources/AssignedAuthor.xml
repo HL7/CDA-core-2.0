@@ -10,6 +10,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="assignedAuthor"/>
+</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor"/>
   <name value="CDAR2.AssignedAuthor"/>
   <title value="AssignedAuthor (CDA Class)"/>
@@ -31,13 +34,12 @@
     <element id="AssignedAuthor.classCode">
       <path value="AssignedAuthor.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
       <binding>
         <strength value="required"/>

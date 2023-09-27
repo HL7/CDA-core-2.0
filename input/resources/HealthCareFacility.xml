@@ -4,6 +4,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="healthCareFacility"/>
+</extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/HealthCareFacility"/>
   <name value="CDAR2.HealthCareFacility"/>
   <title value="HealthCareFacility (CDA Class)"/>
