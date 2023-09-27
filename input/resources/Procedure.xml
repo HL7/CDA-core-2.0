@@ -435,58 +435,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.typeCode">
-      <path value="Procedure.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-      
-    </element>
-    <element id="Procedure.reference.seperatableInd">
-      <path value="Procedure.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalAct">
-      <path value="Procedure.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalObservation">
-      <path value="Procedure.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalProcedure">
-      <path value="Procedure.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalDocument">
-      <path value="Procedure.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="Procedure.precondition">

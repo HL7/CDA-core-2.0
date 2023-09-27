@@ -518,58 +518,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.reference.typeCode">
-      <path value="SubstanceAdministration.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-      
-    </element>
-    <element id="SubstanceAdministration.reference.seperatableInd">
-      <path value="SubstanceAdministration.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.reference.externalAct">
-      <path value="SubstanceAdministration.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.reference.externalObservation">
-      <path value="SubstanceAdministration.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.reference.externalProcedure">
-      <path value="SubstanceAdministration.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="SubstanceAdministration.reference.externalDocument">
-      <path value="SubstanceAdministration.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="SubstanceAdministration.precondition">

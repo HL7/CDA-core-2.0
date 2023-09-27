@@ -399,58 +399,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Encounter.reference.typeCode">
-      <path value="Encounter.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-      
-    </element>
-    <element id="Encounter.reference.seperatableInd">
-      <path value="Encounter.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Encounter.reference.externalAct">
-      <path value="Encounter.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="Encounter.reference.externalObservation">
-      <path value="Encounter.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="Encounter.reference.externalProcedure">
-      <path value="Encounter.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="Encounter.reference.externalDocument">
-      <path value="Encounter.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="Encounter.precondition">

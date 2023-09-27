@@ -535,58 +535,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.reference.typeCode">
-      <path value="Observation.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
-      </type>
-
-    </element>
-    <element id="Observation.reference.seperatableInd">
-      <path value="Observation.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalAct">
-      <path value="Observation.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalObservation">
-      <path value="Observation.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalProcedure">
-      <path value="Observation.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalDocument">
-      <path value="Observation.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="Observation.precondition">
