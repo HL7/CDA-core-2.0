@@ -296,6 +296,18 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Entry" />
+			</reference>
+			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/EntryRelationship" />
+			</reference>
+			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/ENXP" />
 			</reference>
 			<groupingId value="datatypes-complex"/>
@@ -519,6 +531,12 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/Organizer" />
+			</reference>
+			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/OrganizerComponent" />
 			</reference>
 			<groupingId value="classes"/>
 		</resource>
