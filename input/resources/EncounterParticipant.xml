@@ -12,7 +12,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="encounterParticipant"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/EncounterParticipant"/>
   <name value="CDAR2.EncounterParticipant"/>
   <title value="EncounterParticipant (CDA Class)"/>

@@ -12,7 +12,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="custodianOrganization"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/CustodianOrganization"/>
   <name value="CDAR2.CustodianOrganization"/>
   <title value="CustodianOrganization (CDA Class)"/>

@@ -6,7 +6,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="authoringDevice"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/AuthoringDevice"/>
   <name value="CDAR2.AuthoringDevice"/>
   <title value="AuthoringDevice (CDA Class)"/>

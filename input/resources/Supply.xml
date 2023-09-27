@@ -14,7 +14,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="supply"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
   <name value="CDAR2Supply"/>
   <title value="Supply (CDA Class)"/>

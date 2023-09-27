@@ -15,7 +15,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="substanceAdministration"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
   <name value="CDAR2.SubstanceAdministration"/>
   <title value="SubstanceAdministration (CDA Class)"/>

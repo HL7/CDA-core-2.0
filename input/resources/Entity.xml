@@ -14,7 +14,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="entity"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Entity"/>
   <name value="CDAR2.Entity"/>
   <title value="Entity (CDA Class)"/>

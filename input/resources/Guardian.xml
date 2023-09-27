@@ -13,7 +13,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="guardian"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Guardian"/>
   <name value="CDAR2.Guardian"/>
   <title value="Guardian (CDA Class)"/>

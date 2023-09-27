@@ -13,7 +13,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="author"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
   <name value="CDAR2.Author"/>
   <title value="Author (CDA Class)"/>

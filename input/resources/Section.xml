@@ -13,7 +13,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="section"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Section"/>
   <name value="CDAR2.Section"/>
   <title value="Section (CDA Class)"/>

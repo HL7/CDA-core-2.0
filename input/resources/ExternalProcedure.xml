@@ -12,7 +12,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="externalProcedure"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/ExternalProcedure"/>
   <name value="CDAR2.ExternalProcedure"/>
   <title value="ExternalProcedure (CDA Class)"/>

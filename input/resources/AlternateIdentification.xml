@@ -10,7 +10,7 @@
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="alternateIdentification"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/AlternateIdentification"/>
   <name value="AlternateIdentification"/>
   <title value="AlternateIdentification (CDA Class)"/>

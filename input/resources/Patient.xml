@@ -13,7 +13,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
     <valueUri value="patient"/>
-</extension> 
+  </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/Patient"/>
   <name value="CDAR2.Patient"/>
   <title value="Patient (CDA Class)"/>
