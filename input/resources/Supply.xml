@@ -197,19 +197,18 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="Supply.product.typeCode">
       <path value="Supply.product.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="PRD"/>
       <fixedCode value="PRD"/>
       <binding>
         <strength value="required"/>

@@ -195,33 +195,31 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="Section.component.typeCode">
       <path value="Section.component.typeCode"/>
       <definition value="Drawn from concept domain DocumentSectionType"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
-      
     </element>
     <element id="Section.component.contextConductionInd">
       <path value="Section.component.contextConductionInd"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
-      <defaultValueBoolean value="true"/>
+      <fixedBoolean value="true"/>
       
     </element>
     <element id="Section.component.section">

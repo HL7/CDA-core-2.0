@@ -363,22 +363,22 @@
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>
+      <definition value="Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified."/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="Observation.referenceRange.typeCode">
       <path value="Observation.referenceRange.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="REFV"/>
       <fixedCode value="REFV"/>
       <binding>
         <strength value="required"/>

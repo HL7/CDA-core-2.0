@@ -87,32 +87,30 @@
       <min value="1"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="StructuredBody.component.typeCode">
       <path value="StructuredBody.component.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="COMP"/>
       <fixedCode value="COMP"/>
-      
     </element>
     <element id="StructuredBody.component.contextConductionInd">
       <path value="StructuredBody.component.contextConductionInd"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
-      <defaultValueBoolean value="true"/>
+      <fixedBoolean value="true"/>
       
     </element>
     <element id="StructuredBody.component.section">

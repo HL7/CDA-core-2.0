@@ -129,24 +129,23 @@
     </element>
     <element id="EncompassingEncounter.responsibleParty">
       <path value="EncompassingEncounter.responsibleParty"/>
+      <definition value="The responsibleParty participant represents the participant having primary legal responsibility for the encounter. This differs from the legalAuthenticator participant in that the legalAuthenticator may or may not be the responsible party, and is serving a medical records function by signing off on the document, moving it into a completed state."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="EncompassingEncounter.responsibleParty.typeCode">
       <path value="EncompassingEncounter.responsibleParty.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="RESP"/>
       <fixedCode value="RESP"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -170,24 +169,23 @@
     </element>
     <element id="EncompassingEncounter.location">
       <path value="EncompassingEncounter.location"/>
+      <definition value="The location participant (location class) relates a healthcare facility (HealthCareFacility class) to the encounter to indicate where the encounter took place. The entity playing the role of HealthCareFacility is a place (Place class). The entity scoping the HealthCareFacility role is an organization (Organization class).&#10;&#10;The setting of an encounter (e.g. cardiology clinic, primary care clinic, rehabilitation hospital, skilled nursing facility) can be expressed in HealthCareFacility.code. Note that setting and physical location are not the same. There is a many-to-many relationship between setting and the physical location where care is delivered. Thus, a particular room can provide the location for cardiology clinic one day, and for primary care clinic another day; and cardiology clinic today might be held in one physical location, but in another physical location tomorrow.&#10;&#10;When the location is an organization, this is indicated by the presence of a scoping Organization, without a playing Place."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="EncompassingEncounter.location.typeCode">
       <path value="EncompassingEncounter.location.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="LOC"/>
       <fixedCode value="LOC"/>
-      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetLocation"/>
