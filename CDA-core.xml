@@ -27,7 +27,7 @@
 <artifact id="StructureDefinition/CS" key="StructureDefinition-CS" name="CS: CodedSimpleValue (V3 Data Type)"/>
 <artifact id="StructureDefinition/CV" key="StructureDefinition-CV" name="CV: CodedValue (V3 Data Type)"/>
 <artifact id="StructureDefinition/ClinicalDocument" key="StructureDefinition-ClinicalDocument" name="ClinicalDocument (CDA Class)"/>
-<artifact id="StructureDefinition/Component2" key="StructureDefinition-Component2" name="Component2 (CDA Class)"/>
+<artifact id="StructureDefinition/Component" key="StructureDefinition-Component" name="Component (CDA Class)"/>
 <artifact id="StructureDefinition/ComponentOf" key="StructureDefinition-ComponentOf" name="ComponentOf (CDA Class)"/>
 <artifact id="StructureDefinition/Consent" key="StructureDefinition-Consent" name="Consent (CDA Class)"/>
 <artifact id="StructureDefinition/Criterion" key="StructureDefinition-Criterion" name="Criterion (CDA Class)"/>

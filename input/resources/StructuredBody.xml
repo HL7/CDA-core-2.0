@@ -24,14 +24,9 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="http://hl7.org/cda/stds/core/StructureDefinition/StructuredBody"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="StructuredBody">
-      <path value="StructuredBody"/>
-      <min value="1"/>
-      <max value="1"/>
-    </element>
     <element id="StructuredBody.classCode">
       <path value="StructuredBody.classCode"/>
       <representation value="xmlAttr"/>

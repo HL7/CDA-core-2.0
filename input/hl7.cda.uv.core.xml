@@ -170,7 +170,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/Component2" />
+				<reference value="StructureDefinition/Component" />
 			</reference>
 			<groupingId value="classes"/>
 		</resource>

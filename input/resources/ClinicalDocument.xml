@@ -309,7 +309,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Component2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Component"/>
       </type>
     </element>
   </differential>
