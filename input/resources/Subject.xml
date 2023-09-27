@@ -27,14 +27,6 @@
   <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
   <derivation value="specialization"/>
   <differential>
-    <element id="Subject">
-      <path value="Subject"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Element"/>
-      </type>
-    </element>
     <element id="Subject.typeCode">
       <path value="Subject.typeCode"/>
       <definition value="Element Act.typeCode"/>

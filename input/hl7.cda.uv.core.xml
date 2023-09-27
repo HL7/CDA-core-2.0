@@ -410,6 +410,24 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/IVXB-INT" />
+			</reference>
+			<groupingId value="datatypes-complex"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/IVXB-PQ" />
+			</reference>
+			<groupingId value="datatypes-complex"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/IVXB-TS" />
+			</reference>
+			<groupingId value="datatypes-complex"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/LabeledDrug" />
 			</reference>
 			<groupingId value="classes"/>
@@ -614,6 +632,12 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Reference" />
+			</reference>
+			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/RegionOfInterest" />
 			</reference>
 			<groupingId value="classes"/>
@@ -681,6 +705,12 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/StructuredBody" />
+			</reference>
+			<groupingId value="classes"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Subject" />
 			</reference>
 			<groupingId value="classes"/>
 		</resource>
