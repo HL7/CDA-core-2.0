@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="current" defaultWorkgroup="cgp" url="http://hl7.org/cda/stds/core">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="https://build.fhir.org/ig/HL7/CDA-core-2.0" defaultVersion="current" defaultWorkgroup="" url="http://hl7.org/cda/stds/core">
 <version code="current" url="https://build.fhir.org/ig/HL7/CDA-core-2.0"/>
 <version code="2.1.0-draft1" url="http://hl7.org/cda/stds/core/draft1"/>
 <artifactPageExtension value="-definitions"/>
@@ -44,6 +44,7 @@
 <artifact id="StructureDefinition/Encounter" key="StructureDefinition-Encounter" name="Encounter (CDA Class)"/>
 <artifact id="StructureDefinition/EncounterParticipant" key="StructureDefinition-EncounterParticipant" name="EncounterParticipant (CDA Class)"/>
 <artifact id="StructureDefinition/Entity" key="StructureDefinition-Entity" name="Entity (CDA Class)"/>
+<artifact id="Binary/clinicaldocument-example" key="Binary-clinicaldocument-example" name="Example CDA document"/>
 <artifact id="StructureDefinition/ExternalAct" key="StructureDefinition-ExternalAct" name="ExternalAct (CDA Class)"/>
 <artifact id="StructureDefinition/ExternalDocument" key="StructureDefinition-ExternalDocument" name="ExternalDocument (CDA Class)"/>
 <artifact id="StructureDefinition/ExternalObservation" key="StructureDefinition-ExternalObservation" name="ExternalObservation (CDA Class)"/>
@@ -56,11 +57,14 @@
 <artifact id="StructureDefinition/IVL-INT" key="StructureDefinition-IVL-INT" name="IVL_INT: Interval (V3 Data Type)"/>
 <artifact id="StructureDefinition/IVL-PQ" key="StructureDefinition-IVL-PQ" name="IVL_PQ: Interval (V3 Data Type)"/>
 <artifact id="StructureDefinition/IVL-TS" key="StructureDefinition-IVL-TS" name="IVL_TS: Interval (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-INT" key="StructureDefinition-IVXB-INT" name="IVXB_INT: Interval Boundary IntegerNumber (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-PQ" key="StructureDefinition-IVXB-PQ" name="IVXB_PQ: Interval Boundary PhysicalQuantity (V3 Data Type)"/>
+<artifact id="StructureDefinition/IVXB-TS" key="StructureDefinition-IVXB-TS" name="IVXB_TS: Interval Boundary PointInTime (V3 Data Type)"/>
 <artifact id="StructureDefinition/IdentifiedBy" key="StructureDefinition-IdentifiedBy" name="IdentifiedBy (CDA Class)"/>
 <artifact id="StructureDefinition/InFulfillmentOf" key="StructureDefinition-InFulfillmentOf" name="InFulfillmentOf (CDA Class)"/>
 <artifact id="StructureDefinition/Informant" key="StructureDefinition-Informant" name="Informant (CDA Class)"/>
 <artifact id="StructureDefinition/InformationRecipient" key="StructureDefinition-InformationRecipient" name="InformationRecipient (CDA Class)"/>
-<artifact id="StructureDefinition/InfrastructureRoot" key="StructureDefinition-InfrastructureRoot" name="InfrastructureRoot"/>
+<artifact id="StructureDefinition/InfrastructureRoot" key="StructureDefinition-InfrastructureRoot" name="InfrastructureRoot (Base Type for all CDA Classes)"/>
 <artifact id="StructureDefinition/IntendedRecipient" key="StructureDefinition-IntendedRecipient" name="IntendedRecipient (CDA Class)"/>
 <artifact id="StructureDefinition/LabeledDrug" key="StructureDefinition-LabeledDrug" name="LabeledDrug (CDA Class)"/>
 <artifact id="StructureDefinition/LanguageCommunication" key="StructureDefinition-LanguageCommunication" name="LanguageCommunication (CDA Class)"/>
@@ -78,7 +82,7 @@
 <artifact id="StructureDefinition/Organization" key="StructureDefinition-Organization" name="Organization (CDA Class)"/>
 <artifact id="StructureDefinition/OrganizationPartOf" key="StructureDefinition-OrganizationPartOf" name="OrganizationPartOf (CDA Class)"/>
 <artifact id="StructureDefinition/Organizer" key="StructureDefinition-Organizer" name="Organizer (CDA Class)"/>
-<artifact id="StructureDefinition/PIVL-TS" key="StructureDefinition-PIVL-TS" name="PIVL-TS: PeriodicIntervalOfTime (V3 Data Type)"/>
+<artifact id="StructureDefinition/PIVL-TS" key="StructureDefinition-PIVL-TS" name="PIVL_TS: PeriodicIntervalOfTime (V3 Data Type)"/>
 <artifact id="StructureDefinition/PN" key="StructureDefinition-PN" name="PN: PersonName (V3 Data Type)"/>
 <artifact id="StructureDefinition/PQ" key="StructureDefinition-PQ" name="PQ: PhysicalQuantity (V3 Data Type)"/>
 <artifact id="StructureDefinition/PQR" key="StructureDefinition-PQR" name="PQR: PhysicalQuantityRepresentation (V3 Data Type)"/>
@@ -97,7 +101,7 @@
 <artifact id="StructureDefinition/Procedure" key="StructureDefinition-Procedure" name="Procedure (CDA Class)"/>
 <artifact id="StructureDefinition/QTY" key="StructureDefinition-QTY" name="QTY: Quantity (V3 Data Type)"/>
 <artifact id="StructureDefinition/REAL" key="StructureDefinition-REAL" name="REAL: RealNumber (V3 Data Type)"/>
-<artifact id="StructureDefinition/RTO-PQ-PQ" key="StructureDefinition-RTO-PQ-PQ" name="RTO-PQ-PQ: Ratio (V3 Data Type)"/>
+<artifact id="StructureDefinition/RTO-PQ-PQ" key="StructureDefinition-RTO-PQ-PQ" name="RTO_PQ_PQ: Ratio (V3 Data Type)"/>
 <artifact id="StructureDefinition/RecordTarget" key="StructureDefinition-RecordTarget" name="RecordTarget (CDA Class)"/>
 <artifact id="StructureDefinition/RegionOfInterest" key="StructureDefinition-RegionOfInterest" name="RegionOfInterest (CDA Class)"/>
 <artifact id="StructureDefinition/RelatedDocument" key="StructureDefinition-RelatedDocument" name="RelatedDocument (CDA Class)"/>
@@ -105,20 +109,35 @@
 <artifact id="StructureDefinition/RelatedSubject" key="StructureDefinition-RelatedSubject" name="RelatedSubject (CDA Class)"/>
 <artifact id="StructureDefinition/SC" key="StructureDefinition-SC" name="SC: CharacterStringWithCode (V3 Data Type)"/>
 <artifact id="StructureDefinition/ST" key="StructureDefinition-ST" name="ST: CharacterString (V3 Data Type)"/>
-<artifact id="StructureDefinition/SXCM-TS" key="StructureDefinition-SXCM-TS" name="SXCM-TS: GeneralTimingSpecification (V3 Data Type)"/>
-<artifact id="StructureDefinition/SXPR-TS" key="StructureDefinition-SXPR-TS" name="SXPR-TS: Component part of GTS (V3 Data Type)"/>
+<artifact id="StructureDefinition/SXCM-TS" key="StructureDefinition-SXCM-TS" name="SXCM_TS: GeneralTimingSpecification (V3 Data Type)"/>
+<artifact id="StructureDefinition/SXPR-TS" key="StructureDefinition-SXPR-TS" name="SXPR_TS: Component part of GTS (V3 Data Type)"/>
 <artifact id="StructureDefinition/Section" key="StructureDefinition-Section" name="Section (CDA Class)"/>
 <artifact id="StructureDefinition/ServiceEvent" key="StructureDefinition-ServiceEvent" name="ServiceEvent (CDA Class)"/>
 <artifact id="StructureDefinition/Specimen" key="StructureDefinition-Specimen" name="Specimen (CDA Class)"/>
 <artifact id="StructureDefinition/SpecimenRole" key="StructureDefinition-SpecimenRole" name="SpecimenRole (CDA Class)"/>
 <artifact id="StructureDefinition/StructuredBody" key="StructureDefinition-StructuredBody" name="StructuredBody (CDA Class)"/>
+<artifact id="StructureDefinition/Subject" key="StructureDefinition-Subject" name="Subject (CDA Class)"/>
 <artifact id="StructureDefinition/SubjectPerson" key="StructureDefinition-SubjectPerson" name="SubjectPerson (CDA Class)"/>
 <artifact id="StructureDefinition/SubstanceAdministration" key="StructureDefinition-SubstanceAdministration" name="SubstanceAdministration (CDA Class)"/>
 <artifact id="StructureDefinition/Supply" key="StructureDefinition-Supply" name="Supply (CDA Class)"/>
 <artifact id="StructureDefinition/TEL" key="StructureDefinition-TEL" name="TEL: TelecommunicationAddress (V3 Data Type)"/>
 <artifact id="StructureDefinition/TN" key="StructureDefinition-TN" name="TN: TrivialName (V3 Data Type)"/>
 <artifact id="StructureDefinition/TS" key="StructureDefinition-TS" name="TS: PointInTime (V3 Data Type)"/>
-<artifact id="StructureDefinition/cs-prim" key="StructureDefinition-cs-prim" name="cs primitive (wrapper for code)"/>
+<artifact id="StructureDefinition/bin" key="StructureDefinition-bin" name="bin: Binary Data"/>
+<artifact id="StructureDefinition/bl-simple" key="StructureDefinition-bl-simple" name="bl: Boolean"/>
+<artifact id="StructureDefinition/bn" key="StructureDefinition-bn" name="bn: BooleanNonNull"/>
+<artifact id="StructureDefinition/cs-simple" key="StructureDefinition-cs-simple" name="cs: Coded Simple Value"/>
+<artifact id="StructureDefinition/int-simple" key="StructureDefinition-int-simple" name="int: Integer Number"/>
+<artifact id="StructureDefinition/oid" key="StructureDefinition-oid" name="oid: ISO Object Identifier"/>
+<artifact id="StructureDefinition/probability" key="StructureDefinition-probability" name="probability: Probability"/>
+<artifact id="StructureDefinition/real-simple" key="StructureDefinition-real-simple" name="real: Real Number"/>
+<artifact id="StructureDefinition/ruid" key="StructureDefinition-ruid" name="ruid: HL7 Reserved Identifier Scheme"/>
+<artifact id="StructureDefinition/st-simple" key="StructureDefinition-st-simple" name="st: Character String"/>
+<artifact id="StructureDefinition/ts-simple" key="StructureDefinition-ts-simple" name="ts: Point in Time"/>
+<artifact id="StructureDefinition/uid" key="StructureDefinition-uid" name="uid: Unique Identifier String"/>
+<artifact id="StructureDefinition/url" key="StructureDefinition-url" name="url: Universal Resource Locator"/>
+<artifact id="StructureDefinition/uuid" key="StructureDefinition-uuid" name="uuid: DCE Universal Unique Identifier"/>
+<artifact id="StructureDefinition/xs-ID" key="StructureDefinition-xs-ID" name="xs:ID"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

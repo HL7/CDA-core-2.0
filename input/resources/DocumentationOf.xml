@@ -28,7 +28,6 @@
   <differential>
     <element id="DocumentationOf">
       <path value="DocumentationOf"/>
-      <definition value="Element DocumentationOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,12 +49,12 @@
     </element>
     <element id="DocumentationOf.typeCode">
       <path value="DocumentationOf.typeCode"/>
-      <definition value="Element DocumentationOf.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DOC"/>      
       <binding>
@@ -91,7 +91,6 @@
     </element>
     <element id="DocumentationOf.serviceEvent">
       <path value="DocumentationOf.serviceEvent"/>
-      <definition value="Element DocumentationOf.serviceEvent"/>
       <min value="1"/>
       <max value="1"/>
       <type>

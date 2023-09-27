@@ -28,7 +28,6 @@
   <differential>
     <element id="Informant">
       <path value="Informant"/>
-      <definition value="Element Informant"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,12 +49,12 @@
     </element>
     <element id="Informant.typeCode">
       <path value="Informant.typeCode"/>
-      <definition value="Element Informant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INF"/>      
       <binding>
@@ -64,12 +64,12 @@
     </element>
     <element id="Informant.contextControlCode">
       <path value="Informant.contextControlCode"/>
-      <definition value="Element Informant.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="OP"/>      
       <binding>
@@ -107,7 +107,6 @@
     <!-- TODO: Need to figure out how to constrain assignedEntity and relatedEntity so that only one may be chosen at a time. It is a choice of either assignedEntity and relatedEntity. -->
     <element id="Informant.assignedEntity">
       <path value="Informant.assignedEntity"/>
-      <definition value="Element Informant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -116,7 +115,6 @@
     </element>
     <element id="Informant.relatedEntity">
       <path value="Informant.relatedEntity"/>
-      <definition value="Element Informant.relatedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>

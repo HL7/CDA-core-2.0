@@ -11,8 +11,8 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
-  <name value="PIVL-TS"/>
-  <title value="PIVL-TS: PeriodicIntervalOfTime (V3 Data Type)"/>
+  <name value="PIVL_TS"/>
+  <title value="PIVL_TS: PeriodicIntervalOfTime (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
@@ -28,6 +28,12 @@
       <definition value="Note: because this type is defined as an extension of SXCM_T, all of the attributes and elements accepted for T are also accepted by this definition. However, they are NOT allowed by the normative description of this type. Unfortunately, we cannot write a general purpose schematron contraints to provide that extra validation, thus applications must be aware that instance (fragments) that pass validation with this might might still not be legal."/>
       <min value="1"/>
       <max value="*"/>
+    </element>
+    <element id="PIVL_TS.value">
+      <path value="PIVL_TS.value"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="0"/>
     </element>
     <element id="PIVL_TS.phase">
       <path value="PIVL_TS.phase"/>
@@ -58,6 +64,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="PIVL_TS.institutionSpecified">
@@ -69,6 +76,7 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
   </differential>

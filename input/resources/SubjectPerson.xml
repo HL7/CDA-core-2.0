@@ -28,18 +28,17 @@
   <differential>
     <element id="SubjectPerson">
       <path value="SubjectPerson"/>
-      <definition value="Element SubjectPerson"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="SubjectPerson.classCode">
       <path value="SubjectPerson.classCode"/>
-      <definition value="Element SubjectPerson.classCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="PSN"/>      
       <binding>
@@ -49,12 +48,12 @@
     </element>
     <element id="SubjectPerson.determinerCode">
       <path value="SubjectPerson.determinerCode"/>
-      <definition value="Element SubjectPerson.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INSTANCE"/>      
       <binding>
@@ -73,11 +72,10 @@
     </element>
     <element id="SubjectPerson.name">
       <path value="SubjectPerson.name"/>
-      <definition value="Element SubjectPerson.name"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PN"/>
       </type>
     </element>
     <element id="SubjectPerson.sdtcDesc">
@@ -88,7 +86,6 @@
         <valueString value="desc"/>
       </extension>
       <path value="SubjectPerson.sdtcDesc"/>
-      <definition value="Element SubjectPerson.sdtcDesc"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -97,7 +94,6 @@
     </element>
     <element id="SubjectPerson.administrativeGenderCode">
       <path value="SubjectPerson.administrativeGenderCode"/>
-      <definition value="Element SubjectPerson.administrativeGenderCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -110,7 +106,6 @@
     </element>
     <element id="SubjectPerson.birthTime">
       <path value="SubjectPerson.birthTime"/>
-      <definition value="Element SubjectPerson.birthTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -125,7 +120,6 @@
         <valueString value="deceasedInd"/>
       </extension>
       <path value="SubjectPerson.sdtcDeceasedInd"/>
-      <definition value="Element SubjectPerson.sdtcDeceasedInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -140,7 +134,6 @@
         <valueString value="deceasedTime"/>
       </extension>
       <path value="SubjectPerson.sdtcDeceasedTime"/>
-      <definition value="Element SubjectPerson.sdtcDeceasedTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>

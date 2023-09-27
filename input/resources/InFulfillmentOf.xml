@@ -28,7 +28,6 @@
   <differential>
     <element id="InFulfillmentOf">
       <path value="InFulfillmentOf"/>
-      <definition value="Element InFulfillmentOf"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,12 +49,12 @@
     </element>
     <element id="InFulfillmentOf.typeCode">
       <path value="InFulfillmentOf.typeCode"/>
-      <definition value="Element InFulfillmentOf.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="FLFS"/>      
       <binding>
@@ -91,7 +91,6 @@
     </element>
     <element id="InFulfillmentOf.order">
       <path value="InFulfillmentOf.order"/>
-      <definition value="Element InFulfillmentOf.order"/>
       <min value="1"/>
       <max value="1"/>
       <type>

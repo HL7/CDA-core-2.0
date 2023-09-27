@@ -39,17 +39,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="dateTime"/>
-      </type>
-    </element>
-    <element id="TS.inclusive">
-      <path value="TS.inclusive"/>
-      <representation value="xmlAttr"/>
-      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
+        <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ts-simple"/>
       </type>
     </element>
   </differential>

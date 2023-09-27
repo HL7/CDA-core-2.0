@@ -19,9 +19,14 @@
   <differential>
     <element id="IVL_TS">
       <path value="IVL_TS"/>
-      <definition value="Element IVL_TS"/>
       <min value="1"/>
       <max value="*"/>
+      <constraint>
+        <key value="ivl-ts-center"/>
+        <severity value="error"/>
+        <human value="Center cannot co-exist with low or high"/>
+        <expression value="center.empty() or (low.empty() and high.empty())"/>
+      </constraint>
     </element>
     <element id="IVL_TS.low">
       <path value="IVL_TS.low"/>
@@ -30,13 +35,13 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-TS"/>
       </type>
     </element>
-    <element id="IVL_TS.high">
-      <path value="IVL_TS.high"/>
-      <label value="High Boundary"/>
-      <definition value="This is the high limit of the interval."/>
+    <element id="IVL_TS.center">
+      <path value="IVL_TS.center"/>
+      <label value="Central Value"/>
+      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -53,14 +58,14 @@
         <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
       </type>
     </element>
-    <element id="IVL_TS.center">
-      <path value="IVL_TS.center"/>
-      <label value="Central Value"/>
-      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
+    <element id="IVL_TS.high">
+      <path value="IVL_TS.high"/>
+      <label value="High Boundary"/>
+      <definition value="This is the high limit of the interval."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-TS"/>
       </type>
     </element>
   </differential>

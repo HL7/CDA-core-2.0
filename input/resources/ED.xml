@@ -38,6 +38,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.compression">
@@ -49,6 +50,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -64,6 +66,7 @@
       <max value="1"/>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.integrityCheckAlgorithm">
@@ -75,6 +78,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -90,6 +94,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.mediaType">
@@ -101,16 +106,17 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.representation">
       <path value="ED.representation"/>
-      <definition value="Element ED.representation"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.data[x]">
@@ -121,9 +127,11 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.reference">

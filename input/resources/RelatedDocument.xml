@@ -28,7 +28,6 @@
   <differential>
     <element id="RelatedDocument">
       <path value="RelatedDocument"/>
-      <definition value="Element RelatedDocument"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,17 +49,17 @@
     </element>
     <element id="RelatedDocument.typeCode">
       <path value="RelatedDocument.typeCode"/>
-      <definition value="Element RelatedDocument.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-xActRelationshipDocument"/>
       </binding>
     </element>
     <element id="RelatedDocument.realmCode">
@@ -91,7 +91,6 @@
     </element>
     <element id="RelatedDocument.parentDocument">
       <path value="RelatedDocument.parentDocument"/>
-      <definition value="Element RelatedDocument.parentDocument"/>
       <min value="1"/>
       <max value="1"/>
       <type>

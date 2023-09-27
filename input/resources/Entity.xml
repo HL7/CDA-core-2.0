@@ -30,18 +30,17 @@
   <differential>
     <element id="Entity">
       <path value="Entity"/>
-      <definition value="Element Entity"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Entity.classCode">
       <path value="Entity.classCode"/>
-      <definition value="Element Entity.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ENT"/>
       
@@ -52,12 +51,12 @@
     </element>
     <element id="Entity.determinerCode">
       <path value="Entity.determinerCode"/>
-      <definition value="Element Entity.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INSTANCE"/>      
       <binding>
@@ -76,7 +75,6 @@
     </element>
     <element id="Entity.id">
       <path value="Entity.id"/>
-      <definition value="Element Entity.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -85,7 +83,6 @@
     </element>
     <element id="Entity.code">
       <path value="Entity.code"/>
-      <definition value="Element Entity.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -98,7 +95,6 @@
     </element>
     <element id="Entity.desc">
       <path value="Entity.desc"/>
-      <definition value="Element Entity.desc"/>
       <min value="0"/>
       <max value="1"/>
       <type>

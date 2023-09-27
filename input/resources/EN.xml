@@ -41,6 +41,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,7 +50,6 @@
     </element>
     <element id="EN.delimiter">
       <path value="EN.delimiter"/>
-      <definition value="Element EN.delimiter"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -58,7 +58,6 @@
     </element>
     <element id="EN.family">
       <path value="EN.family"/>
-      <definition value="Element EN.family"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -67,7 +66,6 @@
     </element>
     <element id="EN.given">
       <path value="EN.given"/>
-      <definition value="Element EN.given"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -76,7 +74,6 @@
     </element>
     <element id="EN.prefix">
       <path value="EN.prefix"/>
-      <definition value="Element EN.prefix"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -94,12 +91,12 @@
     </element>
     <element id="EN.other">
       <path value="EN.other"/>
-      <definition value="Element EN.other"/>
       <representation value="xmlText"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="EN.validTime">

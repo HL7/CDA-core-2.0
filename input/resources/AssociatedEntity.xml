@@ -28,18 +28,17 @@
   <differential>
     <element id="AssociatedEntity">
       <path value="AssociatedEntity"/>
-      <definition value="Element AssociatedEntity"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="AssociatedEntity.classCode">
       <path value="AssociatedEntity.classCode"/>
-      <definition value="Element AssociatedEntity.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -57,7 +56,6 @@
     </element>
     <element id="AssociatedEntity.id">
       <path value="AssociatedEntity.id"/>
-      <definition value="Element AssociatedEntity.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -80,7 +78,6 @@
     </element>
     <element id="AssociatedEntity.code">
       <path value="AssociatedEntity.code"/>
-      <definition value="Element AssociatedEntity.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -93,7 +90,6 @@
     </element>
     <element id="AssociatedEntity.addr">
       <path value="AssociatedEntity.addr"/>
-      <definition value="Element AssociatedEntity.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -102,7 +98,6 @@
     </element>
     <element id="AssociatedEntity.telecom">
       <path value="AssociatedEntity.telecom"/>
-      <definition value="Element AssociatedEntity.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -111,7 +106,6 @@
     </element>
     <element id="AssociatedEntity.associatedPerson">
       <path value="AssociatedEntity.associatedPerson"/>
-      <definition value="Element AssociatedEntity.associatedPerson"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -120,7 +114,6 @@
     </element>
     <element id="AssociatedEntity.scopingOrganization">
       <path value="AssociatedEntity.scopingOrganization"/>
-      <definition value="Element AssociatedEntity.scopingOrganization"/>
       <min value="0"/>
       <max value="1"/>
       <type>

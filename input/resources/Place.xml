@@ -30,18 +30,17 @@
   <differential>
     <element id="Place">
       <path value="Place"/>
-      <definition value="Element Place"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Place.classCode">
       <path value="Place.classCode"/>
-      <definition value="Element Place.classCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="PLC"/>      
       <binding>
@@ -51,12 +50,12 @@
     </element>
     <element id="Place.determinerCode">
       <path value="Place.determinerCode"/>
-      <definition value="Element Place.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INSTANCE"/>      
       <binding>
@@ -75,7 +74,6 @@
     </element>
     <element id="Place.name">
       <path value="Place.name"/>
-      <definition value="Element Place.name"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -84,7 +82,6 @@
     </element>
     <element id="Place.addr">
       <path value="Place.addr"/>
-      <definition value="Element Place.addr"/>
       <min value="0"/>
       <max value="1"/>
       <type>

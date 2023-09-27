@@ -30,18 +30,17 @@
   <differential>
     <element id="ServiceEvent">
       <path value="ServiceEvent"/>
-      <definition value="Element ServiceEvent"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="ServiceEvent.classCode">
       <path value="ServiceEvent.classCode"/>
-      <definition value="Element ServiceEvent.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ACT"/>      
       <binding>
@@ -51,12 +50,12 @@
     </element>
     <element id="ServiceEvent.moodCode">
       <path value="ServiceEvent.moodCode"/>
-      <definition value="Element ServiceEvent.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="EVN"/>      
       <binding>
@@ -75,7 +74,6 @@
     </element>
     <element id="ServiceEvent.id">
       <path value="ServiceEvent.id"/>
-      <definition value="Element ServiceEvent.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -93,7 +91,6 @@
     </element>
     <element id="ServiceEvent.effectiveTime">
       <path value="ServiceEvent.effectiveTime"/>
-      <definition value="Element ServiceEvent.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -102,7 +99,6 @@
     </element>
     <element id="ServiceEvent.performer">
       <path value="ServiceEvent.performer"/>
-      <definition value="Element ServiceEvent.performer"/>
       <min value="0"/>
       <max value="*"/>
       <type>

@@ -28,7 +28,6 @@
   <differential>
     <element id="Precondition">
       <path value="Precondition"/>
-      <definition value="Element Precondition"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,12 +49,12 @@
     </element>
     <element id="Precondition.typeCode">
       <path value="Precondition.typeCode"/>
-      <definition value="Element Precondition.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -90,7 +90,6 @@
     </element>
     <element id="Precondition.criterion">
       <path value="Precondition.criterion"/>
-      <definition value="Element Precondition.criterion"/>
       <min value="1"/>
       <max value="1"/>
       <type>

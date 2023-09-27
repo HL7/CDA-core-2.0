@@ -29,7 +29,6 @@
   <differential>
     <element id="Custodian">
       <path value="Custodian"/>
-      <definition value="Element Custodian"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -42,6 +41,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -50,12 +50,12 @@
     </element>
     <element id="Custodian.typeCode">
       <path value="Custodian.typeCode"/>
-      <definition value="Element Custodian.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="ENT"/>      
       <binding>
@@ -92,7 +92,6 @@
     </element>
     <element id="Custodian.assignedCustodian">
       <path value="Custodian.assignedCustodian"/>
-      <definition value="Element Custodian.assignedCustodian"/>
       <min value="1"/>
       <max value="1"/>
       <type>

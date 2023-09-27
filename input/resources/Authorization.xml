@@ -28,7 +28,6 @@
   <differential>
     <element id="Authorization">
       <path value="Authorization"/>
-      <definition value="Element Authorization"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,14 +49,14 @@
     </element>
     <element id="Authorization.typeCode">
       <path value="Authorization.typeCode"/>
-      <definition value="Element Authorization.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <fixedCode value="AUT"/>
+      <fixedCode value="AUTH"/>
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
@@ -91,7 +91,6 @@
     </element>
     <element id="Authorization.consent">
       <path value="Authorization.consent"/>
-      <definition value="Element Authorization.consent"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -30,7 +30,6 @@
   <differential>
     <element id="LanguageCommunication">
       <path value="LanguageCommunication"/>
-      <definition value="Element LanguageCommunication"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,7 +44,6 @@
     </element>
     <element id="LanguageCommunication.languageCode">
       <path value="LanguageCommunication.languageCode"/>
-      <definition value="Element LanguageCommunication.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -58,7 +56,6 @@
     </element>
     <element id="LanguageCommunication.modeCode">
       <path value="LanguageCommunication.modeCode"/>
-      <definition value="Element LanguageCommunication.modeCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -71,7 +68,6 @@
     </element>
     <element id="LanguageCommunication.proficiencyLevelCode">
       <path value="LanguageCommunication.proficiencyLevelCode"/>
-      <definition value="Element LanguageCommunication.proficiencyLevelCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -84,7 +80,6 @@
     </element>
     <element id="LanguageCommunication.preferenceInd">
       <path value="LanguageCommunication.preferenceInd"/>
-      <definition value="Element LanguageCommunication.preferenceInd"/>
       <min value="0"/>
       <max value="1"/>
       <type>

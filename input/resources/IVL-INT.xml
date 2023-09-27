@@ -5,7 +5,7 @@
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"/>
-  <name value="IVL-_INT"/>
+  <name value="IVL_INT"/>
   <title value="IVL_INT: Interval (V3 Data Type)"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -19,14 +19,18 @@
   <differential>
     <element id="IVL_INT">
       <path value="IVL_INT"/>
-      <definition value="Element IVL_INT"/>
       <definition value="Interval of integers"/>
       <min value="1"/>
       <max value="*"/>
+      <constraint>
+        <key value="ivl-int-center"/>
+        <severity value="error"/>
+        <human value="Center cannot co-exist with low or high"/>
+        <expression value="center.empty() or (low.empty() and high.empty())"/>
+      </constraint>
     </element>
     <element id="IVL_INT.value">
       <path value="IVL_INT.value"/>
-      <definition value="Element IVL_INT.value"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
@@ -37,7 +41,24 @@
       </base>
       <type>
         <code value="integer"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/int-simple"/>
       </type>
+    </element>
+    <element id="IVL_INT.operator">
+      <path value="IVL_INT.operator"/>
+      <representation value="xmlAttr"/>
+      <definition value="A code specifying whether the set component is included (union) or excluded (set-difference) from the set, or other set operations with the current set component and the set as constructed from the representation stream up to the current point."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
+      </type>
+      <defaultValueCode value="I"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-SetOperator"/>
+      </binding>
     </element>
     <element id="IVL_INT.low">
       <path value="IVL_INT.low"/>
@@ -46,13 +67,13 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-INT"/>
       </type>
     </element>
-    <element id="IVL_INT.high">
-      <path value="IVL_INT.high"/>
-      <label value="High Boundary"/>
-      <definition value="This is the high limit of the interval."/>
+    <element id="IVL_INT.center">
+      <path value="IVL_INT.center"/>
+      <label value="Central Value"/>
+      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -66,17 +87,17 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
     </element>
-    <element id="IVL_INT.center">
-      <path value="IVL_INT.center"/>
-      <label value="Central Value"/>
-      <definition value="The arithmetic mean of the interval (low plus high divided by 2). The purpose of distinguishing the center as a semantic property is for conversions of intervals from and to point values."/>
+    <element id="IVL_INT.high">
+      <path value="IVL_INT.high"/>
+      <label value="High Boundary"/>
+      <definition value="This is the high limit of the interval."/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-INT"/>
       </type>
     </element>
   </differential>

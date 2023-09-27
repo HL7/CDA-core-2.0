@@ -28,7 +28,6 @@
   <differential>
     <element id="Component2">
       <path value="Component2"/>
-      <definition value="Element Component2"/>
       <min value="1"/>
       <max value="1"/>
       <constraint>
@@ -47,6 +46,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -55,12 +55,12 @@
     </element>
     <element id="Component2.typeCode">
       <path value="Component2.typeCode"/>
-      <definition value="Element Component2.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="AUT"/>
       <binding>
@@ -70,12 +70,12 @@
     </element>
     <element id="Component2.contextConductionInd">
       <path value="Component2.contextConductionInd"/>
-      <definition value="Element Component2.contextConductionInd"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
       <defaultValueBoolean value="true"/>
     </element>
@@ -108,7 +108,6 @@
     </element>
     <element id="Component2.nonXMLBody">
       <path value="Component2.nonXMLBody"/>
-      <definition value="Element Component2.nonXMLBody"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -117,7 +116,6 @@
     </element>
     <element id="Component2.structuredBody">
       <path value="Component2.structuredBody"/>
-      <definition value="Element Component2.structuredBody"/>
       <min value="0"/>
       <max value="1"/>
       <type>

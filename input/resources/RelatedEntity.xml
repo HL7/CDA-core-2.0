@@ -28,18 +28,17 @@
   <differential>
     <element id="RelatedEntity">
       <path value="RelatedEntity"/>
-      <definition value="Element RelatedEntity"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="RelatedEntity.classCode">
       <path value="RelatedEntity.classCode"/>
-      <definition value="Element RelatedEntity.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       
       <binding>
@@ -58,7 +57,6 @@
     </element>
     <element id="RelatedEntity.code">
       <path value="RelatedEntity.code"/>
-      <definition value="Element RelatedEntity.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -71,7 +69,6 @@
     </element>
     <element id="RelatedEntity.addr">
       <path value="RelatedEntity.addr"/>
-      <definition value="Element RelatedEntity.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -80,7 +77,6 @@
     </element>
     <element id="RelatedEntity.telecom">
       <path value="RelatedEntity.telecom"/>
-      <definition value="Element RelatedEntity.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -89,7 +85,6 @@
     </element>
     <element id="RelatedEntity.effectiveTime">
       <path value="RelatedEntity.effectiveTime"/>
-      <definition value="Element RelatedEntity.effectiveTime"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -98,7 +93,6 @@
     </element>
     <element id="RelatedEntity.relatedPerson">
       <path value="RelatedEntity.relatedPerson"/>
-      <definition value="Element RelatedEntity.relatedPerson"/>
       <min value="0"/>
       <max value="1"/>
       <type>

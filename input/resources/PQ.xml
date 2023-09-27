@@ -29,16 +29,6 @@
       <min value="1"/>
       <max value="*"/>
     </element>
-    <element id="PQ.inclusive">
-      <path value="PQ.inclusive"/>
-      <definition value="Element PQ.inclusive"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
     <element id="PQ.unit">
       <path value="PQ.unit"/>
       <representation value="xmlAttr"/>
@@ -48,6 +38,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="1"/>
     </element>
@@ -60,6 +51,7 @@
       <max value="1"/>
       <type>
         <code value="decimal"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/real-simple"/>
       </type>
     </element>
     <element id="PQ.translation">

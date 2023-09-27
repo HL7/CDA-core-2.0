@@ -29,18 +29,17 @@
   <differential>
     <element id="NonXMLBody">
       <path value="NonXMLBody"/>
-      <definition value="Element NonXMLBody"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="NonXMLBody.classCode">
       <path value="NonXMLBody.classCode"/>
-      <definition value="Element NonXMLBody.classCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DOCBODY"/>      
       <binding>
@@ -50,12 +49,12 @@
     </element>
     <element id="NonXMLBody.moodCode">
       <path value="NonXMLBody.moodCode"/>
-      <definition value="Element NonXMLBody.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="EVN"/>      
       <binding>
@@ -65,7 +64,6 @@
     </element>
     <element id="NonXMLBody.text">
       <path value="NonXMLBody.text"/>
-      <definition value="Element NonXMLBody.text"/>
       <min value="1"/>
       <max value="1"/>
       <type>
@@ -74,7 +72,6 @@
     </element>
     <element id="NonXMLBody.confidentialityCode">
       <path value="NonXMLBody.confidentialityCode"/>
-      <definition value="Element NonXMLBody.confidentialityCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -83,7 +80,6 @@
     </element>
     <element id="NonXMLBody.languageCode">
       <path value="NonXMLBody.languageCode"/>
-      <definition value="Element NonXMLBody.languageCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>

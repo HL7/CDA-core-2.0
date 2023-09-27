@@ -32,7 +32,6 @@
   <differential>
     <element id="RecordTarget">
       <path value="RecordTarget"/>
-      <definition value="Element RecordTarget"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -45,6 +44,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -53,12 +53,12 @@
     </element>
     <element id="RecordTarget.typeCode">
       <path value="RecordTarget.typeCode"/>
-      <definition value="Element RecordTarget.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="RCT"/>
       
@@ -69,12 +69,12 @@
     </element>
     <element id="RecordTarget.contextControlCode">
       <path value="RecordTarget.contextControlCode"/>
-      <definition value="Element RecordTarget.contextControlCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="OP"/>
       
@@ -112,7 +112,6 @@
     </element>
     <element id="RecordTarget.patientRole">
       <path value="RecordTarget.patientRole"/>
-      <definition value="Element RecordTarget.patientRole"/>
       <min value="1"/>
       <max value="1"/>
       <type>

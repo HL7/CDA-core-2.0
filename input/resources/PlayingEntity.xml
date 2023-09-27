@@ -22,18 +22,17 @@
   <differential>
     <element id="PlayingEntity">
       <path value="PlayingEntity"/>
-      <definition value="Element PlayingEntity"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="PlayingEntity.classCode">
       <path value="PlayingEntity.classCode"/>
-      <definition value="Element PlayingEntity.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ENT"/>
       
@@ -44,12 +43,12 @@
     </element>
     <element id="PlayingEntity.determinerCode">
       <path value="PlayingEntity.determinerCode"/>
-      <definition value="Element PlayingEntity.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INSTANCE"/>      
       <binding>
@@ -68,7 +67,6 @@
     </element>
     <element id="PlayingEntity.code">
       <path value="PlayingEntity.code"/>
-      <definition value="Element PlayingEntity.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -81,7 +79,6 @@
     </element>
     <element id="PlayingEntity.quantity">
       <path value="PlayingEntity.quantity"/>
-      <definition value="Element PlayingEntity.quantity"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -90,16 +87,28 @@
     </element>
     <element id="PlayingEntity.name">
       <path value="PlayingEntity.name"/>
-      <definition value="Element PlayingEntity.name"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PN"/>
+      </type>
+    </element>
+    <element id="PlayingEntity.sdtcBirthTime">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+        <valueUri value="birthTime"/>
+      </extension>
+      <path value="PlayingEntity.sdtcBirthTime"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="PlayingEntity.desc">
       <path value="PlayingEntity.desc"/>
-      <definition value="Element PlayingEntity.desc"/>
       <min value="0"/>
       <max value="1"/>
       <type>

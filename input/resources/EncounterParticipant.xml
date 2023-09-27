@@ -28,7 +28,6 @@
   <differential>
     <element id="EncounterParticipant">
       <path value="EncounterParticipant"/>
-      <definition value="Element EncounterParticipant"/>
       <min value="1"/>
       <max value="1"/>
     </element>
@@ -41,6 +40,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,12 +49,12 @@
     </element>
     <element id="EncounterParticipant.typeCode">
       <path value="EncounterParticipant.typeCode"/>
-      <definition value="Element EncounterParticipant.typeCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -90,7 +90,6 @@
     </element>
     <element id="EncounterParticipant.time">
       <path value="EncounterParticipant.time"/>
-      <definition value="Element EncounterParticipant.time"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -99,7 +98,6 @@
     </element>
     <element id="EncounterParticipant.assignedEntity">
       <path value="EncounterParticipant.assignedEntity"/>
-      <definition value="Element EncounterParticipant.assignedEntity"/>
       <min value="0"/>
       <max value="1"/>
       <type>

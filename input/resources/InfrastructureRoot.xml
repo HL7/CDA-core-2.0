@@ -16,8 +16,8 @@
     <valueUri value="infrastructureRoot"/>
   </extension> 
   <url value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
-  <name value="Base Type for all classes in the CDA structure"/>
-  <title value="InfrastructureRoot"/>
+  <name value="InfrastructureRoot"/>
+  <title value="InfrastructureRoot (Base Type for all CDA Classes)"/>
   <status value="active"/>
   <experimental value="false"/>
   <publisher value="HL7"/>
@@ -30,7 +30,6 @@
   <differential>
     <element id="InfrastructureRoot">
       <path value="InfrastructureRoot"/>
-      <definition value="Element InfrastructureRoot"/>
       <min value="1"/>
       <max value="*"/>
     </element>

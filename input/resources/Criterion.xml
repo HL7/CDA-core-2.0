@@ -22,18 +22,17 @@
   <differential>
     <element id="Criterion">
       <path value="Criterion"/>
-      <definition value="Element Criterion"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Criterion.classCode">
       <path value="Criterion.classCode"/>
-      <definition value="Element Criterion.classCode"/>
       <representation value="xmlAttr"/>
       <min value="1"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="OBS"/>
       
@@ -44,12 +43,12 @@
     </element>
     <element id="Criterion.moodCode">
       <path value="Criterion.moodCode"/>
-      <definition value="Element Criterion.moodCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="EVN.CRT"/>      
       <binding>
@@ -68,7 +67,6 @@
     </element>
     <element id="Criterion.code">
       <path value="Criterion.code"/>
-      <definition value="Element Criterion.code"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -81,7 +79,6 @@
     </element>
     <element id="Criterion.text">
       <path value="Criterion.text"/>
-      <definition value="Element Criterion.text"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -90,7 +87,6 @@
     </element>
     <element id="Criterion.value">
       <path value="Criterion.value"/>
-      <definition value="Element Criterion.value"/>
       <representation value="typeAttr"/>
       <min value="0"/>
       <max value="1"/>

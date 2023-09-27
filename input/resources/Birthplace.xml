@@ -28,18 +28,17 @@
   <differential>
     <element id="Birthplace">
       <path value="Birthplace"/>
-      <definition value="Element Birthplace"/>
       <min value="1"/>
       <max value="1"/>
     </element>
     <element id="Birthplace.classCode">
       <path value="Birthplace.classCode"/>
-      <definition value="Element Birthplace.classCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="BIRTHPL"/>      
       <binding>
@@ -58,7 +57,6 @@
     </element>
     <element id="Birthplace.place">
       <path value="Birthplace.place"/>
-      <definition value="Element Birthplace.place"/>
       <min value="1"/>
       <max value="1"/>
       <type>

@@ -29,18 +29,33 @@
   <differential>
     <element id="Organization">
       <path value="Organization"/>
-      <definition value="Element Organization"/>
       <min value="1"/>
       <max value="1"/>
     </element>
+    <element id="Organization.nullFlavor">
+      <path value="Organization.nullFlavor"/>
+      <representation value="xmlAttr"/>
+      <label value="Exceptional Value Detail"/>
+      <definition value="If a value is an exceptional value (NULL-value), this specifies in what way and why proper information is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-NullFlavor"/>
+      </binding>
+    </element>
     <element id="Organization.classCode">
       <path value="Organization.classCode"/>
-      <definition value="Element Organization.classCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="ORG"/>      
       <binding>
@@ -50,18 +65,34 @@
     </element>
     <element id="Organization.determinerCode">
       <path value="Organization.determinerCode"/>
-      <definition value="Element Organization.determinerCode"/>
       <representation value="xmlAttr"/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="INSTANCE"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
       </binding>
+    </element>
+    <element id="Organization.realmCode">
+      <path value="Organization.realmCode"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
+      </type>
+    </element>
+    <element id="Organization.typeId">
+      <path value="Organization.typeId"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
+      </type>
     </element>
     <element id="Organization.templateId">
       <path value="Organization.templateId"/>
@@ -74,7 +105,6 @@
     </element>
     <element id="Organization.id">
       <path value="Organization.id"/>
-      <definition value="Element Organization.id"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -83,7 +113,6 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name"/>
-      <definition value="Element Organization.name"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -92,7 +121,6 @@
     </element>
     <element id="Organization.telecom">
       <path value="Organization.telecom"/>
-      <definition value="Element Organization.telecom"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -101,7 +129,6 @@
     </element>
     <element id="Organization.addr">
       <path value="Organization.addr"/>
-      <definition value="Element Organization.addr"/>
       <min value="0"/>
       <max value="*"/>
       <type>
@@ -110,7 +137,6 @@
     </element>
     <element id="Organization.standardIndustryClassCode">
       <path value="Organization.standardIndustryClassCode"/>
-      <definition value="Element Organization.standardIndustryClassCode"/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -123,7 +149,6 @@
     </element>
     <element id="Organization.asOrganizationPartOf">
       <path value="Organization.asOrganizationPartOf"/>
-      <definition value="Element Organization.asOrganizationPartOf"/>
       <min value="0"/>
       <max value="1"/>
       <type>

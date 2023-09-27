@@ -51,6 +51,7 @@
       </base>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -66,6 +67,7 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
     <element id="AD.use">
@@ -77,6 +79,7 @@
       <max value="*"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="AD.delimiter">
@@ -106,6 +109,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DEL"/>
     </element>
@@ -136,6 +140,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="CNT"/>
     </element>
@@ -166,6 +171,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="STA"/>
     </element>
@@ -196,6 +202,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="CPA"/>
     </element>
@@ -226,6 +233,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="CTY"/>
     </element>
@@ -256,6 +264,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="ZIP"/>
     </element>
@@ -286,6 +295,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="SAL"/>
     </element>
@@ -316,6 +326,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="BNR"/>
     </element>
@@ -346,6 +357,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="BNN"/>
     </element>
@@ -376,6 +388,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DIR"/>
     </element>
@@ -406,6 +419,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="STR"/>
     </element>
@@ -436,6 +450,7 @@
       </base>-->
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="STB"/>
     </element>
@@ -462,6 +477,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="STTYP"/>
     </element>
@@ -484,6 +500,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="ADL"/>
     </element>
@@ -506,6 +523,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="UNID"/>
     </element>
@@ -528,6 +546,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="UNIT"/>
     </element>
@@ -550,6 +569,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="CAR"/>
     </element>
@@ -572,6 +592,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="CEN"/>
     </element>
@@ -594,6 +615,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DAL"/>
     </element>
@@ -616,6 +638,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DINST"/>
     </element>
@@ -638,6 +661,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DINSTA"/>
     </element>
@@ -660,6 +684,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DINSTQ"/>
     </element>
@@ -682,6 +707,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DMOD"/>
     </element>
@@ -704,6 +730,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="DMODID"/>
     </element>
@@ -726,6 +753,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="BNS"/>
     </element>
@@ -748,6 +776,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="POB"/>
     </element>
@@ -770,6 +799,7 @@
       
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="PRE"/>
     </element>
@@ -779,9 +809,9 @@
       <definition value="Textual representation of (part of) the address"/>
       <min value="0"/>
       <max value="1"/>
-      
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="AD.useablePeriod[x]">
