@@ -814,11 +814,11 @@
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
-    <element id="AD.useablePeriod[x]">
+    <element id="AD.useablePeriod">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-defaulttype">
         <valueCanonical value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
       </extension>
-      <path value="AD.useablePeriod[x]"/>
+      <path value="AD.useablePeriod"/>
       <representation value="typeAttr"/>
       <label value="Useable Period"/>
       <definition value="A General Timing Specification (GTS) specifying the periods of time during which the address can be used. This is used to specify different addresses for different times of the week or year."/>
