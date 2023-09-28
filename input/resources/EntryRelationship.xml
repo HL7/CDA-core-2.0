@@ -54,7 +54,7 @@
     <element id="EntryRelationship.inversionInd">
       <path value="EntryRelationship.inversionInd"/>
       <representation value="xmlAttr"/>
-      <definition>The entryRelationship.inversionInd can be set to "true" to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed.</definition>
+      <definition value="The entryRelationship.inversionInd can be set to &quot;true&quot; to indicate that the relationship should be interpreted as if the roles of the source and target entries were reversed."/>
       <min value="0"/>
       <max value="1"/>
       <type>
@@ -65,7 +65,7 @@
     <element id="EntryRelationship.contextConductionInd">
       <path value="EntryRelationship.contextConductionInd"/>
       <representation value="xmlAttr"/>
-      <definition>The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at "true", whereas here the value is defaulted to "true", and can be changed to "false" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.</definition>
+      <definition value="The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at &quot;true&quot;, whereas here the value is defaulted to &quot;true&quot;, and can be changed to &quot;false&quot; when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context."/>
       <min value="0"/>
       <max value="1"/>
       <type>
