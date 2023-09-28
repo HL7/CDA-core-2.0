@@ -62,7 +62,6 @@
     <element id="OrganizerComponent.contextConductionInd">
       <path value="OrganizerComponent.contextConductionInd"/>
       <representation value="xmlAttr"/>
-      <definition>The entryRelationship.contextConductionInd differs from the otherwise common use of this attribute in that in all other cases where this attribute is used, the value is fixed at "true", whereas here the value is defaulted to "true", and can be changed to "false" when referencing an entry in the same document. Setting the context conduction to false when referencing an entry in the same document keeps clear the fact that the referenced object retains its original context.</definition>
       <min value="0"/>
       <max value="1"/>
       <type>
