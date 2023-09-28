@@ -19,7 +19,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice</a></li>
 				<li><a href="StructureDefinition-Authorization.html">Authorization</a></li>
 				<li><a href="StructureDefinition-Birthplace.html">Birthplace</a></li>
-				<li><a href="StructureDefinition-Component2.html">Component2</a></li>
+				<li><a href="StructureDefinition-Component.html">Component</a></li>
 				<li><a href="StructureDefinition-ComponentOf.html">ComponentOf</a></li>
 				<li><a href="StructureDefinition-Consent.html">Consent</a></li>
 				<li><a href="StructureDefinition-Criterion.html">Criterion</a></li>
