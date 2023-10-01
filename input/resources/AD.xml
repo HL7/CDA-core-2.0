@@ -810,10 +810,11 @@
       </type>
       <fixedCode value="PRE"/>
     </element>
-    <element id="AD.other">
-      <path value="AD.other"/>
+    <element id="AD.xmlText">
+      <path value="AD.xmlText"/>
       <representation value="xmlText"/>
-      <definition value="Textual representation of (part of) the address"/>
+      <short value="Allows for mixed text content"/>
+      <comment value="This element is represented in XML as textual content. The actual name &quot;xmlText&quot; will not appear in a CDA instance."/>
       <min value="0"/>
       <max value="1"/>
       <type>
