@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="IVXB-PQ"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>A physical quantity interval boundary containing an inclusive/exclusive flag.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB-PQ"/>
+  <name value="IVXB_PQ"/>
+  <title value="IVXB_PQ: Interval Boundary PhysicalQuantity (V3 Data Type)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="A physical quantity interval boundary containing an inclusive/exclusive flag."/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/IVXB_PQ"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="IVXB_PQ">
+      <path value="IVXB_PQ"/>
+      <definition value="A physical quantity interval boundary containing an inclusive/exclusive flag."></definition>
+      <min value="1"/>
+      <max value="*"/>
+    </element>
+    <element id="IVXB_PQ.inclusive">
+      <path value="IVXB_PQ.inclusive"/>
+      <representation value="xmlAttr"/>
+      <definition value="Specifies whether the limit is included in the interval (interval is closed) or excluded from the interval (interval is open)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
+      </type>
+      <defaultValueBoolean value="true"/>
+    </element>
+  </differential>
+</StructureDefinition>

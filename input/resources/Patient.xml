@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Patient"/>
+  <id value="Patient"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +18,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Patient"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="patient"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Patient"/>
   <name value="CDAR2.Patient"/>
   <title value="Patient (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +30,7 @@
   <description value="A LivingSubject as a recipient of health care services from a healthcare provider.&#10;The patient is the player; the provider is the scoper."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Patient"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Patient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -32,14 +42,13 @@
     <element id="Patient.classCode">
       <path value="Patient.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="PSN"/>
-      <fixedCode value="PSN"/>
-      
+      <fixedCode value="PSN"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityClassLivingSubject"/>
@@ -48,14 +57,13 @@
     <element id="Patient.determinerCode">
       <path value="Patient.determinerCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="INSTANCE"/>
-      <fixedCode value="INSTANCE"/>
-      
+      <fixedCode value="INSTANCE"/>      
       <binding>
         <strength value="required"/>
         <valueSet value="http://terminology.hl7.org/ValueSet/v3-EntityDeterminer"/>
@@ -67,7 +75,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Patient.id">
@@ -75,7 +83,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Patient.name">
@@ -83,7 +91,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PN"/>
       </type>
     </element>
     <element id="Patient.sdtcDesc">
@@ -97,7 +105,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Patient.administrativeGenderCode">
@@ -105,7 +113,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -117,7 +125,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="Patient.sdtcDeceasedInd">
@@ -131,7 +139,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Patient.sdtcDeceasedTime">
@@ -145,7 +153,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
     </element>
     <element id="Patient.sdtcMultipleBirthInd">
@@ -159,7 +167,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
     </element>
     <element id="Patient.sdtcMultipleBirthOrderNumber">
@@ -173,7 +181,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT-POS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT-POS"/>
       </type>
     </element>
     <element id="Patient.maritalStatusCode">
@@ -181,7 +189,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -193,7 +201,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -205,7 +213,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -223,7 +231,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -235,7 +243,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -253,7 +261,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -265,7 +273,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Guardian"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Guardian"/>
       </type>
     </element>
     <element id="Patient.birthplace">
@@ -273,7 +281,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Birthplace"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Birthplace"/>
       </type>
     </element>
     <element id="Patient.languageCommunication">
@@ -281,7 +289,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/LanguageCommunication"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/LanguageCommunication"/>
       </type>
     </element>
   </differential>

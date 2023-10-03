@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Observation"/>
+  <id value="Observation"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +18,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="observation"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
   <name value="CDAR2.Observation"/>
   <title value="Observation (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +30,7 @@
   <description value="A derivative of the RIM Observation class, used for representing coded and other observations.&#10;Observation.negationInd, when set to &quot;true&quot;, is a positive assertion that the Observation as a whole is negated. Some properties such as Observation.id, Observation.moodCode, and the participations are not negated. These properties always have the same meaning: i.e., the author remains the author of the negative Observation. An observation statement with negationInd is still a statement about the specific fact described by the Observation. For instance, a negated &quot;finding of wheezing on July 1&quot; means that the author positively denies that there was wheezing on July 1, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Observation"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -36,6 +46,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -49,6 +60,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="Observation.negationInd">
@@ -58,6 +70,7 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
     <element id="Observation.realmCode">
@@ -65,7 +78,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Observation.typeId">
@@ -73,7 +86,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Observation.templateId">
@@ -82,7 +95,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Observation.id">
@@ -90,7 +103,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Observation.code">
@@ -99,7 +112,7 @@
       <max value="1"/>
       <representation value="typeAttr"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -111,7 +124,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
       </type>
     </element>
     <element id="Observation.text">
@@ -120,7 +133,7 @@
       <max value="1"/>
       <representation value="typeAttr"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Observation.statusCode">
@@ -128,7 +141,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -140,7 +153,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
     <element id="Observation.priorityCode">
@@ -148,7 +161,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -160,7 +173,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-INT"/>
       </type>
     </element>
     <element id="Observation.languageCode">
@@ -168,7 +181,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -181,70 +194,73 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EN"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EN"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/REAL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/REAL"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/MO"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PQ"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/MO"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-PQ"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/EIVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SXPR-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS"/>
       </type>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RTO-PQ-PQ"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS"/>
+      </type>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RTO-PQ-PQ"/>
       </type>
     </element>
     <element id="Observation.interpretationCode">
@@ -252,7 +268,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -264,7 +280,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -277,7 +293,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
     <element id="Observation.subject">
@@ -285,59 +301,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.subject.typeCode">
-      <path value="Observation.subject.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="SBJ"/>
-      <fixedCode value="SBJ"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
-      </binding>
-    </element>
-    <element id="Observation.subject.contextControlCode">
-      <path value="Observation.subject.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Observation.subject.awarenessCode">
-      <path value="Observation.subject.awarenessCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
-      </binding>
-    </element>
-    <element id="Observation.subject.relatedSubject">
-      <path value="Observation.subject.relatedSubject"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Subject"/>
       </type>
     </element>
     <element id="Observation.specimen">
@@ -345,7 +309,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Observation.performer">
@@ -353,7 +317,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
       </type>
     </element>
     <element id="Observation.author">
@@ -361,7 +325,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Observation.informant">
@@ -369,55 +333,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.informant.typeCode">
-      <path value="Observation.informant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INF"/>
-      <fixedCode value="INF"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="Observation.informant.contextControlCode">
-      <path value="Observation.informant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Observation.informant.assignedEntity">
-      <path value="Observation.informant.assignedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-    <element id="Observation.informant.relatedEntity">
-      <path value="Observation.informant.relatedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="Observation.participant">
@@ -425,7 +341,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="Observation.entryRelationship">
@@ -433,141 +349,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-      <constraint>
-        <key value="obs-er-1"/>
-        <severity value="error"/>
-        <human value="Only one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer, and act"/>
-        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1"/>
-        <source value=""/>
-      </constraint>
-    </element>
-    <element id="Observation.entryRelationship.typeCode">
-      <path value="Observation.entryRelationship.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-
-    </element>
-    <element id="Observation.entryRelationship.inversionInd">
-      <path value="Observation.entryRelationship.inversionInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.contextConductionInd">
-      <path value="Observation.entryRelationship.contextConductionInd"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-      <defaultValueBoolean value="true"/>
-
-    </element>
-    <element id="Observation.entryRelationship.sequenceNumber">
-      <path value="Observation.entryRelationship.sequenceNumber"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.negationInd">
-      <path value="Observation.entryRelationship.negationInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.seperatableInd">
-      <path value="Observation.entryRelationship.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.observation">
-      <path value="Observation.entryRelationship.observation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.regionOfInterest">
-      <path value="Observation.entryRelationship.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.observationMedia">
-      <path value="Observation.entryRelationship.observationMedia"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.substanceAdministration">
-      <path value="Observation.entryRelationship.substanceAdministration"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.supply">
-      <path value="Observation.entryRelationship.supply"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.procedure">
-      <path value="Observation.entryRelationship.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.encounter">
-      <path value="Observation.entryRelationship.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.organizer">
-      <path value="Observation.entryRelationship.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Observation.entryRelationship.act">
-      <path value="Observation.entryRelationship.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"/>
       </type>
     </element>
     <element id="Observation.reference">
@@ -575,57 +357,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Observation.reference.typeCode">
-      <path value="Observation.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-
-    </element>
-    <element id="Observation.reference.seperatableInd">
-      <path value="Observation.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalAct">
-      <path value="Observation.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalObservation">
-      <path value="Observation.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalProcedure">
-      <path value="Observation.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="Observation.reference.externalDocument">
-      <path value="Observation.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="Observation.precondition">
@@ -633,26 +365,27 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
       </type>
     </element>
     <element id="Observation.referenceRange">
       <path value="Observation.referenceRange"/>
+      <definition value="Relates an Observation to the ObservationRange class, where the expected range of values for a particular observation can be specified."/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
       </type>
     </element>
     <element id="Observation.referenceRange.typeCode">
       <path value="Observation.referenceRange.typeCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="REFV"/>
       <fixedCode value="REFV"/>
       <binding>
         <strength value="required"/>
@@ -664,7 +397,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationRange"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationRange"/>
       </type>
     </element>
   </differential>

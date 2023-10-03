@@ -10,6 +10,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 			<ul>
 				<li><a href="StructureDefinition-ClinicalDocument.html"><strong>ClinicalDocument</strong></a></li>
 				<li><a href="StructureDefinition-Act.html">Act</a></li>
+				<li><a href="StructureDefinition-AlternateIdentification.html">AlternateIdentification</a></li>
 				<li><a href="StructureDefinition-AssignedAuthor.html">AssignedAuthor</a></li>
 				<li><a href="StructureDefinition-AssignedCustodian.html">AssignedCustodian</a></li>
 				<li><a href="StructureDefinition-AssignedEntity.html">AssignedEntity</a></li>
@@ -19,7 +20,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-AuthoringDevice.html">AuthoringDevice</a></li>
 				<li><a href="StructureDefinition-Authorization.html">Authorization</a></li>
 				<li><a href="StructureDefinition-Birthplace.html">Birthplace</a></li>
-				<li><a href="StructureDefinition-Component2.html">Component2</a></li>
+				<li><a href="StructureDefinition-Component.html">Component</a></li>
 				<li><a href="StructureDefinition-ComponentOf.html">ComponentOf</a></li>
 				<li><a href="StructureDefinition-Consent.html">Consent</a></li>
 				<li><a href="StructureDefinition-Criterion.html">Criterion</a></li>
@@ -32,16 +33,19 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Encounter.html">Encounter</a></li>
 				<li><a href="StructureDefinition-EncounterParticipant.html">EncounterParticipant</a></li>
 				<li><a href="StructureDefinition-Entity.html">Entity</a></li>
+				<li><a href="StructureDefinition-Entry.html">Entry</a></li>
+				<li><a href="StructureDefinition-EntryRelationship.html">EntryRelationship</a></li>
 				<li><a href="StructureDefinition-ExternalAct.html">ExternalAct</a></li>
 				<li><a href="StructureDefinition-ExternalDocument.html">ExternalDocument</a></li>
 				<li><a href="StructureDefinition-ExternalObservation.html">ExternalObservation</a></li>
 				<li><a href="StructureDefinition-ExternalProcedure.html">ExternalProcedure</a></li>
 				<li><a href="StructureDefinition-Guardian.html">Guardian</a></li>
 				<li><a href="StructureDefinition-HealthCareFacility.html">HealthCareFacility</a></li>
+				<li><a href="StructureDefinition-IdentifiedBy.html">IdentifiedBy</a></li>
+				<li><a href="StructureDefinition-InFulfillmentOf.html">InFulfillmentOf</a></li>
 				<li><a href="StructureDefinition-Informant.html">Informant</a></li>
 				<li><a href="StructureDefinition-InformationRecipient.html">InformationRecipient</a></li>
 				<li><a href="StructureDefinition-InfrastructureRoot.html">InfrastructureRoot</a></li>
-				<li><a href="StructureDefinition-InFulfillmentOf.html">InFulfillmentOf</a></li>
 				<li><a href="StructureDefinition-IntendedRecipient.html">IntendedRecipient</a></li>
 				<li><a href="StructureDefinition-LabeledDrug.html">LabeledDrug</a></li>
 				<li><a href="StructureDefinition-LanguageCommunication.html">LanguageCommunication</a></li>
@@ -57,6 +61,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Organization.html">Organization</a></li>
 				<li><a href="StructureDefinition-OrganizationPartOf.html">OrganizationPartOf</a></li>
 				<li><a href="StructureDefinition-Organizer.html">Organizer</a></li>
+				<li><a href="StructureDefinition-OrganizerComponent.html">OrganizerComponent</a></li>
 				<li><a href="StructureDefinition-ParentDocument.html">ParentDocument</a></li>
 				<li><a href="StructureDefinition-Participant1.html">Participant1</a></li>
 				<li><a href="StructureDefinition-Participant2.html">Participant2</a></li>
@@ -71,6 +76,7 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Precondition.html">Precondition</a></li>
 				<li><a href="StructureDefinition-Procedure.html">Procedure</a></li>
 				<li><a href="StructureDefinition-RecordTarget.html">RecordTarget</a></li>
+				<li><a href="StructureDefinition-Reference.html">Reference</a></li>
 				<li><a href="StructureDefinition-RegionOfInterest.html">RegionOfInterest</a></li>
 				<li><a href="StructureDefinition-RelatedDocument.html">RelatedDocument</a></li>
 				<li><a href="StructureDefinition-RelatedEntity.html">RelatedEntity</a></li>
@@ -80,13 +86,14 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-Specimen.html">Specimen</a></li>
 				<li><a href="StructureDefinition-SpecimenRole.html">SpecimenRole</a></li>
 				<li><a href="StructureDefinition-StructuredBody.html">StructuredBody</a></li>
+				<li><a href="StructureDefinition-Subject.html">Subject</a></li>
 				<li><a href="StructureDefinition-SubjectPerson.html">SubjectPerson</a></li>
 				<li><a href="StructureDefinition-SubstanceAdministration.html">SubstanceAdministration</a></li>
 				<li><a href="StructureDefinition-Supply.html">Supply</a></li>
 			</ul>
 		</td>
 		<td>
-			<h3>V3 Data Types</h3>
+			<h3>V3 Complex Data Types</h3>
 			<ul>
 				<li><a href="StructureDefinition-AD.html">AD: PostalAddress</a></li>
 				<li><a href="StructureDefinition-ADXP.html">ADXP: CharacterString</a></li>
@@ -101,14 +108,18 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-ED.html">ED: EncapsulatedData</a></li>
 				<li><a href="StructureDefinition-EIVL-TS.html">EIVL_TS: EventRelatedPeriodicInterval</a></li>
 				<li><a href="StructureDefinition-EN.html">EN: EntityName</a></li>
-				<li><a href="StructureDefinition-ENXP.html">ENXP: EntityNamePart</a></li>
+				<li><a href="StructureDefinition-ENXP.html">ENXP: Entity Name Part</a></li>
 				<li><a href="StructureDefinition-II.html">II: InstanceIdentifier</a></li>
+				<li><a href="StructureDefinition-INT-POS.html">INT_POS: Positive integer numbers</a></li>
 				<li><a href="StructureDefinition-INT.html">INT: IntegerNumber</a></li>
-				<li><a href="StructureDefinition-INT-POS.html">INT-POS: PositiveIntegerNumber</a></li>
 				<li><a href="StructureDefinition-IVL-INT.html">IVL_INT: Interval</a></li>
 				<li><a href="StructureDefinition-IVL-PQ.html">IVL_PQ: Interval</a></li>
 				<li><a href="StructureDefinition-IVL-TS.html">IVL_TS: Interval</a></li>
+				<li><a href="StructureDefinition-IVXB-INT.html">IVXB_INT: Interval Boundary IntegerNumber</a></li>
+				<li><a href="StructureDefinition-IVXB-PQ.html">IVXB_PQ: Interval Boundary PhysicalQuantity</a></li>
+				<li><a href="StructureDefinition-IVXB-TS.html">IVXB_TS: Interval Boundary PointInTime</a></li>
 				<li><a href="StructureDefinition-MO.html">MO: MonetaryAmount</a></li>
+				<li><a href="StructureDefinition-ON.html">ON: OrganizationName</a></li>
 				<li><a href="StructureDefinition-PIVL-TS.html">PIVL_TS: PeriodicIntervalOfTime</a></li>
 				<li><a href="StructureDefinition-PN.html">PN: PersonName</a></li>
 				<li><a href="StructureDefinition-PQ.html">PQ: PhysicalQuantity</a></li>
@@ -121,8 +132,33 @@ This FHIR Implementation Guide represents CDA using the FHIR Type Definition Fra
 				<li><a href="StructureDefinition-SXCM-TS.html">SXCM_TS: GeneralTimingSpecification</a></li>
 				<li><a href="StructureDefinition-SXPR-TS.html">SXPR_TS: Component part of GTS</a></li>
 				<li><a href="StructureDefinition-TEL.html">TEL: TelecommunicationAddress</a></li>
-				<li><a href="StructureDefinition-TS.html">TS: PointInTime</a></li>
 				<li><a href="StructureDefinition-TN.html">TN: TrivialName</a></li>
+				<li><a href="StructureDefinition-TS.html">TS: PointInTime</a></li>
+			</ul>
+		</td>
+		<td>
+			<h3>V3 Simple Data Types</h3>
+			<ul>
+				<li><a href="StructureDefinition-bin.html">bin: Binary Data</a></li>
+				<li><a href="StructureDefinition-bl-simple.html">bl: Boolean</a></li>
+				<li><a href="StructureDefinition-bn.html">bn: BooleanNonNull</a></li>
+				<li><a href="StructureDefinition-cs-simple.html">cs: Coded Simple Value</a></li>
+				<li><a href="StructureDefinition-int-simple.html">int: Integer Number</a></li>
+				<li><a href="StructureDefinition-oid.html">oid: ISO Object Identifier</a></li>
+				<li><a href="StructureDefinition-probability.html">probability: Probability</a></li>
+				<li><a href="StructureDefinition-real-simple.html">real: Real Number</a></li>
+				<li><a href="StructureDefinition-ruid.html">ruid: HL7 Reserved Identifier Scheme</a></li>
+				<li><a href="StructureDefinition-st-simple.html">st: Character String</a></li>
+				<li><a href="StructureDefinition-ts-simple.html">ts: Point in Time</a></li>
+				<li><a href="StructureDefinition-uid.html">uid: Unique Identifier String</a></li>
+				<li><a href="StructureDefinition-url.html">url: Universal Resource Locator</a></li>
+				<li><a href="StructureDefinition-uuid.html">uuid: DCE Universal Unique Identifier</a></li>
+			</ul>
+		</td>
+		<td>
+			<h3>XML Data Types</h3>
+			<ul>
+				<li><a href="StructureDefinition-xs-ID.html">xs:ID</a></li>
 			</ul>
 		</td>
 	</tr>

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="CE"/>
+  <id value="CE"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13,10 +23,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-bind"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
   <name value="CE"/>
   <title value="CE: CodedWithEquivalents (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +35,8 @@
   <description value="Coded data that consists of a coded value (CV) and, optionally, coded value(s) from other coding systems that identify the same concept. Used when alternative codes may exist."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CE"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CE">
@@ -42,7 +52,7 @@
       <min value="0"/>
       <max value="0"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
       </type>
     </element>
   </differential>

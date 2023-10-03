@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="RelatedSubject"/>
+  <id value="RelatedSubject"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +17,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="relatedSubject"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
   <name value="CDAR2.RelatedSubject"/>
   <title value="RelatedSubject (CDA Class)"/>
   <status value="active"/>
@@ -19,7 +29,7 @@
   <description value="A subject is a person playing one of several possible roles (RelatedSubject class). The entity playing the role is a person (SubjectPerson class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="RelatedSubject"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/RelatedSubject"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -35,6 +45,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PRS"/>
       
@@ -45,7 +56,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="RelatedSubject.code">
@@ -53,7 +64,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -65,7 +76,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="RelatedSubject.telecom">
@@ -73,7 +84,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="RelatedSubject.subject">
@@ -81,7 +92,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubjectPerson"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubjectPerson"/>
       </type>
     </element>
   </differential>

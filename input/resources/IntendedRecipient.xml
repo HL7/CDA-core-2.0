@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="IntendedRecipient"/>
+  <id value="IntendedRecipient"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/IntendedRecipient"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="intendedRecipient"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/IntendedRecipient"/>
   <name value="CDAR2.IntendedRecipient"/>
   <title value="IntendedRecipient (CDA Class)"/>
   <status value="active"/>
@@ -13,7 +23,7 @@
   <description value="IntendedRecipient (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="IntendedRecipient"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/IntendedRecipient"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -29,6 +39,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="ASSIGNED"/>
     </element>
@@ -38,7 +49,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="IntendedRecipient.id">
@@ -46,7 +57,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="IntendedRecipient.sdtcIdentifiedBy">
@@ -60,7 +71,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="IntendedRecipient.addr">
@@ -68,7 +79,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="IntendedRecipient.telecom">
@@ -76,7 +87,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="IntendedRecipient.informationRecipient">
@@ -84,7 +95,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
       </type>
     </element>
     <element id="IntendedRecipient.receivedOrganization">
@@ -92,7 +103,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

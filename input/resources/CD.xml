@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="CD"/>
+  <id value="CD"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +26,7 @@
   <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
   <name value="CD"/>
   <title value="CD: ConceptDescriptor (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +35,8 @@
   <description value="A concept descriptor represents any kind of concept usually by giving a code defined in a code system. A concept descriptor can contain the original text or phrase that served as the basis of the coding and one or more translations into different coding systems. A concept descriptor can also contain qualifiers to describe, e.g., the concept of a &quot;left foot&quot; as a postcoordinated term built from the primary code &quot;FOOT&quot; and the qualifier &quot;LEFT&quot;. In cases of an exceptional value, the concept descriptor need not contain a code but only the original text describing that concept."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CD"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CD">
@@ -43,7 +53,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="CD.codeSystem">
@@ -55,6 +66,9 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid"/>
       </type>
     </element>
     <element id="CD.codeSystemName">
@@ -66,6 +80,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.codeSystemVersion">
@@ -77,6 +92,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.displayName">
@@ -88,6 +104,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.sdtcValueSet">
@@ -109,6 +126,7 @@
       </base>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid"/>
       </type>
     </element>
     <element id="CD.sdtcValueSetVersion">
@@ -125,6 +143,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="CD.originalText">
@@ -134,7 +153,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="CD.qualifier">
@@ -144,7 +163,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
       </type>
     </element>
     <element id="CD.translation">
@@ -155,7 +174,7 @@
       <max value="*"/>
       <representation value="typeAttr"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
   </differential>

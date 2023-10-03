@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="AssignedEntity"/>
+  <id value="AssignedEntity"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="assignedEntity"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
   <name value="CDAR2.AssignedEntity"/>
   <title value="AssignedEntity (CDA Class)"/>
   <status value="active"/>
@@ -13,7 +23,7 @@
   <description value="AssignedEntity (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="AssignedEntity"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedEntity"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -25,12 +35,12 @@
     <element id="AssignedEntity.classCode">
       <path value="AssignedEntity.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
       <binding>
         <strength value="required"/>
@@ -43,7 +53,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="AssignedEntity.id">
@@ -51,7 +61,7 @@
       <min value="1"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="AssignedEntity.sdtcIdentifiedBy">
@@ -61,11 +71,12 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
         <valueString value="identifiedBy"/>
       </extension>
+      <definition value="Element AssignedEntity.sdtcIdentifiedBy"/>
       <path value="AssignedEntity.sdtcIdentifiedBy"/>
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="AssignedEntity.code">
@@ -73,7 +84,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -85,7 +96,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="AssignedEntity.telecom">
@@ -93,7 +104,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="AssignedEntity.assignedPerson">
@@ -101,7 +112,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
       </type>
     </element>
     <element id="AssignedEntity.representedOrganization">
@@ -109,7 +120,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

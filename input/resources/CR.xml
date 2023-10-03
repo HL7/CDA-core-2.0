@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="CR"/>
+  <id value="CR"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +17,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CR"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
   <name value="CR"/>
   <title value="CR: ConceptRole (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +26,8 @@
   <description value="A concept qualifier code with optionally named role. Both qualifier role and value codes must be defined by the coding system of the CD containing the concept qualifier. For example, if SNOMED RT defines a concept &quot;leg&quot;, a role relation &quot;has-laterality&quot;, and another concept &quot;left&quot;, the concept role relation allows to add the qualifier &quot;has-laterality: left&quot; to a primary code &quot;leg&quot; to construct the meaning &quot;left leg&quot;."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CR"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CR"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CR">
@@ -38,6 +45,7 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bn"/>
       </type>
     </element>
     <element id="CR.name">
@@ -47,7 +55,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
       </type>
     </element>
     <element id="CR.value">
@@ -57,7 +65,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
   </differential>

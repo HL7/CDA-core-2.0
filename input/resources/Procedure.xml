@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Procedure"/>
+  <id value="Procedure"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -11,7 +18,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="procedure"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
   <name value="CDAR2.Procedure"/>
   <title value="Procedure (CDA Class)"/>
   <status value="active"/>
@@ -20,7 +30,7 @@
   <description value="A derivative of the RIM Procedure class, used for representing procedures.&#10;Procedure.negationInd, when set to &quot;true&quot;, is a positive assertion that the Procedure as a whole is negated. Some properties such as Procedure.id, Procedure.moodCode, and the participations are not affected. These properties always have the same meaning: i.e., the author remains the author of the negative Procedure. A procedure statement with negationInd is still a statement about the specific fact described by the Procedure. For instance, a negated &quot;appendectomy performed&quot; means that the author positively denies that there was ever an appendectomy performed, and that he takes the same responsibility for such statement and the same requirement to have evidence for such statement than if he had not used negation."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="Procedure"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -36,6 +46,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <defaultValueCode value="PROC"/>
       <fixedCode value="PROC"/>
@@ -51,6 +62,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="Procedure.realmCode">
@@ -58,7 +70,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="Procedure.typeId">
@@ -66,7 +78,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Procedure.templateId">
@@ -75,7 +87,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Procedure.id">
@@ -83,7 +95,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="Procedure.code">
@@ -92,7 +104,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
     <element id="Procedure.negationInd">
@@ -102,6 +114,7 @@
       <max value="1"/>
       <type>
         <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
       </type>
     </element>
     <element id="Procedure.text">
@@ -109,7 +122,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
     <element id="Procedure.statusCode">
@@ -117,7 +130,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -129,7 +142,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IVL-TS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS"/>
       </type>
     </element>
     <element id="Procedure.priorityCode">
@@ -137,7 +150,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -149,7 +162,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -162,7 +175,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
     </element>
     <element id="Procedure.approachSiteCode">
@@ -171,7 +184,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
     <element id="Procedure.targetSiteCode">
@@ -180,7 +193,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CD"/>
       </type>
     </element>
     <element id="Procedure.subject">
@@ -188,59 +201,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Procedure.subject.typeCode">
-      <path value="Procedure.subject.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="SBJ"/>
-      <fixedCode value="SBJ"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationTargetSubject"/>
-      </binding>
-    </element>
-    <element id="Procedure.subject.contextControlCode">
-      <path value="Procedure.subject.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Procedure.subject.awarenessCode">
-      <path value="Procedure.subject.awarenessCode"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-TargetAwareness"/>
-      </binding>
-    </element>
-    <element id="Procedure.subject.relatedSubject">
-      <path value="Procedure.subject.relatedSubject"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedSubject"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Subject"/>
       </type>
     </element>
     <element id="Procedure.specimen">
@@ -248,7 +209,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Specimen"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Specimen"/>
       </type>
     </element>
     <element id="Procedure.performer">
@@ -256,7 +217,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Performer2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Performer2"/>
       </type>
     </element>
     <element id="Procedure.author">
@@ -264,7 +225,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Author"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Author"/>
       </type>
     </element>
     <element id="Procedure.informant">
@@ -272,55 +233,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Procedure.informant.typeCode">
-      <path value="Procedure.informant.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="INF"/>
-      <fixedCode value="INF"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationInformationGenerator"/>
-      </binding>
-    </element>
-    <element id="Procedure.informant.contextControlCode">
-      <path value="Procedure.informant.contextControlCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <defaultValueCode value="OP"/>
-      <fixedCode value="OP"/>
-      
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ContextControl"/>
-      </binding>
-    </element>
-    <element id="Procedure.informant.assignedEntity">
-      <path value="Procedure.informant.assignedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AssignedEntity"/>
-      </type>
-    </element>
-    <element id="Procedure.informant.relatedEntity">
-      <path value="Procedure.informant.relatedEntity"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RelatedEntity"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Informant"/>
       </type>
     </element>
     <element id="Procedure.participant">
@@ -328,7 +241,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Participant2"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Participant2"/>
       </type>
     </element>
     <element id="Procedure.entryRelationship">
@@ -336,141 +249,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-      <constraint>
-        <key value="proc-er-1"/>
-        <severity value="error"/>
-        <human value="Only one of observation, regionOfInterest, observationMedia, substanceAdministration, supply, procedure, encounter, organizer, and act"/>
-        <expression value="(observation | regionOfInterest | observationMedia | substanceAdministration | supply | procedure | encounter | organizer | act).count() = 1"/>
-        <source value=""/>
-      </constraint>
-    </element>
-    <element id="Procedure.entryRelationship.typeCode">
-      <path value="Procedure.entryRelationship.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      
-    </element>
-    <element id="Procedure.entryRelationship.inversionInd">
-      <path value="Procedure.entryRelationship.inversionInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.contextConductionInd">
-      <path value="Procedure.entryRelationship.contextConductionInd"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-      <defaultValueBoolean value="true"/>
-      
-    </element>
-    <element id="Procedure.entryRelationship.sequenceNumber">
-      <path value="Procedure.entryRelationship.sequenceNumber"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/INT"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.negationInd">
-      <path value="Procedure.entryRelationship.negationInd"/>
-      <representation value="xmlAttr"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="boolean"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.seperatableInd">
-      <path value="Procedure.entryRelationship.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.observation">
-      <path value="Procedure.entryRelationship.observation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Observation"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.regionOfInterest">
-      <path value="Procedure.entryRelationship.regionOfInterest"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/RegionOfInterest"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.observationMedia">
-      <path value="Procedure.entryRelationship.observationMedia"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ObservationMedia"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.substanceAdministration">
-      <path value="Procedure.entryRelationship.substanceAdministration"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/SubstanceAdministration"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.supply">
-      <path value="Procedure.entryRelationship.supply"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Supply"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.procedure">
-      <path value="Procedure.entryRelationship.procedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Procedure"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.encounter">
-      <path value="Procedure.entryRelationship.encounter"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Encounter"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.organizer">
-      <path value="Procedure.entryRelationship.organizer"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organizer"/>
-      </type>
-    </element>
-    <element id="Procedure.entryRelationship.act">
-      <path value="Procedure.entryRelationship.act"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Act"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/EntryRelationship"/>
       </type>
     </element>
     <element id="Procedure.reference">
@@ -478,57 +257,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="Element"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.typeCode">
-      <path value="Procedure.reference.typeCode"/>
-      <representation value="xmlAttr"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      
-    </element>
-    <element id="Procedure.reference.seperatableInd">
-      <path value="Procedure.reference.seperatableInd"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/BL"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalAct">
-      <path value="Procedure.reference.externalAct"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalAct"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalObservation">
-      <path value="Procedure.reference.externalObservation"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalObservation"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalProcedure">
-      <path value="Procedure.reference.externalProcedure"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalProcedure"/>
-      </type>
-    </element>
-    <element id="Procedure.reference.externalDocument">
-      <path value="Procedure.reference.externalDocument"/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ExternalDocument"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Reference"/>
       </type>
     </element>
     <element id="Procedure.precondition">
@@ -536,7 +265,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Precondition"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Precondition"/>
       </type>
     </element>
   </differential>

@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ED"/>
+  <id value="ED"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +17,7 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
   <name value="ED"/>
   <title value="ED: EncapsulatedData (V3 Data Type)"/>
   <status value="active"/>
@@ -19,8 +26,8 @@
   <description value="Data that is primarily intended for human interpretation or for further machine processing outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information in as defined by a different standard (e.g., XML-signatures.) Instead of the data itself, an may contain only a reference (see .) Note that the data type is a specialization of the data type when the media type is text/plain."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ED"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ANY"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ANY"/>
   <derivation value="specialization"/>
   <differential>
     <element id="ED">
@@ -38,6 +45,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.compression">
@@ -49,6 +57,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -64,6 +73,7 @@
       <max value="1"/>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.integrityCheckAlgorithm">
@@ -75,6 +85,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -90,6 +101,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.mediaType">
@@ -101,6 +113,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.representation">
@@ -110,19 +123,24 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="ED.data[x]">
       <path value="ED.data[x]"/>
       <representation value="xmlText"/>
+      <short value="Allows for mixed text content"/>
       <definition value="Data that is primarily intended for human interpretation or for further machine processing is outside the scope of HL7. This includes unformatted or formatted written language, multimedia data, or structured information as defined by a different standard (e.g., XML-signatures.)"/>
+      <comment value="This element is represented in XML as textual content. The actual name &quot;xmlText&quot; will not appear in a CDA instance."/>
       <min value="0"/>
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
       <type>
         <code value="base64Binary"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bin"/>
       </type>
     </element>
     <element id="ED.reference">
@@ -132,7 +150,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="ED.thumbnail">
@@ -142,7 +160,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/ED"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ED"/>
       </type>
     </element>
   </differential>

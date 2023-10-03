@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="RecordTarget"/>
+  <id value="RecordTarget"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -14,7 +21,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/RecordTarget"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="recordTarget"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/RecordTarget"/>
   <name value="CDAR2.RecordTarget"/>
   <title value="RecordTarget (CDA Class)"/>
   <status value="active"/>
@@ -23,7 +33,7 @@
   <description value="The recordTarget represents the medical record that this document belongs to. A clinical document typically has exactly one recordTarget participant. In the uncommon case where a clinical document (such as a group encounter note) is placed into more than one patient chart, more than one recordTarget participants can be stated. The recordTarget(s) of a document are stated in the header and propagate to nested content, where they cannot be overridden (see See CDA Context (§ 4.4 ))."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="RecordTarget"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/RecordTarget"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -41,6 +51,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <binding>
         <strength value="required"/>
@@ -54,6 +65,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="RCT"/>
       
@@ -69,6 +81,7 @@
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
       <fixedCode value="OP"/>
       
@@ -83,7 +96,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CS"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CS"/>
       </type>
     </element>
     <element id="RecordTarget.typeId">
@@ -92,7 +105,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="RecordTarget.templateId">
@@ -101,7 +114,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="RecordTarget.patientRole">
@@ -109,7 +122,7 @@
       <min value="1"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/PatientRole"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/PatientRole"/>
       </type>
     </element>
   </differential>

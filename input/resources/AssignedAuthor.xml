@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="AssignedAuthor"/>
+  <id value="AssignedAuthor"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -10,7 +17,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/AssignedAuthor"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="assignedAuthor"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor"/>
   <name value="CDAR2.AssignedAuthor"/>
   <title value="AssignedAuthor (CDA Class)"/>
   <status value="active"/>
@@ -19,7 +29,7 @@
   <description value="An author is a person in the role of an assigned author (AssignedAuthor class)."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="AssignedAuthor"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/AssignedAuthor"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -31,12 +41,12 @@
     <element id="AssignedAuthor.classCode">
       <path value="AssignedAuthor.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="ASSIGNED"/>
       <fixedCode value="ASSIGNED"/>
       <binding>
         <strength value="required"/>
@@ -49,7 +59,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="AssignedAuthor.id">
@@ -57,7 +67,7 @@
       <min value="1"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="AssignedAuthor.sdtcIdentifiedBy">
@@ -71,7 +81,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="AssignedAuthor.code">
@@ -79,7 +89,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
       </type>
       <binding>
         <strength value="extensible"/>
@@ -91,7 +101,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AD"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AD"/>
       </type>
     </element>
     <element id="AssignedAuthor.telecom">
@@ -99,7 +109,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/TEL"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/TEL"/>
       </type>
     </element>
     <element id="AssignedAuthor.assignedPerson">
@@ -107,7 +117,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Person"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Person"/>
       </type>
     </element>
     <element id="AssignedAuthor.assignedAuthoringDevice">
@@ -115,7 +125,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/AuthoringDevice"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/AuthoringDevice"/>
       </type>
     </element>
     <element id="AssignedAuthor.representedOrganization">
@@ -123,7 +133,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

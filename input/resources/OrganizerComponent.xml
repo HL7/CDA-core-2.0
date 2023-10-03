@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="OrganizerComponent"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>CDA entries represent the structured computer-processable components within a document section. Each section can contain zero to many entries.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="component"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent"/>
+  <name value="OrganizerComponent"/>
+  <title value="OrganizerComponent (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="CDA entries represent the structured computer-processable components within a document section. Each section can contain zero to many entries."/>
+  <kind value="logical"/>
+  <abstract value="true"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/OrganizerComponent"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="OrganizerComponent">
+      <path value="OrganizerComponent"/>
+      <min value="1"/>
+      <max value="*"/>
+      <constraint>
+        <key value="organizer-only-one" />
+        <severity value="error" />
+        <human value="SHALL have no more than one of act, encounter, observation, observationMedia, organizer, procedure, regionOfInterest, substanceAdministration, or supply." />
+        <expression value="(act | encounter | observation | observationMedia | organizer | procedure | regionOfInterest | substanceAdministration | supply).count() = 1" />
+      </constraint>
+    </element>
+    <element id="OrganizerComponent.typeCode">
+      <path value="OrganizerComponent.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActRelationshipHasComponent"/>
+      </binding>
+    </element>
+    <element id="OrganizerComponent.contextConductionInd">
+      <path value="OrganizerComponent.contextConductionInd"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
+      </type>
+      <fixedBoolean value="true"/>
+    </element>
+    <element id="OrganizerComponent.sequenceNumber">
+      <path value="OrganizerComponent.sequenceNumber"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.priorityNumber">
+      <path value="OrganizerComponent.priorityNumber"/>
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+        <valueUri value="urn:hl7-org:sdtc"/>
+      </extension>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/INT"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.seperatableInd">
+      <path value="OrganizerComponent.seperatableInd"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.act">
+      <path value="OrganizerComponent.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.encounter">
+      <path value="OrganizerComponent.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.observation">
+      <path value="OrganizerComponent.observation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.observationMedia">
+      <path value="OrganizerComponent.observationMedia"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.organizer">
+      <path value="OrganizerComponent.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.procedure">
+      <path value="OrganizerComponent.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.regionOfInterest">
+      <path value="OrganizerComponent.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.substanceAdministration">
+      <path value="OrganizerComponent.substanceAdministration"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
+      </type>
+    </element>
+    <element id="OrganizerComponent.supply">
+      <path value="OrganizerComponent.supply"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

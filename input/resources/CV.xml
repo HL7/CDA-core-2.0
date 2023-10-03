@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="CV"/>
+  <id value="CV"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13,10 +23,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-bind"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/CV"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
   <name value="CV"/>
   <title value="CV: CodedValue (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +35,8 @@
   <description value="Coded data, specifying only a code, code system, and optionally display name and original text. Used only as the data type for other data types' properties."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="CV"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/CE"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/CV"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/CE"/>
   <derivation value="specialization"/>
   <differential>
     <element id="CV">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="real-simple"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Primitive type 'real'</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/real-simple"/>
+  <name value="real"/>
+  <title value="real: Real Number"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="Fractional numbers. Typically used whenever quantities are measured, estimated, or computed from other real numbers.  The typical representation is decimal, where the number of significant decimal digits is known as the precision. Real numbers are needed beyond integers whenever quantities of the real world are measured, estimated, or computed from other real numbers. The term &quot;Real number&quot; in this specification is used to mean that fractional values are covered without necessarily implying the full set of the mathematical real numbers."/>
+  <kind value="primitive-type"/>
+  <abstract value="false"/>
+  <type value="decimal"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/decimal"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="decimal.id">
+      <path value="decimal.id"/>
+      <max value="0"/>
+    </element>
+    <element id="decimal.extension">
+      <path value="decimal.extension"/>
+      <max value="0"/>
+    </element>
+  </differential>
+</StructureDefinition>

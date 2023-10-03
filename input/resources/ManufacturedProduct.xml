@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ManufacturedProduct"/>
+  <id value="ManufacturedProduct"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
     <valueUri value="urn:hl7-org:v3"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/ManufacturedProduct"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="manufacturedProduct"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct"/>
   <name value="CDAR2.ManufacturedProduct"/>
   <title value="ManufacturedProduct (CDA Class)"/>
   <status value="active"/>
@@ -13,7 +23,7 @@
   <description value="ManufacturedProduct (CDA Class)"/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="ManufacturedProduct"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/ManufacturedProduct"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
   <derivation value="specialization"/>
   <differential>
@@ -25,12 +35,12 @@
     <element id="ManufacturedProduct.classCode">
       <path value="ManufacturedProduct.classCode"/>
       <representation value="xmlAttr"/>
-      <min value="1"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <defaultValueCode value="MANU"/>
       <fixedCode value="MANU"/>
       <binding>
         <strength value="required"/>
@@ -43,7 +53,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ManufacturedProduct.id">
@@ -51,7 +61,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/II"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/II"/>
       </type>
     </element>
     <element id="ManufacturedProduct.sdtcIdentifiedBy">
@@ -65,7 +75,7 @@
       <min value="0"/>
       <max value="*"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/IdentifiedBy"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/IdentifiedBy"/>
       </type>
     </element>
     <element id="ManufacturedProduct.manufacturedLabeledDrug">
@@ -73,7 +83,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/LabeledDrug"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/LabeledDrug"/>
       </type>
     </element>
     <element id="ManufacturedProduct.manufacturedMaterial">
@@ -81,7 +91,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Material"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Material"/>
       </type>
     </element>
     <element id="ManufacturedProduct.manufacturerOrganization">
@@ -89,7 +99,7 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="http://hl7.org/fhir/cda/StructureDefinition/Organization"/>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

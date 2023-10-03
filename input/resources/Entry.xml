@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Entry"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>CDA entries represent the structured computer-processable components within a document section. Each section can contain zero to many entries.</p>
+      <p>Clinical documents contain a wide breadth of content, requiring much of the RIM to enable a full and complete encoding. The current set of CDA entries have been developed in response to identified requirements and scenarios that are in CDA's scope. Rather than creating specific entries for each scenario, similar requirements are merged to create broader entries, which can then be constrained within a particular realm or implementation. This approach is consistent with the approach taken by CEN, DICOM, and OpenEHR.</p>
+      <p>The model for CDA entries is derived from the shared HL7 Clinical Statement model, which is a collaborative project between several committees striving to provide a consistent representation of clinical observations and acts across various V3 specifications.</p>
+    </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace">
+    <valueUri value="urn:hl7-org:v3"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-xml-name">
+    <valueUri value="entry"/>
+  </extension> 
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/Entry"/>
+  <name value="Entry"/>
+  <title value="Entry (CDA Class)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7"/>
+  <description value="CDA entries represent the structured computer-processable components within a document section. Each section can contain zero to many entries."/>
+  <kind value="logical"/>
+  <abstract value="true"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/Entry"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/InfrastructureRoot"/>
+  <derivation value="specialization"/>
+  <differential>
+    <element id="Entry">
+      <path value="Entry"/>
+      <min value="1"/>
+      <max value="*"/>
+      <constraint>
+        <key value="entry-only-one" />
+        <severity value="error" />
+        <human value="SHALL have no more than one of act, encounter, observation, observationMedia, organizer, procedure, regionOfInterest, substanceAdministration, or supply." />
+        <expression value="(act | encounter | observation | observationMedia | organizer | procedure | regionOfInterest | substanceAdministration | supply).count() = 1" />
+      </constraint>
+    </element>
+    <element id="Entry.typeCode">
+      <path value="Entry.typeCode"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
+      </type>
+      <defaultValueCode value="COMP"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-xActRelationshipEntry"/>
+      </binding>
+    </element>
+    <element id="Entry.contextConductionInd">
+      <path value="Entry.contextConductionInd"/>
+      <representation value="xmlAttr"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/bl-simple"/>
+      </type>
+      <fixedBoolean value="true"/>
+    </element>
+    <element id="Entry.act">
+      <path value="Entry.act"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Act"/>
+      </type>
+    </element>
+    <element id="Entry.encounter">
+      <path value="Entry.encounter"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Encounter"/>
+      </type>
+    </element>
+    <element id="Entry.observation">
+      <path value="Entry.observation"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Observation"/>
+      </type>
+    </element>
+    <element id="Entry.observationMedia">
+      <path value="Entry.observationMedia"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/ObservationMedia"/>
+      </type>
+    </element>
+    <element id="Entry.organizer">
+      <path value="Entry.organizer"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Organizer"/>
+      </type>
+    </element>
+    <element id="Entry.procedure">
+      <path value="Entry.procedure"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Procedure"/>
+      </type>
+    </element>
+    <element id="Entry.regionOfInterest">
+      <path value="Entry.regionOfInterest"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/RegionOfInterest"/>
+      </type>
+    </element>
+    <element id="Entry.substanceAdministration">
+      <path value="Entry.substanceAdministration"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/SubstanceAdministration"/>
+      </type>
+    </element>
+    <element id="Entry.supply">
+      <path value="Entry.supply"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.org/cda/stds/core/StructureDefinition/Supply"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

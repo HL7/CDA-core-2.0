@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="SC"/>
+  <id value="SC"/> 
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/logical-target">
+    <valueBoolean>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="not-applicable"/>
+      </extension>
+    </valueBoolean>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-bind"/>
+  </extension>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13,10 +23,10 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
     <valueCode value="can-bind"/>
   </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-binding-style">
+  <extension url="http://hl7.org/fhir/tools/StructureDefinition/elementdefinition-binding-style">
     <valueCode value="CDA"/>
   </extension>
-  <url value="http://hl7.org/fhir/cda/StructureDefinition/SC"/>
+  <url value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
   <name value="SC"/>
   <title value="SC: CharacterStringWithCode (V3 Data Type)"/>
   <status value="active"/>
@@ -25,8 +35,8 @@
   <description value="A character string that optionally may have a code attached. The text must always be present if a code is present. The code is often a local code."/>
   <kind value="logical"/>
   <abstract value="false"/>
-  <type value="SC"/>
-  <baseDefinition value="http://hl7.org/fhir/cda/StructureDefinition/ST"/>
+  <type value="http://hl7.org/cda/stds/core/StructureDefinition/SC"/>
+  <baseDefinition value="http://hl7.org/cda/stds/core/StructureDefinition/ST"/>
   <derivation value="specialization"/>
   <differential>
     <element id="SC">
@@ -42,7 +52,8 @@
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="string"/>
+        <code value="code"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
     </element>
     <element id="SC.codeSystem">
@@ -53,6 +64,9 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/oid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/uuid"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/ruid"/>
       </type>
     </element>
     <element id="SC.codeSystemName">
@@ -63,6 +77,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="SC.codeSystemVersion">
@@ -73,6 +88,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
     <element id="SC.displayName">
@@ -83,6 +99,7 @@
       <max value="1"/>
       <type>
         <code value="string"/>
+        <profile value="http://hl7.org/cda/stds/core/StructureDefinition/st-simple" />
       </type>
     </element>
   </differential>
