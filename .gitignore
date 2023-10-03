@@ -1,16 +1,19 @@
 output
 qa
 temp
-template/
-resources/ig-expansion-parameters.json
-resources/ig-new.json
-resources/ig-new.xml
-resources/ig-validation-parameters.json
-org.hl7.fhir.publisher.jar
-input-cache/schemas/
+template
 .DS_Store
+input-cache/schemas/
 input-cache/workgroups.xml
 input-cache/txcache/
 input-cache/publisher.jar
 
-FHIR-cda.xml
+# Local development
+node_modules
+toc.js
+package*.json
+
+# Local validation
+_updateValidator.sh
+_validate.sh
+validator_cli.jar
