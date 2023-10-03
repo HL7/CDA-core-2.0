@@ -63,11 +63,9 @@
         <code value="code"/>
         <profile value="http://hl7.org/cda/stds/core/StructureDefinition/cs-simple"/>
       </type>
-      <!-- SG 20230709 Removed the fixed code here - spurious -->
-      <!-- <fixedCode value="DOC"/> -->
       <binding>
         <strength value="required"/>
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-xServiceEventPerformer"/>
       </binding>
     </element>
     <element id="Performer1.realmCode">
