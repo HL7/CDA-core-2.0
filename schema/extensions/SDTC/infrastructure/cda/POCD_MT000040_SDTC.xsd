@@ -127,6 +127,10 @@
       Added alternateIdentification extension approved by SDWG on 2020-09
       Fix missing sdtc: prefix on functionCode approved by SDWG on 2020-10
     </xs:documentation>
+    <xs:documentation>
+      2024-03-21
+      Added CustodianOrganization/sdtc:telecom extension approved by SDWG on 2020-12
+    </xs:documentation>
 
   </xs:annotation>
   <xs:include schemaLocation="../../processable/coreschemas/datatypes.xsd" />
@@ -470,6 +474,9 @@
       <xs:element name="id" type="II" maxOccurs="unbounded" />
       <xs:element name="name" type="ON" minOccurs="0" />
       <xs:element name="telecom" type="TEL" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:telecom" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="addr" type="AD" minOccurs="0" />
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
