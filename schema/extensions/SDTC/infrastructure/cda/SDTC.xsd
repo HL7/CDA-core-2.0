@@ -206,6 +206,7 @@
       <xs:element name="templateId" type="hl7:II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="hl7:II" minOccurs="1" maxOccurs="unbounded" />
     </xs:sequence>
+    <xs:attribute name="nullFlavor" type="hl7:NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="hl7:ActClass" use="required" />
     <xs:attribute name="moodCode" type="hl7:x_DocumentActMood" use="required" />
     <xs:attribute name="determinerCode" type="hl7:EntityDeterminer" use="optional" fixed="INSTANCE" />
@@ -218,6 +219,7 @@
       <xs:element name="templateId" type="hl7:II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="actReference" type="ActReference" />
     </xs:sequence>
+    <xs:attribute name="nullFlavor" type="hl7:NullFlavor" use="optional" />
     <xs:attribute name="typeCode" type="hl7:ActRelationshipFulfills" use="required" fixed="FLFS" />
     <xs:attribute name="inversionInd" type="hl7:bl" use="optional" />
     <xs:attribute name="negationInd" type="hl7:bl" use="optional" />
@@ -234,6 +236,7 @@
       <xs:element name="templateId" type="hl7:II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="hl7:CE" />
     </xs:sequence>
+    <xs:attribute name="nullFlavor" type="hl7:NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="hl7:x_DocumentSubject" use="required" fixed="PRS" />
     <xs:attribute name="determinerCode" type="hl7:EntityDeterminer" use="optional" fixed="INSTANCE" />
   </xs:complexType>
@@ -284,6 +287,7 @@
         </xs:choice>
       </xs:choice>
     </xs:sequence>
+    <xs:attribute name="nullFlavor" type="hl7:NullFlavor" use="optional" />
     <xs:attribute name="typeCode" type="hl7:ActRelationshipType" use="optional" fixed="PRCN" />
     <xs:attribute name="negationInd" type="xs:boolean" use="optional" fixed="true" />
   </xs:complexType>
