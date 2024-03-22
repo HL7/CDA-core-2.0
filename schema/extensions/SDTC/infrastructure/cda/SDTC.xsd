@@ -171,7 +171,7 @@
   <!-- == End Attributes =================================================================== -->
     
   <!-- == Start Simple Elements =================================================================== -->
-  <xs:element name="admissionReferralSourceCode" type="hl7:CD" />
+  <xs:element name="admissionReferralSourceCode" type="hl7:CE" />
   <xs:element name="raceCode" type="hl7:CE" />
   <xs:element name="ethnicGroupCode" type="hl7:CE" />
   <xs:element name="dischargeDispositionCode" type="hl7:CE" />
