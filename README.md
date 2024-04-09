@@ -17,3 +17,7 @@ The `schema/extensions` folder contains an `SDTC` folder which has the updated C
 ## FHIR Logical Models for CDA
 
 The FHIR logical models for CDA have been moved to https://github.com/HL7/CDA-core-sd
+
+## Online Navigation of CDA
+
+Files developed for ballot to place the CDA R2.0 standard online are included in the folder ```online-navigation``

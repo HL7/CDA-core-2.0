@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="CDA.xsl"?>
+<!--
+ This file has been manually generated to demonstrate an empty conformant CCD (C-CDA 2.1)
+ This file was based on MU testing file named: 170.315_b1_toc_gold_sample2_v2.xml
+ All component/section within structuredBody have been emptied to provide a template for testing specific entries
+ Comments have been edited and/or deleted for streamlining data entry
+ Patient data has been added to prevent MU demographic omissions 
+ As of May 9, 2017 this document validates with no errors (SITE ETT) and scores an A+ (no SMART C-CDA scorecard errors)
+  
+ ********************************************************
+ Disclaimer: This sample file contains representative data elements to represent a Continuity of Care Document (CCD). 
+ The file depicts a fictional character's health data. Any resemblance to a real person is coincidental. 
+ To illustrate as many data elements as possible, the clinical scenario may not be plausible. 
+ The data in this sample file is not intended to represent real patients, people or clinical events. 
+ This sample is designed to be used in conjunction with the C-CDA Clinical Notes Implementation Guide.
+ ********************************************************
+ -->
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="/infrastructure/cda/CDA_SDTC.xsd" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc">
+	<realmCode code="US"/>
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<!-- C-CDA template ID-->
+	<templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+	<!-- CCD template ID-->
+	<templateId root="2.16.840.1.113883.10.20.22.1.2" extension="2015-08-01"/>
+	<!-- Globally unique identifier for the document  -->
+	<id root="9f27eaec-bbb7-4a5d-879f-ee1fe4ba2e59"/>
+	<code code="34133-9" displayName="Summarization of Episode Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+	<title>Empty C-CDA with no errors (or meaningful data!)</title>
+	<effectiveTime value="20170509124923-0500" />
+	<confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
+	<languageCode code="en-US"/>
+	<setId root="9f27eaec-bbb7-4a5d-879f-ee1fe4ba2e50"/>
+	<versionNumber value="1"/>
+	<recordTarget>
+		<patientRole>
+			<!-- Not a real OID in root -->
+			<id extension="DH000000001" root="1.3.6.1.4.1.22812.4.99930.4"/>
+			<addr use="HP">
+				<streetAddressLine>400 Farmington Ave.</streetAddressLine>
+				<city>Farmington</city>
+				<state>CT</state>
+				<postalCode>06032</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom value="tel:+1(917)-733-3735" use="MC"/>
+			<patient>
+				<name use="L">
+					<given>Testing</given>
+					<family>ZZZData</family>
+				</name>
+				<administrativeGenderCode code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
+				<birthTime value="19800530"/>
+				<maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode"/>
+				<religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+				<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<!-- The raceCode extension is only used if raceCode is valued -->
+				<sdtc:raceCode code="2108-9" displayName="White European" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+				<languageCommunication>
+					<languageCode code="en"/>
+					<modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+					<proficiencyLevelCode code="G" displayName="Good" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency" />
+					<preferenceInd value="true"/>
+				</languageCommunication>
+			</patient>
+			<providerOrganization>
+				<!-- Not a real identifier in extension -->
+				<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+				<name>Circle Hospital</name>
+				<telecom use="WP" value="tel:+1(555)-555-5555"/>
+				<addr use="WP">
+					<streetAddressLine>401 Farmington Ave</streetAddressLine>
+					<city>Farmington</city>
+					<state>CT</state>
+					<postalCode>06032</postalCode>
+					<country>US</country>
+				</addr>
+			</providerOrganization>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20170509124923-0500"/>
+		<assignedAuthor>
+			<!-- Not a real NPI in extension  -->
+			<id extension="111111" root="2.16.840.1.113883.4.6"/>
+			<code code="281P00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Chronic Disease Hospital"/>
+			<addr use="WP">
+				<streetAddressLine>401 Farmington Ave</streetAddressLine>
+				<city>Farmington</city>
+				<state>CT</state>
+				<postalCode>06032</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(555)-555-1002"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr</prefix>
+					<given>Round</given>
+					<family>Circles</family>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<author>
+		<time value="20170509124923-0500" />
+		<assignedAuthor>
+			<!-- Not a real extension or root -->
+			<id root="TBD" extension="TBD"/>
+			<addr use="WP">
+				<streetAddressLine>Somewhere</streetAddressLine>
+				<streetAddressLine>Someplace</streetAddressLine>
+				<city>Somecity</city>
+				<state>Somestate</state>
+				<postalCode>00000</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom nullFlavor="NI"/>
+			<!-- This has been manually generated. Below information is illustrative only -->
+			<assignedAuthoringDevice>
+				<manufacturerModelName>Diameter Health Fusion v3.0</manufacturerModelName>
+				<softwareName>Diameter Health Quality C-CDA/QRDA Generator v3.0</softwareName>
+			</assignedAuthoringDevice>
+			<representedOrganization>
+				<id nullFlavor="NI"/>
+				<name>Diameter Health, Inc.</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<dataEnterer>
+		<assignedEntity>
+			<!-- Not a real NPI in extension  -->
+			<id root="2.16.840.1.113883.4.6" extension="999999943252"/>
+			<addr use="WP">
+				<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+				<city>Portland</city>
+				<state>OR</state>
+				<postalCode>97266</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(555)-555-1002"/>
+			<assignedPerson>
+				<name>
+					<given>Mary</given>
+					<family>McDonald</family>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</dataEnterer>
+	<!-- The informant represents any sources of information for document content -->
+	<informant>
+		<assignedEntity>
+			<!-- Not a real NPI exntesion -->
+			<id extension="2222222222" root="2.16.840.1.113883.4.6"/>
+			<addr use="WP">
+				<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+				<city>Portland</city>
+				<state>OR</state>
+				<postalCode>97266</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(555)-555-1002"/>
+			<assignedPerson>
+				<name>
+					<given>Henry</given>
+					<family>Seven</family>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</informant>
+	<informant>
+		<relatedEntity classCode="PRS">
+			<!-- classCode PRS represents a person with personal relationship with the patient. -->
+			<code code="SPS" displayName="SPOUSE" codeSystem="2.16.840.1.113883.1.11.19563"
+				codeSystemName="Personal Relationship Role Type Value Set"/>
+			<relatedPerson>
+				<name>
+					<given>Caroline</given>
+					<family>Maur</family>
+				</name>
+			</relatedPerson>
+		</relatedEntity>
+	</informant>
+	<!-- The custodian represents the organization charged with maintaining the original source document -->
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<!-- Not a real NPI in extension -->
+				<id extension="99999999" root="2.16.840.1.113883.4.6"/>
+				<name>Circle Hospital</name>
+				<telecom use="WP" value="tel:+1(555)-555-5555"/>
+				<addr use="WP">
+					<streetAddressLine>401 Farmington Ave</streetAddressLine>
+					<city>Farmington</city>
+					<state>CT</state>
+					<postalCode>06032</postalCode>
+					<country>US</country>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<!-- The informationRecipient represents the intended recipient of the document -->
+	<informationRecipient>
+		<intendedRecipient>
+			<informationRecipient>
+				<name>
+					<prefix>Dr</prefix>
+					<given>Henry</given>
+					<family>Seven</family>
+				</name>
+			</informationRecipient>
+			<receivedOrganization>
+				<name>Community Health and Hospitals</name>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<!-- The legalAuthenticator represents the individual who is responsible for the document -->
+	<legalAuthenticator>
+		<time value="20150722"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id extension="111111" root="2.16.840.1.113883.4.6"/>
+			<addr use="WP">
+				<streetAddressLine>401 Farmington Ave</streetAddressLine>
+				<city>Farmington</city>
+				<state>CT</state>
+				<postalCode>06032</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(555)-555-5555"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr</prefix>
+					<given>Round</given>
+					<family>Circles</family>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</legalAuthenticator>
+	<authenticator>
+		<time value="20150722"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id extension="111111" root="2.16.840.1.113883.4.6"/>
+			<addr use="WP">
+				<streetAddressLine>401 Farmington Ave</streetAddressLine>
+				<city>Farmington</city>
+				<state>CT</state>
+				<postalCode>06032</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(555)-555-5555"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr</prefix>
+					<given>Round</given>
+					<family>Circles</family>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</authenticator>
+	<participant typeCode="IND">
+		<associatedEntity classCode="PRS">
+			<code code="SPS" displayName="SPOUSE" codeSystem="2.16.840.1.113883.1.11.19563"
+				codeSystemName="Personal Relationship Role Type Value Set"/>
+			<addr use="HP">
+				<streetAddressLine>1357 Amber Dr</streetAddressLine>
+				<city>Beaverton</city>
+				<state>OR</state>
+				<postalCode>97006</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom value="tel:+1(555)-723-1544" use="HP"/>
+			<associatedPerson>
+				<name>
+					<given>Caroline</given>
+					<family>Maur</family>
+				</name>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>	
+	<documentationOf>
+		<serviceEvent classCode="PCPR">
+			<code code="423123007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Burn by Fire"/>
+			<effectiveTime>
+				<low value="20150722180000-0500"/>
+				<high value="20150722230000-5000"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction" displayName="Primary Care Provider">
+					<originalText>Primary Care Provider</originalText>
+				</functionCode>
+				<assignedEntity>
+					<!-- Not a real NPI in extension -->
+					<id extension="111111" root="2.16.840.1.113883.4.6"/>
+					<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/>
+					<addr>
+						<streetAddressLine>401 Farmington Ave</streetAddressLine>
+						<city>Farmington</city>
+						<state>CT</state>
+						<postalCode>06032</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1(555)-555-1002"/>
+					<assignedPerson>
+						<name>
+							<prefix>Dr</prefix>
+							<given>Round</given>
+							<family>Circles</family>
+						</name>
+					</assignedPerson>
+					<representedOrganization>
+						<id extension="99998899" root="2.16.840.1.113883.4.6"/>
+						<name>Community Health and Hospitals</name>
+						<telecom use="WP" value="tel:+1(555)-555-5000"/>
+						<addr>
+							<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+							<city>Portland</city>
+							<state>OR</state>
+							<postalCode>97266</postalCode>
+							<country>US</country>
+						</addr>
+					</representedOrganization>
+				</assignedEntity>
+			</performer>
+			<performer typeCode="PRF">
+				<time>
+					<low nullFlavor="UNK"/>
+				</time>
+				<assignedEntity>
+					<!-- Not a NPI extension -->
+					<id extension="91138" root="2.16.840.1.113883.4.6"/>
+					<code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy" code="163W00000X" displayName="Registered Nurse"/>
+					<addr>
+						<streetAddressLine>1002 Healthcare Dr</streetAddressLine>
+						<city>Portland</city>
+						<state>OR</state>
+						<postalCode>97266</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1(555)-555-1002"/>
+					<assignedPerson>
+						<name>
+							<given>Mary</given>
+							<family>McDonald</family>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>			
+		</serviceEvent>
+	</documentationOf>
+	<!-- added componentOf to represent encounter and to represent length of stay better as per SME suggestion -db -->
+	<componentOf>
+		<encompassingEncounter>
+			<id extension="9937012" root="2.16.840.1.113883.19"/>
+			<effectiveTime>
+				<low value="20150722180000-0500"/>
+				<high value="20150722230000-5000"/>
+			</effectiveTime>			
+		</encompassingEncounter>
+	</componentOf>
+	<!-- ******************************************************** CDA Body ******************************************************** -->
+	<component>
+		<structuredBody>
+			<!-- ***************** ALLERGIES *************** -->
+			<!-- No allergy information  -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.6.1" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Allergies and Adverse Reactions</title>
+					<text>No Known Drug Allergies</text>
+				</section>
+			</component>
+
+			<!-- ******************************* MEDICATIONS ***************************** -->
+			<!-- No known medications -->			
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
+					<title>Medications</title>
+					<text>No known Medications</text>
+				</section>
+			</component>
+
+			<!-- ******************************* MEDICATIONS ADMINISTERED			***************************** 
+				NO known medications 
+			-->
+			<component>
+				<section nullFlavor="NI">
+					<!-- The section contains the medications taken by the patient prior to 
+					and 
+					at the time of admission to the facility. -->
+					<!-- Admission Medications Section (entries optional) (V3) -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.44" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.44"/>
+					<code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MEDICATIONS ON ADMISSION"/>
+					<title>Admission Medications</title>
+					<text>No Medications Administered</text>
+				</section>
+			</component>	
+			<!-- Added Discharge Medications Section (entries required) (V3) No known medications -->
+			<component>
+				<section nullFlavor="NI">
+					<!-- Discharge Medications Section (entries required) (V3) -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.11.1" extension="2015-08-01" />
+					<templateId root="2.16.840.1.113883.10.20.22.2.11.1" />
+					<code code="10183-2" displayName="Hospital Discharge Medications" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+						<translation code="75311-1" displayName="Discharge Medications" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					</code>
+					<title>Discharge Medications</title>
+					<text>No Information</text>
+				</section>
+			</component>			
+
+			<!-- ***************** PROBLEM LIST *********************** -->
+			<!-- No known problems -->		
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROBLEM LIST"/>
+					<title>Problems</title>
+					<text>No Information</text>
+				</section>
+			</component>
+
+			<!-- ************************ ENCOUNTERS *********************** -->
+			<!-- No known encounters -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+					<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+					<title>Encounters</title>
+					<text>No Encounters</text>
+				</section>
+			</component>
+
+			<!-- ************** PROCEDURES and UDI ***************** -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09" />
+					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PROCEDURES" />
+					<title>Procedures</title>
+					<text>No Information</text>
+				</section>
+			</component>
+
+
+			<!-- ************** No UDI ***************** -->
+			<component>
+				<section nullFlavor="NI">
+					<!-- Medical equipment section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.23" extension="2014-06-09"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.23" />
+					<code code="46264-8" codeSystem="2.16.840.1.113883.6.1" />
+					<title>Medical Equipment</title>
+					<text>
+						<paragraph>No information</paragraph>
+					</text>				
+				</section>
+			</component>
+
+
+			<!-- ******************** IMMUNIZATIONS ********************* -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2014-06-09"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+					<code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+					<title>Immunizations</title>
+					<text>No immunization history</text>
+				</section>
+			</component>
+
+			<!-- ************* VITAL SIGNS *************** -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01" />
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="VITAL SIGNS" />
+					<title>Vital Signs</title>
+					<text>No Recorded Vital Signs</text>
+				</section>
+			</component>
+
+			<!-- ******************* SOCIAL HISTORY ********************* -->
+			<!-- Data is here since needed for validation -->
+			<component>
+				<section>
+					<!--  ** Social History Section (V3) ** -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.17" />
+					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+					<title>Social History</title>
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Social History Observation</th>
+									<th>Description</th>
+									<th>Dates Observed</th>
+								</tr>
+							</thead>
+							<tbody>								
+								<tr>
+									<td>Current Smoking Status</td>
+									<td>Current every day</td>
+									<td>July 22, 2015</td>
+								</tr>
+								<tr>
+									<td ID="BirthSexInfo">Birth Sex</td>
+									<td>Male</td>
+									<td>July 22, 2015</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>					
+					<!-- Current Smoking Status - July 22, 2015 -db -->
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<!-- ** Smoking Status - Meaningful Use (V2) ** -->
+							<templateId root="2.16.840.1.113883.10.20.22.4.78" extension="2014-06-09"/>
+							<templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+							<id extension="123456789" root="2.16.840.1.113883.19"/>
+							<!-- code SHALL be 72166-2 for Smoking Status - Meaningful Use (V2) -db -->
+							<code code="72166-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco smoking status NHIS"/>
+							<statusCode code="completed"/>
+							<!-- The effectiveTime reflects when the current smoking status was observed. -->
+							<effectiveTime value="20150722"/>
+							<!-- The value represents the patient's smoking status currently observed. -->
+							<!-- Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] value (CONF:1098-14810), which SHALL be selected from ValueSet Current Smoking Status 2.16.840.1.113883.11.20.9.38 STATIC 2014-09-01 (CONF:1098-14817) -db -->
+							<value xsi:type="CD" code="449868002" displayName="Current every day smoker" codeSystem="2.16.840.1.113883.6.96"/>
+							<author typeCode="AUT">
+								<templateId root="2.16.840.1.113883.10.20.22.4.119" />
+								<time value="201209101145-0500" />
+								<assignedAuthor>
+									<id extension="111111" root="2.16.840.1.113883.4.6" />
+									<code code="207QA0505X" displayName="Adult Medicine" codeSystem="2.16.840.1.113883.6.101" codeSystemName="Healthcare Provider Taxonomy (HIPAA)" />
+								</assignedAuthor>
+							</author>
+						</observation>
+					</entry>					
+					<!-- removed Social history observation (V3) entry for "Alcoholic drinks per day" -db -->
+					<!-- Add Birth Sex entry -->
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01"/>
+							<code code="76689-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sex Assigned At Birth"/>
+							<text>
+								<reference value="#BirthSexInfo"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime value="20150722"/>
+							<value code="M" codeSystem="2.16.840.1.113883.5.1" xsi:type="CD" displayName="Male"/>
+						</observation>
+					</entry>
+
+
+				</section>
+			</component>	
+
+			<!-- ******************** RESULTS ************************ -->
+			<!-- edited as per test doc - all of this data is directly relevant -db -->
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="RESULTS"/>
+					<title>Results</title>
+					<text>No Information</text>
+				</section>
+			</component>			
+
+			<!-- 
+			********************************************************
+			Assessment
+			********************************************************
+			-->
+			<!-- edited as per test doc - all of this data is directly relevant -db -->
+			<component>
+				<section nullFlavor="NI">
+					<!-- Assessment Section -db -->
+					<!-- There is no R2.1 (or 2.0) version of Assessment Section, using R1.1 templateId only -db -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.8"/>
+					<code codeSystem="2.16.840.1.113883.6.1" 
+						 codeSystemName="LOINC" code="51848-0" 
+						 displayName="ASSESSMENTS"/>
+					<title>Assessments</title>
+					<text>No assessment information</text>
+				</section>
+			</component>
+
+			<!-- ******************* PLAN OF TREATMENT ********************** -->
+			<!-- edited as per test doc - all of this data is directly relevant -db -->
+			<component>
+				<section>
+					<!--  **** Plan of Treatment Section (V2) **** -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+					<templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+					<title>Treatment Plan</title>
+					<text>
+						No Plan of treatment
+					</text>
+				</section>
+			</component>
+
+			<!-- Added Goals - original version from C-CDA_R2_Care_Plan.xml from R2.0 IG package.
+			     There are no duplicated template Ids with extensions -
+				 as there is only one version in existence for each section and entry listed -db -->
+			<!-- 
+                ********************************************************
+                Goals
+                ********************************************************
+            -->
+			<!-- edited as per test doc -db -->			
+			<component>
+				<section nullFlavor="NI">
+					<!-- Goals Section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.60"/>
+					<code code="61146-7" displayName="Goals" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Goals Section</title>
+					<text>No goal information</text>
+				</section>
+			</component>
+
+			<!-- 
+			********************************************************
+			Health Concerns
+			********************************************************
+			-->
+			<component>
+				<!-- This example records assertion of no concerns -->
+				<section nullFlavor="NI">
+					<!-- Health Concerns Section (V2) (V1 was added as a NEW template in R2.0, V2 was updated in R2.1) -db -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.58" extension="2015-08-01"/>
+					<code code="75310-3" displayName="Health Concerns Document"
+						codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Health Concerns</title>
+					<text>No Known Health Concerns on 07/22/2015</text>
+				</section>
+			</component>		
+
+			<!-- 
+			************************************
+			HOSPITAL DISCHARGE INSTRUCTIONS
+			************************************ 
+			-->
+			<component>
+				<section>
+					<!-- Hospital Discharge Instructions Section - no R2.1 version for this template -db -->
+					<templateId
+					  root="2.16.840.1.113883.10.20.22.2.41"/>
+					<code
+					  code="8653-8"
+					  codeSystem="2.16.840.1.113883.6.1"
+					  codeSystemName="LOINC"
+					  displayName="HOSPITAL DISCHARGE INSTRUCTIONS"/>
+					<title>Hospital Discharge Instructions</title>
+					<!-- Unstructured text field -->
+					<text>
+						<list
+						  listType="ordered">
+							<item>Appointments: Schedule an appointment with Dr Seven after 1 week. Follow up with Outpatient facility.</item>
+							<item>In case of fever, take Tylenol as advised in plan of treatment.</item>
+						</list>
+					</text>
+				</section>
+			</component>				
+
+			<!-- added Mental Status Section (V2) (used to be NEW in R2.0) 2.16.840.1.113883.10.20.22.2.56 as required by VDT inp test data -db -->
+			<!-- 
+			********************************************************
+			Mental Status Section
+			********************************************************
+			-->		
+			<component>
+				<section nullFlavor="NI">
+					<!-- note: the IG lists the wrong templateId in its example of this section, lists ...2,14 instead of 2.56 -db -->
+					<!-- There is no R1.1 version of this template -db -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01" />
+					<!-- Mental Status Section -->
+					<code code="10190-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MENTAL STATUS" />
+					<title>Mental Status</title>
+					<text>No information</text>
+				</section>	
+			</component>
+
+			<!-- added component Functional Status as required by test data -db -->
+			<!-- 
+			********************************************************
+			FUNCTIONAL STATUS
+			********************************************************
+			-->			
+			<component>				
+				<section nullFlavor="NI">
+					<!-- Functional Status Section (V2)-->
+					<templateId root="2.16.840.1.113883.10.20.22.2.14" extension="2014-06-09"/>
+					<!-- Functional Status Section -->
+					<templateId root="2.16.840.1.113883.10.20.22.2.14"/>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional Status"/>
+					<title>Function Status</title>
+					<text>No information</text>
+				</section>
+			</component>
+
+			<!-- added Interventions -->
+			<!-- 
+			********************************************************
+			INTERVENTIONS
+			********************************************************
+			-->
+
+			<component>
+				<section nullFlavor="NI">
+					<templateId root="2.16.840.1.113883.10.20.21.2.3" extension="2015-08-01" />
+					<templateId root="2.16.840.1.113883.10.20.21.2.3" />
+					<code code="62387-6" displayName="Interventions Provided" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+					<title>Interventions Section</title>
+					<text>No intervention information</text>
+				</section>
+			</component>
+
+			<!-- Image of Insurance Card -->
+			<!-- 
+			********************************************************
+			Insurance Card 
+			********************************************************
+			-->
+			<component>
+				<section>
+					<code code="64290-0" displayName="Health Insurance Card" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+					<title>Health Insurance Card</title>
+					<text>Attached is an image of the patient's health insurance card
+						<table>
+						<thead>
+							<th >Description</th>
+							<th >Date</th>
+							<th >Embedded Attachment</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td >Health Insurance Card</td>
+								<td> March 24, 2022</td>
+								<td ><renderMultiMedia referencedObject="MM1"/></td>
+							</tr>
+						</tbody>
+						</table>
+					</text>
+					<entry>
+						<observation>
+							<code nullFlavor="NA"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220324" />
+							<entryRelationship typeCode="SUBJ">
+								<observationMedia classCode="OBS" moodCode="EVN" ID="MM1">
+									<id root="2.16.840.1.113883.19.2.1"/>
+									<value mediaType="image/jpeg">
+										<reference value="insurance_card2.jpg"/>
+									</value>
+								</observationMedia>
+							</entryRelationship>
+						</observation>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
