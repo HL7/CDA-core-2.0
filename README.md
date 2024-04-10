@@ -20,4 +20,4 @@ The FHIR logical models for CDA have been moved to https://github.com/HL7/CDA-co
 
 ## Online Navigation of CDA
 
-Files developed for ballot to place the CDA R2.0 standard online are included in the folder ```online-navigation``
+Files developed for ballot to place the CDA R2.0 standard online are included in the folder ```online-navigation```
