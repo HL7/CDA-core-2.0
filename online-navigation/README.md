@@ -7,15 +7,14 @@ The CDA R2.0 (last published in 2010) was originally developed as a set of webpa
 - "CDA Sample Documents" now points to the HL7 CDA repository
 - "CDA Refined Message Information Model (R-MIM)" now links to the image and 2023 version in the online CDA publication
 
-The intent is to ballot and publish these new artefacts as CDA R2.0 in 2024/2025. 
+The official link to the HL7 hosted version of this content is: https://hl7.org/cda/stds/online-navigation
 
 ### Where to start?
 
 Open the file ```index.html``` in a browser. For best functionality, host the web pages to allow for an CDA example document (XML with stylesheet) to open. 
 
-### When is this being balloted and by whom?
+### When was this being balloted and by whom?
 
-The current intent is to ballot these set of web pages in May 2024. Contact CDA Management Group with questions. 
-
+This was successfully balloted in May 2024 by the Lisa Nelson and John D'Amore (with help from Structured Documents workgroup and CDA Management Group). It is the ANSI normative version of CDA R2.0. 
 
 
