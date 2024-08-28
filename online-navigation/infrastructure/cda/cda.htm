@@ -115,7 +115,7 @@
     </tr>
     <tr>
       <td width="100%" colspan="3"><p class="copyright">Last
-        Published: 09/25/2005 9:14 PM</p>
+        Published: 08/28/2024</p>
 
         <p class="copyright">HL7&reg; Version 3 Standard, &copy; 2005 Health Level
         Seven&reg;, Inc. All Rights Reserved. </p>
@@ -422,7 +422,7 @@
           <li>The CDA specification is richly expressive and flexible.
             Document-level, section-level and entry-level templates can be used
             to constrain the generic CDA specification (see <a
-            href="#The_A_in_CDA">The "A" in "CDA" (ง 1.2.2 )</a>). </li>
+            href="#The_A_in_CDA">The "A" in "CDA" (ยง 1.2.2 )</a>). </li>
         </ul>
       </td>
     </tr>
@@ -458,7 +458,7 @@
         this specification does impose requirements upon the packaging of CDA
         documents in HL7 messages (see <a
         href="#CDA_Document_Exchange_in_HL7_Messages">CDA Document Exchange in
-        HL7 Messages (ง 3 )</a>). </p>
+        HL7 Messages (ยง 3 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -479,7 +479,7 @@
         management messages is outside the scope of the CDA. (For more on this,
         see <a
         href="#Relationship_of_the_CDA_to_HL7_Messaging_Standards">Relationship
-        of the CDA to HL7 Messaging Standards (ง 1.2.6 )</a>). </p>
+        of the CDA to HL7 Messaging Standards (ยง 1.2.6 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -602,7 +602,7 @@
       <td class="body_col"><p>Major components of a prototypic CDA document are
         shown in the following skeletal example. (Note that many required
         components are missing to simplify the example. See <a
-        href="#Samples">Samples (ง A )</a> for a detailed conformant example).
+        href="#Samples">Samples (ยง A )</a> for a detailed conformant example).
         </p>
       </td>
     </tr>
@@ -611,8 +611,8 @@
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>A CDA document is wrapped by the
         &lt;ClinicalDocument&gt; element, and contains a header (see <a
-        href="#CDA_Header">Header (ง 4.2 )</a>) and a body (see <a
-        href="#CDA_Body">Body (ง 4.3 )</a>). The header lies between the
+        href="#CDA_Header">Header (ยง 4.2 )</a>) and a body (see <a
+        href="#CDA_Body">Body (ยง 4.3 )</a>). The header lies between the
         &lt;ClinicalDocument&gt; and the &lt;structuredBody&gt; elements, and
         identifies and classifies the document and provides information on
         authentication, the encounter, the patient, and the involved providers.
@@ -635,8 +635,8 @@
       <td class="body_col"><p>A CDA document section is wrapped by the
         &lt;section&gt; element. Each section can contain a single narrative
         block (see <a href="#CDA_Section_Narrative_Block">Section Narrative
-        Block (ง 4.3.5 )</a>), and any number of CDA entries (see <a
-        href="#CDA_Entry_Acts">Entry Acts (ง 4.3.6 )</a>) and external
+        Block (ยง 4.3.5 )</a>), and any number of CDA entries (see <a
+        href="#CDA_Entry_Acts">Entry Acts (ยง 4.3.6 )</a>) and external
         references. </p>
       </td>
     </tr>
@@ -647,8 +647,8 @@
         &lt;text&gt; element within the &lt;section&gt; element, and must
         contain the human readable content to be rendered. See also <a
         href="#Human_Readability_and_Rendering_CDA_Documents">Human Readability
-        and Rendering CDA Documents (ง 1.2.3 )</a> and <a
-        href="#CDA_Conformance">CDA Conformance (ง 1.3 )</a> for principles
+        and Rendering CDA Documents (ยง 1.2.3 )</a> and <a
+        href="#CDA_Conformance">CDA Conformance (ยง 1.3 )</a> for principles
         governing the representation of the narrative block, and conformance
         requirements on the part of originators when populating the block, and
         recipients when rendering it. </p>
@@ -734,7 +734,7 @@
       <td class="body_col"><p>The notion of CDA "levels" in CDA, Release One
         anticipated a hierarchical set of XML DTDs or XML Schemas to achieve
         the goals enumerated above (see <a
-        href="#Goals_and_Design_Principles">Goals and Design Principles (ง
+        href="#Goals_and_Design_Principles">Goals and Design Principles (ยง
         1.1.3 )</a>). This hierarchy formed an "architecture", hence the "A" in
         "CDA". </p>
       </td>
@@ -971,7 +971,7 @@
       <td class="body_col"><p>These principles and requirements have led to the
         current approach, where the material to be rendered is placed into the
         Section.text field (see <a href="#CDA_Section_Narrative_Block">Section
-        Narrative Block (ง 4.3.5 )</a>). The content model of this field is
+        Narrative Block (ยง 4.3.5 )</a>). The content model of this field is
         specially hand crafted to meet the above requirements, and corresponds
         closely to the content model of sections in CDA, Release One.
         Structured observations can reference narrative content in the
@@ -995,7 +995,7 @@
       <td class="body_col"><p>XML markup of CDA documents is prescribed in this
         specification. CDA instances are valid against the CDA Schema and may
         be subject to additional validation (see <a href="#CDA_Conformance">CDA
-        Conformance (ง 1.3 )</a>). There is no prohibition against multiple
+        Conformance (ยง 1.3 )</a>). There is no prohibition against multiple
         schema languages (e.g., W3C, DTD, RELAXNG), as long as conforming
         instances are compatible. </p>
       </td>
@@ -1012,7 +1012,7 @@
       <td class="body_col"><ul style="margin-left:20px;">
           <li><strong>General Requirements: </strong>The design of the CDA
             Schema follows the more general requirements for CDA (see <a
-            href="#Goals_and_Design_Principles">Goals and Design Principles (ง
+            href="#Goals_and_Design_Principles">Goals and Design Principles (ยง
             1.1.3 )</a>). </li>
           <li><strong>CDA Schema and V3 Implementation Technology Specification
             (ITS) : </strong>The CDA Schema will follow the general V3 XML ITS.
@@ -1049,7 +1049,7 @@
             Schema should adhere to the requirements for forward and backward
             compatibility. (See <a
             href="#Backwards_and_Forwards_Compatibility">Backwards and Forwards
-            Compatibility (ง 1.5 )</a>) </li>
+            Compatibility (ยง 1.5 )</a>) </li>
           <li><strong>Naming: </strong>While XML markup, by definition, is for
             machine processing, it should be optimized for human review, debug,
             and design. The CDA Schema is not "self-documenting", but meaning
@@ -1114,7 +1114,7 @@
         information object that can exist outside of a messaging context and/or
         can be a payload within an HL7 message (see <a
         href="#CDA_Document_Exchange_in_HL7_Messages">CDA Document Exchange in
-        HL7 Messages (ง 3 )</a>). Thus, the CDA complements HL7 messaging
+        HL7 Messages (ยง 3 )</a>). Thus, the CDA complements HL7 messaging
         specifications. </p>
       </td>
     </tr>
@@ -1214,10 +1214,10 @@
         storage requirements for CDA documents defined in this standard.
         However, as noted above (see <a
         href="#Relationship_of_the_CDA_to_HL7_Messaging_Standards">Relationship
-        of the CDA to HL7 Messaging Standards (ง 1.2.6 )</a>), document
+        of the CDA to HL7 Messaging Standards (ยง 1.2.6 )</a>), document
         management is critically interdependent with the CDA specification. The
         custodian identified in the CDA header (see <a
-        href="#custodian">custodian (ง 4.2.2.3 )</a>) is the participant
+        href="#custodian">custodian (ยง 4.2.2.3 )</a>) is the participant
         charged with maintaining the original document, which may be in some
         form other than CDA. </p>
       </td>
@@ -1273,7 +1273,7 @@
                 section. </li>
               <li>If the CDA Body is structured, the contents of the
                 Section.text field must rendered per the rules defined in <a
-                href="#CDA_Section_Narrative_Block">Section Narrative Block (ง
+                href="#CDA_Section_Narrative_Block">Section Narrative Block (ยง
                 4.3.5 )</a>. </li>
             </ul>
           </li>
@@ -1324,7 +1324,7 @@
                 entries. </li>
               <li>If the CDA Body is structured, the contents of the
                 Section.text field must be created per the rules defined in <a
-                href="#CDA_Section_Narrative_Block">Section Narrative Block (ง
+                href="#CDA_Section_Narrative_Block">Section Narrative Block (ยง
                 4.3.5 )</a></li>
             </ul>
           </li>
@@ -1409,7 +1409,7 @@
           <b>NOTE: </b>A detailed list of all changes between CDA, Release One
           and CDA, Release Two can be found in the appendix (see <a
           href="#Enumeration_of_Changes_Between_Release_One_and_Release_Two">Changes
-          from CDA Release 1 (ง B.4 )</a>). </blockquote>
+          from CDA Release 1 (ยง B.4 )</a>). </blockquote>
       </td>
     </tr>
     <tr>
@@ -1462,7 +1462,7 @@
             components (including XML element and attribute names). Where this
             occurs, a mapping table will list all changes. Renaming will adhere
             to the naming convention articulated above (see <a
-            href="#XML_Markup_of_CDA_Documents">XML Markup of CDA Documents (ง
+            href="#XML_Markup_of_CDA_Documents">XML Markup of CDA Documents (ยง
             1.2.4 )</a>). </li>
           <li><strong>Deprecated components</strong> : A new release of CDA can
             deprecate components defined in a prior release. Deprecated
@@ -1760,7 +1760,7 @@
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The CDA R-MIM is described below (see <a
-        href="#CDA_RMIM">CDA R-MIM (ง 4 )</a>). </p>
+        href="#CDA_RMIM">CDA R-MIM (ยง 4 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -1823,7 +1823,7 @@
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The CDA HD is described below (see <a
-        href="#CDA_Hierarchical_Description">CDA Hierarchical Description (ง 5
+        href="#CDA_Hierarchical_Description">CDA Hierarchical Description (ยง 5
         )</a>). </p>
       </td>
     </tr>
@@ -1846,7 +1846,7 @@
         it must also adhere to the conformance rules stated in the CDA
         Hierarchical Description. For CDA, Release Two, the CDA HD is uniquely
         identified by the string "POCD_HD000040". As described below (see <a
-        href="#Clinical_Document">Clinical Document (ง 4.1 )</a>), this value
+        href="#Clinical_Document">Clinical Document (ยง 4.1 )</a>), this value
         must be included in a CDA instance to serve as an unambiguous reference
         to the CDA, Release Two specification. </p>
       </td>
@@ -1873,7 +1873,7 @@
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The CDA Schema is described below (see <a
-        href="#CDA_Schema">CDA XML Implementation (ง 6 )</a>). </p>
+        href="#CDA_Schema">CDA XML Implementation (ยง 6 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -1889,7 +1889,7 @@
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>Specific enhancements to the CDA Schema, above
         and beyond those defined in the HL7 V3 XML ITS, are described below in
-        <a href="#CDA_Schema">CDA XML Implementation (ง 6 )</a>. </p>
+        <a href="#CDA_Schema">CDA XML Implementation (ยง 6 )</a>. </p>
       </td>
     </tr>
     <tr>
@@ -2627,7 +2627,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>Within the LOINC database, beginning with version
         2.09, May 2003, document type codes are those that have a value of
         "DOC" in the Scale component. This subset of LOINC is included in the
-        appendix (see <a href="#LOINC_Document_Codes">LOINC Document Codes (ง
+        appendix (see <a href="#LOINC_Document_Codes">LOINC Document Codes (ยง
         B.2 )</a>). </p>
       </td>
     </tr>
@@ -2665,7 +2665,7 @@ Content-Type: image/JPEG
         are rendered to the clinician, or where the document has a unique
         title, the ClinicalDocument.title component should be used. In the
         example document in the appendix (see <a href="#Sample_Document">Sample
-        Document (ง A.1 )</a>), the value of ClinicalDocument.title = "Good
+        Document (ยง A.1 )</a>), the value of ClinicalDocument.title = "Good
         Health Clinic Consultation Note". </p>
       </td>
     </tr>
@@ -2702,7 +2702,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>Confidentiality is a required contextual
         component of CDA, where the value expressed in the header holds true
         for the entire document, unless overridden by a nested value (as
-        further described in <a href="#CDAContext">CDA Context (ง 4.4 )</a>).
+        further described in <a href="#CDAContext">CDA Context (ยง 4.4 )</a>).
         </p>
       </td>
     </tr>
@@ -2779,7 +2779,7 @@ Content-Type: image/JPEG
         is a contextual component of CDA, where the value expressed in the
         header holds true for the entire document, unless overridden by a
         nested value (as further described in <a href="#CDAContext">CDA Context
-        (ง 4.4 )</a>). </p>
+        (ยง 4.4 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -2871,7 +2871,7 @@ Content-Type: image/JPEG
         accuracy of the document, but who does not have privileges to legally
         authenticate the document. An example would be a resident physician who
         sees a patient and dictates a note, then later signs it. (See also <a
-        href="#legalAuthenticator">legalAuthenticator (ง 4.2.2.8 )</a>) </p>
+        href="#legalAuthenticator">legalAuthenticator (ยง 4.2.2.8 )</a>) </p>
       </td>
     </tr>
     <tr>
@@ -3525,7 +3525,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The custodian participation satisfies the CDA
         definition of Stewardship (see <a href="#What_is_the_CDA">What is the
-        CDA (ง 1.1 )</a>). Because CDA is an exchange standard and may not
+        CDA (ยง 1.1 )</a>). Because CDA is an exchange standard and may not
         represent the original form of the authenticated document, the
         custodian represents the steward of the original source document. </p>
       </td>
@@ -3763,7 +3763,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>See <a
-        href="#EncompassingEncounter">EncompassingEncounter (ง 4.2.3.5 )</a>
+        href="#EncompassingEncounter">EncompassingEncounter (ยง 4.2.3.5 )</a>
         for a description of the encounterParticipant participant. </p>
       </td>
     </tr>
@@ -4320,7 +4320,7 @@ Content-Type: image/JPEG
     <tr>
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
-      <td class="body_col"><p>See <a href="#Event">ServiceEvent (ง 4.2.3.2
+      <td class="body_col"><p>See <a href="#Event">ServiceEvent (ยง 4.2.3.2
         )</a> for a description of the performer participant. </p>
       </td>
     </tr>
@@ -4354,7 +4354,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The recordTarget(s) of a document are stated in
         the header and propagate to nested content, where they cannot be
-        overridden (see See <a href="#CDAContext">CDA Context (ง 4.4 )</a>).
+        overridden (see See <a href="#CDAContext">CDA Context (ยง 4.4 )</a>).
         </p>
       </td>
     </tr>
@@ -4708,7 +4708,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>See <a
-        href="#EncompassingEncounter">EncompassingEncounter (ง 4.2.3.5 )</a>
+        href="#EncompassingEncounter">EncompassingEncounter (ยง 4.2.3.5 )</a>
         for a description of the responsibleParty participant. </p>
       </td>
     </tr>
@@ -6380,7 +6380,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>Document sections can nest, can override context
-        propagated from the header (see <a href="#CDAContext">CDA Context (ง
+        propagated from the header (see <a href="#CDAContext">CDA Context (ยง
         4.4 )</a>, and can contain narrative and CDA entries. </p>
       </td>
     </tr>
@@ -6389,7 +6389,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>An XML attribute "ID" of type XML ID, is added to
         Section within the CDA Schema. This attribute serves as the target of a
-        &lt;linkHtml&gt; reference (see <a href="#link">&lt;linkHtml&gt; (ง
+        &lt;linkHtml&gt; reference (see <a href="#link">&lt;linkHtml&gt; (ยง
         4.3.5.2 )</a>). All values of attributes of type XML ID must be unique
         within the document (per the <a
         href="http://www.w3.org/TR/2004/REC-xml-20040204/#id"
@@ -6519,7 +6519,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>Used to store narrative to be rendered. Also
         referred to as the CDA Narrative Block. See <a
-        href="#CDA_Section_Narrative_Block">Section Narrative Block (ง 4.3.5
+        href="#CDA_Section_Narrative_Block">Section Narrative Block (ยง 4.3.5
         )</a> for details. </p>
       </td>
     </tr>
@@ -6536,7 +6536,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>A value for Section.confidentialityCode overrides
         the value propagated from StructuredBody. See <a href="#CDAContext">CDA
-        Context (ง 4.4 )</a> for more details. </p>
+        Context (ยง 4.4 )</a> for more details. </p>
       </td>
     </tr>
     <tr>
@@ -6616,7 +6616,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>A value for Section.languageCode overrides the
         value propagated from StructuredBody. See <a href="#CDAContext">CDA
-        Context (ง 4.4 )</a> for more details. </p>
+        Context (ยง 4.4 )</a> for more details. </p>
       </td>
     </tr>
     <tr>
@@ -6639,7 +6639,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The author participant (described above, see <a
-        href="#author">author (ง 4.2.2.2 )</a>), can be ascribed to a CDA
+        href="#author">author (ยง 4.2.2.2 )</a>), can be ascribed to a CDA
         section, where it overrides the value(s) propagated from the CDA
         header. </p>
       </td>
@@ -6656,7 +6656,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The informant participant (described above, see
-        <a href="#informant">informant (ง 4.2.2.6 )</a>), can be ascribed to a
+        <a href="#informant">informant (ยง 4.2.2.6 )</a>), can be ascribed to a
         CDA section where it overrides the value(s) propagated from the CDA
         header. </p>
       </td>
@@ -6675,7 +6675,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>The subject participant represents the primary
         target of the entries recorded in the document. Most of the time the
         subject is the same as the recordTarget (see <a
-        href="#recordTarget">recordTarget (ง 4.2.2.11 )</a>), but need not be,
+        href="#recordTarget">recordTarget (ยง 4.2.2.11 )</a>), but need not be,
         for instance when the subject is a fetus observed in an obstetrical
         ultrasound. </p>
       </td>
@@ -6891,7 +6891,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The "component" Act Relationship is used to nest
         a Section within a Section. Context propagates to nested sections (see
-        <a href="#CDAContext">CDA Context (ง 4.4 )</a>). </p>
+        <a href="#CDAContext">CDA Context (ยง 4.4 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -6946,7 +6946,7 @@ Content-Type: image/JPEG
       <td class="body_col">
         <blockquote>
           <b>NOTE: </b>See <a href="#XML_ID_IDREFS_Pointers">Referencing in and
-          out of the narrative block (ง 4.3.5.12 )</a> for a discussion of
+          out of the narrative block (ยง 4.3.5.12 )</a> for a discussion of
           referencing in and out of a section's narrative block. </blockquote>
       </td>
     </tr>
@@ -6985,7 +6985,7 @@ Content-Type: image/JPEG
         generated them). Relationships between various entries (such as two
         Observations or an Observation and an ObservationMedia) are encoded
         using the relationship types defined in <a
-        href="#entryRelationship">entryRelationship (ง 4.3.8.4 )</a>. </p>
+        href="#entryRelationship">entryRelationship (ยง 4.3.8.4 )</a>. </p>
       </td>
     </tr>
     <tr>
@@ -7085,7 +7085,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The Section.text field is used to store narrative
         to be rendered, as described above in <a href="#CDA_Conformance">CDA
-        Conformance (ง 1.3 )</a>, and is therefore referred to as the CDA
+        Conformance (ยง 1.3 )</a>, and is therefore referred to as the CDA
         Narrative Block. </p>
       </td>
     </tr>
@@ -7105,7 +7105,7 @@ Content-Type: image/JPEG
         schema is specially hand crafted to meet the requirements outlined
         above (see <a
         href="#Human_Readability_and_Rendering_CDA_Documents">Human Readability
-        and Rendering CDA Documents (ง 1.2.3 )</a>). The schema is registered
+        and Rendering CDA Documents (ยง 1.2.3 )</a>). The schema is registered
         as a MIME type (text/x-hl7-text+xml), which is the fixed media type for
         Section.text. Components of the schema are described in the sections
         that follow. </p>
@@ -7229,7 +7229,7 @@ Content-Type: image/JPEG
         part of the attestable content of the document requires the use of the
         ObservationMedia CDA entry, which is referenced by the
         &lt;renderMultiMedia&gt; element (see <a
-        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ง 4.3.5.6 )</a>).
+        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ยง 4.3.5.6 )</a>).
         Multimedia that is simply referenced by the document and not an
         integral part of the document can use &lt;linkHtml&gt;. </p>
       </td>
@@ -7530,7 +7530,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The table.border, table.cellspacing, and
         table.cellpadding attributes are deprecated, because the styleCode
-        attribute (see <a href="#styleCode">styleCode attribute (ง 4.3.5.11
+        attribute (see <a href="#styleCode">styleCode attribute (ยง 4.3.5.11
         )</a> provides a more consistent way for senders to suggest rendering
         characteristics. </p>
       </td>
@@ -7781,7 +7781,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col">
         <blockquote>
-          <b>NOTE: </b>See <a href="#entry">entry (ง 4.3.4.2 )</a> for a
+          <b>NOTE: </b>See <a href="#entry">entry (ยง 4.3.4.2 )</a> for a
           discussion of the relationships between a section and its contained
           entries. </blockquote>
       </td>
@@ -7798,21 +7798,21 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap">  </td>
       <td class="body_col"><ul style="margin-left:20px;">
           <li>CDA entries can point in to the &lt;content&gt; element of the
-            CDA Narrative Block (see <a href="#content">&lt;content&gt; (ง
+            CDA Narrative Block (see <a href="#content">&lt;content&gt; (ยง
             4.3.5.1 )</a>). </li>
           <li>The &lt;linkHtml&gt; element of the CDA Narrative Block can
             reference targets that are either internal or external to the
-            document (see <a href="#link">&lt;linkHtml&gt; (ง 4.3.5.2 )</a>).
+            document (see <a href="#link">&lt;linkHtml&gt; (ยง 4.3.5.2 )</a>).
           </li>
           <li>The &lt;footnoteRef&gt; element of the CDA Narrative Block can
             reference a &lt;footnote&gt; element in the same or different CDA
             Narrative Block of the same document (see <a
-            href="#footNote">&lt;footnote&gt; and &lt;footnoteRef&gt; (ง
+            href="#footNote">&lt;footnote&gt; and &lt;footnoteRef&gt; (ยง
             4.3.5.5 )</a>). </li>
           <li>The &lt;renderMultiMedia&gt; element of the CDA Narrative Block
             can point out to CDA ObservationMedia and RegionOfInterest entries
             of the same document (see <a
-            href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ง 4.3.5.6
+            href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ยง 4.3.5.6
             )</a>). </li>
         </ul>
       </td>
@@ -8075,7 +8075,7 @@ Content-Type: image/JPEG
       <td class="body_col">
         <blockquote>
           <b>NOTE: </b>The EncompassingEncounter class in the CDA Header (see
-          <a href="#CDA_Header_Relationships">Header Relationships (ง 4.2.3
+          <a href="#CDA_Header_Relationships">Header Relationships (ยง 4.2.3
           )</a>) represents the setting of the clinical encounter during which
           the documented act occurred. The Encounter class in the CDA Body is
           used to represent other related encounters. </blockquote>
@@ -8459,7 +8459,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>An XML attribute "ID" of type XML ID, is added to
         ObservationMedia within the CDA Schema. This attribute serves as the
         target of a &lt;renderMultiMedia&gt; reference (see <a
-        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ง 4.3.5.6 )</a>).
+        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ยง 4.3.5.6 )</a>).
         All values of attributes of type XML ID must be unique within the
         document (per the <a
         href="http://www.w3.org/TR/2004/REC-xml-20040204/#id"
@@ -8811,7 +8811,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>An XML attribute "ID" of type XML ID, is added to
         RegionOfInterest within the CDA Schema. This attribute serves as the
         target of a &lt;renderMultiMedia&gt; reference (see <a
-        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ง 4.3.5.6 )</a>).
+        href="#renderMultiMedia">&lt;renderMultiMedia&gt; (ยง 4.3.5.6 )</a>).
         All values of attributes of type XML ID must be unique within the
         document (per the <a
         href="http://www.w3.org/TR/2004/REC-xml-20040204/#id"
@@ -9623,7 +9623,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>CDA structures and entries can have various
         participants, some of which are also defined in the CDA header. As
         described in the discussion of CDA context (see <a
-        href="#CDAContext">CDA Context (ง 4.4 )</a>), participants propagated
+        href="#CDAContext">CDA Context (ยง 4.4 )</a>), participants propagated
         from the header can be overridden within the body. </p>
       </td>
     </tr>
@@ -9639,7 +9639,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The author participant (described above, see <a
-        href="#author">author (ง 4.2.2.2 )</a>), can be ascribed to a CDA
+        href="#author">author (ยง 4.2.2.2 )</a>), can be ascribed to a CDA
         section where it overrides the value(s) propagated from the CDA header,
         or can be ascribed to a CDA entry, where it overrides the value(s)
         propagated from a CDA section and propagates to nested entries. </p>
@@ -9657,7 +9657,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The consumable participant is described above
-        (see <a href="#CDA_Entry_Acts">Entry Acts (ง 4.3.6 )</a>). </p>
+        (see <a href="#CDA_Entry_Acts">Entry Acts (ยง 4.3.6 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -9672,7 +9672,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The informant participant (described above, see
-        <a href="#informant">informant (ง 4.2.2.6 )</a>), can be ascribed to a
+        <a href="#informant">informant (ยง 4.2.2.6 )</a>), can be ascribed to a
         CDA section where it overrides the value(s) propagated from the CDA
         header, or can be ascribed to a CDA entry, where it overrides the
         value(s) propagated from a CDA section and propagates to nested
@@ -10080,7 +10080,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The product participant is described above (see
-        <a href="#CDA_Entry_Acts">Entry Acts (ง 4.3.6 )</a>). </p>
+        <a href="#CDA_Entry_Acts">Entry Acts (ยง 4.3.6 )</a>). </p>
       </td>
     </tr>
     <tr>
@@ -10176,7 +10176,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The subject participant (described above, see <a
-        href="#section_subject">subject (ง 4.3.3.3 )</a>), can be ascribed to a
+        href="#section_subject">subject (ยง 4.3.3.3 )</a>), can be ascribed to a
         CDA section, or it can be ascribed to a CDA entry, where it overrides
         the value(s) propagated from a CDA section and propagates to nested
         entries. </p>
@@ -10202,7 +10202,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The component relationship has a source of
-        Organizer (see <a href="#Organizer">Organizer (ง 4.3.6.5 )</a>, and a
+        Organizer (see <a href="#Organizer">Organizer (ยง 4.3.6.5 )</a>, and a
         target that is another CDA entry, and is used to create groupings of
         CDA entries within an Organizer. </p>
       </td>
@@ -10368,7 +10368,7 @@ Content-Type: image/JPEG
       <td class="graphic_col" nowrap="nowrap"> </td>
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The referenceRange relationship (described above,
-        see <a href="#Observation">Observation (ง 4.3.6.3 )</a>), has a source
+        see <a href="#Observation">Observation (ยง 4.3.6.3 )</a>), has a source
         of Observation, and a target of ObservationRange. </p>
       </td>
     </tr>
@@ -10583,7 +10583,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The entryRelationship.contextConductionInd
         differs from the otherwise common use of this attribute (see <a
-        href="#CDAContext">CDA Context (ง 4.4 )</a>) in that in all other cases
+        href="#CDAContext">CDA Context (ยง 4.4 )</a>) in that in all other cases
         where this attribute is used, the value is fixed at "true", whereas
         here the value is defaulted to "true", and can be changed to "false"
         when referencing an entry in the same document. Setting the context
@@ -11258,7 +11258,7 @@ Content-Type: image/JPEG
       <td class="body_col"><p>* The one exception to this is
         entryRelationship.contextConductionInd, which is defaulted to "true",
         but can be changed to "false". See <a
-        href="#entryRelationship">entryRelationship (ง 4.3.8.4 )</a> for
+        href="#entryRelationship">entryRelationship (ยง 4.3.8.4 )</a> for
         details. </p>
       </td>
     </tr>
@@ -11566,7 +11566,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>The CDA Narrative Block, which is the XML content
         model of section.text, is manually crafted, as described above (see <a
-        href="#CDA_Section_Narrative_Block">Section Narrative Block (ง 4.3.5
+        href="#CDA_Section_Narrative_Block">Section Narrative Block (ยง 4.3.5
         )</a>). Note that while the CDA Schema is not a normative artifact, the
         CDA Narrative Block schema is. </p>
       </td>
@@ -12254,7 +12254,7 @@ Content-Type: image/JPEG
       <td class="number_col" nowrap="nowrap"> </td>
       <td class="body_col"><p>Templates are one type of constraint. HL7 is in
         the process of defining a formal template mechanism (see <a
-        href="#The_A_in_CDA">The "A" in "CDA" (ง 1.2.2 )</a>). </p>
+        href="#The_A_in_CDA">The "A" in "CDA" (ยง 1.2.2 )</a>). </p>
       </td>
     </tr>
     <tr>
