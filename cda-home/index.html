@@ -1,0 +1,438 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CDA: Clinical Document Architecture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HL7 Clinical Document Architecture">
+  <meta name="author" content="http://www.hl7.org">
+  <!-- Bootstrap core CSS color: #2E8B57;-->
+  <link rel="stylesheet" href="https://hl7.org/cda/stds/core/assets-hist/css/bootstrap-fhir.css">
+
+  <!-- Project extras -->
+  <link rel="stylesheet" href="https://hl7.org/cda/stds/core/assets-hist/css/project.css">
+  <link rel="stylesheet" href="https://hl7.org/cda/stds/core/assets-hist/css/pygments-manni.css">
+  <link href="https://hl7.org/cda/stds/core/assets-hist/css/cda.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://hl7.org/cda/stds/core/jquery-ui.css">
+  <!-- header.template starts here -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="https://hl7.org/cda/stds/core/assets-hist/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="https://hl7.org/cda/stds/core/assets-hist/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72"
+    href="https://hl7.org/cda/stds/core/assets-hist/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed"
+    href="https://hl7.org/cda/stds/core/assets-hist/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="https://hl7.org/cda/stds/core/assets-hist/ico/favicon.png">
+  <style type="text/css" media="screen">
+    table.history-grid {
+      margin-bottom: 10px;
+      border: 1px black solid;
+      margin-right: auto;
+
+    }
+
+    table.history-grid th {
+      border: 1px solid silver;
+      padding: 3px 7px 2px 7px;
+      font-size: 16px;
+      line-height: 1.4em;
+      font-family: verdana;
+      font-weight: bold;
+      padding: 3px;
+      vertical-align: top;
+    }
+
+
+    table.history-grid td {
+      border: 1px solid silver;
+      padding: 3px 7px 2px 7px;
+      font-size: 16px;
+      line-height: 1.4em;
+      font-family: verdana;
+      font-weight: normal;
+      padding: 3px;
+      vertical-align: top;
+    }
+
+    h1 {
+      color: black;
+      font-weight: bold;
+    }
+
+    .navbar-brand {
+      float: left;
+      margin-left: -15px;
+      margin-right: 5px;
+    }
+
+    .navbar-nav {
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .navbar-nav>li {
+      float: left;
+    }
+
+    .navbar-nav>li>a {
+      border-radius: 0;
+    }
+
+    .navbar-nav.pull-right {
+      float: right;
+      width: auto;
+    }
+
+    .navbar-toggle {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: none;
+    }
+
+    .nav-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+
+    .navbar-brand {
+      float: left;
+      margin-left: -15px;
+      margin-right: 5px;
+    }
+
+    .navbar-nav {
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .navbar-nav>li {
+      float: left;
+    }
+
+    .navbar-nav>li>a {
+      border-radius: 0;
+    }
+
+    .navbar-nav.pull-right {
+      float: right;
+      width: auto;
+    }
+
+    .navbar-toggle {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: none;
+    }
+
+    .nav-collapse.collapse {
+      display: block !important;
+      height: auto !important;
+      overflow: visible !important;
+    }
+  </style>
+
+  <!-- header.template ends here -->
+</head>
+<!-- preamble.template starts here -->
+
+<body>
+  <div id="segment-header" class="segment"> <!-- segment-header -->
+    <div class="container">
+      <table class="none" style="text-align:center; width:100%">
+        <tbody>
+          <tr>
+            <td style="text-align:left;" width="20%"><a id="logo" no-external="true" href="http://hl7.org/cda"><img
+                  alt="logo cda" src="https://hl7.org/fhir/assets-hist/images/cda_both_trans.jpg"></a></td>
+            <td>
+              <div id="ig-status" style="padding-top: 10px;"><b id="ig-title" style="font-size:2.0rem">CDA: Clinical
+                  Document
+                  Architecture</b></div>
+            </td>
+            <td style="text-align:right;" width="20%"><a id="hl7-logo" no-external="true" href="http://www.hl7.org"><img
+                  alt="visit the hl7 website" src="https://hl7.org/fhir/assets-hist/images/hl7-logo.png"></a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> <!-- /segment-header -->
+
+  <div id="segment-navbar" class="segment"> <!-- segment-navbar -->
+    <div id="stripe"></div>
+    <div class="container"> <!-- container -->
+      <!-- HEADER CONTENT -->
+
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+        </div> <!-- /.container -->
+      </nav> <!-- /.navbar -->
+
+      <!-- /HEADER CONTENT -->
+    </div> <!-- /container -->
+  </div> <!-- /segment-navbar -->
+
+
+
+  <!-- ============BreadCrumb=============== -->
+
+  <!-- /container -->
+  <!-- /segment-breadcrumb -->
+
+  <div id="segment-content" class="segment"> <!-- segment-content -->
+    <div class="container"> <!-- container -->
+      <div class="row">
+        <div class="inner-wrapper">
+
+
+          <!-- preamble.template ends here -->
+
+
+          <div class="col-12">
+            <div style="font-size: 2.0rem;">
+              <!-- ============CONTENT CONTENT=============== -->
+
+              <h1 id="Description" >Description</h1>
+              <div class="markdown-toc">
+                <ul>
+                  <li><a href="#Description">Description</a></li>
+                  <li><a href="#Standard">The CDA Standard</a></li>
+                  <li><a href="#Map">Interactive Map of CDA</a></li>
+                  <li><a href="#Community">Community and Resources</a></li>
+                  <li><a href="#Education">Education</a></li>
+                </ul>
+              </div>
+              <p>
+                The <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">HL7 Clinical
+                  Document Architecture (CDA®)</a> is a primary
+                standard of Health Level Seven (HL7) and used millions of times each day for the
+                exchange of patient summaries and other medical documents.
+              </p>
+              <p>
+                CDA is a document markup standard that specifies the
+                structure and semantics of clinical documents for the purpose of exchange between patients, healthcare
+                providers, and other stakeholders. It defines a clinical document as having the following six
+                characteristics:
+              <ol>
+                <li>Persistence</li>
+                <li>Stewardship</li>
+                <li>Potential for authentication</li>
+                <li>Context</li>
+                <li>Wholeness</li>
+                <li>Human readability</li>
+              </ol>
+              </p>
+              <h1 id="Standard">The CDA Standard</h1>
+              <p>
+                All of the following are equivalent representations of CDA R2.0. The top row is the Normative version.
+              </p>
+              <table class="history-grid" width="100%">
+                <thead style="font-size:16px">
+                  <tr style="background-color: #efefef">
+                    <th width="15%">Date</th>
+                    <th width="20%">Version</th>
+                    <th width="65%">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="https://hl7.org/cda/stds/online-navigation" target="_blank">2024-08-28</a>
+                    </td>
+                    <td>2.0.0-OnlineNavigation</td>
+                    <td>CDA R2.0 Online Navigation (<b>Normative</b>)<br />
+                      This makes the original CDA R2.0 publication web accessible.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://hl7.org/cda/stds/core/2.0.0-sd/" target="_blank">2024-05-17</a></td>
+                    <td>2.0.0-sd</td>
+                    <td>CDA R2.0 in Structure Definition Format</a> (<b>Informative</b>)<br />
+                      This supports CDA implementation guides authored using <a
+                        href="https://hl7.org/fhir/R5/structuredefinition.html" target="_blank">StructureDefinition</a>.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7"
+                        target="_blank">2010-06-24</a>
+                    </td>
+                    <td>2.0.0</td>
+                    <td>CDA R2.0<br />This is the original 2010 CDA R2.0 publication available via download only.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br />
+            <br />
+            <div>
+              <h1 id="Map">Interactive Graphical Map of CDA <i>(click to navigate)</i></h1>
+              <br />
+              <br />
+              <a href="https://hl7.org/cda/stds/core/cda-rmim.html" target="_blank">
+                <img alt="logo cda" width="100%" target="_blank"
+                  src="https://hl7.org/cda/stds/core/L-POCD_RM000040.gif">
+                <div>Graphical Map of CDA (CDA Refined Message Information Model, R-MIM, Diagram)</div>
+              </a>
+              <br />
+            </div>
+            <div class="col-sm-12 col-lg-7" style="font-size: 2.0rem;">
+
+              <h1 id="Community">Community and Resources</h1>
+              <ul>
+                <li>
+                  <a href="https://chat.fhir.org/#narrow/stream/229921-CDA" target="_blank">CDA on chat.fhir.org</a>
+                </li>
+                <li>
+                  Example CDA Documents
+                  <ul>
+                    <li>
+                      <a href="http://www.cda.health/infrastructure/cda/SampleCDADocument.xml" target="_blank">Rendered
+                        CDA in Stylesheet</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/HL7/CDA-core-sd/blob/master/input/examples/clinicaldocument-example.xml"
+                        target="_blank">CDA R2.0 XML Sample</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://cdasearch.hl7.org/" target="_blank">CDA Examples Search</a>
+                </li>
+                <li>
+                  CDA Validators
+                  <ul>
+                    <li>
+                      <a href="https://validator.fhir.org/" target="_blank">HL7 Validator (select CDA under "Common
+                        Options")</a>
+                    </li>
+                    <li>
+                      <a href="https://site.healthit.gov/test-tools" target="_blank">HealthIT.gov Test Tools (includes
+                        CDA & C-CDA)</a>
+                    </li>
+                    <li>
+                      <a href="https://validator-legacy.lantanagroup.com/validator/" target="_blank">Lantana
+                        Validator</a>
+                    </li>
+                    <li>
+                      <a href="https://gazelle.ihe.net/evs/cda/validator.seam?standard=20" target="_blank">IHE
+                        Validator</a>
+                    </li>
+                    <li>
+                      <a href="https://confluence.hl7.org/display/SD/CDA+in+FHIR+StructureDefinition+%28SD%29+Format" target="_blank">Schematron Support for New CDA IGs</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  CDA Publication Tools
+                  <ul>
+                    <li>
+                      <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">HL7 FHIR IG Publisher (will
+                        publish CDA as well)</a>
+                    </li>
+                    <li>
+                      <a href="https://art-decor.org/" target="_blank">Art-Decor CDA IG Builder</a>
+                    </li>
+                    <li>
+                      <a href="https://trifolia.lantanagroup.com/" target="_blank">Trifolia Workbench IG Builder</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://confluence.hl7.org/display/CDA" target="_blank">CDA Management Group (HL7
+                    Confluence)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-lg-5" style="font-size: 2.0rem;">
+              <h1 id="Education">Education</h1>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=80ZggCcUi58" target="_blank">5-minute Introduction to CDA
+                    (2024)</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=hyYTG_NU1Bw" target="_blank">22-minute Introduction to CDA
+                    (2017)</a>
+                </li>
+                <li>
+                  <a href="https://www.pathlms.com/courses?category_ids%5B%5D=427&slug=hl7" target="_blank">HL7
+                    Education On Demand</a>
+                </li>
+                <li>
+                  <a href="https://hl7fundamentals.org/" target="_blank">HL7 Training & Get Certified in CDA</a>
+                </li>
+              </ul>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <!-- postamble.template starts here -->
+        <!-- ==============END CONTENT END CONTENT=================== -->
+
+
+      </div> <!-- /inner-wrapper -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+  <!-- /segment-content -->
+
+
+
+
+
+  <!-- /inner-wrapper -->
+  <!-- /row -->
+  <!-- /container -->
+
+  <!-- /segment-content -->
+
+
+  <div id="segment-footer" class="segment"> <!-- segment-footer -->
+    <div class="container"> <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+          <span id="ig-footer">hl7.cda.uv.core </span> ®© <a style="color: #81BEF7" href="http://hl7.org/cda"">CDA</a> |
+          <!--  <a style=" color: #81BEF7" rel="license" <href="../license.html"><img style="border-style: none;"
+              alt="CC0" src="cc0.png" /></a> -->
+          <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/license.html"><img
+              style="border-style: none;" alt="CC0" src="https://hl7.org/cda/stds/core/cc0.png"></a>
+        </p>
+      </div> <!-- /inner-wrapper -->
+    </div> <!-- /container -->
+  </div> <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+  <div id="segment-post-footer" class="segment hidden"> <!-- segment-post-footer -->
+    <div class="container"> <!-- container -->
+    </div> <!-- /container -->
+  </div> <!-- /segment-post-footer -->
+
+
+  <!-- postamble.template ends here -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="./assets-hist/js/jquery.js"> </script>
+  <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="./dist-hist/js/bootstrap.min.js"> </script>
+  <script src="./assets-hist/js/respond.min.js"> </script>
+
+  <script src="./assets-hist/js/fhir.js"> </script>
+
+  <!-- Analytics Below
+================================================== -->
+
+
+
+</body>
+
+</html>
