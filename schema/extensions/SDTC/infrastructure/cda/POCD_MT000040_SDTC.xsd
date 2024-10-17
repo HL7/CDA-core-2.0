@@ -131,6 +131,10 @@
       2024-03-21
       Added CustodianOrganization/sdtc:telecom extension approved by SDWG on 2020-12
     </xs:documentation>
+    <xs:documentation>
+      2024-10-17
+      Added external*/sdtc:author extension approved by SDWG on 2024-10
+    </xs:documentation>    
 
   </xs:annotation>
   <xs:include schemaLocation="../../processable/coreschemas/datatypes.xsd" />
@@ -650,6 +654,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" />
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassRoot" use="optional" default="ACT" />
@@ -665,6 +672,9 @@
       <xs:element name="text" type="ED" minOccurs="0" />
       <xs:element name="setId" type="II" minOccurs="0" />
       <xs:element name="versionNumber" type="INT" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" />
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassDocument" use="optional" default="DOC" />
@@ -678,6 +688,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" />
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassObservation" use="optional" default="OBS" />
@@ -691,6 +704,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" />
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClass" use="optional" fixed="PROC" />
