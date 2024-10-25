@@ -655,7 +655,7 @@
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:author" minOccurs="0" />
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
       <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
@@ -673,7 +673,7 @@
       <xs:element name="setId" type="II" minOccurs="0" />
       <xs:element name="versionNumber" type="INT" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:author" minOccurs="0" />
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
       <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
@@ -689,7 +689,7 @@
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:author" minOccurs="0" />
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
       <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
@@ -705,7 +705,7 @@
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
-      <xs:element ref="sdtc:author" minOccurs="0" />
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
       <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
