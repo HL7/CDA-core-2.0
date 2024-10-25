@@ -134,6 +134,8 @@
     <xs:documentation>
       2024-10-17
       Added external*/sdtc:author extension approved by SDWG on 2024-10
+      2024-10/25
+      Added category extension approved by SDWG on 2024-10
     </xs:documentation>    
 
   </xs:annotation>
@@ -321,6 +323,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" />
       <xs:element name="title" type="ST" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
@@ -910,6 +915,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" />
       <xs:element name="derivationExpr" type="ST" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
@@ -1039,6 +1047,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
       <xs:element ref="sdtc:text" minOccurs="0" />
@@ -1268,6 +1279,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
       <xs:element name="statusCode" type="CS" minOccurs="0" />

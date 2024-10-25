@@ -135,6 +135,9 @@
   
   <xs:import namespace="urn:hl7-org:v3" schemaLocation="POCD_MT000040_SDTC.xsd" />
   
+  <!-- Non RIM-based extensions based on FHIR elements -->
+  <xs:element name="category" type="hl7:CD" />
+  
   <!-- == Start Data types ===================================================================== -->
   <!-- Datatype INT_POS (restricts integers to 1 or greater) -->
   <xs:simpleType name="int_pos">
