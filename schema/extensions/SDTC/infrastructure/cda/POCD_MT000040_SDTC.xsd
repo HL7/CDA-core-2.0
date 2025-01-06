@@ -131,6 +131,12 @@
       2024-03-21
       Added CustodianOrganization/sdtc:telecom extension approved by SDWG on 2020-12
     </xs:documentation>
+    <xs:documentation>
+      2024-10-17
+      Added external*/sdtc:author extension approved by SDWG on 2024-10
+      2024-10/25
+      Added category extension approved by SDWG on 2024-10
+    </xs:documentation>    
 
   </xs:annotation>
   <xs:include schemaLocation="../../processable/coreschemas/datatypes.xsd" />
@@ -317,6 +323,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" />
       <xs:element name="title" type="ST" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
@@ -650,6 +659,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassRoot" use="optional" default="ACT" />
@@ -665,6 +677,9 @@
       <xs:element name="text" type="ED" minOccurs="0" />
       <xs:element name="setId" type="II" minOccurs="0" />
       <xs:element name="versionNumber" type="INT" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassDocument" use="optional" default="DOC" />
@@ -678,6 +693,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClassObservation" use="optional" default="OBS" />
@@ -691,6 +709,9 @@
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:author" minOccurs="0" maxOccurs="unbounded"/>
+      <!-- End Extension: (SDTC) -->
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="ActClass" use="optional" fixed="PROC" />
@@ -894,6 +915,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" />
       <xs:element name="derivationExpr" type="ST" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
@@ -1023,6 +1047,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" minOccurs="0" />
       <!-- Begin Extension: (SDTC) -->
       <xs:element ref="sdtc:text" minOccurs="0" />
@@ -1252,6 +1279,9 @@
       <xs:element name="typeId" type="POCD_MT000040.InfrastructureRoot.typeId" minOccurs="0" />
       <xs:element name="templateId" type="II" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="id" type="II" minOccurs="0" maxOccurs="unbounded" />
+      <!-- Begin Extension: (SDTC) -->
+      <xs:element ref="sdtc:category" minOccurs="0" maxOccurs="unbounded" />
+      <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CD" minOccurs="0" />
       <xs:element name="text" type="ED" minOccurs="0" />
       <xs:element name="statusCode" type="CS" minOccurs="0" />
