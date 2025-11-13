@@ -199,6 +199,7 @@
   <xs:element name="identifiedBy" type="IdentifiedBy" />
   <xs:element name="telecom" type="hl7:TEL" />
   <xs:element name="author" type="hl7:POCD_MT000040.Author" />
+  <xs:element name="specialty" type="hl7:CE" />
   <!-- == End Simple Elements =================================================================== -->
   
   <!-- == Start Complex Elements =================================================================== -->

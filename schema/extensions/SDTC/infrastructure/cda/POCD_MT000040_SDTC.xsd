@@ -136,7 +136,10 @@
       Added external*/sdtc:author extension approved by SDWG on 2024-10
       2024-10/25
       Added category extension approved by SDWG on 2024-10
-    </xs:documentation>    
+    </xs:documentation>
+    <xs:documentation>
+      2025-11-13  Added sdtc:specialty to AssignedAuthor, AssignedEntity, AssociatedEntity, and ParticipantRole
+    </xs:documentation>
 
   </xs:annotation>
   <xs:include schemaLocation="../../processable/coreschemas/datatypes.xsd" />
@@ -195,6 +198,7 @@
       <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
+      <xs:element ref="sdtc:specialty" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
       <xs:choice>
@@ -226,6 +230,7 @@
       <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
+      <xs:element ref="sdtc:specialty" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="assignedPerson" type="POCD_MT000040.Person" minOccurs="0" />
@@ -247,6 +252,7 @@
       <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
+      <xs:element ref="sdtc:specialty" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="associatedPerson" type="POCD_MT000040.Person" minOccurs="0" />
@@ -1128,6 +1134,7 @@
       <xs:element ref="sdtc:identifiedBy" minOccurs="0" maxOccurs="unbounded" />
       <!-- End Extension: (SDTC) -->
       <xs:element name="code" type="CE" minOccurs="0" />
+      <xs:element ref="sdtc:specialty" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="addr" type="AD" minOccurs="0" maxOccurs="unbounded" />
       <xs:element name="telecom" type="TEL" minOccurs="0" maxOccurs="unbounded" />
       <xs:choice>
