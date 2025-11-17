@@ -138,7 +138,9 @@
       Added category extension approved by SDWG on 2024-10
     </xs:documentation>
     <xs:documentation>
-      2025-11-13  Added sdtc:specialty to AssignedAuthor, AssignedEntity, AssociatedEntity, and ParticipantRole
+      2025-11-13  
+      Added sdtc:specialty to AssignedAuthor, AssignedEntity, AssociatedEntity, and ParticipantRole
+      Added sdtc:expirationDate to Material
     </xs:documentation>
 
   </xs:annotation>
@@ -897,6 +899,7 @@
       <xs:element name="code" type="CE" minOccurs="0" />
       <xs:element name="name" type="EN" minOccurs="0" />
       <xs:element name="lotNumberText" type="ST" minOccurs="0" />
+      <xs:element ref="sdtc:expirationTime" minOccurs="0" />
     </xs:sequence>
     <xs:attribute name="nullFlavor" type="NullFlavor" use="optional" />
     <xs:attribute name="classCode" type="EntityClassManufacturedMaterial" use="optional" fixed="MMAT" />
