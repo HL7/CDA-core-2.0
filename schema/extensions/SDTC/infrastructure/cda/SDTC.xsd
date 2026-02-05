@@ -131,6 +131,10 @@
       2024-03-21
       Added telecom extension approved by SDWG on 2020-12
     </xs:documentation>
+    <xs:documentation>
+      2025-11-17
+      Added specialty and expirationTime extensions approved by SDWG for C-CDA R5
+    </xs:documentation>
   </xs:annotation>
   
   <xs:import namespace="urn:hl7-org:v3" schemaLocation="POCD_MT000040_SDTC.xsd" />
@@ -199,6 +203,8 @@
   <xs:element name="identifiedBy" type="IdentifiedBy" />
   <xs:element name="telecom" type="hl7:TEL" />
   <xs:element name="author" type="hl7:POCD_MT000040.Author" />
+  <xs:element name="specialty" type="hl7:CE" />
+  <xs:element name="expirationTime" type="hl7:IVL_TS" />
   <!-- == End Simple Elements =================================================================== -->
   
   <!-- == Start Complex Elements =================================================================== -->
