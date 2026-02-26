@@ -4,7 +4,7 @@ Resources for Clinical Document Architecture (CDA) release 2.0
 
 ## CDA Schema
 
-The [`schema/normative`](./schema/normative) folder contains the original published CDA Schema. This is the schema which is published with the base/core standard. This is mainly used for historical reference. See "CDA Schema Extensions" below for the latest version that includes all extensions; which most people will want to use.
+The [`schema/normative`](./schema/normative) folder contains the original published CDA Schema. This is the schema which is published with the base/core standard. This is mainly used for historical reference. See "CDA Schema Extensions" below for the latest version that includes all extensions, which most people will want to use.
 
 ## CDA Schema Extensions
 
